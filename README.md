@@ -1,4 +1,8 @@
 # Bubble Bobble Bonkers #
+It may not be the real game ....   
+But why not play my memory game & find some of the characters,
+While listening to the classic retro theme tune :) 
+
  
 ***PIC HERE***
 
@@ -31,6 +35,12 @@
 
 
 ## Project Goals
+
+To create a fun & interactive environment for the user, where they can 'chill out' & play a memory game based on an absolute 80's classic.
+Test your memory, speed & interactive skills to match the characters & gameplay objects on hidden cards, within an allotted time (depending on level).
+My bro & I played Bubble Bobble for hours on end because it was so awesomely addictive which is what I want my game to be as well. 
+Although my game ain't the real deal, I still want users / players to feel that retro nostaglia when they play it & fall in love with Bub & Bob, the main Bubble Bobble characters.
+And for an added touch, you will get to hear the unforgettable theme tune while you compete against the clock :)
 
 ## User Goals
 
