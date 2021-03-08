@@ -62,9 +62,26 @@ And for an added touch, you will get to hear the unforgettable theme tune while 
 
 ## Site Owner Goals
 
+* As a site owner, I want to make sure game players smile & laugh
+* As a site owner, I want them to connect and love the characters that is Bub & Bob
+* As a site owner, I want visitors to have fun playing a cool, yet challenging game
+* As a site owner, I want people to enjoy the catchy & unforgettable theme tune from the orginal Bubble Bobble
+* As a site owner, I want gamers to actually go out & buy the orginal Bubble Booble so they can play iy with their friends because it was sooooo good back in the day
+* As a site owner, I want set up a contact form for users to declare any bugs or issues with the game for me to rectify & any possible ideas
+* As a site owner, I want people to enjoy themselves that much that they want to come back for more (maybe even beat their last score)
+
 ## User Requirements and Expectations
 
 ### Requirements 
+
+* Single page game website 
+* Allow player to input their actual name so that it will increase their feeling of game involvement & therefore their interactivity with the game
+* Fun looking website which is aesthetically pleasing also
+* Easy & smooth interaction with the game play
+* Increased difficulty either by shortening the game conutdown timer or by adding extra memory tiles to turn over
+* The classic Bubble Bobble theme tune has to be playing in the background for sure
+* Once tiles have been matched, increase the players score
+* To have link to a contact form for unnoticed bugs & ideas (obviously I don't want any bug feedback tbh but may add form just in case)
 
 ### Expectations
 
