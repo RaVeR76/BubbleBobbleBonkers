@@ -94,19 +94,30 @@ And for an added touch, you will get to hear the unforgettable theme tune while 
 
 ## Design Choices
 
+To be honest, the actual design of the game will be pretty simple as it's going to be a single page website that hosts the game.
+I was thinking of using one of the actual game levels to add my game memory tiles to. 
+The main opening game screens & a lot of the levels were very dense with actual gameplay content if I remember right so I need to find an appropiate level
+that will allow me the space to add my memory tiles. I know it's a bit hazy at the minute but once I start to delve into screen plays & game levels, we will find a suitable back drop
+for this awesome memory game :)
+
 ### Fonts
+
 
 ### Icons
 
+
 ### Colours
+
 
 # Wireframes
 ---
+
 
 ### What didn't make the cut
 
 # Features
 ---
+
 
 # Technologies Utilised
 ---
