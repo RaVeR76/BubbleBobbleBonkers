@@ -85,6 +85,13 @@ And for an added touch, you will get to hear the unforgettable theme tune while 
 
 ### Expectations
 
+* The user will smile as a bare minimum if I consider my wee game a success
+* They will enjoy the website layout and navigate freely with no issues
+* A good working game (but I do foresee some hidden bugs tbh, which may be undetected unless you play the game over & over & over), hence the contact form
+* I'm hoping for feeling of addictiveness (in a good way) which will bring the user back for more
+* Stimulation of the human nation
+* Some crazy fun .... for sure !
+
 ## Design Choices
 
 ### Fonts
@@ -107,7 +114,17 @@ And for an added touch, you will get to hear the unforgettable theme tune while 
 
 ### Languages
 
+- [HTML](https://en.wikipedia.org/wiki/HTML)
+- [CSS](https://en.wikipedia.org/wiki/CSS) 
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript) 
+
 ### Tools and Libraries
+
+- [Git](https://en.wikipedia.org/wiki/Git) 
+- [Bootstrap](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework))
+- [jQuery](https://jquery.com/)
+- [Font Awesome](https://fontawesome.com/)
+- [Google Fonts](https://fonts.google.com/)
 
 # Testing
 ---
