@@ -1,6 +1,6 @@
 # Bubble Bobble Bonkers #
-It may not be the real game ....   
-But why not play my memory game & find some of the characters,
+This may not be the real Bubble Bobble but ....   
+Why not play my wee memory game & find some of the characters,
 While listening to the classic retro theme tune :) 
 
  
@@ -44,7 +44,21 @@ And for an added touch, you will get to hear the unforgettable theme tune while 
 
 ## User Goals
 
+* Have some awesome interactive fun
+* Interact with the Bub & Bob (user has to input name for this)
+* Play an awesome interactive game
+* Enjoy the game so much they want to come back to play again & again & again ha ha
+* Possible message form (add link from game) - for any bugs or issues with the game or possible future ideas
+* Tell their friends about this awesome game
+
 ## User Stories
+
+* As a user, I want have some fun & therefore some me-time
+* As a user, I want to have a laugh and have a smile on my face
+* As a user, I want to enjoy some old classic retro based gameplay
+* As a user, I want to enjoy a aesthetically pleasing game which is easy to navigate around
+* As a user, I want to test my brain by playing an awesome yet tricky interactive game
+* As a user, I want to feel that I have a friend on the other side of the screen .... awwww !
 
 ## Site Owner Goals
 
