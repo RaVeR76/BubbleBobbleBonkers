@@ -1,6 +1,6 @@
 # Bubble Bobble Bonkers #
 This may not be the real Bubble Bobble but ....   
-Why not play my wee memory game & find some of the characters,
+Why not play my wee memory game & find some of the characters,  
 While listening to the classic retro theme tune :) 
 
  
@@ -102,9 +102,15 @@ for this awesome memory game :)
 
 ### Fonts
 
+For my fonts, I'm looking at deffo going retro on this one because the original game came out in 1986, therefore I want to try & keep to that basic style. 
+Also, because it's Bubble Bobble based there will definintely be some 'Bubble' writing throughout. I have located similar Bubble fonts online & 
+I am currently checking for retro fonts that will work too. I can see that Bitmap fonts are the oldskool retro gaming fonts that were used back in the day.
+Fontspace looks like an awesome website with all these cool fonts that might be useful for this project.
+
 
 ### Icons
 
+Icons .... Icons ... Icons ... 
 
 ### Colours
 
