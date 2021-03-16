@@ -127,7 +127,7 @@ Other than them, we will just have to see what suits and fits the game layout pe
 If the truth be told, this was quite a hard choice because of the fact it's a game & not an actual website.
 Therefore to keep inline with the original game itself, I used a website called [Image Color Picker](https://imagecolorpicker.com/) to upload the main Bubble Bobble title.
 Once the image was uploaded I was able to select the main colours from it & get the HEX values. 
-I also had orange (the outline of the cloud), blue (for Bob) & green (for Bub) which I had to cut unfortunately. 
+I also had blue (for Bob), green (for Bub) & orange (the outline of the cloud) selected but I had to cut unfortunately. 
 So the colours I have mainly settled for are :
 
 |Name                  |Hex Code   |Basic Description  |Usage                           |
@@ -139,7 +139,7 @@ So the colours I have mainly settled for are :
 
 Below is an image of the chosen colours .....
 
-![Bubble Bobble Bonkers Colors]()
+![Bubble Bobble Bonkers Colors](https://github.com/RaVeR76/BubbleBobbleBonkers/raw/master/wireframes/bbb-color-scheme.png)
 
 
 # Wireframes
@@ -147,6 +147,9 @@ Below is an image of the chosen colours .....
 
 
 ### What didn't make the cut
+
+Possible high score register for user to compete against (can also be reset by user)
+
 
 # Features
 ---
@@ -192,7 +195,13 @@ Below is an image of the chosen colours .....
 
 #### User Story : I want to be able to play a sneaky wee game on my office desktop, on my tablet in the bath & on my mobile whilst commuting home ... obviously when NOT driving a car!
 
-* **Plan**
+* **Plan**  
+I want the user to be able to play my game on any device they want or choose. Therefore the game layout will have to be compatible on large desktop screens, 
+right through to small mobile screens. I will achieve this by using the Bootstrap framework (Ver 4) as the foundation from where to build my game up. 
+I am a bit more clued up on Bootstrap now but deffo struggled a little on my first project with it. 
+This time I will start with the mobile design (seeing it is a mobile first framework) & work my way up, to the desktop sized screens.
+On a mobile device, you are really limited to the maximum number of tile / cards that can be displayed due to the screen size but I have settled for 12 max.
+I may increase the maximum tile numbers as the screen size gets larger but we will have to see.
 
 * **Implementation**
 
