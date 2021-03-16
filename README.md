@@ -36,28 +36,33 @@ While listening to the classic retro theme tune :)
 
 ## Project Goals
 
-To create a fun & interactive environment for the user, where they can 'chill out' & play a memory game based on an absolute 80's classic.
+There isn't a day goes by when someone in the world needs a wee timeout from their normal, boring & monotonous day to day activities.....
+If only they had some kind of game to entertain themselves with & therefore flush their life stresses down the porcelain gateway to extinction :)
+Hold my coffee .... That's were Bubble Bobble Bonkers will come to the rescue & save their day !
+
+My aim is to create a fun & interactive environment for the user, where they can 'chill out' & play a memory game based on an absolute 80's classic.
 Test your memory, speed & interactive skills to match the characters & gameplay objects on hidden cards, within an allotted time (depending on level).
-My bro & I played Bubble Bobble for hours on end because it was so awesomely addictive which is what I want my game to be as well. 
+My bro & I played the original Bubble Bobble game for hours on end because it was so awesomely addictive which is what I want my game to be as well. 
 Although my game ain't the real deal, I still want users / players to feel that retro nostaglia when they play it & fall in love with Bub & Bob, the main Bubble Bobble characters.
-And for an added touch, you will get to hear the unforgettable theme tune while you compete against the clock :)
+And for an added touch, you will get to hear the unforgettable Bubble Bobble theme tune while you play each level :)
 
 ## User Goals
 
-* Have some awesome interactive fun
+* Have some awesome fun & a smile whilst doing so
 * Interact with the Bub & Bob (user has to input name for this)
-* Play an awesome interactive game
+* Play an cool 80s classic based interactive game
 * Enjoy the game so much they want to come back to play again & again & again ha ha
 * Possible message form (add link from game) - for any bugs or issues with the game or possible future ideas
-* Tell their friends about this awesome game
+* Tell their friends about this awesome retro memory game
 
 ## User Stories
 
-* As a user, I want have some fun & therefore some me-time
-* As a user, I want to have a laugh and have a smile on my face
-* As a user, I want to enjoy some old classic retro based gameplay
-* As a user, I want to enjoy a aesthetically pleasing game which is easy to navigate around
-* As a user, I want to test my brain by playing an awesome yet tricky interactive game
+* As a user, I want to take some time out from my daily routine & play a wee game
+* As a user, I want to be able to play a sneaky wee game on my office desktop, on my tablet in the bath & on my mobile whilst commuting home ... obviously when NOT driving a car!
+* As a user, I want the game to get more difficult as I progress
+* As a user, I want to be able to compete against my current high score
+* As a user, I want to let the developer know if there are any gameplay bugs so they can rectify them or level difficulty suggestions for future updates
+* As a user, I want to enjoy a aesthetically pleasing game which is easy to navigate around 
 * As a user, I want to feel that I have a friend on the other side of the screen .... awwww !
 
 ## Site Owner Goals
@@ -66,9 +71,9 @@ And for an added touch, you will get to hear the unforgettable theme tune while 
 * As a site owner, I want them to connect and love the characters that is Bub & Bob
 * As a site owner, I want visitors to have fun playing a cool, yet challenging game
 * As a site owner, I want people to enjoy the catchy & unforgettable theme tune from the orginal Bubble Bobble
-* As a site owner, I want gamers to actually go out & buy the orginal Bubble Booble so they can play iy with their friends because it was sooooo good back in the day
+* As a site owner, I want gamers to actually go out & buy the orginal Bubble Booble so they can play iy with their friends because it was sooooo good back in the day & even to this day
 * As a site owner, I want set up a contact form for users to declare any bugs or issues with the game for me to rectify & any possible ideas
-* As a site owner, I want people to enjoy themselves that much that they want to come back for more (maybe even beat their last score)
+* As a site owner, I want people to enjoy themselves that much that they want to come back for more (maybe even beat their last highest score)
 
 ## User Requirements and Expectations
 
