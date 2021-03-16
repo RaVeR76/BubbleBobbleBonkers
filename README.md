@@ -319,3 +319,5 @@ I may increase the maximum tile numbers as the screen size gets larger but we wi
 
 # Credits
 ---
+
+Took on any critique from my first project so hopefully I have ironed out the issues from it :)
