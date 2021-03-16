@@ -59,6 +59,7 @@ And for an added touch, you will get to hear the unforgettable Bubble Bobble the
 
 * As a user, I want to take some time out from my daily routine & play a wee game
 * As a user, I want to be able to play a sneaky wee game on my office desktop, on my tablet in the bath & on my mobile whilst commuting home ... obviously when NOT driving a car!
+* As a user, I want to be able to score points for matching cards / tiles
 * As a user, I want the game to get more difficult as I progress
 * As a user, I want to be able to compete against my current high score
 * As a user, I want to let the developer know if there are any gameplay bugs so they can rectify them or level difficulty suggestions for future updates
@@ -79,13 +80,13 @@ And for an added touch, you will get to hear the unforgettable Bubble Bobble the
 
 ### Requirements 
 
-* Single page game website 
+* Single page game with introduction page 
 * Allow player to input their actual name so that it will increase their feeling of game involvement & therefore their interactivity with the game
 * Fun looking website which is aesthetically pleasing also
 * Easy & smooth interaction with the game play
-* Increased difficulty either by shortening the game conutdown timer or by adding extra memory tiles to turn over
+* Increased difficulty either by shortening the game countdown timer or by adding extra memory tiles to turn over
 * The classic Bubble Bobble theme tune has to be playing in the background for sure
-* Once tiles have been matched, increase the players score
+* Once tiles have been matched, increase the players score (possibly decrease score on a mismatch in a later level)
 * To have link to a contact form for unnoticed bugs & ideas (obviously I don't want any bug feedback tbh but may add form just in case)
 
 ### Expectations
@@ -99,8 +100,10 @@ And for an added touch, you will get to hear the unforgettable Bubble Bobble the
 
 ## Design Choices
 
-To be honest, the actual design of the game will be pretty simple as it's going to be a single page website that hosts the game.
-I was thinking of using one of the actual game levels to add my game memory tiles to. 
+I will be using Bootstrap 4 to create the overall layout of my game, as this will make it easier for me to control it's functionality across multiple devices.
+As for the actual game design, it will be pretty simple as it's going to be a single page that hosts the game.
+I will have an introduction page so the user can input a game name for that personal interactive feeling & possible rules of the game / level, if required.
+For the main gameplay area, I was thinking of using one of the actual original game levels & then add my game memory tiles to it. 
 The main opening game screens & a lot of the levels were very dense with actual gameplay content if I remember right so I need to find an appropiate level
 that will allow me the space to add my memory tiles. I know it's a bit hazy at the minute but once I start to delve into screen plays & game levels, we will find a suitable back drop
 for this awesome memory game :)
@@ -115,7 +118,9 @@ Fontspace looks like an awesome website with all these cool fonts that might be 
 
 ### Icons
 
-Icons .... Icons ... Icons ... 
+[Font Awesome](https://fontawesome.com/) will be the main source for any icons that I require, as always. 
+I also plan to use some of the retro characters or gameplay objects from Bubble Bobble to use as icons, if applicable.
+Other than them, we will just have to see what suits and fits the game layout perfectly.
 
 ### Colours
 
@@ -150,6 +155,126 @@ Icons .... Icons ... Icons ...
 
 # Testing
 ---
+
+### **Take A Wee Break**
+
+#### User Story : I want to take some time out from my daily routine & play a wee game
+
+* **Plan**
+
+* **Implementation**
+
+* **Test**
+
+* **Result**
+
+* **Verdict**
+
+
+### **Multiple Device Play**
+
+#### User Story : I want to be able to play a sneaky wee game on my office desktop, on my tablet in the bath & on my mobile whilst commuting home ... obviously when NOT driving a car!
+
+* **Plan**
+
+* **Implementation**
+
+* **Test**
+
+* **Result**
+
+* **Verdict**
+
+
+### **Score Points**
+
+#### User Story : I want to be able to score points for matching cards / tiles
+
+* **Plan**
+
+* **Implementation**
+
+* **Test**
+
+* **Result**
+
+* **Verdict**
+
+
+### **Level Difficulty**
+
+#### User Story : I want the game to get more difficult as I progress
+
+* **Plan**
+
+* **Implementation**
+
+* **Test**
+
+* **Result**
+
+* **Verdict**
+
+
+### **Current Players High Score**
+
+#### User Story : I want to be able to compete against my current high score
+
+* **Plan**
+
+* **Implementation**
+
+* **Test**
+
+* **Result**
+
+* **Verdict**
+
+
+### **Contact Form**
+
+#### User Story : I want to let the developer know if there are any gameplay bugs so they can rectify them or level difficulty suggestions for future updates
+
+* **Plan**
+
+* **Implementation**
+
+* **Test**
+
+* **Result**
+
+* **Verdict**
+
+
+### **Game Navagation & Interaction**
+
+#### User Story : I want to enjoy a aesthetically pleasing game which is easy to navigate around
+
+* **Plan**
+
+* **Implementation**
+
+* **Test**
+
+* **Result**
+
+* **Verdict**
+
+
+### **Be A Friend Of Bob & Bub**
+
+#### User Story : I want to feel that I have a friend or friends on the other side of the screen .... awwww !
+
+* **Plan**
+
+* **Implementation**
+
+* **Test**
+
+* **Result**
+
+* **Verdict**
+
 
 
 # Bugs
