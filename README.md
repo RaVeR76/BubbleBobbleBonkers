@@ -124,6 +124,23 @@ Other than them, we will just have to see what suits and fits the game layout pe
 
 ### Colours
 
+If the truth be told, this was quite a hard choice because of the fact it's a game & not an actual website.
+Therefore to keep inline with the original game itself, I used a website called [Image Color Picker](https://imagecolorpicker.com/) to upload the main Bubble Bobble title.
+Once the image was uploaded I was able to select the main colours from it & get the HEX values. 
+I also had orange (the outline of the cloud), blue (for Bob) & green (for Bub) which I had to cut unfortunately. 
+So the colours I have mainly settled for are :
+
+|Name                  |Hex Code   |Basic Description  |Usage                           |
+|:--------------------:|:---------:|:-----------------:|:------------------------------:|
+|***White***           |#FFFFFF    |White              |Body background, text & titles  |
+|***Aureolin***        |#FEEE20    |Loud Yellow        |Titles & text                   |
+|***Rose Bonbon***     |#F74498    |Bubblegum Pink     |Titles & text                   |
+|***Black***           |#000000    |Black              |Body background, text & titles  |
+
+Below is an image of the chosen colours .....
+
+![Bubble Bobble Bonkers Colors]()
+
 
 # Wireframes
 ---
