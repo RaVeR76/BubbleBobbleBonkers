@@ -4,7 +4,7 @@ Why not play my wee memory game & find some of the characters,
 While listening to the classic retro theme tune :) 
 
  
-***PIC HERE***
+![Bubble Bobble Bonkers](https://github.com/RaVeR76/BubbleBobbleBonkers/raw/master/wireframes/main-title.png)
 
 
 # Contents
@@ -182,6 +182,10 @@ Possible high score register for user to compete against (can also be reset by u
 
 * **Plan**
 Create a fun memory game that will allow the user to escape from normal life, even for a few moments.
+I am going to base my memory game on a retro 80s classic arcade game so I will utilise as much Bubble Bobble content as I can.
+I will use the various characters for my hidden memory cards so it will all look awesome & retro.
+I hope to add the wee theme tune as well because it will just add to the overall retro feel of the game .... de de dee de de de dee (don't worry you'll be dee deeing it too soon enough ha ha)
+
 
 
 * **Implementation**
