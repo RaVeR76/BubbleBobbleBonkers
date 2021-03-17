@@ -1,0 +1,12 @@
+
+
+
+
+
+.main-title {
+    background: url("../images/main-title.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain ;
+    min-height: 360px;
+}
