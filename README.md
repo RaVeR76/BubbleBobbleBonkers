@@ -197,7 +197,7 @@ Create a fun memory game that will allow the user to escape from normal life, ev
 
 #### User Story : I want to be able to play a sneaky wee game on my office desktop, on my tablet in the bath & on my mobile whilst commuting home ... obviously when NOT driving a car!
 
-* **Plan**  
+* **Plan**    
 I want the user to be able to play my game on any device they want or choose. Therefore the game layout will have to be compatible on large desktop screens, 
 right through to small mobile screens. I will achieve this by using the Bootstrap framework (Ver 4) as the foundation from where to build my game up. 
 I am a bit more clued up on Bootstrap now but deffo struggled a little on my first project with it. 
@@ -218,7 +218,10 @@ I may increase the maximum tile numbers as the screen size gets larger but we wi
 
 #### User Story : I want to be able to score points for matching cards / tiles
 
-* **Plan**
+* **Plan**  
+My aim is to add 5 points for a match & subtract 2 points for a mismatch. I will write some JS code that will incorporate some mathematical equations.
+If my cards match function is true, then I'll add a score of 5 to the users total score, if it's a mismatch (else if), I'll subtract 2 points from the users total score.
+I hope this code is as simple to write, as it is to say it ha ha ! 
 
 
 * **Implementation**
@@ -234,7 +237,12 @@ I may increase the maximum tile numbers as the screen size gets larger but we wi
 
 #### User Story : I want the game to get more difficult as I progress
 
-* **Plan**
+* **Plan**  
+My plan is to design at least 3 levels with the first one being the easiest & the last one being the hardest .... standard gaming etiquette to be fair.
+The first level will have max 12 tiles & you just compete at your own pace.
+The second level will have max 12 tiles but you will have a time of 60 seconds to complete all the matches.
+The third level will have agin 12 tiles but the time will either be 40 or 50 seconds now. I will decide when testing to see how difficult either is.
+
 
 * **Implementation**
 
@@ -249,7 +257,9 @@ I may increase the maximum tile numbers as the screen size gets larger but we wi
 
 #### User Story : I want to be able to compete against my current high score
 
-* **Plan**
+* **Plan**  
+I will store the score after each game in a variable. I will then display that on the screen at each level.
+So the user has a goal for each game he or she plays. Just a wee added incentive to keep playing :)
 
 * **Implementation**
 
@@ -264,7 +274,7 @@ I may increase the maximum tile numbers as the screen size gets larger but we wi
 
 #### User Story : I want to let the developer know if there are any gameplay bugs so they can rectify them or level difficulty suggestions for future updates
 
-* **Plan**
+* **Plan**  
 I want to add a contact form so that the user can contact me if they come across any bugs that I may have missed with the game.
 They could also suggest various ways to increase level difficulty for future level expansion. 
 While I will test this as best as I can & ask family, friends & work colleagues to test my user stories .... I still forsee some bugs with it.
@@ -283,7 +293,7 @@ So I think a wee contact form will help keep the game bug free & help me as a de
 
 #### User Story : I want to enjoy a aesthetically pleasing game which is easy to navigate around
 
-* **Plan**
+* **Plan**  
 I am going to build this on mobile first as I know this will be the most difficult due to size restrictions.
 I want to have a smooth flowing game that the user can play over & over again. 
 As I progress through the screen sizes, I can add more content to make it look more retro.
@@ -304,7 +314,7 @@ Nice vibrant colours based on the original game will hopefully make it fun & ind
 
 #### User Story : I want to feel that I have a friend or friends on the other side of the screen .... awwww !
 
-* **Plan**
+* **Plan**  
 Create an introduction page that welcomes the user & asks them to input their game name. I will store this as a variable & use it to allow that feeling of loving interaction :)
 I want the user to feel welcome anytime & maybe feel a little nostalgic, if they were born in the 70s, as the 80s would've been the start of the arcade gaming world. 
 The chances are the user played the original Bubble Bobble so a flood of childhood memories could come flowing back ..... it's all about the memories :)  
