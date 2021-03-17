@@ -181,6 +181,8 @@ Possible high score register for user to compete against (can also be reset by u
 #### User Story : I want to take some time out from my daily routine & play a wee game
 
 * **Plan**
+Create a fun memory game that will allow the user to escape from normal life, even for a few moments.
+
 
 * **Implementation**
 
@@ -217,6 +219,7 @@ I may increase the maximum tile numbers as the screen size gets larger but we wi
 #### User Story : I want to be able to score points for matching cards / tiles
 
 * **Plan**
+
 
 * **Implementation**
 
@@ -262,6 +265,10 @@ I may increase the maximum tile numbers as the screen size gets larger but we wi
 #### User Story : I want to let the developer know if there are any gameplay bugs so they can rectify them or level difficulty suggestions for future updates
 
 * **Plan**
+I want to add a contact form so that the user can contact me if they come across any bugs that I may have missed with the game.
+They could also suggest various ways to increase level difficulty for future level expansion. 
+While I will test this as best as I can & ask family, friends & work colleagues to test my user stories .... I still forsee some bugs with it.
+So I think a wee contact form will help keep the game bug free & help me as a developer too.
 
 * **Implementation**
 
@@ -277,6 +284,12 @@ I may increase the maximum tile numbers as the screen size gets larger but we wi
 #### User Story : I want to enjoy a aesthetically pleasing game which is easy to navigate around
 
 * **Plan**
+I am going to build this on mobile first as I know this will be the most difficult due to size restrictions.
+I want to have a smooth flowing game that the user can play over & over again. 
+As I progress through the screen sizes, I can add more content to make it look more retro.
+The tiles will turn on touch, hold, then turn back unless there has been a match.
+I want this movement to be easy on the eye & look awesomely animated.
+Nice vibrant colours based on the original game will hopefully make it fun & indulging.
 
 * **Implementation**
 
@@ -292,6 +305,10 @@ I may increase the maximum tile numbers as the screen size gets larger but we wi
 #### User Story : I want to feel that I have a friend or friends on the other side of the screen .... awwww !
 
 * **Plan**
+Create an introduction page that welcomes the user & asks them to input their game name. I will store this as a variable & use it to allow that feeling of loving interaction :)
+I want the user to feel welcome anytime & maybe feel a little nostalgic, if they were born in the 70s, as the 80s would've been the start of the arcade gaming world. 
+The chances are the user played the original Bubble Bobble so a flood of childhood memories could come flowing back ..... it's all about the memories :)  
+I also want the user to feel they are interacting with Bob & Bub by adding good vibes comments but using their game name too .... to address them. 
 
 * **Implementation**
 
