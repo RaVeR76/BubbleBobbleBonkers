@@ -4,7 +4,7 @@ Why not play my wee memory game & find some of the characters,
 While listening to the classic retro theme tune :) 
 
  
-![Bubble Bobble Bonkers](https://github.com/RaVeR76/BubbleBobbleBonkers/raw/master/wireframes/main-title.png)
+![Bubble Bobble Bonkers](https://github.com/RaVeR76/BubbleBobbleBonkers/raw/master/images/main-title.png)
 
 
 # Contents
@@ -144,6 +144,31 @@ Below is an image of the chosen colours .....
 
 # Wireframes
 ---
+The software that I used for my **wireframes** was [***Balsamiq***](https://balsamiq.com/).
+This was the second time I used this software & it was deffo a lot easier to understand what you need to do. 
+The software allows you design the basic layout of your website on devices such as a desktop, tablet and mobile.
+They are just simple 2D sketches but I now understand how important these really are:)  
+
+My wireframes are set out where you will first have a wee intro screen to input your ***game name*** & get your self fully prepared for the game of your life :)
+The second screen will basically be the gamezone & pretty much the same for the 3 levels as well, maybe with different backgrounds or slight tweaks.
+I have added an **alternative gamezone wireframe** for my desktop because I am still unsure at what layout will work better & look more aesthetically pleasing.
+At present, as I write this, I am swaying more towards the *alternative* version but even this coould change as I progress ha ha!
+
+Anyway, you can have a wee look at my wireframes below:
+
+- [Mobile Intro Wireframe](https://github.com/RaVeR76/BubbleBobbleBonkers/raw/master/wireframes/mobile-intro-wireframe.pdf)
+- [Mobile Gamezone Wireframe](https://github.com/RaVeR76/BubbleBobbleBonkers/raw/master/wireframes/mobile-gamezone-wireframe.pdf)
+
+- [Tablet Intro Wireframe](https://github.com/RaVeR76/BubbleBobbleBonkers/raw/master/wireframes/tablet-intro-wireframe.pdf)
+- [Tablet Gamezone Wireframe](https://github.com/RaVeR76/BubbleBobbleBonkers/raw/master/wireframes/tablet-gamezone-wireframe.pdf)
+
+- [Desktop Intro Wireframe](https://github.com/RaVeR76/BubbleBobbleBonkers/raw/master/wireframes/desktop-intro-wireframe.pdf)
+- [Desktop Gamezone Wireframe](https://github.com/RaVeR76/BubbleBobbleBonkers/raw/master/wireframes/desktop-gamezone-wireframe.pdf)
+- [Desktop Gamezone Alternative Wireframe](https://github.com/RaVeR76/BubbleBobbleBonkers/raw/master/wireframes/desktop-gamezone-alt-wireframe.pdf)
+
+
+Hopefully, I can pull this off & do wee Bob & wee Bub some justice with my memory game. 
+To be honest I can't wait to hear the wee theme tune as I match those cards.
 
 
 ### What didn't make the cut
