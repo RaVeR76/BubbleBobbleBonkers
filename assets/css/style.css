@@ -1,5 +1,15 @@
 /*-- Main CSS Code --*/
 
+html,body   /* Used to remove margin on right hand side - Taken from answer on Stack Overflow */
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+
 /*
 body {
     background-color: black;
@@ -11,5 +21,19 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain ;
-    min-height: 360px;
+    min-height: 300px;
+}
+
+.intro {
+    text-align: center;
+}
+
+.game-name {
+    text-align: center;
+    text-overflow: inherit;
+}
+
+.col-centered{
+    margin: 0 auto;
+    float: none;
 }

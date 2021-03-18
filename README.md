@@ -4,7 +4,7 @@ Why not play my wee memory game & find some of the characters,
 While listening to the classic retro theme tune :) 
 
  
-![Bubble Bobble Bonkers](https://github.com/RaVeR76/BubbleBobbleBonkers/raw/master/images/main-title.png)
+![Bubble Bobble Bonkers](https://github.com/RaVeR76/BubbleBobbleBonkers/raw/master/assets/images/main-title.png)
 
 
 # Contents
