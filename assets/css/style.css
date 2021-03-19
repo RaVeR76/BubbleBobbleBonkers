@@ -37,9 +37,11 @@ body {
     
 }
 
-
-
 .col-centered{
     margin: 0 auto;
     float: none;
+}
+
+.hello {
+    font-size: 2rem;
 }

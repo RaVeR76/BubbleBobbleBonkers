@@ -5,13 +5,19 @@ function handleSubmit(event) {
     let user = document.getElementById('username');
     console.log('Username:', user.value);
 
-    if (user.value === "Roisin") {
-        let welcome = document.getElementById("welcome");
-        welcome.innerHTML = `<h3>Welcome To My Game ${ user.value } You SEXY Wee BEAR !!!</h3>`
-    } else {
-        let welcome = document.getElementById("welcome");
-        welcome.innerHTML = `<h3>Fuck away off from my game ${ user.value } you CUNT !!!</h3>`
-    }
+    let welcome = document.getElementById("welcome");
+    welcome.innerHTML = `<p>Welcome To My Game ${ user.value } .... Hope You Are Ready !!!</p>`
+    
+
+
+
+//    if (user.value === "Roisin") {
+//        let welcome = document.getElementById("welcome");
+//        welcome.innerHTML = `<h3>Welcome To My Game ${ user.value } You SEXY Wee BEAR !!!</h3>`
+//    } else {
+//        let welcome = document.getElementById("welcome");
+//        welcome.innerHTML = `<h3>Fuck away off from my game ${ user.value } you CUNT !!!</h3>`
+//    }
 
 }
 
