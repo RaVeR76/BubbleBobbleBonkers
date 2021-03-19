@@ -10,6 +10,12 @@ html,body   /* Used to remove margin on right hand side - Taken from answer on S
     font-size: 62.5%;
 }
 
+footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:auto;   /* Height of the footer */
+}
 
 
 /*-- Intro Styling --*/
@@ -49,7 +55,22 @@ body {
     font-size: 2rem;
 }
 
+.foot-pad {
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+}
 
+.bub-size {
+    height: 10rem;
+    width: 10rem;
+}
+
+
+.smiley-size {
+    height: 3rem;
+    width: 3rem;
+}
 
 /*-- Game Zone Styling --*/
 
