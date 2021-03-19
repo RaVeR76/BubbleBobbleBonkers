@@ -7,6 +7,7 @@ html,body   /* Used to remove margin on right hand side - Taken from answer on S
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+    font-size: 62.5%;
 }
 
 
@@ -25,13 +26,18 @@ body {
 }
 
 .intro {
+    font-size: 1.6rem;
     text-align: center;
+    padding: 2rem;
 }
 
-.game-name {
+.intro2 {
+    font-size: 1.6rem;
     text-align: center;
-    text-overflow: inherit;
+    
 }
+
+
 
 .col-centered{
     margin: 0 auto;
