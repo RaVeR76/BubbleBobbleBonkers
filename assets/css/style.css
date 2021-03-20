@@ -31,18 +31,17 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain ;
-    min-height: 40rem;
-    padding-top: 2rem;
+    min-height: 15rem;
 }
 
 .intro {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .intro2 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-align: center;
     
 }
@@ -52,20 +51,81 @@ body {
     float: none;
 }
 
-.hello {
-    font-size: 2rem;
+.bub-pad {
+    padding-top: 2rem;
+    
 }
 
 .foot-pad {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.4rem;
     padding: 1rem;
 }
 
 .bub-size {
-    height: 10rem;
-    width: 10rem;
+   
+    height: 5rem;
+    width: 5rem;
 }
+
+
+/* (A) SPEECH BOX */
+.speech {
+  /* (A1) FONT */
+  font-family: arial, sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  /* (A2) DIMENSIONS + BACKGROUND */
+  position: relative;
+  background: #F74498;
+  padding: 1rem;
+  border-radius: 10px;
+
+}
+
+
+/* (C2) LEFT */
+.left.speech::after {
+  /* LEFT TRIANGLE */
+  border-right-color: #a53d38;
+  border-left: 0;
+  /* POSITION TAIL AT LEFT OF BOX */
+  left: -20px;
+  top: 50%;
+  margin-top: -20px;
+}
+
+.bubble {
+  position: relative;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  width: 300px;
+  background: #F74498;
+  border-radius: 40px;
+  padding: 24px;
+  text-align: center;
+  color: #000;
+}
+
+.bubble-bottom-left:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 24px solid #000;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #000;
+  border-bottom: 20px solid transparent;
+  left: 32px;
+  bottom: -24px;
+}
+
+
+
+
+
+
 
 
 .smiley-size {
@@ -86,17 +146,32 @@ body {
 /* Show in Large desktops and laptops */
 @media (min-width: 1200px) {
 
+     .main-title{
+        min-height: 40rem;
+    }
+
+    .bub-size {
+    height: 10rem;
+    width: 10rem;
+    }
 
 
    
 }
 
-/*Hide in Other Small Devices */
+/*Hide in Other Small Devices */                                    /* ----IF THERE ARE TWO MEDIA QUERY SIZES WITH SAME INFO , COMBINE THEM -----*/
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
 
-    
+    .main-title{
+        min-height: 30rem;
+    }
+
+    .bub-size {
+    height: 10rem;
+    width: 10rem;
+    }
  
 
 }
@@ -104,6 +179,15 @@ body {
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
+
+    .main-title{
+        min-height: 30rem;
+    }
+
+    .bub-size {
+    height: 10rem;
+    width: 10rem;
+    }
 
 
 } 
@@ -113,7 +197,6 @@ body {
 
     .main-title{
         min-height: 25rem;
-        padding-top: 2rem;
     }
 
     .bub-size {
@@ -127,13 +210,13 @@ body {
 @media (max-width: 480px) {
 
     .main-title{
-        min-height: 20rem;
-        padding-top: 2rem;
+        min-height: 15rem;
     }
 
     .bub-size {
     height: 5rem;
     width: 5rem;
     }
+
 
 }

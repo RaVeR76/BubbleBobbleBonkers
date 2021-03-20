@@ -377,3 +377,6 @@ I also want the user to feel they are interacting with Bob & Bub by adding good 
 ---
 
 Took on any critique from my first project so hopefully I have ironed out the issues from it :)
+
+
+Speech Bubble - https://codepen.io/run-time/pen/VNRBJd

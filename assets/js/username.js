@@ -6,7 +6,7 @@ function handleSubmit(event) {
     console.log('Username:', user.value);
 
     let welcome = document.getElementById("welcome");
-    welcome.innerHTML = `<p>Welcome To My Game ${ user.value } .... Hope You Are Ready !!!</p>`
+    welcome.innerHTML = `<p>Hey ${ user.value }, please to meet you ... my name is Bub !</p>`
     
 
 
