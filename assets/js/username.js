@@ -6,7 +6,10 @@ function handleSubmit(event) {
     console.log('Username:', user.value);
 
     let welcome = document.getElementById("welcome");
-    welcome.innerHTML = `<p>Hey ${ user.value }, please to meet you ... my name is Bub !</p>`
+    welcome.innerHTML = `
+    <div class="speech-bubs" contenteditable>
+    <p>Hey ${ user.value }, please to meet you ... my name is Bub !</p>
+    </div>`
     
 
 

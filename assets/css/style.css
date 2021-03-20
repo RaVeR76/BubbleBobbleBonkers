@@ -63,23 +63,24 @@ body {
 }
 
 .bub-size {
-   
+    float:left;
+    margin-left:20px;
     height: 7rem;
     width: 7rem;
 }
 
 
+
+/*-- Bubble Code Accredited In README but I have changed it to suit my game --*/
 .speech-bubs {
 	
 	position: relative;
-	max-width: 30em;
-	
-
-	background-color: #fff;
+	max-width: 20rem;
+	background-color: rgba(247, 68, 152, 0.1);
 	padding: 1.125em 1.5em;
-	font-size: 1.25em;
+    font-size: 1.25rem;
 	border-radius: 1rem;
-  box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+    box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
 }
 
 .speech-bubs::before {
@@ -88,56 +89,15 @@ body {
 	width: 0;
 	height: 0;
 	bottom: 50%;
-	left: -1.9rem; 
-	border: 1.25rem solid transparent;
+	left: -1.2rem; 
+	border: .75rem solid transparent;
     border-top: none;
     transform: rotate(-90deg);
     
-
-
-	border-bottom-color: #fff;
+	border-bottom-color: rgba(247, 68, 152, 0.3);
 	filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
 }
 
-/*
-html {
-	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-	line-height: 1.5;
-	font-weight: 300;
-	color: #192229;
-	background: linear-gradient(135deg, #F4F2F3, #BFC6D0);
-}*/
-
-
-
-
-/*-- Bubble Code Accredited In README but I have changed it to suit my game --*/
-/*
-.bubble {
-  position: relative;
-  font-family: sans-serif;
-  font-size: 1rem;
-  line-height: 24px;
-  width: 300px;
-  background: #FEEE20	;
-  border-radius: 40px;
-  padding: 24px;
-  text-align: center;
-  color: #F74498;
-}
-
-.bubble-bottom-left:before {
-  content: "";
-  width: 0px;
-  height: 0px;
-  position: absolute;
-  border-left: 24px solid #F74498;
-  border-right: 0px solid transparent;
-  border-top: 12px solid #000;
-  border-bottom: 30px solid transparent;
-  left:0px;
-  bottom: 10px;
-}*/
 
 
 
@@ -145,6 +105,8 @@ html {
     height: 3rem;
     width: 3rem;
 }
+
+
 
 /*-- Game Zone Styling --*/
 
@@ -164,8 +126,9 @@ html {
     }
 
     .bub-size {
-    height: 10rem;
-    width: 10rem;
+        float: right;
+        height: 10rem;
+        width: 10rem;
     }
 
 
@@ -182,8 +145,9 @@ html {
     }
 
     .bub-size {
-    height: 10rem;
-    width: 10rem;
+        float: right;
+        height: 10rem;
+        width: 10rem;
     }
  
 
@@ -198,8 +162,9 @@ html {
     }
 
     .bub-size {
-    height: 10rem;
-    width: 10rem;
+        float: right;
+        height: 10rem;
+        width: 10rem;
     }
 
 
@@ -213,8 +178,9 @@ html {
     }
 
     .bub-size {
-    height: 5rem;
-    width: 5rem;
+        float: right;
+        height: 7rem;
+        width: 7rem;
     }
 
 }
@@ -227,8 +193,7 @@ html {
     }
 
     .bub-size {
-    height: 5rem;
-    width: 5rem;
+        float: left;
     }
 
 
