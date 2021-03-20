@@ -52,9 +52,21 @@ body {
 }
 
 .bub-pad {
-    padding-top: 4rem;
+    
+    padding: 4rem 0rem 0rem 0rem;
     
 }
+
+.bub-size {
+    height: 7rem;
+    width: 7rem;
+}
+
+ .bub-size2 {
+        float: left;
+        height: 7rem;
+        width: 7rem;
+    }
 
 .foot-pad {
     text-align: center;
@@ -72,19 +84,14 @@ body {
     filter: grayscale(100%);
 }
 
-.bub-size {
-    float:left;
-    margin-left:20px;
-    height: 7rem;
-    width: 7rem;
-}
 
 
 
 /*-- Bubble Code Accredited In README but I have changed it to suit my game --*/
 .speech-bubs {
 	
-	position: relative;
+    float: right;
+    position: relative;
 	max-width: 20rem;
 	background-color: rgba(247, 68, 152, 0.1);
 	padding: 1.125em 1.5em;
@@ -99,10 +106,10 @@ body {
 	width: 0;
 	height: 0;
 	bottom: 50%;
-	left: -1.2rem; 
+	left: 19.7rem; 
 	border: .75rem solid transparent;
     border-top: none;
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
     
 	border-bottom-color: rgba(247, 68, 152, 0.3);
 	filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
@@ -128,7 +135,7 @@ body {
     }
 
     .bub-size {
-        float: right;
+        float: left;
         height: 10rem;
         width: 10rem;
     }
@@ -147,7 +154,7 @@ body {
     }
 
     .bub-size {
-        float: right;
+        float: left;
         height: 10rem;
         width: 10rem;
     }
@@ -164,7 +171,7 @@ body {
     }
 
     .bub-size {
-        float: right;
+        float: left;
         height: 10rem;
         width: 10rem;
     }
@@ -180,7 +187,7 @@ body {
     }
 
     .bub-size {
-        float: right;
+        float: left;
         height: 7rem;
         width: 7rem;
     }
@@ -195,7 +202,7 @@ body {
     }
 
     .bub-size {
-        float: left;
+        float: right;
     }
 
 
