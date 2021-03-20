@@ -362,6 +362,12 @@ I also want the user to feel they are interacting with Bob & Bub by adding good 
 # Bugs
 ---
   
+Added some speech bubble code but I wanted to add some code on a click of the button. The speech bubble was always there even before the click.
+So I added the speech bubble css class to my JS literal thingy for using when called for.S
+
+
+
+
 
 ### The Development Journey
 
