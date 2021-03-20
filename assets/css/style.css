@@ -89,8 +89,10 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 20rem;
-  background-color: #FEEE20;
-  border: 1px solid rgba(247, 68, 152, 1);
+  border-radius: 1rem;
+  background-color: rgba(247, 68, 152, .3);
+  border: 1px solid rgba(254, 238, 32, 1);
+  
 }
 
 
@@ -144,7 +146,7 @@ body {
 
 .speech-bubs2 {
 	
-    float: right;
+    float: left;
     position: relative;
 	max-width: 20rem;
 	background-color: rgba(254, 238, 32, 0.1);
