@@ -31,7 +31,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain ;
-    min-height: 300px;
+    min-height: 40rem;
+    padding-top: 2rem;
 }
 
 .intro {
@@ -74,3 +75,65 @@ body {
 
 /*-- Game Zone Styling --*/
 
+
+
+
+
+
+
+/*-- Media Queries --*/
+
+/* Show in Large desktops and laptops */
+@media (min-width: 1200px) {
+
+
+
+   
+}
+
+/*Hide in Other Small Devices */
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    
+ 
+
+}
+
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+} 
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+    .main-title{
+        min-height: 25rem;
+        padding-top: 2rem;
+    }
+
+    .bub-size {
+    height: 5rem;
+    width: 5rem;
+    }
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+    .main-title{
+        min-height: 20rem;
+        padding-top: 2rem;
+    }
+
+    .bub-size {
+    height: 5rem;
+    width: 5rem;
+    }
+
+}
