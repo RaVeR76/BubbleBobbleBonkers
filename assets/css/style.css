@@ -75,10 +75,30 @@ body {
         width: 7rem;
     }
 
+.container {
+  position: fixed;
+  bottom: 3rem;
+ 
+}
+
+.center {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 20rem;
+  background-color: #FEEE20;
+  border: 1px solid rgba(247, 68, 152, 1);
+}
+
+
+
+
 .foot-pad {
     text-align: center;
     font-size: 1.5rem;
-    padding: 1rem;
 }
 
 .smiley-size {
