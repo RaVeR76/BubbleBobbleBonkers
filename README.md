@@ -380,3 +380,5 @@ Took on any critique from my first project so hopefully I have ironed out the is
 
 
 Speech Bubble - https://codepen.io/run-time/pen/VNRBJd
+
+Speech Bubble 2 - https://codepen.io/rikschennink/pen/mjywQb    /    https://freefrontend.com/css-speech-bubbles/
