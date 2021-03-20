@@ -40,11 +40,18 @@ body {
     padding: 1rem;
 }
 
+.form-group {
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .intro2 {
     font-size: 1.4rem;
     text-align: center;
     
 }
+
 
 .col-centered{
     margin: 0 auto;
@@ -112,6 +119,33 @@ body {
     transform: rotate(90deg);
     
 	border-bottom-color: rgba(247, 68, 152, 0.3);
+	filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
+}
+
+.speech-bubs2 {
+	
+    float: right;
+    position: relative;
+	max-width: 20rem;
+	background-color: rgba(254, 238, 32, 0.1);
+	padding: 1.125em 1.5em;
+    font-size: 1.25rem;
+	border-radius: 1rem;
+    box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+}
+
+.speech-bubs2::before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	bottom: 50%;
+	left: -1.2rem; 
+	border: .75rem solid transparent;
+    border-top: none;
+    transform: rotate(-90deg);
+    
+	border-bottom-color: rgba(254, 238, 32, 0.3);
 	filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
 }
 
