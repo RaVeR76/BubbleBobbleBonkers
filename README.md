@@ -366,6 +366,12 @@ Added some speech bubble code but I wanted to add some code on a click of the bu
 So I added the speech bubble css class to my JS literal thingy for using when called for.S
 
 
+When my comedy chat between Bub & Bob starts but the user wants to change their username then Bub will reset okay but Bob & his speech bubble are still there.
+I added two lines of code to the user name input button function which will remove any innerHTML first from the Bob image Div & his speech bubble div.
+
+document.getElementById("bob-talk").innerHTML = "";     // Added these two lines so it will remove Bob & his speech bubble if they enter a new username
+document.getElementById("bob-position").innerHTML = "";
+
 
 
 

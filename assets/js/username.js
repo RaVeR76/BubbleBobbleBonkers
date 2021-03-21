@@ -6,6 +6,11 @@ function handleSubmit(event) {
     // Prevent the default submit action (more on this in a couple units)
     event.preventDefault();
 
+    document.getElementById("bob-talk").innerHTML = "";     // Added these two lines so it will remove Bob's image & his speech bubble .... if the user enters a new username
+    document.getElementById("bob-position").innerHTML = "";
+
+
+
     let bubtalk = document.getElementById("bub-talk");
     bubtalk.innerHTML = `
     <div class="speech-bubs">
@@ -19,9 +24,7 @@ function handleSubmit(event) {
         <img src="assets/images/bub-card-square-200.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">
     </a>`
 
-
-    
-
+    document.getElementById('username').value = ''; // Removes the username from the input field once button is hit
 
 
 //    if (user.value === "Roisin") {
