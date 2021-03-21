@@ -116,6 +116,9 @@ I am currently checking for retro fonts that will work too. I can see that Bitma
 Fontspace looks like an awesome website with all these cool fonts that might be useful for this project.
 
 
+Press Start 2P in Google Fonts
+
+
 ### Icons
 
 [Font Awesome](https://fontawesome.com/) will be the main source for any icons that I require, as always. 
@@ -371,6 +374,11 @@ I added two lines of code to the user name input button function which will remo
 
 document.getElementById("bob-talk").innerHTML = "";     // Added these two lines so it will remove Bob & his speech bubble if they enter a new username
 document.getElementById("bob-position").innerHTML = "";
+
+
+Not a bug - But used my first shorthand padding utility class to allow me to reduce CSS code as I had intro 1 & intro 2.
+Both pretty much the same but one had 1rem of padding in addition so I put padding shorthand class in DOM & removed padding in CSS.
+I then removed intro 2 & changed the html classes appropiately to all match intro 1.
 
 
 
