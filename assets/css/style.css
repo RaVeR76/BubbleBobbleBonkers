@@ -27,7 +27,7 @@ body {
 
 
 .main-title {
-    background: url("../images/main-title.png");
+    background: url("../images/main-title2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain ;
@@ -60,7 +60,7 @@ body {
 
 .bub-pad {
     
-    padding: 4rem 0rem 0rem 0rem;
+    padding: 3rem 0rem 0rem 0rem;
     
 }
 
@@ -121,10 +121,10 @@ body {
 	
     float: right;
     position: relative;
-	max-width: 20rem;
+    max-width: 20rem;
 	background-color: rgba(247, 68, 152, 0.1);
 	padding: 1.125em 1.5em;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
 	border-radius: 1rem;
     box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
 }
@@ -148,10 +148,10 @@ body {
 	
     float: left;
     position: relative;
-	max-width: 20rem;
+    max-width: 20rem;
 	background-color: rgba(254, 238, 32, 0.1);
 	padding: 1.125em 1.5em;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
 	border-radius: 1rem;
     box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
 }

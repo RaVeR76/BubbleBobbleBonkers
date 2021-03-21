@@ -8,12 +8,13 @@ function handleSubmit(event) {
     let bubtalk = document.getElementById("bub-talk");
     bubtalk.innerHTML = `
     <div class="speech-bubs" contenteditable>
-        <p>Hey <b>${ user.value }</b>, pleased to meet you ... my name is <b>Bub</b> !</p>
+        <p>Hey <b>${ user.value }</b>, pleased to meet you ... my name is <b>Bub</b> !</p> 
+        <p>Click Me !</p>
     </div>`
 
     let bubposition = document.getElementById("bub-position");
     bubposition.innerHTML = `
-    <a href="javascript:void(0);" onclick="bobTalk();">
+    <a href="javascript:void(0);" onclick="bubTalk();">
         <img src="assets/images/bub-card-square-200.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">
     </a>`
 
@@ -39,9 +40,25 @@ form.addEventListener('submit', handleSubmit);
 
 
 
-//   $('#bub-position').click(function(){ MyFunction(); return false; });
+function bubTalk() {
+    // Prevent the default submit action (more on this in a couple units)
+    event.preventDefault();
 
+    let user = document.getElementById('username');
+    console.log('Username:', user.value);
 
+    let bubtalk = document.getElementById("bub-talk");
+    bubtalk.innerHTML = `
+    <div class="speech-bubs" contenteditable>
+        <p>Just so you know <b>${ user.value }</b>, I am & always will be <b>Player One</b> !</p>
+    </div>`
+
+    let bubposition = document.getElementById("bub-position");
+    bubposition.innerHTML = `
+    <a href="javascript:void(0);" onclick="bobTalk();">
+        <img src="assets/images/bub-card-square-200.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">
+    </a>`
+}
 
 
 
@@ -52,22 +69,37 @@ function bobTalk() {
     let user = document.getElementById('username');
     console.log('Username:', user.value);
 
-    let bobtalks = document.getElementById("bob-talk");
-    bobtalks.innerHTML = `
+    let bobtalk = document.getElementById("bob-talk");
+    bobtalk.innerHTML = `
     <div class="speech-bubs2" contenteditable>
-        <p>Hey <b>${ user.value }</b>, don't listen too that <b>CUNT</b> !!!</p>
+        <p>Hey <b>${ user.value }</b>, don't listen to him. I've heard this crap for 35 years !!!</p>
     </div>`
 
 
-    let bobpositions = document.getElementById("bob-position");
-    bobpositions.innerHTML = `
-    <a href="gamezone.html" target="_blank">
+    let bobposition = document.getElementById("bob-position");
+    bobposition.innerHTML = `
+    <a href="javascript:void(0);" onclick="bubTalk2();">
         <img src="assets/images/bob-card-square-200.jpg" alt="Wee Bubble Bobble Bub" class="bub-size2">
     </a>`
-
-
 }
-/*
-// This gets the form and attaches an event listener to it
-let form = document.getElementById('uname');
-form.addEventListener('submit', handleSubmit);*/
+
+
+function bubTalk2() {
+    // Prevent the default submit action (more on this in a couple units)
+    event.preventDefault();
+
+    let user = document.getElementById('username');
+    console.log('Username:', user.value);
+
+    let bubtalk = document.getElementById("bub-talk");
+    bubtalk.innerHTML = `
+    <div class="speech-bubs" contenteditable>
+        <p><b>${ user.value }</b>, that's <b>Bob</b> by the way ... the <b>"second"</b> player of the game !</p>
+    </div>`
+
+    let bubposition = document.getElementById("bub-position");
+    bubposition.innerHTML = `
+    <a href="javascript:void(0);" onclick="bobTalk();">
+        <img src="assets/images/bub-card-square-200.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">
+    </a>`
+}
