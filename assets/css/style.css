@@ -34,11 +34,6 @@ body {
     min-height: 15rem;
 }
 
-.intro {
-    font-size: 1.4rem;
-    text-align: center;
-    padding: 1rem;
-}
 
 .form-group {
     max-width: 30rem;
@@ -46,10 +41,9 @@ body {
     margin-right: auto;
 }
 
-.intro2 {
+.intro {
     font-size: 1.4rem;
     text-align: center;
-    
 }
 
 
@@ -69,11 +63,10 @@ body {
     width: 7rem;
 }
 
- .bub-size2 {
-        float: left;
-        height: 7rem;
-        width: 7rem;
-    }
+.bob-size {
+    height: 7rem;
+    width: 7rem;
+}
 
     
 .game-butt {
@@ -188,7 +181,7 @@ body {
 @media (min-width: 1200px) {
 
      .main-title{
-        min-height: 40rem;
+        min-height: 35rem;
     }
 
     .bub-size {
@@ -197,8 +190,12 @@ body {
         width: 10rem;
     }
 
-
-   
+    .bob-size {
+        float: right;
+        height: 10rem;
+        width: 10rem;
+}
+  
 }
 
 /*Hide in Other Small Devices */                                    /* ----IF THERE ARE TWO MEDIA QUERY SIZES WITH SAME INFO , COMBINE THEM -----*/
@@ -215,6 +212,12 @@ body {
         height: 10rem;
         width: 10rem;
     }
+
+    .bob-size {
+        float: right;
+        height: 10rem;
+        width: 10rem;
+}
  
 
 }
@@ -233,6 +236,12 @@ body {
         width: 10rem;
     }
 
+    .bob-size {
+        float: right;
+        height: 10rem;
+        width: 10rem;
+}
+
 
 } 
 
@@ -249,6 +258,12 @@ body {
         width: 7rem;
     }
 
+    .bob-size {
+        float: right;
+        height: 7rem;
+        width: 7rem;
+}
+
 }
 
 /* Portrait phones and smaller */
@@ -262,5 +277,8 @@ body {
         float: right;
     }
 
+    .bob-size {
+        float: left;
+    }
 
 }

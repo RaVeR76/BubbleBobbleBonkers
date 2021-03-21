@@ -77,7 +77,7 @@ function bobTalk() {
     let bobposition = document.getElementById("bob-position");
     bobposition.innerHTML = `
     <a href="javascript:void(0);" onclick="bubTalk2();">
-        <img src="assets/images/bob-card-square-200.jpg" alt="Wee Bubble Bobble Bub" class="bub-size2">
+        <img src="assets/images/bob-card-square-200.jpg" alt="Wee Bubble Bobble Bub" class="bob-size">
     </a>`
 }
 
