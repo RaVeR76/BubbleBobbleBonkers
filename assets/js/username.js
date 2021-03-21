@@ -1,13 +1,14 @@
+let user = document.getElementById('username');
+    console.log('Username:', user.value);
+
+
 function handleSubmit(event) {
     // Prevent the default submit action (more on this in a couple units)
     event.preventDefault();
 
-    let user = document.getElementById('username');
-    console.log('Username:', user.value);
-
     let bubtalk = document.getElementById("bub-talk");
     bubtalk.innerHTML = `
-    <div class="speech-bubs" contenteditable>
+    <div class="speech-bubs">
         <p>Hey <b>${ user.value }</b>, pleased to meet you ... my name is <b>Bub</b> !</p> 
         <p>Click Me !</p>
     </div>`
@@ -44,12 +45,9 @@ function bubTalk() {
     // Prevent the default submit action (more on this in a couple units)
     event.preventDefault();
 
-    let user = document.getElementById('username');
-    console.log('Username:', user.value);
-
     let bubtalk = document.getElementById("bub-talk");
     bubtalk.innerHTML = `
-    <div class="speech-bubs" contenteditable>
+    <div class="speech-bubs">
         <p>Just so you know <b>${ user.value }</b>, I am & always will be <b>Player One</b> !</p>
     </div>`
 
@@ -66,12 +64,9 @@ function bobTalk() {
     // Prevent the default submit action (more on this in a couple units)
     event.preventDefault();
 
-    let user = document.getElementById('username');
-    console.log('Username:', user.value);
-
     let bobtalk = document.getElementById("bob-talk");
     bobtalk.innerHTML = `
-    <div class="speech-bubs2" contenteditable>
+    <div class="speech-bubs2">
         <p>Hey <b>${ user.value }</b>, don't listen to him. I've heard this crap for 35 years !!!</p>
     </div>`
 
@@ -88,12 +83,9 @@ function bubTalk2() {
     // Prevent the default submit action (more on this in a couple units)
     event.preventDefault();
 
-    let user = document.getElementById('username');
-    console.log('Username:', user.value);
-
     let bubtalk = document.getElementById("bub-talk");
     bubtalk.innerHTML = `
-    <div class="speech-bubs" contenteditable>
+    <div class="speech-bubs">
         <p><b>${ user.value }</b>, that's <b>Bob</b> by the way ... the <b>"second"</b> player of the game !</p>
     </div>`
 
