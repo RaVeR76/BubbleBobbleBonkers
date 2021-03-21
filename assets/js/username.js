@@ -13,7 +13,7 @@ function handleSubmit(event) {
 
     let bubposition = document.getElementById("bub-position");
     bubposition.innerHTML = `
-    <a href="gamezone.html" target="_blank">
+    <a href="javascript:void(0);" onclick="bobTalk();">
         <img src="assets/images/bub-card-square-200.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">
     </a>`
 
@@ -44,8 +44,8 @@ form.addEventListener('submit', handleSubmit);
 
 
 
-/*
-function handleSubmit(event) {
+
+function bobTalk() {
     // Prevent the default submit action (more on this in a couple units)
     event.preventDefault();
 
@@ -67,7 +67,7 @@ function handleSubmit(event) {
 
 
 }
-
+/*
 // This gets the form and attaches an event listener to it
 let form = document.getElementById('uname');
 form.addEventListener('submit', handleSubmit);*/
