@@ -24,7 +24,7 @@ function handleSubmit(event) {
         <img src="assets/images/bub-card-square-200.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">
     </a>`
 
-    document.getElementById('username').value = ''; // Removes the username from the input field once button is hit
+    //document.getElementById('username').value = ''; // Removes the username from the input field once button is hit
 
 
 //    if (user.value === "Roisin") {

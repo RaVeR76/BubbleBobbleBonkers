@@ -381,6 +381,9 @@ Both pretty much the same but one had 1rem of padding in addition so I put paddi
 I then removed intro 2 & changed the html classes appropiately to all match intro 1.
 
 
+Was using a line of code to clear Game Name input on first bub hit but then I loose the user name variable for th erst of my comedy chat
+
+
 
 
 ### The Development Journey
