@@ -384,6 +384,10 @@ I then removed intro 2 & changed the html classes appropiately to all match intr
 Was using a line of code to clear Game Name input on first bub hit but then I loose the user name variable for th erst of my comedy chat
 
 
+Game Name input was responsive until after 991px then it just went small in length. I was using the form-group class to set max-width to 30rem.
+Tried a few things but eventually found that if I used the lower div class of input-group to set my max-width then it stayed responsive across all screen sizes.
+
+
 
 
 ### The Development Journey
