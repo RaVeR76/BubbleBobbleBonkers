@@ -1,6 +1,6 @@
 let user = document.getElementById('username');
     console.log('Username:', user.value);
-
+    
 
 function handleSubmit(event) {
     // Prevent the default submit action (more on this in a couple units)
