@@ -388,6 +388,14 @@ Game Name input was responsive until after 991px then it just went small in leng
 Tried a few things but eventually found that if I used the lower div class of input-group to set my max-width then it stayed responsive across all screen sizes.
 
 
+Trying to get the username (Game Name) variable to transfer from index.html to gamezone.html was a complete nightmare for ma ha ha.
+I spent about 3 hopurs on this one but got there in the end.
+I used the Session Storage method to do this which I got from this link https://code-boxx.com/pass-variables-between-pages-javascript/
+I could see the variable in Dev Tools in the application section after the button was hit but couldn't get it to display on my gamezone page.
+Basically it was non matching variable names & syntax errors but I got there in the end ..... now I am a JavaScript Jedi .... NOT !!!!
+
+
+
 
 
 ### The Development Journey
