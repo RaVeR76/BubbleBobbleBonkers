@@ -1,6 +1,6 @@
 let user = document.getElementById('username');
     console.log('Username:', user.value);
-    
+
 
 function handleSubmit(event) {
     // Prevent the default submit action (more on this in a couple units)
@@ -9,6 +9,9 @@ function handleSubmit(event) {
     document.getElementById("bob-talk").innerHTML = "";     // Added these two lines so it will remove Bob's image & his speech bubble .... if the user enters a new username
     document.getElementById("bob-position").innerHTML = "";
 
+
+    let first = user.value;
+    sessionStorage.setItem("first", first);
 
 
     let bubtalk = document.getElementById("bub-talk");

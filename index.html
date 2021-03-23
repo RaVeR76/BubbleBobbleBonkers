@@ -29,7 +29,7 @@
             <p>Please Enter Your Game Name Below</p>
         </div>
 
-        <form id="uname" class="form-group">
+        <form id="uname" class="form-group" method="POST">
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-4 col-centered">
                     <div class="input-group">
@@ -70,7 +70,8 @@
 
         <div class="container-fluid game-butt">
             <div class="center">
-                <a href="gamezone.html" type="button" class="btn btn-block">Enter The Gamezone</a>
+               
+                <a href="gamezone.html" type="button" class="btn btn-block" onclick="store">Enter The Gamezone</a>
             </div>
         </div>
 
@@ -86,8 +87,9 @@
     </footer>
 
 <script>
-let favoritemovie = "Shrek";
-sessionStorage.setItem("favoriteMovie", favoritemovie);
+
+
+
 
 </script>
 
