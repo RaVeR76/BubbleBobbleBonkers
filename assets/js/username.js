@@ -10,8 +10,8 @@ function handleSubmit(event) {
     document.getElementById("bob-position").innerHTML = "";
 
 
-    let first = user.value;
-    sessionStorage.setItem("first", first);
+    let gamename = user.value;
+    sessionStorage.setItem("GameName", gamename);   // Used this method for transferring the users Game Name from Intro Zone to The Game Zone so I can interact with them during the game :)
 
 
     let bubtalk = document.getElementById("bub-talk");
