@@ -31,7 +31,7 @@ body {
 
 
 .main-title {
-    background: url("../images/main-title2.png");
+    background: url("../images/main-title2.png");  
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain ;
@@ -176,6 +176,7 @@ body {
 .grid-container {
   display: grid;
   grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
   grid-template-columns: auto auto auto;
   background-color: #ffffff;
   padding: 1rem;
@@ -187,7 +188,64 @@ body {
   padding: 2rem;
   font-size: 3rem;
   text-align: center;
-  border-radius: 3rem;
+  border-radius: 50%;
+}
+
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+  background-color: transparent;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+    background: url("../images/bob-card-square-200");  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain ;
+    min-height: auto;
+
+
+   /* background-image: url("../images/bob-card-square-200");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 110%;
+    overflow: hidden;
+  background-color: dodgerblue;*/
+  color: white;
+  transform: rotateY(180deg);
 }
 
 
