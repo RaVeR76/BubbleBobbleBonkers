@@ -1,5 +1,9 @@
 /*-- Main CSS Code --*/
 
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');  /*Test 8-bit looking font */
+
+
+
 html,body   /* Used to remove margin on right hand side - Taken from answer on Stack Overflow */
 {
     width: 100%;
@@ -117,7 +121,7 @@ body {
     position: relative;
     max-width: 20rem;
 	background-color: rgba(247, 68, 152, 0.1);
-	padding: 1.125em 1.5em;
+    padding: 1.125em 1.5em;
     font-size: 1.1rem;
 	border-radius: 1rem;
     box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
