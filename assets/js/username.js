@@ -11,7 +11,7 @@ function handleSubmit(event) {
 
 
     let gamename = user.value;
-    sessionStorage.setItem("GameName", gamename);   // Used this method for transferring the users Game Name from Intro Zone to The Game Zone so I can interact with them during the game :)
+    localStorage.setItem("GameName", gamename);   // Used this method for transferring the users Game Name from Intro Zone to The Game Zone so I can interact with them during the game :)
 
 
     let bubtalk = document.getElementById("bub-talk");
@@ -92,7 +92,7 @@ function bubTalk2() {
     let bubtalk = document.getElementById("bub-talk");
     bubtalk.innerHTML = `
     <div class="speech-bubs">
-        <p><b>${ user.value }</b>, that's <b>Bob</b> by the way ... the <b>"second"</b> player of the game !</p>
+        <p><b>${ user.value }</b>, that's <b>Bob</b> by the way ... the <b>"second"</b> best player of the game !</p>
     </div>`
 
     let bubposition = document.getElementById("bub-position");

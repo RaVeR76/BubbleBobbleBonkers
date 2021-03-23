@@ -1,4 +1,4 @@
-let gamename = sessionStorage.getItem("GameName");
+let gamename = localStorage.getItem("GameName");
 
 
 function get () {
