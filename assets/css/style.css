@@ -173,6 +173,22 @@ body {
 
 /*-- Game Zone Styling --*/
 
+.grid-container {
+  display: grid;
+  grid-column-gap: 2rem;
+  grid-template-columns: auto auto auto;
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+.grid-item {
+  background-color: rgba(247, 68, 152, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 2rem;
+  font-size: 3rem;
+  text-align: center;
+  border-radius: 3rem;
+}
 
 
 
