@@ -417,3 +417,7 @@ Took on any critique from my first project so hopefully I have ironed out the is
 Speech Bubble - https://codepen.io/run-time/pen/VNRBJd
 
 Speech Bubble 2 - https://codepen.io/rikschennink/pen/mjywQb    /    https://freefrontend.com/css-speech-bubbles/
+
+
+Fisher-Yates Shuffle to randomise 1 to 6 for selecting cards
+https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
