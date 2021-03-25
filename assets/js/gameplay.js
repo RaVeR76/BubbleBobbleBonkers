@@ -17,6 +17,9 @@ function get () {
 }
 
 
+
+
+
 // generate a random array from 1 to 6
 
     function shuffle(array) {
@@ -39,10 +42,21 @@ function get () {
 }
 
 // Used like so
-var arr = [url("../images/main-title2.png"), 2, 3, 4, 5, 6];
+var arr = [1, 2, 3, 4, 5, 6, 7];
 shuffle(arr);
 console.log(arr);
 
 let randomcards = document.getElementById("cardrandom");
     randomcards.innerHTML = 
     `Welcome To My Game ${ arr } .... Hope You Are Ready !!!`
+
+
+
+var ArrayOfImages = ['assets/images/bob-card-square-200.jpg', 'assets/images/bub-card-square-200.jpg', 'assets/images/smiley.png'];
+ArrayOfImages.forEach(function(image) {
+  var img = document.createElement('img');
+  img.src = image;
+  img.height = "45";
+  img.width = "50";
+  document.body.appendChild(img);
+});
