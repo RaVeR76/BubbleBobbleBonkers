@@ -41,22 +41,48 @@ function get () {
   return array;
 }
 
+
+
+
+
+
+
+
+
 // Used like so
-var arr = [1, 2, 3, 4, 5, 6, 7];
-shuffle(arr);
-console.log(arr);
+//var arr = [1, 2, 3, 4, 5, 6, 7];
+//shuffle(arr);
+//console.log(arr);
 
-let randomcards = document.getElementById("cardrandom");
-    randomcards.innerHTML = 
-    `Welcome To My Game ${ arr } .... Hope You Are Ready !!!`
+//let randomcards = document.getElementById("cardrandom");
+ //   randomcards.innerHTML = 
+//    `Welcome To My Game ${ arr } .... Hope You Are Ready !!!`
 
 
 
-var ArrayOfImages = ['assets/images/bob-card-square-200.jpg', 'assets/images/bub-card-square-200.jpg', 'assets/images/smiley.png'];
+var ArrayOfImages = [
+'assets/cards/baron-von-blubba-card.jpg', 
+'assets/cards/beluga-card.jpg', 
+'assets/cards/bob-card.jpg',
+'assets/cards/bub-card.jpg',
+'assets/cards/bubble-buster.jpg',
+'assets/cards/coiley-card.jpg',
+'assets/cards/hullaballoon-card.jpg',
+'assets/cards/incendo-card.jpg',
+'assets/cards/stoner-card.jpg',
+'assets/cards/super-socket-card.jpg',
+'assets/cards/unknown1-card.jpg',
+'assets/cards/unknown2-card.jpg',
+'assets/cards/willy-whistle-card.jpg'];
+
+
+shuffle(ArrayOfImages);
+
+
 ArrayOfImages.forEach(function(image) {
-  var img = document.createElement('img');
-  img.src = image;
-  img.height = "45";
-  img.width = "50";
-  document.body.appendChild(img);
+    var img = document.createElement('img');
+    img.src = image;
+    img.height = "100";
+    img.width = "100";
+    document.body.appendChild(img);
 });
