@@ -421,3 +421,7 @@ Speech Bubble 2 - https://codepen.io/rikschennink/pen/mjywQb    /    https://fre
 
 Fisher-Yates Shuffle to randomise 1 to 6 for selecting cards
 https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+
+
+How to produce an image array as I wasn't sure of the how you write the location of the image into an array (link below)
+https://stackoverflow.com/questions/42327498/output-an-array-of-images-in-javascript
