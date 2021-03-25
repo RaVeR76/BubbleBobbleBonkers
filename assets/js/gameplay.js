@@ -78,11 +78,52 @@ var ArrayOfImages = [
 
 shuffle(ArrayOfImages);
 
+let memoryCards = new Array();
+ArrayOfImages[0];
+ArrayOfImages[1];
+ArrayOfImages[2];
+ArrayOfImages[3];
+ArrayOfImages[4];
+ArrayOfImages[5];
 
-ArrayOfImages.forEach(function(image) {
-    var img = document.createElement('img');
-    img.src = image;
-    img.height = "100";
-    img.width = "100";
-    document.body.appendChild(img);
-});
+
+shuffle(memoryCards);
+
+
+console.log(ArrayOfImages[0]);
+console.log(ArrayOfImages[1]);
+console.log(ArrayOfImages[2]);
+console.log(ArrayOfImages[3]);
+console.log(ArrayOfImages[4]);
+console.log(ArrayOfImages[5]);
+
+
+
+
+function displayCards() {
+
+    let numberOfCards = memoryCards.length;
+   for (let i = 0;i < numberOfCards; i++) {
+        
+       let img = new Image();
+       img.src = memoryCards[i];
+       img.style.width = '100px';
+        img.style.height = '100px';
+        
+        console.log(memoryCards[0]);
+    }
+};
+
+
+
+
+
+
+
+//ArrayOfImages.forEach(function(image) {
+ //   var img = document.createElement('img');
+ //   img.src = image;
+ //   img.height = "100";
+ //   img.width = "100";
+//    document.body.appendChild(img);
+//});
