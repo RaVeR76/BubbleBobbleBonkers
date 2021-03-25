@@ -60,7 +60,7 @@ function get () {
 
 
 
-var ArrayOfImages = [
+let ArrayOfImages = [
 'assets/cards/baron-von-blubba-card.jpg', 
 'assets/cards/beluga-card.jpg', 
 'assets/cards/bob-card.jpg',
@@ -78,41 +78,58 @@ var ArrayOfImages = [
 
 shuffle(ArrayOfImages);
 
-let memoryCards = new Array();
-ArrayOfImages[0];
-ArrayOfImages[1];
-ArrayOfImages[2];
-ArrayOfImages[3];
-ArrayOfImages[4];
-ArrayOfImages[5];
+
+
+let memoryCards = [
+ArrayOfImages[0],
+ArrayOfImages[1],
+ArrayOfImages[2],
+ArrayOfImages[3],
+ArrayOfImages[4],
+ArrayOfImages[5],
+ArrayOfImages[0],
+ArrayOfImages[1],
+ArrayOfImages[2],
+ArrayOfImages[3],
+ArrayOfImages[4],
+ArrayOfImages[5]];
 
 
 shuffle(memoryCards);
 
 
-console.log(ArrayOfImages[0]);
-console.log(ArrayOfImages[1]);
-console.log(ArrayOfImages[2]);
-console.log(ArrayOfImages[3]);
-console.log(ArrayOfImages[4]);
-console.log(ArrayOfImages[5]);
+console.log(memoryCards[0]);
+console.log(memoryCards[1]);
+console.log(memoryCards[2]);
+console.log(memoryCards[3]);
+console.log(memoryCards[4]);
+console.log(memoryCards[5]);
+console.log(memoryCards[6]);
+console.log(memoryCards[7]);
+console.log(memoryCards[8]);
+console.log(memoryCards[9]);
+console.log(memoryCards[10]);
+console.log(memoryCards[11]);
+
+
+//shuffle(memoryCards);
 
 
 
 
-function displayCards() {
+//function displayCards() {
 
-    let numberOfCards = memoryCards.length;
-   for (let i = 0;i < numberOfCards; i++) {
+   // let numberOfCards = memoryCards.length;
+  // for (let i = 0;i < numberOfCards; i++) {
         
-       let img = new Image();
-       img.src = memoryCards[i];
-       img.style.width = '100px';
-        img.style.height = '100px';
+  //     let img = new Image();
+ //      img.src = memoryCards[i];
+//       img.style.width = '100px';
+//        img.style.height = '100px';
         
-        console.log(memoryCards[0]);
-    }
-};
+ //       console.log(memoryCards[0]);
+ //   }
+//};
 
 
 
