@@ -188,14 +188,14 @@ body {
   padding: 2rem;
   font-size: 3rem;
   text-align: center;
-  border-radius: 50%;
+  /*border-radius: 50%;*/
 }
 
 
 .hide {
     opacity: 0.3;
-    height: 5rem;
-    width: 5rem;
+    height: 4rem;
+    width: 4rem;
     
 }
 

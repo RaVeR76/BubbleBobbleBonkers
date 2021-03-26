@@ -151,7 +151,14 @@ let numberOfCards = memoryCards.length;
     img.src = memoryCards[i++];
     //img.height = "40";
     //img.width = "40";
-    let cardStyle = document.getElementsByClassName("card")[i-1]
+
+
+    let test = document.getElementsByClassName("grid-item")[i-1];
+    test.innerHTML = 
+    `<div class="card"></div>`
+    
+
+    let cardStyle = document.getElementsByClassName("card")[i-1];
     cardStyle.classList.add("hide");
     cardStyle.appendChild(img);
 });
