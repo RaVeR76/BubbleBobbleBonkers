@@ -192,6 +192,14 @@ body {
 }
 
 
+.hide {
+    opacity: 0.3;
+    height: 5rem;
+    width: 5rem;
+    
+}
+
+
 /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 /*.flip-box {
   background-color: transparent;

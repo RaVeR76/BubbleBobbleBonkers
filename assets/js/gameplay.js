@@ -131,24 +131,29 @@ shuffle(memoryCards);
  //   }
 //};
 
-
+//function myFunction() {
+   //let element = document.getElementById("card")[i-1];
+   //element.classList.add("hide");
+//}
 
 
 function displayCards() {
 
 let numberOfCards = memoryCards.length;
    for (let i = 0;i < numberOfCards; i++) {
-
+   
 
 
     memoryCards.forEach(function(image) {
     
-
+    
     let img = document.createElement('img');
     img.src = memoryCards[i++];
-    img.height = "100";
-    img.width = "100";
-    document.getElementsByClassName("card")[i-1].appendChild(img);
+    //img.height = "40";
+    //img.width = "40";
+    let cardStyle = document.getElementsByClassName("card")[i-1]
+    cardStyle.classList.add("hide");
+    cardStyle.appendChild(img);
 });
    }
 };
