@@ -148,7 +148,7 @@ let numberOfCards = memoryCards.length;
     img.src = memoryCards[i++];
     img.height = "100";
     img.width = "100";
-    document.getElementsByClassName("card")[i].appendChild(img);
+    document.getElementsByClassName("card")[i-1].appendChild(img);
 });
    }
 };
