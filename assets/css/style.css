@@ -192,7 +192,7 @@ body {
 }
 
 .grid-item:hover {
-  background-color: rgba(247, 68, 152, 0.9);
+  background-color: rgba(247, 68, 152, 0);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 2rem;
   font-size: 3rem;
@@ -205,10 +205,21 @@ body {
 
 .hide {
    
-    opacity: 0.5;
-    height: 4rem;
-    width: 4rem;
+    opacity: 0;
+    height: 6rem;
+    width: 6rem;
 }
+
+.hide:hover {
+   
+    opacity: 1;
+    height: 6rem;
+    width: 6rem;
+}
+
+
+
+
 
 
 /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
