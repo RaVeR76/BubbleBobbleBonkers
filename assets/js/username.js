@@ -30,14 +30,6 @@ function handleSubmit(event) {
     //document.getElementById('username').value = ''; // Removes the username from the input field once button is hit
 
 
-//    if (user.value === "Roisin") {
-//        let welcome = document.getElementById("welcome");
-//        welcome.innerHTML = `<h3>Welcome To My Game ${ user.value }</h3>`
-//    } else {
-//        let welcome = document.getElementById("welcome");
-//        welcome.innerHTML = `<h3>Fck away off from my game ${ user.value }!!!</h3>`
-//    }
-
 }
 
 // This gets the form and attaches an event listener to it

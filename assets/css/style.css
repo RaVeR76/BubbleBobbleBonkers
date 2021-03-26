@@ -173,6 +173,12 @@ body {
 
 /*-- Game Zone Styling --*/
 
+
+.welcome {
+    font-size: 1rem;
+    text-align: center;
+}
+
 .grid-container {
   display: grid;
   grid-column-gap: 2rem;
@@ -188,7 +194,7 @@ body {
   padding: 2rem;
   font-size: 3rem;
   text-align: center;
-  /*border-radius: 50%;*/
+  border-radius: 50%;
 }
 
 .grid-item:hover {
@@ -197,7 +203,7 @@ body {
   padding: 2rem;
   font-size: 3rem;
   text-align: center;
-  /*border-radius: 50%;*/
+  border-radius: 50%;
 }
 
 
@@ -206,67 +212,16 @@ body {
 .hide {
    
     opacity: 0;
-    height: 6rem;
-    width: 6rem;
+    height: 4rem;
+    width: 4rem;
 }
 
 .hide:hover {
    
     opacity: 1;
-    height: 6rem;
-    width: 6rem;
+    height: 4rem;
+    width: 4rem;
 }
-
-
-
-
-
-
-/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-/*.flip-box {
-  background-color: transparent;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect 
-}*/
-
-/* This container is needed to position the front and back side */
-/*.flip-box-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}*/
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-/*.flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
-}*/
-
-/* Position the front and back side */
-/*.flip-box-front, .flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}*/
-
-/* Style the front side (fallback if image is missing) */
-/*.flip-box-front {
-  color: black;
-}*/
-
-/* Style the back side */
-/*.flip-box-back {
-    background: url("../images/bob-card-square-200.jpg");  
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain ;
-    min-height: auto;
-    color: white;
-    transform: rotateY(180deg);
-}*/
 
 
 

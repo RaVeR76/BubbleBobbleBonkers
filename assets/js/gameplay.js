@@ -3,18 +3,23 @@
 
 let gamename = localStorage.getItem("GameName");
 
-function get () {
+function startFunction() {
 
 
-  let test = document.getElementById("test");
-    test.innerHTML = 
-    `Welcome To My Game ${ gamename } .... Hope You Are Ready !!!`
+  let welcome = document.getElementById("welcome");
+    welcome.innerHTML = 
+    `Welcome To My Game <b>${ gamename }</b> .... Hope You Are Ready !!!`
   
 
   // (EXTRA) TO CLEAR
   // sessionStorage.removeItem("KEY");
   // sessionStorage.clear();
 }
+
+
+
+
+
 
 
 
@@ -42,24 +47,6 @@ function get () {
 }
 
 
-
-
-
-
-
-
-
-// Used like so
-//var arr = [1, 2, 3, 4, 5, 6, 7];
-//shuffle(arr);
-//console.log(arr);
-
-//let randomcards = document.getElementById("cardrandom");
- //   randomcards.innerHTML = 
-//    `Welcome To My Game ${ arr } .... Hope You Are Ready !!!`
-
-
-
 let ArrayOfImages = [
 'assets/cards/baron-von-blubba-card.jpg', 
 'assets/cards/beluga-card.jpg', 
@@ -77,7 +64,6 @@ let ArrayOfImages = [
 
 
 shuffle(ArrayOfImages);
-
 
 
 let memoryCards = [
@@ -98,43 +84,6 @@ ArrayOfImages[5]];
 shuffle(memoryCards);
 
 
-//console.log(memoryCards[0]);
-//console.log(memoryCards[1]);
-//console.log(memoryCards[2]);
-//console.log(memoryCards[3]);
-//console.log(memoryCards[4]);
-//console.log(memoryCards[5]);
-//console.log(memoryCards[6]);
-//console.log(memoryCards[7]);
-//console.log(memoryCards[8]);
-//console.log(memoryCards[9]);
-//console.log(memoryCards[10]);
-//console.log(memoryCards[11]);
-
-//let test1 = document.getElementById("card1");
-   // test1.innerHTML = memoryCards[0]
-    
-
-
-//function displayCards() {
-
- //   let numberOfCards = memoryCards.length;
- //  for (let i = 0;i < numberOfCards; i++) {
-        
- //      card = document.getElementById("card" + i);
-//       let img = document.createElement('img');
-//       img.src = memoryCards[i];
-//       img.style.width = '100px';
-//        img.style.height = '100px';
-        
- //       console.log(memoryCards[0]);
- //   }
-//};
-
-//function myFunction() {
-   //let element = document.getElementById("card")[i-1];
-   //element.classList.add("hide");
-//}
 
 
 function displayCards() {

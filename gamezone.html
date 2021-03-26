@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <title>Bubble Bobble Bonkers</title>
 </head>
-<body>
+<body onload="startFunction()">
     <header class="container-fluid">
         <div class="row"> 
             <div class="col-12 main-title">
@@ -20,32 +20,12 @@
 
     <section>
         
-        <div id="test">Welcome To My Game User .... Hope You Are Ready !!!</div>
-
-        <div>
-        <input type="button" value="Get From Session Storage" onclick="get()"/>
-        </div>
-
-
-       
-
-
+        <div id="welcome" class="welcome container-fluid"></div>
 
         
-<!--
-            <div class="grid-container">               
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <div class="grid-item">1</div>
-                        </div>
-                    <div class="flip-box-back">
-                    
-                    </div>
-                </div>
-            </div>
--->
-            <div class="grid-container"> 
+<!-- Grid Section -->
+
+        <div class="grid-container"> 
             <div class="grid-item"></div>
             <div class="grid-item"></div>
             <div class="grid-item"></div>  
@@ -58,10 +38,7 @@
             <div class="grid-item"></div>
             <div class="grid-item"></div>
             <div class="grid-item"></div> 
-            </div>
-
-
-
+        </div>
 
         <!--
         <audio controls autoplay>
@@ -79,19 +56,7 @@
         <input type="button" value="Populate The Game Test" onclick="displayCards()"/>
         </div>
 
-
-
-
     </section>
-
-
-    <script>
-    
-
-
-    </script>
-
-
 
 <script type="text/javascript" src="assets/js/gameplay.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
