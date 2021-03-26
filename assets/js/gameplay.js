@@ -98,32 +98,32 @@ ArrayOfImages[5]];
 shuffle(memoryCards);
 
 
-console.log(memoryCards[0]);
-console.log(memoryCards[1]);
-console.log(memoryCards[2]);
-console.log(memoryCards[3]);
-console.log(memoryCards[4]);
-console.log(memoryCards[5]);
-console.log(memoryCards[6]);
-console.log(memoryCards[7]);
-console.log(memoryCards[8]);
-console.log(memoryCards[9]);
-console.log(memoryCards[10]);
-console.log(memoryCards[11]);
+//console.log(memoryCards[0]);
+//console.log(memoryCards[1]);
+//console.log(memoryCards[2]);
+//console.log(memoryCards[3]);
+//console.log(memoryCards[4]);
+//console.log(memoryCards[5]);
+//console.log(memoryCards[6]);
+//console.log(memoryCards[7]);
+//console.log(memoryCards[8]);
+//console.log(memoryCards[9]);
+//console.log(memoryCards[10]);
+//console.log(memoryCards[11]);
 
-
-//shuffle(memoryCards);
-
-
+//let test1 = document.getElementById("card1");
+   // test1.innerHTML = memoryCards[0]
+    
 
 
 //function displayCards() {
 
-   // let numberOfCards = memoryCards.length;
-  // for (let i = 0;i < numberOfCards; i++) {
+ //   let numberOfCards = memoryCards.length;
+ //  for (let i = 0;i < numberOfCards; i++) {
         
-  //     let img = new Image();
- //      img.src = memoryCards[i];
+ //      card = document.getElementById("card" + i);
+//       let img = document.createElement('img');
+//       img.src = memoryCards[i];
 //       img.style.width = '100px';
 //        img.style.height = '100px';
         
@@ -134,13 +134,21 @@ console.log(memoryCards[11]);
 
 
 
+function displayCards() {
+
+let numberOfCards = memoryCards.length;
+   for (let i = 0;i < numberOfCards; i++) {
 
 
 
-//ArrayOfImages.forEach(function(image) {
- //   var img = document.createElement('img');
- //   img.src = image;
- //   img.height = "100";
- //   img.width = "100";
-//    document.body.appendChild(img);
-//});
+    memoryCards.forEach(function(image) {
+    
+
+    let img = document.createElement('img');
+    img.src = memoryCards[i++];
+    img.height = "100";
+    img.width = "100";
+    document.getElementsByClassName("card")[i].appendChild(img);
+});
+   }
+};

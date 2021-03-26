@@ -24,7 +24,7 @@ function handleSubmit(event) {
     let bubposition = document.getElementById("bub-position");
     bubposition.innerHTML = `
     <a href="javascript:void(0);" onclick="bubTalk();">
-        <img src="assets/images/bub-card-square-200.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">
+        <img src="assets/cards/bub-card.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">
     </a>`
 
     //document.getElementById('username').value = ''; // Removes the username from the input field once button is hit
@@ -60,7 +60,7 @@ function bubTalk() {
     let bubposition = document.getElementById("bub-position");
     bubposition.innerHTML = `
     <a href="javascript:void(0);" onclick="bobTalk();">
-        <img src="assets/images/bub-card-square-200.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">
+        <img src="assets/cards/bub-card.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">
     </a>`
 }
 
@@ -80,7 +80,7 @@ function bobTalk() {
     let bobposition = document.getElementById("bob-position");
     bobposition.innerHTML = `
     <a href="javascript:void(0);" onclick="bubTalk2();">
-        <img src="assets/images/bob-card-square-200.jpg" alt="Wee Bubble Bobble Bub" class="bob-size">
+        <img src="assets/cards/bob-card.jpg" alt="Wee Bubble Bobble Bub" class="bob-size">
     </a>`
 }
 
@@ -98,6 +98,6 @@ function bubTalk2() {
     let bubposition = document.getElementById("bub-position");
     bubposition.innerHTML = `
     <a href="javascript:void(0);" onclick="bobTalk();">
-        <img src="assets/images/bub-card-square-200.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">
+        <img src="assets/cards/bub-card.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">
     </a>`
 }
