@@ -86,26 +86,30 @@ shuffle(memoryCards);
 
 
 
-function displayCards() {
 
-let numberOfCards = memoryCards.length;
-   for (let i = 0;i < numberOfCards; i++) {
+
+
+
+//function displayCards() {
+
+//let numberOfCards = memoryCards.length;
+//   for (let i = 0;i < numberOfCards; i++) {
    
 
 
-    memoryCards.forEach(function(image) {
+//    memoryCards.forEach(function(image) {
     
     
-    let img = document.createElement('img');
-    img.src = memoryCards[i++];
+ //   let img = document.createElement('img');
+ //   img.src = memoryCards[i++];
     
 
 
-    let cardStyle = document.getElementsByClassName("grid-item")[i-1];
+ //   let cardStyle = document.getElementsByClassName("grid-item")[i-1];
    
-    cardStyle.appendChild(img);
+ //   cardStyle.appendChild(img);
 
-    img.classList.add("hide");
-});
-   }
-};
+ ////   img.classList.add("hide");
+//});
+//   }
+//};
