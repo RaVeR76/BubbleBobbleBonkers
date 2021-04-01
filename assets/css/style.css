@@ -11,7 +11,7 @@ html {
 
 body {               
     width: 100%;
-    height: 100%;
+    height: 100vh;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
@@ -185,6 +185,7 @@ body {
 .grid-container {
   display: grid;
   width: 90%;
+  /*height: 300px;*/
   margin: auto;
   /*display: flex;
   flex-wrap: wrap;
@@ -202,7 +203,7 @@ body {
   padding: 2rem;
   font-size: 3rem;
   text-align: center;
-  position: relative;
+  /*position: relative;*/
   transform: scale(1);
   transform-style: preserve-3d;
   transition: transform 0.5s;
@@ -212,6 +213,10 @@ body {
 .grid-item:active {
     transform: scale(0.9);
     transition: transform 0.5s;
+}
+
+.grid-item.turn {
+    transform: rotateY(180deg);
 }
 
 

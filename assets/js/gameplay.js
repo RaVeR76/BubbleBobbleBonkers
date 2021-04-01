@@ -1,7 +1,8 @@
+// Declare constants
 
-// Transfer username to gamezone area
+const cards = document.querySelectorAll(".grid-item");
+const gamename = localStorage.getItem("GameName");     // Transfer username to gamezone area
 
-let gamename = localStorage.getItem("GameName");
 
 function startFunction() {
 
@@ -17,15 +18,44 @@ function startFunction() {
 }
 
 
+// Populate the gameplay grid
+
+
+
+
+let hasTurnCard = false;
+let cardOne, cardTwo;
+
+
+
+function turnCard() {
+   
+    if (this === cardOne) return;
+
+    this.classList.add("turn");
+
+    if (!hasTurnCard) {
+        hasTurnCard = true;
+        cardOne = this;
+
+        return;
+    }
+  
+    cardTwo = this;
+    //cardCheck();
+
+    console.log("Hello sham")
+}
 
 
 
 
 
+cards.forEach((card) => card.addEventListener("click", turnCard));
 
 
 
-// generate a random array from 1 to 6
+// generate a random array
 
     function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
@@ -82,6 +112,12 @@ ArrayOfImages[5]];
 
 
 shuffle(memoryCards);
+
+
+
+
+
+
 
 
 
