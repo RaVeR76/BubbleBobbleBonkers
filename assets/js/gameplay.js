@@ -7,6 +7,7 @@ const time = document.getElementById("timeLeft");
 const score = document.getElementById("scoreTotal");
 
 let points = 0;
+let countDown = 60;
 
 
 
@@ -16,6 +17,7 @@ let points = 0;
 document.addEventListener("DOMContentLoaded", function() {
 
    displayCards();
+   timer();
 
 });
 
@@ -206,6 +208,13 @@ function matchReset() {
     [hasTurnCard, gridLock] = [false, false];
     [cardOne, cardTwo] = [null, null];
 }
+
+
+timer = setInterval(function() {
+
+    time.innerHTML = (countDown--);
+    if(countDown == 1) clearInterval(timer);
+}, 1000);
 
 
 
