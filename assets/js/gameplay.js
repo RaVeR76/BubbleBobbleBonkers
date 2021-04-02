@@ -3,6 +3,12 @@
 
 const cards = document.querySelectorAll(".grid-item");
 const gamename = localStorage.getItem("GameName");     // Transfer username to gamezone area
+const time = document.getElementById("timeLeft");
+const score = document.getElementById("scoreTotal");
+
+let points = 0;
+
+
 
 
 // On start up
@@ -166,6 +172,9 @@ function cardsMatch(){
     cardOne.removeEventListener("click", turnCard);
     cardTwo.removeEventListener("click", turnCard);
 
+    points += 5;
+    score.innerHTML = points;
+
     matchReset();
 }
 
@@ -180,6 +189,9 @@ function cardsDontMatch() {
     setTimeout(() => {
         cardOne.classList.remove("turn");
         cardTwo.classList.remove("turn");
+
+        points -= 2;
+        score.innerHTML = points;
 
         matchReset();
     }
