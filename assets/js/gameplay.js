@@ -32,17 +32,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+
+
+
+
 // Populate the gameplay grid
 
 
 
 let hasTurnCard = false;
+let gridLock = false;   // Added this because once you selected two cards, you could select another which messed up the sequence
 let cardOne, cardTwo;
 
 
 
 function turnCard() {
-   
+    if (gridLock) return;
     if (this === cardOne) return;
 
     this.classList.add("turn");
@@ -61,36 +66,53 @@ function turnCard() {
 }
 
 function cardCheck() {
-    let match = cardOne.src === cardTwo.src;
+
+    let cardTest1 = cardOne.id;
+    let cardTest2 = cardTwo.id;
+
+    let match = cardTest1 === cardTest2
 
     console.log("Hello sham");
     console.log(cardOne);
     console.log(cardTwo);
+    console.log(cardTest1);
+    console.log(cardTest2);
 
     match ? cardsMatch() : cardsDontMatch()
 }
 
 
 function cardsMatch(){
-
+ 
     console.log("Cards Do Match Sham");
 
     cardOne.removeEventListener("click", turnCard);
     cardTwo.removeEventListener("click", turnCard);
+
+    matchReset();
 }
 
 function cardsDontMatch() {
+
+    gridLock = true;
 
     console.log("Cards Dont Match Sham");
 
     setTimeout(() => {
         cardOne.classList.remove("turn");
         cardTwo.classList.remove("turn");
+
+        matchReset();
     }
-, 1000)};
+, 2000);
 
+}
 
-
+function matchReset() {
+    
+    [hasTurnCard, gridLock] = [false, false];
+    [cardOne, cardTwo] = [null, null];
+}
 
 
 
@@ -170,12 +192,6 @@ console.log(memoryCards[1].name);
 
 
 
-
-
-
-
-
-
 function displayCards() {
 
 let numberOfCards = memoryCards.length;
@@ -190,7 +206,7 @@ let numberOfCards = memoryCards.length;
     
     let memCardAtt = memoryCards[i++];
 
-    img.setAttribute("id", memCardAtt.name)
+    //img.setAttribute("id", memCardAtt.name);
     img.classList.add("hide");
     img.src = memCardAtt.src;
     
@@ -198,9 +214,7 @@ let numberOfCards = memoryCards.length;
     let cardStyle = document.getElementsByClassName("grid-item")[i-1];
    
 
-  
-
-
+    cardStyle.setAttribute("id", memCardAtt.name);
     cardStyle.appendChild(img);
 });
    }
