@@ -55,16 +55,46 @@ function turnCard() {
     }
   
     cardTwo = this;
-    //cardCheck();
+    cardCheck();
 
-    console.log("Hello sham")
+    
 }
 
-//function cardCheck() {
-  //  let match = cardOne.dataset.cards === cardTwo.dataset.cards;
+function cardCheck() {
+    let match = cardOne.dataset.cards === cardTwo.dataset.cards;
 
-  //  match ? cardsMatch() : cardsDontMatch()
-//}
+    console.log("Hello sham");
+    console.log(cardOne.dataset.cards);
+    console.log(cardTwo);
+
+    match ? cardsMatch() : cardsDontMatch()
+}
+
+
+function cardsMatch(){
+
+    console.log("Cards Do Match Sham");
+
+    cardOne.removeEventListener("click", turnCard);
+    cardTwo.removeEventListener("click", turnCard);
+}
+
+function cardsDontMatch() {
+
+    console.log("Cards Dont Match Sham");
+
+    setTimeout(() => {
+        cardOne.classList.remove("turn");
+        cardTwo.classList.remove("turn");
+    }
+, 1000)};
+
+
+
+
+
+
+
 
 
 
@@ -158,13 +188,14 @@ let numberOfCards = memoryCards.length;
     
     let img = document.createElement('img');
     img.src = memoryCards[i++].src;
-    
-
+    img.classList.add("hide");
+    //console.log(memoryCards[i++].name);
+    //img.id = memoryCards[i].name;
 
     let cardStyle = document.getElementsByClassName("grid-item")[i-1];
    
 
-    img.classList.add("hide");
+  
 
 
     cardStyle.appendChild(img);
