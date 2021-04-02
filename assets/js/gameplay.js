@@ -94,12 +94,14 @@ cards.forEach((card) => card.addEventListener("click", turnCard));
 }
 
 
+
+
 let ArrayOfImages = [
 { name : "blubs", src : 'assets/cards/baron-von-blubba-card.jpg'}, 
 { name : "bels", src : 'assets/cards/beluga-card.jpg'}, 
 { name : "bob", src : 'assets/cards/bob-card.jpg'},
 { name : "bub", src : 'assets/cards/bub-card.jpg'},
-{ name : "bust", src : 'assets/cards/bubble-buster.jpg'},
+{ name : "bust", scr : 'assets/cards/bubble-buster.jpg'},
 { name : "coils", src : 'assets/cards/coiley-card.jpg'},
 { name : "hulla", src : 'assets/cards/hullaballoon-card.jpg'},
 { name : "ince", src : 'assets/cards/incendo-card.jpg'},
@@ -132,7 +134,7 @@ ArrayOfImages[5]];
 shuffle(memoryCards);
 
 
-console.log(memoryCards['name']);
+console.log(memoryCards[1].name);
 
 
 
@@ -155,14 +157,14 @@ let numberOfCards = memoryCards.length;
     
     
     let img = document.createElement('img');
-    img.src = memoryCards[i++];
+    img.src = memoryCards[i++].src;
     
 
 
     let cardStyle = document.getElementsByClassName("grid-item")[i-1];
    
 
-   // img.classList.add("hide");
+    img.classList.add("hide");
 
 
     cardStyle.appendChild(img);

@@ -192,7 +192,7 @@ body {
   margin: 60px auto;*/
   grid-column-gap: 2rem;
   grid-row-gap: 1rem;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   background-color: #ffffff;
   padding: 1rem;
 }
@@ -222,37 +222,17 @@ body {
 
 
 
-
-
-
-/*
-.grid-item:hover {
-  background-color: rgba(247, 68, 152, 0);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 2rem;
-  font-size: 3rem;
-  text-align: center;
-  border-radius: 50%;
-}
-
-
-
-
 .hide {
-   
-    opacity: 0;
-    height: 4rem;
-    width: 4rem;
+   width: 5em;
+   height: 5em; 
+   border-radius: 5px;
+   backface-visibility: hidden;
+   transform: rotateY(180deg);
 }
 
-.hide:hover {
-   
-    opacity: 1;
-    height: 4rem;
-    width: 4rem;
-}
 
-*/
+
+
 
 
 
