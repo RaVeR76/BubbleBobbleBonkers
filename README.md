@@ -394,7 +394,8 @@ I used the Session Storage method to do this which I got from this link https://
 I could see the variable in Dev Tools in the application section after the button was hit but couldn't get it to display on my gamezone page.
 Basically it was non matching variable names & syntax errors but I got there in the end ..... now I am a JavaScript Jedi .... NOT !!!!
 
-
+Cards would turn but the you could turn another one then another one which messed up the sequence. I added the gridLock logic to stop this from happening.
+Only two cards can be turned now & the sequence stays functional.
 
 
 

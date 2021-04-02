@@ -128,3 +128,6 @@ function characterTalk(characterColor) {
 }
 bubCharacterRef.addEventListener('click', characterTalk("green"))
 bobCharacterRef.addEventListener('click', characterTalk("blue"))
+
+
+// STop you greeting & tell them the rules sham so they can play the wee game

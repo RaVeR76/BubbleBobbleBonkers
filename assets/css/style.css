@@ -177,7 +177,7 @@ body {
 /*-- Game Zone Styling --*/
 
 
-.welcome {
+.gameinfo {
     font-size: 1rem;
     text-align: center;
 }
@@ -207,7 +207,7 @@ body {
   transform: scale(1);
   transform-style: preserve-3d;
   transition: transform 0.5s;
-  /*border-radius: 50%;*/
+  border-radius: 1rem;
 }
 
 .grid-item:active {
@@ -216,6 +216,7 @@ body {
 }
 
 .grid-item.turn {
+    background-color: #fff;
     transform: rotateY(180deg);
 }
 

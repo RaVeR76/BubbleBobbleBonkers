@@ -5,22 +5,6 @@ const cards = document.querySelectorAll(".grid-item");
 const gamename = localStorage.getItem("GameName");     // Transfer username to gamezone area
 
 
-function startFunction() {
-
-
-  let welcome = document.getElementById("welcome");
-    welcome.innerHTML = 
-    `Welcome To My Game <b>${ gamename }</b> .... Hope You Are Ready !!!`
-  
-
-  // (EXTRA) TO CLEAR
-  // sessionStorage.removeItem("KEY");
-  // sessionStorage.clear();
-}
-
-
-
-
 // On start up
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -31,103 +15,53 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+// Create my game array using all available card images
+
+let ArrayOfImages = [
+{ name : "blubs", src : 'assets/cards/baron-von-blubba-card.jpg'}, 
+{ name : "bels", src : 'assets/cards/beluga-card.jpg'}, 
+{ name : "bob", src : 'assets/cards/bob-card.jpg'},
+{ name : "bub", src : 'assets/cards/bub-card.jpg'},
+{ name : "bust", scr : 'assets/cards/bubble-buster.jpg'},
+{ name : "coils", src : 'assets/cards/coiley-card.jpg'},
+{ name : "hulla", src : 'assets/cards/hullaballoon-card.jpg'},
+{ name : "ince", src : 'assets/cards/incendo-card.jpg'},
+{ name : "stoner", src : 'assets/cards/stoner-card.jpg'},
+{ name : "super", src : 'assets/cards/super-socket-card.jpg'},
+{ name : "un1", src : 'assets/cards/unknown1-card.jpg'},
+{ name : "un2", src : 'assets/cards/unknown2-card.jpg'},
+{ name : "willy", src : 'assets/cards/willy-whistle-card.jpg'}];
+
+// Shuffle all the individual cards
+
+shuffle(ArrayOfImages);
+
+// Now create another array from the shuffled images but duplicate the first six of the array. This gives us our six pairs for the game.
+
+let memoryCards = [
+ArrayOfImages[0],
+ArrayOfImages[1],
+ArrayOfImages[2],
+ArrayOfImages[3],
+ArrayOfImages[4],
+ArrayOfImages[5],
+ArrayOfImages[0],
+ArrayOfImages[1],
+ArrayOfImages[2],
+ArrayOfImages[3],
+ArrayOfImages[4],
+ArrayOfImages[5]];
+
+// Shuffle the six pairs of cards so they are ready for populating the grid :)
+
+shuffle(memoryCards);
 
 
 
-
-
-// Populate the gameplay grid
-
-
-
-let hasTurnCard = false;
-let gridLock = false;   // Added this because once you selected two cards, you could select another which messed up the sequence
-let cardOne, cardTwo;
-
-
-
-function turnCard() {
-    if (gridLock) return;
-    if (this === cardOne) return;
-
-    this.classList.add("turn");
-
-    if (!hasTurnCard) {
-        hasTurnCard = true;
-        cardOne = this;
-
-        return;
-    }
-  
-    cardTwo = this;
-    cardCheck();
-
-    
-}
-
-function cardCheck() {
-
-    let cardTest1 = cardOne.id;
-    let cardTest2 = cardTwo.id;
-
-    let match = cardTest1 === cardTest2
-
-    console.log("Hello sham");
-    console.log(cardOne);
-    console.log(cardTwo);
-    console.log(cardTest1);
-    console.log(cardTest2);
-
-    match ? cardsMatch() : cardsDontMatch()
-}
-
-
-function cardsMatch(){
- 
-    console.log("Cards Do Match Sham");
-
-    cardOne.removeEventListener("click", turnCard);
-    cardTwo.removeEventListener("click", turnCard);
-
-    matchReset();
-}
-
-function cardsDontMatch() {
-
-    gridLock = true;
-
-    console.log("Cards Dont Match Sham");
-
-    setTimeout(() => {
-        cardOne.classList.remove("turn");
-        cardTwo.classList.remove("turn");
-
-        matchReset();
-    }
-, 2000);
-
-}
-
-function matchReset() {
-    
-    [hasTurnCard, gridLock] = [false, false];
-    [cardOne, cardTwo] = [null, null];
-}
-
-
-
-
-
-
-
-cards.forEach((card) => card.addEventListener("click", turnCard));
-
-
-
-// generate a random array
+// Shuffle my array using the code below
 
     function shuffle(array) {
-  var currentIndex = array.length, temporaryValue, randomIndex;
+  let currentIndex = array.length, temporaryValue, randomIndex;
 
   // While there remain elements to shuffle...
   while (0 !== currentIndex) {
@@ -148,49 +82,8 @@ cards.forEach((card) => card.addEventListener("click", turnCard));
 
 
 
-let ArrayOfImages = [
-{ name : "blubs", src : 'assets/cards/baron-von-blubba-card.jpg'}, 
-{ name : "bels", src : 'assets/cards/beluga-card.jpg'}, 
-{ name : "bob", src : 'assets/cards/bob-card.jpg'},
-{ name : "bub", src : 'assets/cards/bub-card.jpg'},
-{ name : "bust", scr : 'assets/cards/bubble-buster.jpg'},
-{ name : "coils", src : 'assets/cards/coiley-card.jpg'},
-{ name : "hulla", src : 'assets/cards/hullaballoon-card.jpg'},
-{ name : "ince", src : 'assets/cards/incendo-card.jpg'},
-{ name : "stoner", src : 'assets/cards/stoner-card.jpg'},
-{ name : "super", src : 'assets/cards/super-socket-card.jpg'},
-{ name : "un1", src : 'assets/cards/unknown1-card.jpg'},
-{ name : "un2", src : 'assets/cards/unknown2-card.jpg'},
-{ name : "willy", src : 'assets/cards/willy-whistle-card.jpg'}];
 
-console.log(ArrayOfImages[8].name);
-
-shuffle(ArrayOfImages);
-
-
-let memoryCards = [
-ArrayOfImages[0],
-ArrayOfImages[1],
-ArrayOfImages[2],
-ArrayOfImages[3],
-ArrayOfImages[4],
-ArrayOfImages[5],
-ArrayOfImages[0],
-ArrayOfImages[1],
-ArrayOfImages[2],
-ArrayOfImages[3],
-ArrayOfImages[4],
-ArrayOfImages[5]];
-
-
-shuffle(memoryCards);
-
-
-console.log(memoryCards[1].name);
-
-
-
-
+// Populate the gameplay grid
 
 function displayCards() {
 
@@ -219,3 +112,89 @@ let numberOfCards = memoryCards.length;
 });
    }
 };
+
+
+
+
+
+
+// The turnCard function - to turn the cards over on click event
+
+let hasTurnCard = false;
+let gridLock = false;   // Added this because once you selected two cards, you could select another which messed up the sequence
+let cardOne, cardTwo;
+
+
+
+function turnCard() {
+    if (gridLock) return;
+    if (this === cardOne) return;
+
+    this.classList.add("turn");
+
+    if (!hasTurnCard) {
+        hasTurnCard = true;
+        cardOne = this;
+
+        return;
+    }
+  
+    cardTwo = this;
+    cardCheck();
+   
+}
+
+// The cardCheck function - compares the two selected cards & calls functions depending on outcome of match
+
+function cardCheck() {
+
+    let cardTest1 = cardOne.id;
+    let cardTest2 = cardTwo.id;
+
+    let match = cardTest1 === cardTest2
+
+    match ? cardsMatch() : cardsDontMatch()
+}
+
+
+// The cardsMatch function - if cards match then it stops the two cards from turning back over & calls resetMatch
+
+function cardsMatch(){
+ 
+    console.log("Cards Do Match Sham");
+
+    cardOne.removeEventListener("click", turnCard);
+    cardTwo.removeEventListener("click", turnCard);
+
+    matchReset();
+}
+
+// The cardsDontMatch function - if cards do not match then turns the cards back over again in 2 sec & calls resetMatch
+
+function cardsDontMatch() {
+
+    gridLock = true;
+
+    console.log("Cards Dont Match Sham");
+
+    setTimeout(() => {
+        cardOne.classList.remove("turn");
+        cardTwo.classList.remove("turn");
+
+        matchReset();
+    }
+, 2000);
+
+}
+
+// The resetMatch function - this just resets some variables to allow the card selection sequence to start again
+
+function matchReset() {
+    
+    [hasTurnCard, gridLock] = [false, false];
+    [cardOne, cardTwo] = [null, null];
+}
+
+
+
+cards.forEach((card) => card.addEventListener("click", turnCard));
