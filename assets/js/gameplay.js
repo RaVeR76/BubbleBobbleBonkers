@@ -4,10 +4,12 @@
 const cards = document.querySelectorAll(".grid-item");
 const gamename = localStorage.getItem("GameName");     // Transfer username to gamezone area
 const time = document.getElementById("timeLeft");
+const chat = document.getElementById("chat");
 const score = document.getElementById("scoreTotal");
 
 let points = 0;
-let countDown = 60;
+let countdown = 59;
+let totalCards = 0;
 
 
 
@@ -17,7 +19,7 @@ let countDown = 60;
 document.addEventListener("DOMContentLoaded", function() {
 
    displayCards();
-   timer();
+   gameChat();
 
 });
 
@@ -30,7 +32,7 @@ let ArrayOfImages = [
 { name : "bels", src : 'assets/cards/beluga-card.jpg'}, 
 { name : "bob", src : 'assets/cards/bob-card.jpg'},
 { name : "bub", src : 'assets/cards/bub-card.jpg'},
-{ name : "bust", scr : 'assets/cards/bubble-buster.jpg'},
+{ name : "bust", src : 'assets/cards/bubble-buster.jpg'},
 { name : "coils", src : 'assets/cards/coiley-card.jpg'},
 { name : "hulla", src : 'assets/cards/hullaballoon-card.jpg'},
 { name : "ince", src : 'assets/cards/incendo-card.jpg'},
@@ -175,8 +177,12 @@ function cardsMatch(){
     cardTwo.removeEventListener("click", turnCard);
 
     points += 5;
+    totalCards += 2;
     score.innerHTML = points;
 
+    console.log(totalCards);
+
+    gameChat();
     matchReset();
 }
 
@@ -209,11 +215,32 @@ function matchReset() {
     [cardOne, cardTwo] = [null, null];
 }
 
+//
 
-timer = setInterval(function() {
+function gameChat() {
 
-    time.innerHTML = (countDown--);
-    if(countDown == 1) clearInterval(timer);
+    console.log("gameChat works");
+
+    if (totalCards === 0) {
+        chat.innerHTML = `${gamename}, good luck !`;
+    }
+    else if (totalCards === 2) {
+        chat.innerHTML = `${gamename}, first match !`;
+    }
+    else if (totalCards === 4) {
+        chat.innerHTML = `${gamename}, second match !`;
+    }
+
+};
+
+
+
+
+
+timer = setInterval(function() {      // Code from Stack Overflow & modified to suit
+
+    time.innerHTML = (countdown--);
+    if(countdown === -1) clearInterval(timer);
 }, 1000);
 
 

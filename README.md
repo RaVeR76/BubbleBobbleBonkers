@@ -397,7 +397,10 @@ Basically it was non matching variable names & syntax errors but I got there in 
 Cards would turn but the you could turn another one then another one which messed up the sequence. I added the gridLock logic to stop this from happening.
 Only two cards can be turned now & the sequence stays functional.
 
-
+Thought I had an issue with getting images to populate the grid with some images not loading on occassions
+kept testing the restart over & over again to try figure the issue out. Fount that it was only two images that din't load on occassions
+Looked further using Dev Tools & found that it was the same image & it's duplicate.
+Checked the code out & found I had typed 'scr' instead of 'src'...... slap to the face for me !
 
 ### The Development Journey
 

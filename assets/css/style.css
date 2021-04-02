@@ -179,12 +179,18 @@ body {
 
 .gameinfo {
     font-family: "Press Start 2P", sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
+}
+
+.time {
+  background-color: rgba(254, 238, 32, 0.3);
+  border: 1px solid rgba(247, 68, 152, .3);
 }
 
 .grid-container {
   display: grid;
+  justify-content: center;
   width: 90%;
   /*height: 300px;*/
   margin: auto;
@@ -202,7 +208,8 @@ body {
   background-color: rgba(247, 68, 152, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 2rem;
-  font-size: 3rem;
+  width: 15rem;
+  height: 15rem;
   text-align: center;
   /*position: relative;*/
   transform: scale(1);
@@ -222,11 +229,9 @@ body {
 }
 
 
-
-
 .hide {
-   width: 5em;
-   height: 5em; 
+   width: 11rem;
+   height: 11rem; 
    border-radius: 5px;
    backface-visibility: hidden;
    transform: rotateY(180deg);
