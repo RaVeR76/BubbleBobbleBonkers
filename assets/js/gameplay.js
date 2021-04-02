@@ -61,10 +61,10 @@ function turnCard() {
 }
 
 function cardCheck() {
-    let match = cardOne.dataset.cards === cardTwo.dataset.cards;
+    let match = cardOne.src === cardTwo.src;
 
     console.log("Hello sham");
-    console.log(cardOne.dataset.cards);
+    console.log(cardOne);
     console.log(cardTwo);
 
     match ? cardsMatch() : cardsDontMatch()
@@ -187,10 +187,13 @@ let numberOfCards = memoryCards.length;
     
     
     let img = document.createElement('img');
-    img.src = memoryCards[i++].src;
+    
+    let memCardAtt = memoryCards[i++];
+
+    img.setAttribute("id", memCardAtt.name)
     img.classList.add("hide");
-    //console.log(memoryCards[i++].name);
-    //img.id = memoryCards[i].name;
+    img.src = memCardAtt.src;
+    
 
     let cardStyle = document.getElementsByClassName("grid-item")[i-1];
    
