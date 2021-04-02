@@ -203,7 +203,7 @@ function cardsDontMatch() {
 
         matchReset();
     }
-, 2000);
+, 1000);
 
 }
 
