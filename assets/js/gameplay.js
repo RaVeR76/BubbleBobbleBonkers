@@ -95,20 +95,21 @@ cards.forEach((card) => card.addEventListener("click", turnCard));
 
 
 let ArrayOfImages = [
-'assets/cards/baron-von-blubba-card.jpg', 
-'assets/cards/beluga-card.jpg', 
-'assets/cards/bob-card.jpg',
-'assets/cards/bub-card.jpg',
-'assets/cards/bubble-buster.jpg',
-'assets/cards/coiley-card.jpg',
-'assets/cards/hullaballoon-card.jpg',
-'assets/cards/incendo-card.jpg',
-'assets/cards/stoner-card.jpg',
-'assets/cards/super-socket-card.jpg',
-'assets/cards/unknown1-card.jpg',
-'assets/cards/unknown2-card.jpg',
-'assets/cards/willy-whistle-card.jpg'];
+{ name : "blubs", src : 'assets/cards/baron-von-blubba-card.jpg'}, 
+{ name : "bels", src : 'assets/cards/beluga-card.jpg'}, 
+{ name : "bob", src : 'assets/cards/bob-card.jpg'},
+{ name : "bub", src : 'assets/cards/bub-card.jpg'},
+{ name : "bust", src : 'assets/cards/bubble-buster.jpg'},
+{ name : "coils", src : 'assets/cards/coiley-card.jpg'},
+{ name : "hulla", src : 'assets/cards/hullaballoon-card.jpg'},
+{ name : "ince", src : 'assets/cards/incendo-card.jpg'},
+{ name : "stoner", src : 'assets/cards/stoner-card.jpg'},
+{ name : "super", src : 'assets/cards/super-socket-card.jpg'},
+{ name : "un1", src : 'assets/cards/unknown1-card.jpg'},
+{ name : "un2", src : 'assets/cards/unknown2-card.jpg'},
+{ name : "willy", src : 'assets/cards/willy-whistle-card.jpg'}];
 
+console.log(ArrayOfImages[8].name);
 
 shuffle(ArrayOfImages);
 
@@ -131,7 +132,7 @@ ArrayOfImages[5]];
 shuffle(memoryCards);
 
 
-
+console.log(memoryCards['name']);
 
 
 
