@@ -260,6 +260,27 @@ body {
 }
 
 
+.jumbotron {
+    color: rgba(247, 68, 152, 1);
+    font-family: "Press Start 2P", sans-serif;
+    background: rgba(254, 238, 32, .7);
+    width: 30%;
+    margin: auto;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border: 5px solid #FAA101;
+    padding: 5rem;
+    text-align: center;
+   /* width: 30rem;
+    height: 30rem;
+    border-radius: 50%;*/
+}
+
+
 
 
 /*-- Media Queries --*/
