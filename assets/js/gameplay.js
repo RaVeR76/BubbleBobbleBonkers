@@ -6,7 +6,10 @@ const gamename = localStorage.getItem("GameName");     // Transfer username to g
 const time = document.getElementById("timeLeft");
 const chat = document.getElementById("chat");
 const score = document.getElementById("scoreTotal");
+const sound = document.querySelector(".mute");
+const audio = document.querySelector("audio");
 
+let unmute = 0;
 let points = 0;
 let countdown = 59;
 let totalCards = 0;
@@ -234,6 +237,25 @@ function gameChat() {
 };
 
 
+function mute() {
+ console.log("Mute Button Is Working")
+   
+    if (unmute === 0) {
+        audio.muted = true;
+     //   audio.add("mute");
+     //   sound.innerHTML = "Unmute";
+        unmute += 1;
+        console.log(unmute);
+    } else if (unmute === 1) {
+        audio.muted = false;
+    //    audio.remove("mute");
+   //     sound.innerHTML = "Mute";
+        unmute -= 1;
+        console.log(unmute);
+    }
+
+
+};
 
 
 
@@ -246,3 +268,5 @@ timer = setInterval(function() {      // Code from Stack Overflow & modified to 
 
 
 cards.forEach((card) => card.addEventListener("click", turnCard));
+
+sound.addEventListener("click", mute);
