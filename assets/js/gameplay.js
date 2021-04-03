@@ -6,13 +6,13 @@ const gamename = localStorage.getItem("GameName");     // Transfer username to g
 const time = document.getElementById("timeLeft");
 const chat = document.getElementById("chat");
 const score = document.getElementById("scoreTotal");
+const gamescore = document.getElementById("gamescore");
 const sound = document.getElementById("mute");
 const audio = document.querySelector("audio");
 
 let points = 0;
 let countdown = 59;
 let totalCards = 0;
-
 
 
 
@@ -181,8 +181,10 @@ function cardsMatch(){
     points += 5;
     totalCards += 2;
     score.innerHTML = points;
+    gamescore.innerHTML = points;
 
     console.log(totalCards);
+    console.log(gamescore);
 
     gameChat();
     matchReset();
@@ -202,6 +204,7 @@ function cardsDontMatch() {
 
         points -= 2;
         score.innerHTML = points;
+
 
         matchReset();
     }

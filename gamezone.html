@@ -22,7 +22,7 @@
 
     <section>
         
-        <div id="gameinfo" class="gameinfo row">
+        <div id="gamehud" class="gamehud row">
             <div class="time col-sm-4"><p>Time Left : <span id="timeLeft">60</span></p></div>
             <div id="chat" class="chat col-sm-4"></div>
             <div class="score col-sm-4">Score : <span id="scoreTotal">0</span></div>
@@ -61,9 +61,13 @@
     </div>
 
 
-     <div>
-        <input type="button" value="Populate The Game Test" onclick="displayCards()"/>
-        </div>
+    <div id="gameover" class="jumbotron">
+        <h2>You Won ... Awesome Game !</h2>
+        <p>You scored <span id="gamescore" >0</span></p>
+
+    </div> 
+
+
 
     </section>
 
