@@ -190,6 +190,9 @@ function cardsMatch(){
 
     if (totalCards === 12) {
         gameover.style.visibility = "visible";
+        audio.muted = false;
+        mute();
+        clearInterval(timer);
     }
 
     gameChat();
