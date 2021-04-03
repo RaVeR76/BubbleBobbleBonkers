@@ -13,7 +13,7 @@ const gameover = document.getElementById("gameover");
 const newgame = document.getElementById("restart");
 
 let points = 0;
-let countdown = 59;
+let countdown = 60;
 let totalCards = 0;
 
 
@@ -261,6 +261,7 @@ function mute() {
     }
 };
 
+// Restart Game Zone
 
 function restart (){
     
@@ -270,10 +271,22 @@ function restart (){
 
 
 
+
+
+
 timer = setInterval(function() {      // Code from Stack Overflow & modified to suit
 
     time.innerHTML = (countdown--);
     if(countdown === -1) clearInterval(timer);
+    if(countdown <= 50) {
+        let flash = $('#time');
+        if (flash.css('background-color') == 'red') {
+            flash.css({'background-color': 'green'});
+        }
+        else {
+            flash.css({'background-color': 'red'});
+        }
+    };
 }, 1000);
 
 
