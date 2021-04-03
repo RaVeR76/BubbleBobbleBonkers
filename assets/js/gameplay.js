@@ -2,14 +2,15 @@
 
 
 const cards = document.querySelectorAll(".grid-item");
+const audio = document.querySelector("audio");
 const gamename = localStorage.getItem("GameName");     // Transfer username to gamezone area
 const time = document.getElementById("timeLeft");
 const chat = document.getElementById("chat");
 const score = document.getElementById("scoreTotal");
 const gamescore = document.getElementById("gamescore");
 const sound = document.getElementById("mute");
-const audio = document.querySelector("audio");
 const gameover = document.getElementById("gameover");
+const newgame = document.getElementById("restart");
 
 let points = 0;
 let countdown = 59;
@@ -258,6 +259,13 @@ function mute() {
 };
 
 
+function restart (){
+    
+    location.reload();
+
+}
+
+
 
 timer = setInterval(function() {      // Code from Stack Overflow & modified to suit
 
@@ -270,3 +278,5 @@ timer = setInterval(function() {      // Code from Stack Overflow & modified to 
 cards.forEach((card) => card.addEventListener("click", turnCard));
 
 sound.addEventListener("click", mute);
+
+newgame.addEventListener("click", restart);

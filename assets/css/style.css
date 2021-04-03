@@ -281,6 +281,15 @@ body {
     border-radius: 50%;*/
 }
 
+#replay {
+ 
+  
+  width: 20rem;
+  border-radius: 1rem;
+  background-color: rgba(247, 68, 152, .3);
+  border: 1px solid #FAA101;
+}
+
 
 
 
