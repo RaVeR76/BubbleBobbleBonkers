@@ -9,6 +9,7 @@ const score = document.getElementById("scoreTotal");
 const gamescore = document.getElementById("gamescore");
 const sound = document.getElementById("mute");
 const audio = document.querySelector("audio");
+const gameover = document.getElementById("gameover");
 
 let points = 0;
 let countdown = 59;
@@ -185,6 +186,10 @@ function cardsMatch(){
 
     console.log(totalCards);
     console.log(gamescore);
+
+    if (totalCards === 12) {
+        gameover.style.visibility = "visible";
+    }
 
     gameChat();
     matchReset();
