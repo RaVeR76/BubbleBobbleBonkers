@@ -27,14 +27,18 @@ footer {
 
 /*-- Intro Styling --*/
 
-/*
+
 body {
     background-color: black;
-}*/
+    background-image: url("../images/round87_large.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
 
 .main-title {
-    background: url("../images/main-title2.png");  
+    background: url("../images/main-heading-3d.png");  
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain ;
@@ -220,7 +224,7 @@ body {
 .grid-container {
   display: grid;
   justify-content: center;
-  width: 90%;
+  width: 50%;
   /*height: 300px;*/
   margin: auto;
   /*display: flex;
@@ -229,14 +233,14 @@ body {
   grid-column-gap: 2rem;
   grid-row-gap: 1rem;
   grid-template-columns: auto auto auto auto;
-  background-color: #ffffff;
+  background-color: #000;
   padding: 1rem;
 }
 
 .grid-item {
   /*background: url("../images/cardface.png")no-repeat center center;*/
   
-  background-color: rgba(247, 68, 152, 0.1);
+  background-color: rgba(247, 68, 152, 1);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 2rem;
   width: 100%;
