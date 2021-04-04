@@ -7,6 +7,7 @@ const gamename = localStorage.getItem("GameName");     // Transfer username to g
 const time = document.getElementById("timeLeft");
 const chat = document.getElementById("chat");
 const score = document.getElementById("scoreTotal");
+const flash = document.getElementById("time");
 const gamescore = document.getElementById("gamescore");
 const sound = document.getElementById("mute");
 const gameover = document.getElementById("gameover");
@@ -248,6 +249,8 @@ function gameChat() {
 };
 
 
+// My mute function allows the user the option to mute the audio 
+
 function mute() {
    
     if (audio.muted === false) {
@@ -271,22 +274,12 @@ function restart (){
 
 
 
-
-
-
 timer = setInterval(function() {      // Code from Stack Overflow & modified to suit
 
     time.innerHTML = (countdown--);
     if(countdown === -1) clearInterval(timer);
-    if(countdown <= 50) {
-        let flash = $('#time');
-        if (flash.css('background-color') == 'red') {
-            flash.css({'background-color': 'green'});
-        }
-        else {
-            flash.css({'background-color': 'red'});
-        }
-    };
+    if(countdown <= 10) flash.classList.add("flash");
+   
 }, 1000);
 
 

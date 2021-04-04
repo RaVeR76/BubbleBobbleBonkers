@@ -192,10 +192,21 @@ body {
   max-width: 30rem;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 1rem;
-    
-    
+    border-radius: 1rem; 
 }
+
+.flash {
+  animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+      background-color: rgba(247, 68, 152, 0.5);
+      border: 1px solid rgba(254, 238, 32, 0.7);
+      color: white;
+  }
+}
+
 
 .score {
     background-color: rgba(254, 238, 32, 0.3);

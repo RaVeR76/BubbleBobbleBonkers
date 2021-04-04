@@ -402,6 +402,14 @@ kept testing the restart over & over again to try figure the issue out. Fount th
 Looked further using Dev Tools & found that it was the same image & it's duplicate.
 Checked the code out & found I had typed 'scr' instead of 'src'...... slap to the face for me !
 
+
+Wanted some sort of alert for when the time was running out so added a function but couldn't get it to work.
+Investigated animation & keyframes. Added some animation / keyframe code to my css.
+Added one line of code to my 60 sec timer so that on 10 sec it would add my flash class to my time class list & therefore flashing the game timer :)
+
+
+
+
 ### The Development Journey
 
 ### The Validation & Testing Journey
@@ -429,3 +437,8 @@ https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascrip
 
 How to produce an image array as I wasn't sure of the how you write the location of the image into an array (link below)
 https://stackoverflow.com/questions/42327498/output-an-array-of-images-in-javascript
+
+
+
+Blinking Code
+https://www.codegrepper.com/code-examples/css/javascript+load+with+flashing+text+color
