@@ -288,9 +288,28 @@ z-index: 1;
    transform: rotateY(180deg);
 }
 
+#mute {
+    height : 3rem;
+    width: 3rem;
+    position: absolute;
+top: 97%;
+left: 66%;
+margin-right: -50%;
+transform: translate(-50%, -50%);
+z-index: 1;
+    border-radius: 50%;
+
+}
+
+.unmute {
+    background-color: rgba(254, 238, 32, 1);
+    border: 2px solid rgba(247, 68, 152, 1);
+}
+
 
 .mute {
     background-color: rgba(247, 68, 152, 1);
+    border: 2px solid rgba(254, 238, 32, 1);
 }
 
 
