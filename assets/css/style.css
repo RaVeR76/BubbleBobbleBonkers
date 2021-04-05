@@ -184,9 +184,9 @@ footer {
 
 .gamehud {
     font-family: "Press Start 2P", sans-serif;
-    min-height: 2rem;
-   /* line-height: 2rem;*/
-    font-size: 1rem;
+    min-height: 1.5rem;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
     text-align: center;
     justify-content: center;
 }
@@ -194,10 +194,15 @@ footer {
 .time {
   background-color: rgba(254, 238, 32, 1);
   border: 1px solid rgba(247, 68, 152, 1);
-  max-width: 20rem;
+  max-width: 8rem;
     margin-left: auto;
     margin-right: auto;
     border-radius: 1rem; 
+    padding-top: 1rem;
+}
+
+.time p span, .score p span {
+    font-size: 1.5rem;
 }
 
 .flash {
@@ -214,16 +219,21 @@ footer {
 
 .chat {
     color: #fff;
+   
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
 }
 
 
 .score {
     background-color: rgba(254, 238, 32, 1);
   border: 1px solid rgba(247, 68, 152, 1);
-    max-width: 20rem;
+    max-width: 8rem;
     margin-left: auto;
     margin-right: auto;
     border-radius: 1rem;
+     padding-top: 1rem;
 }
 
 .grid-container {

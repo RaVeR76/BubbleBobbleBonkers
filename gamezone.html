@@ -21,12 +21,19 @@
 <!--STOP DELETING NOW-->
 
     <section>
-        
+     
         <div id="gamehud" class="gamehud row">
-            <div id="time" class="time col-sm-4"><p>Time Left : <span id="timeLeft">60</span></p></div>
-            <div id="chat" class="chat col-sm-4"></div>
-            <div class="score col-sm-4">Score : <span id="scoreTotal">0</span></div>
-        </div>
+        
+            <div id="time" class="time col-sm-6">
+                <p>Time <span id="timeLeft">60</span></p>
+            </div>
+            <div class="score col-sm-6">
+                <p>Score <span id="scoreTotal">0</span></p>
+            </div>
+            <div id="chat" class="chat col-sm-12"></div>
+            
+     
+</div>
 
         
 <!-- Grid Section -->
@@ -48,7 +55,7 @@
 
         
         <audio autoplay loop>
-            <source src="assets/music/main-theme.mp3" type="audio/mpeg">
+          <!--  <source src="assets/music/main-theme.mp3" type="audio/mpeg">-->
             Your browser does not support the audio element.
         </audio>
 
