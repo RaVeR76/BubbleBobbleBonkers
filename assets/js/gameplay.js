@@ -256,11 +256,11 @@ function mute() {
     if (audio.muted === false) {
         audio.muted = true;
         sound.classList.add("mute");
-        sound.innerHTML = `<i class="fas fa-volume-mute"></i>`;
+        sound.innerHTML = `<i class="fas fa-volume-mute icon"></i>`;
     } else if (audio.muted === true) {
         audio.muted = false;
         sound.classList.remove("mute");
-        sound.innerHTML = `<i class="fas fa-volume-up"></i>`;
+        sound.innerHTML = `<i class="fas fa-volume-up icon"></i>`;
     }
 };
 
