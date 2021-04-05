@@ -11,25 +11,36 @@
 <title>Bubble Bobble Bonkers</title>
 </head>
 <body id="gamezone">
-    <header class="container-fluid">
+    <header>
         <div class="row"> 
-            <div class="col-12 main-title">
+            <div class="col-12 container-fluid main-title">
             </div>
         </div>
     </header>
 
     <section>
      
-        <div id="gamehud" class="gamehud row">
-        
-            <div id="time" class="time col-sm-6">
-                <p>Time <span id="timeLeft">60</span></p>
+        <div id="gamehud" class="gamehud container">
+        <div class="row justify-content-center">
+            <div class="col-6 col-md-4">
+                <p>Time</p> 
+                <div id="time" class="time">
+                <span id="timeLeft">60</span>
+                </div>
             </div>
-            <div class="score col-sm-6">
-                <p>Score <span id="scoreTotal">0</span></p>
-            </div>
-            <div id="chat" class="chat col-sm-12"></div>
             
+            <div class="col-6 col-md-4">
+                <p>Score</p>
+                <div class="score">
+                <span id="scoreTotal">0</span>
+                </div>
+        </div>
+           
+
+            <div id="chat" class="chat col-10  col-md-4">
+
+            </div>
+           </div>  
      
 </div>
 

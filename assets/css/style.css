@@ -184,24 +184,30 @@ footer {
 
 .gamehud {
     font-family: "Press Start 2P", sans-serif;
-    min-height: 1.5rem;
-    line-height: 1.5rem;
+  /*  min-height: 1.5rem;
+    line-height: 1.5rem;*/
     text-align: center;
-    justify-content: center;
+   
 }
 
 .time {
   background-color: rgba(254, 238, 32, 1);
   border: 1px solid rgba(247, 68, 152, 1);
-  max-width: 8rem;
+  width: 4.2rem;
+  height: 4.2rem;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 1rem; 
+    border-radius: 50%; 
     padding-top: 1rem;
 }
 
-.time p span, .score p span {
+#gamehud  p {
+    color: #fff;
+    margin-bottom: 0rem;
+}
+.time  span, .score  span {
     font-size: 1.5rem;
+   /* padding-top: 3rem;*/
 }
 
 .flash {
@@ -216,23 +222,28 @@ footer {
   }
 }
 
-.chat {
-    color: #fff;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 1rem;
-}
-
 
 .score {
     background-color: rgba(254, 238, 32, 1);
   border: 1px solid rgba(247, 68, 152, 1);
-    max-width: 8rem;
+    width: 4.2rem;
+  height: 4.2rem;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 1rem;
+    border-radius: 50%;
     padding-top: 1rem;
 }
+
+.chat {
+    background-color: rgba(247, 68, 152, 1);
+      border: 1px solid rgba(254, 238, 32, 1);
+    color: #fff;
+  /*  margin-left: auto;
+    margin-right: auto;*/
+    margin-top: 1.4rem;
+    border-radius: 1rem;
+}
+
 
 .grid-container {
   display: grid;
