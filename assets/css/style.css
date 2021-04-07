@@ -298,30 +298,24 @@ z-index: 1;
 }
 
 
-#home {
+#home, #mute {
     height : 3.2rem;
     width: 3.2rem;
     position: absolute;
-    top: 97%;
-    left: 35%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     z-index: 1;
     border-radius: 50%;
 }
 
+#home {
+    top: 97%;
+    left: 35%;
+}
 
 #mute {
-    height : 3.2rem;
-    width: 3.2rem;
-    position: absolute;
     top: 97%;
     left: 66%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    border-radius: 50%;
-
 }
 
 .unmute, .home {
@@ -384,10 +378,11 @@ z-index: 1;
 /*-- Media Queries --*/
 
 /* Show in Large desktops and laptops */
-/*@media (min-width: 1200px) {
+@media (min-width: 1200px) {
 
      .main-title{
-        min-height: 20rem;
+        min-height: 25rem;
+        margin-top: 6rem;
     }
 
     .bub-size {
@@ -400,9 +395,45 @@ z-index: 1;
         float: right;
         height: 10rem;
         width: 10rem;
+    }
+
+    
+
+    .time, .score {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .time  span, .score  span {
+    font-size: 3rem;
+    }
+
+    .grid-container {
+        grid-template-columns: auto auto auto auto;
+        top: 68%;
+    }
+
+    .grid-item {
+        width: 12rem;
+        height: 12rem; 
+    }
+
+    .hide {
+        width: 9rem;
+        height: 9rem; 
+    }
+
+    #home, #mute {
+    height : 5rem;
+    width: 5rem;
+    }
+
+    .icon {
+    font-size: 2rem;
+    line-height: 3.5rem;
+    text-align: center; 
+
 }
-  
-}*/
 
 /*Hide in Other Small Devices */                                    /* ----IF THERE ARE TWO MEDIA QUERY SIZES WITH SAME INFO , COMBINE THEM -----*/
 
