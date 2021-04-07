@@ -11,6 +11,7 @@ const flash = document.getElementById("time");
 const gamescore = document.getElementById("gamescore");
 const sound = document.getElementById("mute");
 const gameover = document.getElementById("gameover");
+const levelup = document.getElementById("levelup");
 const newgame = document.getElementById("restart");
 
 let points = 0;
@@ -234,10 +235,8 @@ function matchReset() {
 
 function gameChat() {
 
-    console.log("gameChat works");
-
     if (totalCards === 0) {
-        chat.innerHTML = `${gamename}, good luck !`;
+        chat.innerHTML = `Hey ${gamename}, good luck !`;
     }
     else if (totalCards === 2) {
         chat.innerHTML = `${gamename}, first match !`;
@@ -277,8 +276,8 @@ function restart (){
 timer = setInterval(function() {      // Code from Stack Overflow & modified to suit
 
     time.innerHTML = (countdown--);
-    if(countdown === -1) clearInterval(timer);
-    if(countdown <= 10) flash.classList.add("flash");
+    if(countdown <= 9) flash.classList.add("flash");
+    if(countdown === -1) clearInterval(timer), timeout.style.visibility = "visible";
    
 }, 1000);
 
@@ -287,5 +286,7 @@ timer = setInterval(function() {      // Code from Stack Overflow & modified to 
 cards.forEach((card) => card.addEventListener("click", turnCard));
 
 sound.addEventListener("click", mute);
+
+levelup.addEventListener("click", restart);
 
 newgame.addEventListener("click", restart);
