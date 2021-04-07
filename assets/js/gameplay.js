@@ -13,6 +13,8 @@ const sound = document.getElementById("mute");
 const gameover = document.getElementById("gameover");
 const levelup = document.getElementById("levelup");
 const newgame = document.getElementById("restart");
+const welldone = document.getElementsByClassName("welldone")[0];
+const unlucky = document.getElementsByClassName("welldone")[1];
 
 let points = 0;
 let countdown = 60;
@@ -192,6 +194,7 @@ function cardsMatch(){
 
     if (totalCards === 12) {
         gameover.style.visibility = "visible";
+        welldone.innerHTML = `Awesome Game ${gamename} !`;
         audio.muted = false;
         mute();
         clearInterval(timer);
@@ -277,7 +280,7 @@ timer = setInterval(function() {      // Code from Stack Overflow & modified to 
 
     time.innerHTML = (countdown--);
     if(countdown <= 9) flash.classList.add("flash");
-    if(countdown === -1) clearInterval(timer), timeout.style.visibility = "visible";
+    if(countdown === -1) clearInterval(timer), timeout.style.visibility = "visible", unlucky.innerHTML = `Unlucky ${gamename}`;;
    
 }, 1000);
 

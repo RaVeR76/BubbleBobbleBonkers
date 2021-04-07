@@ -408,6 +408,9 @@ Investigated animation & keyframes. Added some animation / keyframe code to my c
 Added one line of code to my 60 sec timer so that on 10 sec it would add my flash class to my time class list & therefore flashing the game timer :)
 
 
+Media Queries wouldn't work once it went below 1200px - must have deleted the last '}' of the largest media query which fucked it all up ffs :()
+
+
 
 
 ### The Development Journey
