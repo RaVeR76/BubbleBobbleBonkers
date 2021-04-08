@@ -65,12 +65,11 @@ footer {
 }
 
 .bub-pad {
-    
-    padding: 3rem 0rem 0rem 0rem;
-    
+    padding: 3rem 0rem 0rem 0rem;  
 }
 
 .bub-size {
+    float: right;
     height: 7rem;
     width: 7rem;
 }
@@ -101,9 +100,6 @@ footer {
   
 }
 
-
-
-
 .foot-pad {
     text-align: center;
     font-size: 1.5rem;
@@ -118,8 +114,6 @@ footer {
 .smiley-size:hover {
     filter: grayscale(100%);
 }
-
-
 
 
 /*-- Bubble Code Accredited In README but I have changed it to suit my game --*/
@@ -659,7 +653,7 @@ z-index: 1;
 @media (min-width: 481px) and (max-width: 767px) {
 
     .main-title {
-        min-height: 20rem;
+        min-height: 15rem;
         margin-top: 6rem;
     }
 
@@ -676,55 +670,56 @@ z-index: 1;
     }
  
     .gamehud  p {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         margin-bottom: 0.3rem;
     }
     
     .time, .score {
-        width: 6rem;
-        height: 6rem;
+        width: 5rem;
+        height: 5rem;
     }
 
     .time  span, .score  span {
-        font-size: 1.8rem;
-        line-height: 4rem;
+        font-size: 1.6rem;
+        line-height: 3rem;
     }
 
     .chat {
-        height: 5rem;
+        height: 4rem;
         font-size: 0.9rem;
-        line-height: 5rem;
+        line-height: 4rem;
+        margin-top: 1rem;
     }
 
     .grid-container {
-        grid-template-columns: auto auto auto auto;
-        top: 68%;
+        grid-template-columns: auto auto auto;
+        top: 67%;
     }
 
     .grid-item {
-        width: 12rem;
-        height: 12rem; 
+        width: 10rem;
+        height: 10rem; 
     }
 
     .hide {
-        width: 12rem;
-        height: 12rem; 
+        width: 10rem;
+        height: 10rem; 
     }
 
     #gameover, #timeout {
         width: 67%;
-        top: 68%;
-        height: 40rem;
+        top: 67%;
+        height: 44rem;
         line-height: 6rem;
         padding: 5rem;       
     }
 
     .jumbohead {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .jumbomain {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     #restart, #levelup {
@@ -733,22 +728,14 @@ z-index: 1;
     }
 
     #home, #mute {
-        height : 5rem;
-        width: 5rem;
+        height : 4rem;
+        width: 4rem;
     }
 
     .icon {
-        font-size: 2rem;
-        line-height: 3.5rem;
+        font-size: 1.6rem;
+        line-height: 3rem;
     }
-
-
-
-
-
-
-
-
 
 }
 

@@ -1,10 +1,10 @@
 let user = document.getElementById('username');
 
-const bubCharacterRef = document.querySelector("#bub-position");
-const bobCharacterRef = document.querySelector('#bob-position');
-console.log(bubCharacterRef);
-console.log(bobCharacterRef);
+//const bubCharacterRef = document.querySelector("#bub-position");
+//const bobCharacterRef = document.querySelector('#bob-position');
 
+const bubCharacterRef = document.getElementById("#bub-position");
+const bobCharacterRef = document.getElementById('#bob-position');
 
 function handleSubmit(event) {
     
