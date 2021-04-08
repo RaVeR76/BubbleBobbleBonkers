@@ -257,7 +257,7 @@ function gameChat() {
         chat.innerHTML = `Nearly there ${gamename}, fifth match !`;
     }
     else if (totalCards === 12) {
-        chat.innerHTML = `Winner winner chicken dinner ${gamename} !`;
+        chat.innerHTML = `Winner winner chicken dinner !`;
     }
 
 };

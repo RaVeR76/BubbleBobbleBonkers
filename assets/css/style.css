@@ -235,10 +235,14 @@ footer {
 .chat {
     background-color: rgba(247, 68, 152, 1);
     border: 1px solid rgba(254, 238, 32, 1);
+    font-size: .7rem;
+    height: 2rem;
+    line-height: 1.8rem;
     color: #fff;
-    margin-top: 1rem;
+    margin-top: 0.6rem;
     border-radius: 1rem;
 }
+
 
 .grid-container {
   display: grid;
