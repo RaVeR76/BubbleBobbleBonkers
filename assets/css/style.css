@@ -404,13 +404,11 @@ z-index: 1;
         width: 10rem;
     }
 
-
     .gamehud  p {
         font-size: 1.7rem;
     margin-bottom: 0.3rem;
     }
     
-
     .time, .score {
         width: 8rem;
         height: 8rem;
@@ -443,17 +441,16 @@ z-index: 1;
     }
 
     #gameover, #timeout {
-        width: 35%;
+        width: 43%;
         top: 68%;
         height: 40rem;
         line-height: 6rem;
-        padding: 5rem;
-        
+        padding: 5rem;       
     }
 
     .jumbohead {
         font-size: 2.5rem;
-}
+    }
 
     .jumbomain {
         font-size: 2rem;
@@ -483,7 +480,7 @@ z-index: 1;
 
     .main-title {
         min-height: 20rem;
-        margin-top: 10rem;
+        margin-top: 6rem;
     }
 
     .bub-size {
@@ -496,17 +493,84 @@ z-index: 1;
         float: right;
         height: 10rem;
         width: 10rem;
-}
+    }
  
+    .gamehud  p {
+        font-size: 1.5rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .time, .score {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .time  span, .score  span {
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+
+    .chat {
+        height: 5rem;
+        font-size: 1.1rem;
+        line-height: 5rem;
+    }
+
+    .grid-container {
+        grid-template-columns: auto auto auto auto;
+        top: 68%;
+    }
+
+    .grid-item {
+        width: 12rem;
+        height: 12rem; 
+    }
+
+    .hide {
+        width: 12rem;
+        height: 12rem; 
+    }
+
+    #gameover, #timeout {
+        width: 51%;
+        top: 68%;
+        height: 40rem;
+        line-height: 6rem;
+        padding: 5rem;       
+    }
+
+    .jumbohead {
+        font-size: 2.2rem;
+    }
+
+    .jumbomain {
+        font-size: 1.7rem;
+    }
+
+    #restart, #levelup {
+        font-size: 1.5rem;
+        width: 20rem;
+    }
+
+    #home, #mute {
+        height : 5rem;
+        width: 5rem;
+    }
+
+    .icon {
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
 
 }
 
 
 /* Portrait tablets and small desktops */
-/*@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
 
-    .main-title{
-        min-height: 30rem;
+    .main-title {
+        min-height: 20rem;
+        margin-top: 6rem;
     }
 
     .bub-size {
@@ -519,31 +583,174 @@ z-index: 1;
         float: right;
         height: 10rem;
         width: 10rem;
+    }
+ 
+    .gamehud  p {
+        font-size: 1.5rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .time, .score {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .time  span, .score  span {
+        font-size: 1.8rem;
+        line-height: 4rem;
+    }
+
+    .chat {
+        height: 5rem;
+        font-size: 0.9rem;
+        line-height: 5rem;
+    }
+
+    .grid-container {
+        grid-template-columns: auto auto auto auto;
+        top: 68%;
+    }
+
+    .grid-item {
+        width: 12rem;
+        height: 12rem; 
+    }
+
+    .hide {
+        width: 12rem;
+        height: 12rem; 
+    }
+
+    #gameover, #timeout {
+        width: 67%;
+        top: 68%;
+        height: 40rem;
+        line-height: 6rem;
+        padding: 5rem;       
+    }
+
+    .jumbohead {
+        font-size: 2rem;
+    }
+
+    .jumbomain {
+        font-size: 1.5rem;
+    }
+
+    #restart, #levelup {
+        font-size: 1.5rem;
+        width: 20rem;
+    }
+
+    #home, #mute {
+        height : 5rem;
+        width: 5rem;
+    }
+
+    .icon {
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+
 }
 
-
-} */
 
 /* Landscape phones and portrait tablets */
-/*@media (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px) {
 
-    .main-title{
-        min-height: 25rem;
+    .main-title {
+        min-height: 20rem;
+        margin-top: 6rem;
     }
 
     .bub-size {
         float: left;
-        height: 7rem;
-        width: 7rem;
+        height: 10rem;
+        width: 10rem;
     }
 
     .bob-size {
         float: right;
-        height: 7rem;
-        width: 7rem;
-}
+        height: 10rem;
+        width: 10rem;
+    }
+ 
+    .gamehud  p {
+        font-size: 1.5rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .time, .score {
+        width: 6rem;
+        height: 6rem;
+    }
 
-}*/
+    .time  span, .score  span {
+        font-size: 1.8rem;
+        line-height: 4rem;
+    }
+
+    .chat {
+        height: 5rem;
+        font-size: 0.9rem;
+        line-height: 5rem;
+    }
+
+    .grid-container {
+        grid-template-columns: auto auto auto auto;
+        top: 68%;
+    }
+
+    .grid-item {
+        width: 12rem;
+        height: 12rem; 
+    }
+
+    .hide {
+        width: 12rem;
+        height: 12rem; 
+    }
+
+    #gameover, #timeout {
+        width: 67%;
+        top: 68%;
+        height: 40rem;
+        line-height: 6rem;
+        padding: 5rem;       
+    }
+
+    .jumbohead {
+        font-size: 2rem;
+    }
+
+    .jumbomain {
+        font-size: 1.5rem;
+    }
+
+    #restart, #levelup {
+        font-size: 1.5rem;
+        width: 20rem;
+    }
+
+    #home, #mute {
+        height : 5rem;
+        width: 5rem;
+    }
+
+    .icon {
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+
+
+
+
+
+
+
+
+
+}
 
 /* Portrait phones and smaller */
 /*@media (max-width: 480px) {
