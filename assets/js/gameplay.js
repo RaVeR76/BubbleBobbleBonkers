@@ -9,6 +9,7 @@ const chat = document.getElementById("chat");
 const score = document.getElementById("scoreTotal");
 const flash = document.getElementById("time");
 const gamescore = document.getElementById("gamescore");
+const audiosource = document.getElementById("audioSource");
 const sound = document.getElementById("mute");
 const gameover = document.getElementById("gameover");
 const levelup = document.getElementById("levelup");
@@ -17,7 +18,7 @@ const welldone = document.getElementsByClassName("welldone")[0];
 const unlucky = document.getElementsByClassName("welldone")[1];
 
 let points = 0;
-let countdown = 60;
+let countdown = 20;
 let totalCards = 0;
 
 
@@ -292,7 +293,7 @@ timer = setInterval(function() {      // Code from Stack Overflow & modified to 
 
     time.innerHTML = (countdown--);
     if(countdown <= 9) flash.classList.add("flash");
-    if(countdown === -1) clearInterval(timer), timeout.style.visibility = "visible", unlucky.innerHTML = `Unlucky ${gamename}`;;
+    if(countdown === -1) clearInterval(timer), timeout.style.visibility = "visible", unlucky.innerHTML = `Unlucky ${gamename}`, audiosource.setAttribute('src', "assets/music/gameover.mp3");
    
 }, 1000);
 

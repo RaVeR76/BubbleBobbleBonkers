@@ -35,13 +35,11 @@
                         <span id="scoreTotal">0</span>
                     </div>
                 </div>
-           
-                <div id="chat" class="chat col-10 col-md-6 order-md-1"></div>
-           </div>  
-     
-        </div>
 
-        
+                <div id="chat" class="chat col-10 col-md-6 order-md-1"></div>
+           </div>     
+        </div>
+      
 <!-- Grid Section -->
 
         <div class="grid-container"> 
@@ -60,42 +58,36 @@
         </div>
 
         
-        <audio autoplay loop>
+        <audio id="audioSource" autoplay>
             <source src="assets/music/main-theme.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
 
-      
+
+        <div>
+            <a href="index.html" id="home" class="btn home" role="button">
+                <i class="fas fa-home icon" aria-hidden="true"></i>
+            </a>
+        </div>
 
 
-
-    <div>
-        <a href="index.html" id="home" class="btn home" role="button">
-            <i class="fas fa-home icon" aria-hidden="true"></i>
-        </a>
-    </div>
-
-
-    <button type="button" id="mute" class="btn unmute" data-toggle="button" aria-pressed="false" autocomplete="off">
+        <button type="button" id="mute" class="btn unmute" data-toggle="button" aria-pressed="false" autocomplete="off">
             <i class="fas fa-volume-up icon" aria-hidden="true"></i>
         </button>
 
 
+        <div id="gameover" class="container jumbotron">
+            <p class="jumbohead">** You Won **</p>
+            <p class="welldone jumbomain"></p>
+            <p class="jumbomain">You scored <span id="gamescore" >0</span></p>
+            <button id="levelup" class="btn">Level Up</button>
+        </div> 
 
-    <div id="gameover" class="container jumbotron">
-        <p class="jumbohead">** You Won **</p>
-        <p class="welldone jumbomain"></p>
-        <p class="jumbomain">You scored <span id="gamescore" >0</span></p>
-        <button id="levelup" class="btn">Level Up</button>
-    </div> 
-
-    <div id="timeout" class="container jumbotron">
-        <p class="jumbohead">Time is up !</p>
-        <p class="welldone jumbomain"></p>
-        <button id="restart" class="btn">Play Again</button>
-    </div> 
-
-
+        <div id="timeout" class="container jumbotron">
+            <p class="jumbohead">Time is up !</p>
+            <p class="welldone jumbomain"></p>
+            <button id="restart" class="btn">Play Again</button>
+        </div> 
 
     </section>
 
