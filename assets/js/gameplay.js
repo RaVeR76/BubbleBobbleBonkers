@@ -242,10 +242,22 @@ function gameChat() {
         chat.innerHTML = `Hey ${gamename}, good luck !`;
     }
     else if (totalCards === 2) {
-        chat.innerHTML = `${gamename}, first match !`;
+        chat.innerHTML = `Well done ${gamename}, first match !`;
     }
     else if (totalCards === 4) {
-        chat.innerHTML = `${gamename}, second match !`;
+        chat.innerHTML = `Keep going ${gamename}, second match !`;
+    }
+    else if (totalCards === 6) {
+        chat.innerHTML = `Awesome ${gamename}, third match !`;
+    }
+    else if (totalCards === 8) {
+        chat.innerHTML = `Unbelievable ${gamename}, forth match !`;
+    }
+    else if (totalCards === 10) {
+        chat.innerHTML = `Nearly there ${gamename}, fifth match !`;
+    }
+    else if (totalCards === 12) {
+        chat.innerHTML = `Winner winner chicken dinner ${gamename} !`;
     }
 
 };
