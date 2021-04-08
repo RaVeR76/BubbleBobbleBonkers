@@ -18,7 +18,7 @@ const welldone = document.getElementsByClassName("welldone")[0];
 const unlucky = document.getElementsByClassName("welldone")[1];
 
 let points = 0;
-let countdown = 20;
+let countdown = 60;
 let totalCards = 0;
 
 
@@ -292,6 +292,7 @@ function restart (){
 timer = setInterval(function() {      // Code from Stack Overflow & modified to suit
 
     time.innerHTML = (countdown--);
+    if(countdown == 11) audiosource.setAttribute('src', "assets/music/main-theme-faster.mp3");
     if(countdown <= 9) flash.classList.add("flash");
     if(countdown === -1) clearInterval(timer), timeout.style.visibility = "visible", unlucky.innerHTML = `Unlucky ${gamename}`, audiosource.setAttribute('src', "assets/music/gameover.mp3");
    
