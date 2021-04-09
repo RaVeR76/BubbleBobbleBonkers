@@ -98,10 +98,6 @@ shuffle(memoryCards);
   return array;
 }
 
-
-
-
-
 // Populate the gameplay grid
 
 function displayCards() {
@@ -109,10 +105,7 @@ function displayCards() {
 let numberOfCards = memoryCards.length;
    for (let i = 0;i < numberOfCards; i++) {
    
-
-
     memoryCards.forEach(function(image) {
-    
     
     let img = document.createElement('img');
     
@@ -122,10 +115,8 @@ let numberOfCards = memoryCards.length;
     img.classList.add("hide");
     img.src = memCardAtt.src;
     
-
     let cardStyle = document.getElementsByClassName("grid-item")[i-1];
    
-
     cardStyle.setAttribute("id", memCardAtt.name);
     cardStyle.appendChild(img);
 });
@@ -134,15 +125,11 @@ let numberOfCards = memoryCards.length;
 
 
 
-
-
-
 // The turnCard function - to turn the cards over on click event
 
 let hasTurnCard = false;
 let gridLock = false;   // Added this because once you selected two cards, you could select another which messed up the sequence
 let cardOne, cardTwo;
-
 
 
 function turnCard() {
@@ -179,8 +166,6 @@ function cardCheck() {
 // The cardsMatch function - if cards match then it stops the two cards from turning back over & calls resetMatch
 
 function cardsMatch(){
- 
-    console.log("Cards Do Match Sham");
 
     cardOne.removeEventListener("click", turnCard);
     cardTwo.removeEventListener("click", turnCard);
@@ -189,9 +174,6 @@ function cardsMatch(){
     totalCards += 2;
     score.innerHTML = points;
     gamescore.innerHTML = points;
-
-    console.log(totalCards);
-    console.log(gamescore);
 
     if (totalCards === 12) {
         gameover.style.visibility = "visible";
@@ -220,7 +202,6 @@ function cardsDontMatch() {
         points -= 2;
         score.innerHTML = points;
 
-
         matchReset();
     }
 , 1000);
@@ -235,7 +216,7 @@ function matchReset() {
     [cardOne, cardTwo] = [null, null];
 }
 
-//
+// My game chat function just send positive messages whilst playing the game
 
 function gameChat() {
 
@@ -286,7 +267,6 @@ function restart (){
     location.reload();
 
 }
-
 
 
 timer = setInterval(function() {      // Code from Stack Overflow & modified to suit

@@ -257,8 +257,8 @@ z-index: 1;
 }
 
 .grid-item {
-  /*background: url("../images/cardface.png")no-repeat center center;*/
-  
+  background: url("../images/cardface.png")no-repeat center center;
+  background-size: contain;
   background-color: rgba(247, 68, 152, 1);
   border: 1px solid rgba(0, 0, 0, 0.8);
   width: 7rem;
