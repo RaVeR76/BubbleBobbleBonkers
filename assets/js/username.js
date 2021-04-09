@@ -1,15 +1,15 @@
 let user = document.getElementById('username');
 
-const bubCharacterRef = document.querySelector("#bub-position");
-const bobCharacterRef = document.querySelector('#bob-position');
+//const bubCharacterRef = document.querySelector("#bub-position");
+//const bobCharacterRef = document.querySelector('#bob-position');
+const bubSpeech = document.getElementById("bub-talk");
+const bobSpeech = document.getElementById("bob-talk");
+const bubCharacterRef = document.getElementById("bub-position");
+const bobCharacterRef = document.getElementById("bob-position");
 
 
-console.log(bubCharacterRef);
-console.log(bobCharacterRef);
 
 
-//const bubCharacterRef = document.getElementById("bub-position");
-//const bobCharacterRef = document.getElementById("bob-position");
 
 function handleSubmit(event) {
     
@@ -23,11 +23,11 @@ function handleSubmit(event) {
     localStorage.setItem("GameName", gamename);   // Used this method for transferring the users Game Name from Intro Zone to The Game Zone so I can interact with them during the game :)
 
 
-    let bubposition = document.getElementById("bub-position");
-    bubposition.innerHTML = `<img src="assets/cards/bub-card.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">`
+    //let bubposition = document.getElementById("bub-position");
+    bubCharacterRef.innerHTML = `<img src="assets/cards/bub-card.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">`
 
-    let bubtalk = document.getElementById("bub-talk");
-    bubtalk.innerHTML = `
+   // let bubtalk = document.getElementById("bub-talk");
+   bubSpeech.innerHTML = `
     <div class="speech-bubs">
         <p>Hey <b>${ user.value }</b>, pleased to meet you ... my name is <b>Bub</b> !</p> 
         <p>Click Me !</p>
@@ -59,6 +59,7 @@ function handleSubmit(event) {
 // This gets the form and attaches an event listener to it
 let form = document.getElementById('uname');
 form.addEventListener('submit', handleSubmit);
+
 
 
 
@@ -116,23 +117,34 @@ form.addEventListener('submit', handleSubmit);
 
 
 
-function characterTalk(characterColor) {
-  event.preventDefault();
-  console.log("Working Sham")
-  if (characterColor === 'green') {
-    bubCharacterRef.innerHTML = `
-      <div class="speech-bubs">
-          <p>Hey <b>${user.value}</b>, don't listen to him. I've heard this crap for 35 years !!!</p>
-      </div>`;
-  } else {
-    bobCharacterRef.innerHTML = `
-    <div class="speech-bubs2">
-        <p><b>${user.value}</b>, that's <b>Bob</b> by the way ... the <b>"second"</b> best player of the game !</p>
-    </div>`;
-  }
-}
-bubCharacterRef.addEventListener('click', characterTalk("green"))
-bobCharacterRef.addEventListener('click', characterTalk("blue"))
 
 
-// STop you greeting & tell them the rules sham so they can play the wee game
+
+
+
+
+
+//function characterTalk(event, characterColor) {
+
+  //  event.preventDefault();
+  
+//    console.log("Working Sham")
+///    if (characterColor === 'green') {
+ //     bubSpeech.innerHTML = `
+ //       <div class="speech-bubs">
+//            <p>Hey <b>${user.value}</b>, don't listen to him. I've heard this crap for 35 years !!!</p>
+ //       </div>`;
+//    } else {
+ //     bobSpeech.innerHTML = `
+ //     <div class="speech-bubs2">
+//          <p><b>${user.value}</b>, that's <b>Bob</b> by the way ... the <b>"second"</b> best player of the game !</p>
+//      </div>`;
+ //   }
+ // }
+
+  
+ // bubCharacterRef.addEventListener('click', characterTalk("green"));
+  //bobCharacterRef.addEventListener('click', characterTalk("blue"));
+  
+  
+  // STop you greeting & tell them the rules sham so they can play the wee game

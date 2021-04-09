@@ -193,8 +193,6 @@ function cardsDontMatch() {
 
     gridLock = true;
 
-    console.log("Cards Dont Match Sham");
-
     setTimeout(() => {
         cardOne.classList.remove("turn");
         cardTwo.classList.remove("turn");

@@ -411,6 +411,12 @@ Added one line of code to my 60 sec timer so that on 10 sec it would add my flas
 Media Queries wouldn't work once it went below 1200px - must have deleted the last '}' of the largest media query which fucked it all up ffs :()
 
 
+During Mentor session when he was playing my game the face card image showed uop reversed when the card turned & no character image was displayed.
+On my screen / PC it worked perfectly. I was windows & he was Mac so I need to figure this out. I am running Chrome plus I checked it on Firefox & my andoid phone.
+All worked perfectly for me.
+On firefox though the theme tune would not autoplay either :(  .... gonna cry soon !!!
+
+
 
 
 ### The Development Journey
