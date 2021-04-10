@@ -9,8 +9,11 @@ const bobCharacterRef = document.getElementById("bob-position");
 //const speechBubs = document.getElementsByClassName("bub-speech");
 //const speechBobs = document.getElementsByClassName("bob-speech");
 
+let clickCounterBub = 0;
+let clickCounterBob = 0;
 
-
+console.log(clickCounterBub);
+console.log(clickCounterBob);
 
 function handleSubmit(event) {
     
@@ -31,7 +34,6 @@ function handleSubmit(event) {
    bubChat.innerHTML = `
     <div class="bub-speech">
         <p>Hey <b>${ user.value }</b>, pleased to meet you ... my name is <b>Bub</b> !</p> 
-        <p>Click Me !</p>
     </div>`
 
     setTimeout(function(){
@@ -41,8 +43,17 @@ function handleSubmit(event) {
      
         bobChat.innerHTML = `
         <div class="bob-speech">
-            <p>And I am <b>Bob</b>, pleased to meet you ... <b>${ user.value }</b> !</p> 
-        </div>`    
+            <p>And I am <b>Bob</b>, pleased to meet you ... <b>${ user.value }</b></p> 
+            <p>Even if I don't look it ha ha !</p>
+        </div>`   
+        
+        bubChat.innerHTML = `
+        <div class="bub-speech">
+            <p>Hey <b>${ user.value }</b>, pleased to meet you ... my name is <b>Bub</b> !</p> 
+            <p>Click Me !</p>
+        </div>`
+
+
     },2000);
 
     //document.getElementById('username').value = ''; // Removes the username from the input field once button is hit
@@ -60,24 +71,66 @@ function bubTalk(event) {
   //   Prevent the default submit action (more on this in a couple units)
     event.preventDefault();
 
-    
-    bubChat.innerHTML = `
+    clickCounterBub +=1;
+    console.log(clickCounterBub);
+
+
+    if (clickCounterBub === 1) {
+        bubChat.innerHTML = `
     <div class="bub-speech">
         <p>Just so you know <b>${ user.value }</b>, I am & always will be <b>Player One</b> !</p>
     </div>`
 
+    } else if (clickCounterBub === 2 && clickCounterBob === 1) {
+        bubChat.innerHTML = `
+        <div class="bub-speech">
+        <p> <b>${ user.value }</b>, testie sham !</p>
+    </div>`
+    }
+
+
+
+
+
+
+
+    bubCharacterRef.removeEventListener("click", bubTalk);
+    bobCharacterRef.addEventListener("click", bobTalk);
+
 }
+
+
 
 
 function bobTalk(event) {
    //  Prevent the default submit action (more on this in a couple units)
     event.preventDefault();
 
+    clickCounterBob += 1;
+    
+    console.log(clickCounterBob);
+    
 
+    if (clickCounterBob === 1) {
     bobChat.innerHTML = `
     <div class="bob-speech">
     <p>Hey <b>${ user.value }</b>, don't listen to him. I've heard this crap for 35 years !!!</p>
     </div>`
+    } else if  (clickCounterBub === 2 && clickCounterBob === 2) { 
+        bobChat.innerHTML = `    
+    <div class="bob-speech">
+    <p><b>${ user.value }</b>, test 2</p>
+    </div>`
+    }
+
+
+
+
+
+
+
+    bobCharacterRef.removeEventListener("click", bobTalk);
+    bubCharacterRef.addEventListener("click", bubTalk);
 
 }
 
@@ -101,8 +154,8 @@ function bobTalk(event) {
 
 
 
-bubCharacterRef.addEventListener("click", bubTalk, false);
-bobCharacterRef.addEventListener("click", bobTalk, false);
+bubCharacterRef.addEventListener("click", bubTalk);
+bobCharacterRef.addEventListener("click", bobTalk);
 
 
 
