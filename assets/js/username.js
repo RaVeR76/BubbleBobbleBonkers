@@ -2,11 +2,12 @@ let user = document.getElementById('username');
 
 //const bubCharacterRef = document.querySelector("#bub-position");
 //const bobCharacterRef = document.querySelector('#bob-position');
-const bubSpeech = document.getElementById("bub-talk");
-const bobSpeech = document.getElementById("bob-talk");
+const bubChat = document.getElementById("bub-talk");
+const bobChat = document.getElementById("bob-talk");
 const bubCharacterRef = document.getElementById("bub-position");
 const bobCharacterRef = document.getElementById("bob-position");
-
+const speechBubs = document.getElementsByClassName("bub-speech");
+const speechBobs = document.getElementsByClassName("bob-speech");
 
 
 
@@ -27,19 +28,19 @@ function handleSubmit(event) {
     bubCharacterRef.innerHTML = `<img src="assets/cards/bub-card.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">`
 
    // let bubtalk = document.getElementById("bub-talk");
-   bubSpeech.innerHTML = `
-    <div class="speech-bubs">
+   bubChat.innerHTML = `
+    <div class="bub-speech">
         <p>Hey <b>${ user.value }</b>, pleased to meet you ... my name is <b>Bub</b> !</p> 
         <p>Click Me !</p>
     </div>`
 
     setTimeout(function(){
-        let bobposition = document.getElementById("bob-position");
-        bobposition.innerHTML = `<img src="assets/cards/bob-card.jpg" alt="Wee Bubble Bobble Bob" class="bob-size">`
+       // let bobposition = document.getElementById("bob-position");
+       bobCharacterRef.innerHTML = `<img src="assets/cards/bob-card.jpg" alt="Wee Bubble Bobble Bob" class="bob-size">`
 
-        let bobtalk = document.getElementById("bob-talk");
-        bobtalk.innerHTML = `
-        <div class="speech-bubs2">
+       // let bobtalk = document.getElementById("bob-talk");
+        bobChat.innerHTML = `
+        <div class="bob-speech">
             <p>And I am <b>Bob</b>, pleased to meet you ... <b>${ user.value }</b> !</p> 
         </div>`    
     },2000);
@@ -63,28 +64,37 @@ form.addEventListener('submit', handleSubmit);
 
 
 
-//function bubTalk() {
+function bubTalk(event) {
+  //   Prevent the default submit action (more on this in a couple units)
+    event.preventDefault();
+
+    
+    bubChat.innerHTML = `
+    <div class="bub-speech">
+        <p>Just so you know <b>${ user.value }</b>, I am & always will be <b>Player One</b> !</p>
+    </div>`
+
+  
+
+
+}
+
+
+  // let bubposition = document.getElementById("bub-position");
+   //bubCharacterRef.innerHTML = `
+   // <a href="javascript:void(0);" onclick="bobTalk();">
+   //     <img src="assets/cards/bub-card.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">
+   // </a>`
+
+
+
+
+
+
+
+//function bobTalk(event) {
     // Prevent the default submit action (more on this in a couple units)
-//    event.preventDefault();
-
-//    let bubtalk = document.getElementById("bub-talk");
-//    bubtalk.innerHTML = `
-//    <div class="speech-bubs">
-//        <p>Just so you know <b>${ user.value }</b>, I am & always will be <b>Player One</b> !</p>
-//    </div>`
-
-//    let bubposition = document.getElementById("bub-position");
-//    bubposition.innerHTML = `
-//    <a href="javascript:void(0);" onclick="bobTalk();">
-//        <img src="assets/cards/bub-card.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">
- //   </a>`
-//}
-
-
-
-//function bobTalk() {
-//    // Prevent the default submit action (more on this in a couple units)
-//    event.preventDefault();
+ //   event.preventDefault();
 
 //    let bobtalk = document.getElementById("bob-talk");
 //    bobtalk.innerHTML = `
@@ -97,26 +107,27 @@ form.addEventListener('submit', handleSubmit);
 //}
 
 
-//function bubTalk2() {
-    // Prevent the default submit action (more on this in a couple units)
- //   event.preventDefault();
+//function bubTalk2(event) {
+ //  //  Prevent the default submit action (more on this in a couple units)
+  //  event.preventDefault();
 
- //   let bubtalk = document.getElementById("bub-talk");
+//    let bubtalk = document.getElementById("bub-talk");
 //    bubtalk.innerHTML = `
 //    <div class="speech-bubs">
 //        <p><b>${ user.value }</b>, that's <b>Bob</b> by the way ... the <b>"second"</b> best player of the game !</p>
-  //  </div>`
+ //   </div>`
 
-  //  let bubposition = document.getElementById("bub-position");
-  //  bubposition.innerHTML = `
+ //   let bubposition = document.getElementById("bub-position");
+ //   bubposition.innerHTML = `
  //   <a href="javascript:void(0);" onclick="bobTalk();">
  //       <img src="assets/cards/bub-card.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">
- //   </a>`
+ //   </a>
 //}
 
 
 
-
+bubCharacterRef.addEventListener("click", bubTalk, false);
+//bubCharacterRef.addEventListener("click", bubTalk2, false);
 
 
 
@@ -143,7 +154,7 @@ form.addEventListener('submit', handleSubmit);
  // }
 
   
- // bubCharacterRef.addEventListener('click', characterTalk("green"));
+  //bubCharacterRef.addEventListener('click', characterTalk("green"));
   //bobCharacterRef.addEventListener('click', characterTalk("blue"));
   
   

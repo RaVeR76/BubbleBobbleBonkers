@@ -117,7 +117,7 @@ footer {
 
 
 /*-- Bubble Code Accredited In README but I have changed it to suit my game --*/
-.speech-bubs {
+.bub-speech {
 	
     float: right;
     position: relative;
@@ -129,7 +129,7 @@ footer {
     box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
 }
 
-.speech-bubs::before {
+.bub-speech::before {
 	content: '';
 	position: absolute;
 	width: 0;
@@ -144,7 +144,7 @@ footer {
 	filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
 }
 
-.speech-bubs2 {
+.bob-speech {
 	
     float: left;
     position: relative;
@@ -156,7 +156,7 @@ footer {
     box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
 }
 
-.speech-bubs2::before {
+.bob-speech::before {
 	content: '';
 	position: absolute;
 	width: 0;
