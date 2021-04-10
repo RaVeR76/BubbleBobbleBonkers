@@ -155,7 +155,7 @@ function bobTalk(event) {
 
 
 bubCharacterRef.addEventListener("click", bubTalk);
-bobCharacterRef.addEventListener("click", bobTalk);
+//bobCharacterRef.addEventListener("click", bobTalk);
 
 
 
