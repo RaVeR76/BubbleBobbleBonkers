@@ -6,8 +6,8 @@ const bubChat = document.getElementById("bub-talk");
 const bobChat = document.getElementById("bob-talk");
 const bubCharacterRef = document.getElementById("bub-position");
 const bobCharacterRef = document.getElementById("bob-position");
-//const speechBubs = document.getElementsByClassName("bub-speech");
-//const speechBobs = document.getElementsByClassName("bob-speech");
+const speechBubs = document.getElementsByClassName("bub-speech")[0];
+const speechBobs = document.getElementsByClassName("bob-speech")[0];
 
 let clickCounterBub = 0;
 let clickCounterBob = 0;
@@ -19,8 +19,8 @@ function handleSubmit(event) {
     
     event.preventDefault();
 
-    bubChat.innerHTML = "";     // Added these two lines so it will remove Bob's image & his speech bubble .... if the user enters a new username
-    bobChat.innerHTML = "";
+   // bubChat.innerHTML = "";     // Added these two lines so it will remove Bob's image & his speech bubble .... if the user enters a new username
+   // bobChat.innerHTML = "";
 
 
     let gamename = user.value;
@@ -29,29 +29,25 @@ function handleSubmit(event) {
 
     
     bubCharacterRef.innerHTML = `<img src="assets/cards/bub-card.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">`
-
   
-   bubChat.innerHTML = `
-    <div class="bub-speech">
-        <p>Hey <b>${ user.value }</b>, pleased to meet you ... my name is <b>Bub</b> !</p> 
-    </div>`
+    speechBubs.style.visibility = "visible";
+    speechBubs.innerHTML = 
+        `<p>Hey <b>${ user.value }</b>, pleased to meet you ... my name is <b>Bub</b> !</p>`
 
     setTimeout(function(){
        
        bobCharacterRef.innerHTML = `<img src="assets/cards/bob-card.jpg" alt="Wee Bubble Bobble Bob" class="bob-size">`
-
+       speechBobs.style.visibility = "visible";
      
-        bobChat.innerHTML = `
-        <div class="bob-speech">
-            <p>And I am <b>Bob</b>, pleased to meet you ... <b>${ user.value }</b></p> 
-            <p>Even if I don't look it ha ha !</p>
-        </div>`   
+       speechBobs.innerHTML = 
+           ` <p>And I am <b>Bob</b>, pleased to meet you ... <b>${ user.value }</b></p> 
+            <p>Even if I don't look it ha ha !</p>`
+           
         
-        bubChat.innerHTML = `
-        <div class="bub-speech">
-            <p>Hey <b>${ user.value }</b>, pleased to meet you ... my name is <b>Bub</b> !</p> 
-            <p>Click Me !</p>
-        </div>`
+            speechBubs.innerHTML = 
+            `<p>Hey <b>${ user.value }</b>, pleased to meet you ... my name is <b>Bub</b> !</p> 
+            <p>Click Me !</p>`
+      
 
 
     },2000);
@@ -68,7 +64,7 @@ form.addEventListener('submit', handleSubmit);
 
 
 function bubTalk(event) {
-  //   Prevent the default submit action (more on this in a couple units)
+  //   Prevent the default submit action
     event.preventDefault();
 
     clickCounterBub +=1;
@@ -76,16 +72,14 @@ function bubTalk(event) {
 
 
     if (clickCounterBub === 1) {
-        bubChat.innerHTML = `
-    <div class="bub-speech">
-        <p>Just so you know <b>${ user.value }</b>, I am & always will be <b>Player One</b> !</p>
-    </div>`
+        speechBubs.innerHTML = `
+        <p>Just so you know <b>${ user.value }</b>, I am & always will be <b>Player One</b> !</p>`
+ 
 
     } else if (clickCounterBub === 2 && clickCounterBob === 1) {
-        bubChat.innerHTML = `
-        <div class="bub-speech">
-        <p> <b>${ user.value }</b>, testie sham !</p>
-    </div>`
+        speechBubs.innerHTML = `
+        <p> <b>${ user.value }</b>, testie sham !</p>`
+    
     }
 
 
@@ -103,7 +97,7 @@ function bubTalk(event) {
 
 
 function bobTalk(event) {
-   //  Prevent the default submit action (more on this in a couple units)
+   //  Prevent the default submit action
     event.preventDefault();
 
     clickCounterBob += 1;
@@ -112,15 +106,13 @@ function bobTalk(event) {
     
 
     if (clickCounterBob === 1) {
-    bobChat.innerHTML = `
-    <div class="bob-speech">
-    <p>Hey <b>${ user.value }</b>, don't listen to him. I've heard this crap for 35 years !!!</p>
-    </div>`
+    speechBobs.innerHTML = `
+    <p>Hey <b>${ user.value }</b>, don't listen to him. I've heard this crap for 35 years...</p>
+    <p>Hence my grumpy wee face !</p>`
+   
     } else if  (clickCounterBub === 2 && clickCounterBob === 2) { 
-        bobChat.innerHTML = `    
-    <div class="bob-speech">
-    <p><b>${ user.value }</b>, test 2</p>
-    </div>`
+    speechBobs.innerHTML = `    
+    <p><b>${ user.value }</b>, test 2</p>`
     }
 
 

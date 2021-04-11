@@ -118,6 +118,7 @@ footer {
 
 /*-- Bubble Code Accredited In README but I have changed it to suit my game --*/
 .bub-speech {
+    visibility: hidden;
     float: right;
     position: relative;
     max-width: 20rem;
@@ -144,6 +145,7 @@ footer {
 }
 
 .bob-speech {	
+    visibility: hidden;
     float: left;
     position: relative;
     max-width: 20rem;
