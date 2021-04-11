@@ -451,3 +451,6 @@ https://stackoverflow.com/questions/42327498/output-an-array-of-images-in-javasc
 
 Blinking Code
 https://www.codegrepper.com/code-examples/css/javascript+load+with+flashing+text+color
+
+
+I've added some adult humour for the purposes of having a laugh but obviously if this was going to be seen by children I would remove it & keep it clean
