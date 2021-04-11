@@ -46,7 +46,7 @@ function handleSubmit(event) {
         
             speechBubs.innerHTML = 
             `<p>Hey <b>${ user.value }</b>, pleased to meet you ... my name is <b>Bub</b> !</p> 
-            <p>Click Me then Bub for some chat !</p>`
+            <p>Click me then Bob for some chat !</p>`
       
 
 
@@ -89,7 +89,7 @@ function bubTalk(event) {
     
     } else if (clickCounterBub === 6 && clickCounterBob === 5) {
         speechBubs.innerHTML = `
-        <p>Ha Ha, just testing. Ok <b>${ user.value }</b>, you need to basically match <em>ALL</em> cards in the allotted time"</p>`
+        <p>Ha Ha, just testing. Ok <b>${ user.value }</b>, you need to basically match <b>ALL</b> cards in the allotted time</p>`
     
     } else if (clickCounterBub === 7 && clickCounterBob === 6) {
         speechBubs.innerHTML = `
@@ -97,7 +97,7 @@ function bubTalk(event) {
     
     } else if (clickCounterBub === 8 && clickCounterBob === 7) {
         speechBubs.innerHTML = `
-        <p>My ass & your face Bob .... ha ha ha !</p>`
+        <p>My <b>ass</b> & your <b>face</b> Bob .... ha ha ha !</p>`
     
     } else if (clickCounterBub === 9 && clickCounterBob === 8) {
         speechBubs.innerHTML = `
@@ -138,7 +138,8 @@ function bobTalk(event) {
     
     } else if  (clickCounterBub === 3 && clickCounterBob === 3) { 
         speechBobs.innerHTML = `    
-        <p>OH MY .... You kill me Bub! <b>${ user.value }</b> will leave if you keep it up dude</p>`
+        <p>OH MY .... You kill me Bub!</p> 
+        <p><b>${ user.value }</b> will leave if you keep it up dude</p>`
     
     } else if  (clickCounterBub === 4 && clickCounterBob === 4) { 
         speechBobs.innerHTML = `    
@@ -150,7 +151,7 @@ function bobTalk(event) {
 
     } else if  (clickCounterBub === 6 && clickCounterBob === 6) { 
         speechBobs.innerHTML = `    
-        <p>And you get 5 points for a match & -2 points for a mismatch ... that's it really ... simples!</p>`
+        <p>And you get <b>5</b> points for a match & <b>-2</b> points for a mismatch ... that's it really ... simples!</p>`
 
     } else if  (clickCounterBub === 7 && clickCounterBob === 7) { 
         speechBobs.innerHTML = `    
