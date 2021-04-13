@@ -177,7 +177,7 @@ function cardsMatch(){
 
     if (totalCards === 12) {
         gameover.style.visibility = "visible";
-        welldone.innerHTML = `Awesome Game ${gamename} !`;
+        welldone.innerHTML = `Awesome Game<br>${gamename}`;
         audio.muted = false;
         mute();
         clearInterval(timer);
@@ -225,16 +225,16 @@ function gameChat() {
         chat.innerHTML = `Well done ${gamename}, first match !`;
     }
     else if (totalCards === 4) {
-        chat.innerHTML = `Keep going ${gamename}, second match !`;
+        chat.innerHTML = `Keep going ${gamename} !`;
     }
     else if (totalCards === 6) {
         chat.innerHTML = `Awesome ${gamename}, third match !`;
     }
     else if (totalCards === 8) {
-        chat.innerHTML = `Unbelievable ${gamename}, forth match !`;
+        chat.innerHTML = `Wow ${gamename}, fourth match !`;
     }
     else if (totalCards === 10) {
-        chat.innerHTML = `Nearly there ${gamename}, fifth match !`;
+        chat.innerHTML = `So close ${gamename}, fifth match !`;
     }
     else if (totalCards === 12) {
         chat.innerHTML = `Winner winner chicken dinner !`;

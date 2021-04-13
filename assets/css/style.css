@@ -324,10 +324,10 @@ footer {
    width: 7rem;
    height: 7rem; 
    border-radius: 5px;
-   -webkit-perspective: 0;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translate3d(0,0,0);
-    visibility:visible;
+ /*  -webkit-perspective: 0;*/
+    -webkit-backface-visibility: hidden; 
+ /*  -webkit-transform: translate3d(0,0,0);  */         /*Trying to fix iOS bug with code*/
+   /* visibility:visible;*/
            backface-visibility: hidden;
    -webkit-transform: rotateY(180deg);
            transform: rotateY(180deg);

@@ -46,7 +46,7 @@ function handleSubmit(event) {
         
             speechBubs.innerHTML = 
             `<p>Hey <b>${ user.value }</b>, pleased to meet you ... my name is <b>Bub</b> !</p> 
-            <p>Click me then Bob for some chat !</p>`
+            <p>Click me then Bob & vice versa, for some chat !</p>`
       
 
 
