@@ -20,6 +20,7 @@ const unlucky = document.getElementsByClassName("welldone")[1];
 let points = 0;
 let countdown = 60;
 let totalCards = 0;
+let matchNumber = -1;
 
 
 
@@ -216,29 +217,73 @@ function matchReset() {
 
 // My game chat function just send positive messages whilst playing the game
 
+
+
+
 function gameChat() {
 
-    if (totalCards === 0) {
-        chat.innerHTML = `Hey ${gamename}, good luck !`;
+    chat.innerHTML = `Hey ${gamename}, good luck !`;
+
+    matchNumber +=1;
+
+    switch (totalCards) {
+    
+        case 2:
+            chat.innerHTML = `Well done ${gamename}, ${matchNumber}st match !`;
+            break;
+    
+        case 4:
+            chat.innerHTML = `Keep going ${gamename}, ${matchNumber}nd match !`;
+            break; 
+            
+        case 6:
+            chat.innerHTML = `Awesome ${gamename}, ${matchNumber}rd match !`;
+            break; 
+
+        case 8:
+            chat.innerHTML = `Wow ${gamename}, ${matchNumber}th match !`;
+            break;
+            
+        case 10:
+            chat.innerHTML = `So close ${gamename}, ${matchNumber}th match !`;
+            break;
+
+        case 12:
+            chat.innerHTML = `Winner winner chicken dinner !`;
+            break; 
+    
+        default:
+            break;
+    
     }
-    else if (totalCards === 2) {
-        chat.innerHTML = `Well done ${gamename}, first match !`;
-    }
-    else if (totalCards === 4) {
-        chat.innerHTML = `Keep going ${gamename} !`;
-    }
-    else if (totalCards === 6) {
-        chat.innerHTML = `Awesome ${gamename}, third match !`;
-    }
-    else if (totalCards === 8) {
-        chat.innerHTML = `Wow ${gamename}, fourth match !`;
-    }
-    else if (totalCards === 10) {
-        chat.innerHTML = `So close ${gamename}, fifth match !`;
-    }
-    else if (totalCards === 12) {
-        chat.innerHTML = `Winner winner chicken dinner !`;
-    }
+
+
+
+
+
+
+
+  //  if (totalCards === 0) {
+  //      chat.innerHTML = `Hey ${gamename}, good luck !`;
+  //  }
+ //   else if (totalCards === 2) {
+ //       chat.innerHTML = `Well done ${gamename}, first match !`;
+ //   }
+ //   else if (totalCards === 4) {
+//        chat.innerHTML = `Keep going ${gamename} !`;
+ //   }
+ //   else if (totalCards === 6) {
+ //       chat.innerHTML = `Awesome ${gamename}, third match !`;
+ //   }
+ //   else if (totalCards === 8) {
+ //       chat.innerHTML = `Wow ${gamename}, fourth match !`;
+ //   }
+ //   else if (totalCards === 10) {
+ //       chat.innerHTML = `So close ${gamename}, fifth match !`;
+ //   }
+ //   else if (totalCards === 12) {
+ //       chat.innerHTML = `Winner winner chicken dinner !`;
+ //   }
 
 };
 
