@@ -18,16 +18,19 @@ const welldone = document.getElementsByClassName("welldone")[0];
 const unlucky = document.getElementsByClassName("welldone")[1];
 
 let points = 0;
-let countdown = 60;
+let countDown = 60;
 let totalCards = 0;
 let matchNumber = -1;
+//let countDownTimer = 60;
+//let level = 1;
 
 
 
 // On start up
 
 document.addEventListener("DOMContentLoaded", function() {
-
+   
+   
    displayCards();
    gameChat();
 
@@ -288,6 +291,7 @@ function gameChat() {
 };
 
 
+
 // My mute function allows the user the option to mute the audio 
 
 function mute() {
@@ -312,15 +316,25 @@ function restart (){
 }
 
 
+//function levelUp (){
+    
+//    countDownTimer -=10;
+ //   localStorage.setItem("GameTime", countDownTimer);
+
+ //   location.reload();
+
+//}
+
+
+
 timer = setInterval(function() {      // Code from Stack Overflow & modified to suit
 
-    time.innerHTML = (countdown--);
-    if(countdown == 11) audiosource.setAttribute('src', "assets/music/main-theme-faster.mp3");
-    if(countdown <= 9) flash.classList.add("flash");
-    if(countdown === -1) clearInterval(timer), timeout.style.visibility = "visible", unlucky.innerHTML = `Unlucky ${gamename}`, audiosource.setAttribute('src', "assets/music/gameover.mp3");
+    time.innerHTML = (countDown--);
+    if(countDown == 11) audiosource.setAttribute('src', "assets/music/main-theme-faster.mp3");
+    if(countDown <= 9) flash.classList.add("flash");
+    if(countDown === -1) clearInterval(timer), timeout.style.visibility = "visible", unlucky.innerHTML = `Unlucky ${gamename}`, audiosource.setAttribute('src', "assets/music/gameover.mp3");
    
 }, 1000);
-
 
 
 cards.forEach((card) => card.addEventListener("click", turnCard));
