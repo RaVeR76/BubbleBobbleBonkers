@@ -18,11 +18,59 @@ const welldone = document.getElementsByClassName("welldone")[0];
 const unlucky = document.getElementsByClassName("welldone")[1];
 
 let points = 0;
-let countDown = 60;
+//let countDown = 60;
+//localStorage.setItem("countTime", countDown);
+let countDown = localStorage.getItem("CountDown");
+let level = localStorage.getItem("Level");
+
+
 let totalCards = 0;
 let matchNumber = -1;
 //let countDownTimer = 60;
-//let level = 1;
+//let level = 0;
+
+
+function levelUp (){
+    
+     console.log(level);
+     
+      
+    if (level === 1) {
+        countDown = 60;
+   } else if (level === 2) {
+        countDown = 50;
+    } else if (level === 3) {
+      countDown = 40;
+    }
+   
+    localStorage.setItem("CountDown", countDown);
+    localStorage.setItem("Level", level);
+
+   console.log(level);
+   console.log(countDown);
+  
+  };
+
+
+// Level Up Game Zone
+
+function newLevel (){
+    
+    level++;
+    levelUp ();
+    location.reload();
+    
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -30,9 +78,10 @@ let matchNumber = -1;
 
 document.addEventListener("DOMContentLoaded", function() {
    
-   
+   //levelUp();
    displayCards();
    gameChat();
+   
 
 });
 
@@ -259,35 +308,6 @@ function gameChat() {
             break;
     
     }
-
-
-
-
-
-
-
-  //  if (totalCards === 0) {
-  //      chat.innerHTML = `Hey ${gamename}, good luck !`;
-  //  }
- //   else if (totalCards === 2) {
- //       chat.innerHTML = `Well done ${gamename}, first match !`;
- //   }
- //   else if (totalCards === 4) {
-//        chat.innerHTML = `Keep going ${gamename} !`;
- //   }
- //   else if (totalCards === 6) {
- //       chat.innerHTML = `Awesome ${gamename}, third match !`;
- //   }
- //   else if (totalCards === 8) {
- //       chat.innerHTML = `Wow ${gamename}, fourth match !`;
- //   }
- //   else if (totalCards === 10) {
- //       chat.innerHTML = `So close ${gamename}, fifth match !`;
- //   }
- //   else if (totalCards === 12) {
- //       chat.innerHTML = `Winner winner chicken dinner !`;
- //   }
-
 };
 
 
@@ -316,16 +336,6 @@ function restart (){
 }
 
 
-//function levelUp (){
-    
-//    countDownTimer -=10;
- //   localStorage.setItem("GameTime", countDownTimer);
-
- //   location.reload();
-
-//}
-
-
 
 timer = setInterval(function() {      // Code from Stack Overflow & modified to suit
 
@@ -341,6 +351,6 @@ cards.forEach((card) => card.addEventListener("click", turnCard));
 
 sound.addEventListener("click", mute);
 
-levelup.addEventListener("click", restart);
+levelup.addEventListener("click", newLevel);
 
 newgame.addEventListener("click", restart);

@@ -26,8 +26,11 @@ function handleSubmit(event) {
     let gamename = user.value;
     localStorage.setItem("GameName", gamename);   // Used this method for transferring the users Game Name from Intro Zone to The Game Zone so I can interact with them during the game :)
 
+    let countDown = 60;
+    localStorage.setItem("CountDown", countDown);
+    let level = 0;
+    localStorage.setItem("Level", level);
 
-    
     bubCharacterRef.innerHTML = `<img src="assets/cards/bub-card.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">`
   
     speechBubs.style.visibility = "visible";
