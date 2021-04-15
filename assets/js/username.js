@@ -28,7 +28,7 @@ function handleSubmit(event) {
 
     let countDown = 60;
     localStorage.setItem("CountDown", countDown);
-    let level = 0;
+    let level = 1;
     localStorage.setItem("Level", level);
 
     bubCharacterRef.innerHTML = `<img src="assets/cards/bub-card.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">`

@@ -330,7 +330,9 @@ function mute() {
 // Restart Game Zone
 
 function restart (){
-    
+
+    localStorage.setItem("CountDown", 60);
+    localStorage.setItem("Level", 1);
     location.reload();
 
 }
