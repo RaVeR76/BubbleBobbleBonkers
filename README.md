@@ -418,6 +418,13 @@ On firefox though the theme tune would not autoplay either :(  .... gonna cry so
 https://css-tricks.com/almanac/properties/b/backface-visibility/ - backface visibility seems to be the issue I think & hope !
 
 
+Tried for hours on end to get Countdown timer to reduce as I levelled up but obviously when the game reloaded the countdown timer also reset to 60.
+I utilised localstorage again to store the level & count down time. I wrote some code that when the level up button was presssed it increased the level variable by 1 & stored it in local storage.
+In my level up function check the lavel value & therefore set the countdown time accordingly (the higher the level the less time you have).
+This one busted my balls for sure but I am nearly there at this momemnt in time.
+I also added some code to my restart function (when game times out) which resets these two variables to level 1 i.e. counDown = 60 seconds & level = 1 so the user can start from the beginning again.
+
+
 
 
 ### The Development Journey

@@ -19,30 +19,27 @@ const unlucky = document.getElementsByClassName("welldone")[1];
 
 let points = 0;
 //let countDown = 60;
-//localStorage.setItem("countTime", countDown);
+
 let countDown = localStorage.getItem("CountDown");
 let level = localStorage.getItem("Level");
-
-
 let totalCards = 0;
 let matchNumber = -1;
-//let countDownTimer = 60;
-//let level = 0;
+
 
 
 function levelUp (){
     
      console.log(level);
      
-      
-    if (level === 1) {
-        countDown = 60;
-   } else if (level === 2) {
+    if (level === 2) {
         countDown = 50;
     } else if (level === 3) {
       countDown = 40;
+    } else if (level === 4) {
+        countDown = 30;
     }
-   
+
+    
     localStorage.setItem("CountDown", countDown);
     localStorage.setItem("Level", level);
 
