@@ -23,7 +23,7 @@ function handleSubmit(event) {
    // bobChat.innerHTML = "";
 
     
-   document.getElementById('intro-theme').play();
+    document.getElementById('intro-theme').play();
 
 
     let gamename = user.value;
