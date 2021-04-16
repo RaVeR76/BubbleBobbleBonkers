@@ -264,6 +264,9 @@ function gameChat() {
 };
 
 
+
+// Score Calculations Per Level
+
 function levelScore() {
     
     console.log(countDown);
@@ -274,19 +277,20 @@ function levelScore() {
     console.log(levelTot);
     console.log(levelAt);
     
- 
-    levelTot *= 2;
-    console.log(levelTot);
 
-    switch (levelAt) {
+    switch (+levelAt) {
 
         case 2:
-            levelTot *= 3;
+            levelTot *= 2;
             break;
         
         case 3:
-            console.log("Wanker 2");
-
+            levelTot *= 3;
+            break;
+        
+        case 4:
+            levelTot *= 4;
+             break;
 
         default:
             break;

@@ -427,6 +427,14 @@ I also added some code to my restart function (when game times out) which resets
 
 
 
+couldn't get switch function to work for calculating level scores.
+I needed a '+' at the start of my switch expression which was levelAt.
+I didn't need this for gameChat function where I used the totalCards value to switch messages to be displayed. 
+So this confused the hell out of me ffs.
+
+
+
+
 ### The Development Journey
 
 ### The Validation & Testing Journey
