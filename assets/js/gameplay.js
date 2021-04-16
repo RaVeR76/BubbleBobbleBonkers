@@ -324,9 +324,9 @@ function restart (){
 timer = setInterval(function() {      // Code from Stack Overflow & modified to suit
 
     time.innerHTML = (countDown--);
-    if(countDown == 11) audiosource.setAttribute('src', "assets/music/main-theme-faster.mp3");
+    if(countDown == 11) audiosource.setAttribute('src', "assets/audio/main-theme-faster.mp3");
     if(countDown <= 9) flash.classList.add("flash");
-    if(countDown === -1) clearInterval(timer), timeout.style.visibility = "visible", unlucky.innerHTML = `Unlucky ${gamename}`, audiosource.setAttribute('src', "assets/music/gameover.mp3");
+    if(countDown === -1) clearInterval(timer), timeout.style.visibility = "visible", unlucky.innerHTML = `Unlucky ${gamename}`, audiosource.setAttribute('src', "assets/audio/gameover.mp3");
    
 }, 1000);
 

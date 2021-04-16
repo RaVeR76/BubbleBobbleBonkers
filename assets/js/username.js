@@ -22,6 +22,9 @@ function handleSubmit(event) {
    // bubChat.innerHTML = "";     // Added these two lines so it will remove Bob's image & his speech bubble .... if the user enters a new username
    // bobChat.innerHTML = "";
 
+    
+   document.getElementById('intro-theme').play();
+
 
     let gamename = user.value;
     localStorage.setItem("GameName", gamename);   // Used this method for transferring the users Game Name from Intro Zone to The Game Zone so I can interact with them during the game :)
@@ -172,9 +175,6 @@ function bobTalk(event) {
         <p><b>Be Kind ... ALWAYS !</b></p>`
 
     } 
-
-
-
 
 
     bobCharacterRef.removeEventListener("click", bobTalk);
