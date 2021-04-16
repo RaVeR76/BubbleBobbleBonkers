@@ -25,6 +25,7 @@ let matchNumber = -1;
 
 
 
+
 // On start up
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -175,9 +176,12 @@ function cardsMatch(){
     points += 5;
     totalCards += 2;
     score.innerHTML = points;
-    gamescore.innerHTML = points;
+  //  levelScore();
+  //  gamescore.innerHTML = levelTotal;
 
     if (totalCards === 12) {
+        levelScore();
+        gamescore.innerHTML = levelTot;
         gameover.style.visibility = "visible";
         welldone.innerHTML = `Awesome Game<br>${gamename}`;
         audio.muted = false;
@@ -258,6 +262,58 @@ function gameChat() {
     
     }
 };
+
+
+function levelScore() {
+    
+    console.log(countDown);
+    console.log(points);
+   
+    levelTot = countDown * points;
+
+    console.log(levelTot);
+    console.log(levelAt);
+    
+ 
+    levelTot *= 2;
+    console.log(levelTot);
+
+    switch (levelAt) {
+
+        case 2:
+            levelTot *= 3;
+            break;
+        
+        case 3:
+            console.log("Wanker 2");
+
+
+        default:
+            break;
+
+    }
+
+
+
+            
+ //    if (levelAt === 1) {
+   //     //levelTot = (levelTot*2);
+   //     console.log("wanker");
+  //  } else if (levelAt === 3) {
+  //      levelTot = levelTot *= 3;
+  //  } else if (levelAt === 4) {
+  //      levelTot = levelTot *= 4;
+  //  }
+
+    console.log(levelTot);
+    console.log("made it");
+     
+    //return;
+
+};
+
+
+
 
 
 
