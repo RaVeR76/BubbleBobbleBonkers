@@ -4,6 +4,8 @@
 const cards = document.querySelectorAll(".grid-item");
 const audio = document.querySelector("audio");
 const gamename = localStorage.getItem("GameName");     // Transfer username to gamezone area
+const countDown = localStorage.getItem("CountDown");   // Needed to use this for storing the next level coundown time because reloading the page always reset countdown to 60
+const levelAt = localStorage.getItem("Level");         // Needed to use this for storing the next level to use for selecting the level countdown time
 const time = document.getElementById("timeLeft");
 const chat = document.getElementById("chat");
 const score = document.getElementById("scoreTotal");
@@ -18,56 +20,10 @@ const welldone = document.getElementsByClassName("welldone")[0];
 const unlucky = document.getElementsByClassName("welldone")[1];
 
 let points = 0;
-//let countDown = 60;
-
-let countDown = localStorage.getItem("CountDown");
-let level = localStorage.getItem("Level");
+const countDown = localStorage.getItem("CountDown");
+const levelAt = localStorage.getItem("Level");
 let totalCards = 0;
 let matchNumber = -1;
-
-
-
-function levelUp (){
-    
-     console.log(level);
-     
-    if (level === 2) {
-        countDown = 50;
-    } else if (level === 3) {
-      countDown = 40;
-    } else if (level === 4) {
-        countDown = 30;
-    }
-
-    
-    localStorage.setItem("CountDown", countDown);
-    localStorage.setItem("Level", level);
-
-   console.log(level);
-   console.log(countDown);
-  
-  };
-
-
-// Level Up Game Zone
-
-function newLevel (){
-    
-    level++;
-    levelUp ();
-    location.reload();
-    
-
-}
-
-
-
-
-
-
-
-
-
 
 
 
@@ -75,11 +31,9 @@ function newLevel (){
 
 document.addEventListener("DOMContentLoaded", function() {
    
-   //levelUp();
    displayCards();
    gameChat();
    
-
 });
 
 
@@ -309,6 +263,24 @@ function gameChat() {
 
 
 
+function levelUp () {
+    
+   if (levelAt === 2) {
+       countDown = 50;
+   } else if (levelAt === 3) {
+     countDown = 40;
+   } else if (levelAt === 4) {
+       countDown = 30;
+   }
+
+   
+   localStorage.setItem("CountDown", countDown);
+   localStorage.setItem("Level", levelAt);
+
+ };
+
+
+
 // My mute function allows the user the option to mute the audio 
 
 function mute() {
@@ -324,13 +296,28 @@ function mute() {
     }
 };
 
+
+
+
+// Level Up Game Zone
+
+function newLevel () {
+   
+    levelAt++;
+    levelUp ();
+    location.reload();
+
+ }
+
+
+
 // Restart Game Zone
 
 function restart (){
 
-    localStorage.setItem("CountDown", 60);
-    localStorage.setItem("Level", 1);
-    location.reload();
+    localStorage.setItem("CountDown", 60);     // Reset countdown for level 1 again
+    localStorage.setItem("Level", 1);          // Reset level to 1
+    location.reload();                         // Reload the page again
 
 }
 
