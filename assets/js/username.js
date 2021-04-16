@@ -1,13 +1,13 @@
 let user = document.getElementById('username');
 let form = document.getElementById('uname');
-//const bubCharacterRef = document.querySelector("#bub-position");
-//const bobCharacterRef = document.querySelector('#bob-position');
-const bubChat = document.getElementById("bub-talk");
-const bobChat = document.getElementById("bob-talk");
+
 const bubCharacterRef = document.getElementById("bub-position");
 const bobCharacterRef = document.getElementById("bob-position");
+const bubChat = document.getElementById("bub-talk");
+const bobChat = document.getElementById("bob-talk");
 const speechBubs = document.getElementsByClassName("bub-speech")[0];
 const speechBobs = document.getElementsByClassName("bob-speech")[0];
+const playButton = document.getElementsByClassName("game-butt")[0];
 
 let clickCounterBub = 0;
 let clickCounterBob = 0;
@@ -30,6 +30,8 @@ function handleSubmit(event) {
     localStorage.setItem("CountDown", countDown);
     let level = 1;
     localStorage.setItem("Level", level);
+
+    playButton.style.visibility = "visible";
 
     bubCharacterRef.innerHTML = `<img src="assets/cards/bub-card.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">`
   

@@ -4,8 +4,6 @@
 const cards = document.querySelectorAll(".grid-item");
 const audio = document.querySelector("audio");
 const gamename = localStorage.getItem("GameName");     // Transfer username to gamezone area
-const countDown = localStorage.getItem("CountDown");   // Needed to use this for storing the next level coundown time because reloading the page always reset countdown to 60
-const levelAt = localStorage.getItem("Level");         // Needed to use this for storing the next level to use for selecting the level countdown time
 const time = document.getElementById("timeLeft");
 const chat = document.getElementById("chat");
 const score = document.getElementById("scoreTotal");
@@ -19,9 +17,9 @@ const newgame = document.getElementById("restart");
 const welldone = document.getElementsByClassName("welldone")[0];
 const unlucky = document.getElementsByClassName("welldone")[1];
 
+let countDown = localStorage.getItem("CountDown");   // Needed to use this for storing the next level coundown time because reloading the page always reset countdown to 60
+let levelAt = localStorage.getItem("Level");         // Needed to use this for storing the next level to use for selecting the level countdown time
 let points = 0;
-const countDown = localStorage.getItem("CountDown");
-const levelAt = localStorage.getItem("Level");
 let totalCards = 0;
 let matchNumber = -1;
 

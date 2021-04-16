@@ -81,9 +81,9 @@ footer {
 
     
 .game-butt {
-  position: fixed;
-  bottom: 3rem;
- 
+    visibility: hidden; 
+    position: fixed;
+    bottom: 3rem;
 }
 
 .center {                             /* Autoprefixer */
