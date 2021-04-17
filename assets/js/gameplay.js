@@ -20,13 +20,14 @@ const unlucky = document.getElementsByClassName("welldone")[1];
 
 let countDown = localStorage.getItem("CountDown");   // Needed to use this for storing the next level coundown time because reloading the page always reset countdown to 60
 let levelAt = localStorage.getItem("Level");         // Needed to use this for storing the next level to use for selecting the level countdown time
+let level1Hi = localStorage.getItem("Level1HiScore");
+let level2Hi = localStorage.getItem("Level2HiScore");
+let level3Hi = localStorage.getItem("Level3HiScore");
+let level4Hi = localStorage.getItem("Level4HiScore");
+let level5Hi = localStorage.getItem("Level5HiScore");
 let points = 0;
 let totalCards = 0;
 let matchNumber = -1;
-let level1Hi = localStorage.getItem("Level1HiScore");
-let level2Hi = 0;
-
-
 
 
 // On start up
@@ -288,7 +289,7 @@ function levelScore() {
         case 1:
             if (levelTot > level1Hi) {
                 localStorage.setItem("Level1HiScore", levelTot);
-                newHighScore.innerHTML = `New Level High Score ${levelTot}`;
+                newHighScore.innerHTML = `New High Score ${levelTot}`;
                 }
                 break;
 
@@ -302,15 +303,26 @@ function levelScore() {
         
         case 3:
             levelTot *= 3;
-            localStorage.setItem("Level3HiScore", level3Hi);
+            if (levelTot > level3Hi) {
+                localStorage.setItem("Level3HiScore", levelTot);
+                newHighScore.innerHTML = `New High Score ${levelTot}`;
+                }
             break;
         
         case 4:
             levelTot *= 4;
-             break;
+            if (levelTot > level4Hi) {
+                localStorage.setItem("Level4HiScore", levelTot);
+                newHighScore.innerHTML = `New High Score ${levelTot}`;
+                }
+            break;
 
         case 5:
             levelTot *= 5;
+            if (levelTot > level5Hi) {
+                localStorage.setItem("Level5HiScore", levelTot);
+                newHighScore.innerHTML = `New High Score ${levelTot}`;
+                }
             break;
 
         default:
