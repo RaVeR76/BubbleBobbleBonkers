@@ -182,7 +182,7 @@ function cardsMatch(){
     totalCards += 2;
     score.innerHTML = points;
  
-    if (totalCards === 12) {
+    if (totalCards === 12) {   // added this to de-clutter this section
         gameLevelOver();
     };
 
@@ -228,6 +228,8 @@ function gameChat() {
 
     matchNumber +=1;
 
+
+
     switch (totalCards) {
     
         case 2:
@@ -266,30 +268,26 @@ function gameLevelOver () {
 
     levelScore();
     audiosource.setAttribute('src', "assets/audio/levelover.mp3");
-    //gamescore.innerHTML = levelTotal;
+    gamescore.innerHTML = levelTot;
+    gameover.style.visibility = "visible";
 
-    if (totalCards === 12 && ([1].includes(+levelAt))) {
-      //  levelScore();
-        gamescore.innerHTML = levelTot;
-        gameover.style.visibility = "visible";
+    if (totalCards === 12 && ([1, 2, 3, 4].includes(+levelAt))) {
+        
         welldone.innerHTML = `Awesome Game ${gamename}`;
         audio.muted = false;
-        mute();
-        clearInterval(timer);
-    } else if (totalCards === 12 && +levelAt === 2) {
-     //   levelScore();
-        gamescore.innerHTML = levelTot;
-        gameover.style.visibility = "visible";
-        completeGame.innerHTML = `** LEGEND **`;
+     } 
+        else if (totalCards === 12 && +levelAt === 5) {
+        
+        completeGame.innerHTML = `** YOU LEGEND **`;
         welldone.innerHTML = `You Completed The <br>Game, ${gamename} !`;
         levelup.removeEventListener("click", newLevel);                          // Removed so I could add the restart function to it
         levelup.addEventListener("click", restart);
         levelup.innerHTML = `Start New Game`;
         audio.muted = true;
-        mute();
-        clearInterval(timer);
-
     }
+
+    mute();
+    clearInterval(timer);
 
 };
 
@@ -307,37 +305,45 @@ function levelScore() {
     switch (+levelAt) {
 
         case 1:
+
+            levelup.innerHTML = `Play Level Two`;
+
             if (levelTot > level1Hi) {
                 localStorage.setItem("Level1HiScore", levelTot);
                 newHighScore.innerHTML = `New High Score ${levelTot}`;
-                levelup.innerHTML = `Play Level Two`;
                 }
                 break;
 
         case 2:
+
+            levelup.innerHTML = `Play Level Three`;    
+
             levelTot *= 2;
             if (levelTot > level2Hi) {
             localStorage.setItem("Level2HiScore", levelTot);
             newHighScore.innerHTML = `New High Score ${levelTot}`;
-            levelup.innerHTML = `Play Level Three`;
             }
             break;
         
         case 3:
+
+            levelup.innerHTML = `Play Level Four`;
             levelTot *= 3;
+            
             if (levelTot > level3Hi) {
                 localStorage.setItem("Level3HiScore", levelTot);
                 newHighScore.innerHTML = `New High Score ${levelTot}`;
-                levelup.innerHTML = `Play Level Four`;
                 }
             break;
         
         case 4:
+
+            levelup.innerHTML = `Play Level Last Level`;
             levelTot *= 4;
+
             if (levelTot > level4Hi) {
                 localStorage.setItem("Level4HiScore", levelTot);
                 newHighScore.innerHTML = `New High Score ${levelTot}`;
-                levelup.innerHTML = `Play Level Last Level`;
                 }
             break;
 
