@@ -201,7 +201,8 @@ function cardsMatch(){
         levelup.removeEventListener("click", newLevel);                          // Removed so I could add the restart function to it
         levelup.addEventListener("click", restart);
         levelup.innerHTML = `Start New Game`;
-     //   audio.muted = false;
+        audiosource.setAttribute('src', "assets/audio/levelover.mp3");
+        audio.muted = true;
         mute();
         clearInterval(timer);
 
@@ -283,20 +284,11 @@ function gameChat() {
 
 
 
-// Score Calculations Per Level
+// Score Calculations Per Level & Display / Store If High Score
 
 function levelScore() {
-    
-    console.log(countDown);
-    console.log(points);
    
     levelTot = countDown * points;
-
-    console.log(levelTot);
-    console.log(levelAt);
-
-
-    
 
     switch (+levelAt) {
 
@@ -344,12 +336,6 @@ function levelScore() {
 
     }
 
-
-    console.log(levelTot);
-    console.log("made it");
-     
-    //return;
-
 };
 
 
@@ -366,7 +352,7 @@ function levelUp () {
    } else if (levelAt === 4) {
        countDown = 30;
    } else if (levelAt === 5) {
-    countDown = 30;                                 // Change to 20 once game is finished
+    countDown = 20;                                 // Change to 20 once game is finished
    }
    
    localStorage.setItem("CountDown", countDown);
