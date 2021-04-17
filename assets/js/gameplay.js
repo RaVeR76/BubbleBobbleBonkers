@@ -17,6 +17,7 @@ const levelup = document.getElementById("levelup");
 const newgame = document.getElementById("restart");
 const welldone = document.getElementsByClassName("welldone")[0];
 const unlucky = document.getElementsByClassName("welldone")[1];
+const completeGame = document.getElementsByClassName("jumbohead")[0];
 
 let countDown = localStorage.getItem("CountDown");   // Needed to use this for storing the next level coundown time because reloading the page always reset countdown to 60
 let levelAt = localStorage.getItem("Level");         // Needed to use this for storing the next level to use for selecting the level countdown time
@@ -195,8 +196,12 @@ function cardsMatch(){
         levelScore();
         gamescore.innerHTML = levelTot;
         gameover.style.visibility = "visible";
-        welldone.innerHTML = `Awesome Game ${gamename}`;
-        audio.muted = false;
+        completeGame.innerHTML = `** LEGEND **`;
+        welldone.innerHTML = `You Completed The <br>Game, ${gamename} !`;
+        levelup.removeEventListener("click", newLevel);                          // Removed so I could add the restart function to it
+        levelup.addEventListener("click", restart);
+        levelup.innerHTML = `Start New Game`;
+     //   audio.muted = false;
         mute();
         clearInterval(timer);
 
@@ -361,7 +366,7 @@ function levelUp () {
    } else if (levelAt === 4) {
        countDown = 30;
    } else if (levelAt === 5) {
-    countDown = 20;
+    countDown = 30;                                 // Change to 20 once game is finished
    }
    
    localStorage.setItem("CountDown", countDown);
