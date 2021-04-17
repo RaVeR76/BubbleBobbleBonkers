@@ -103,7 +103,7 @@ shuffle(memoryCards);
   }
 
   return array;
-}
+};
 
 // Populate the gameplay grid
 
@@ -155,7 +155,7 @@ function turnCard() {
     cardTwo = this;
     cardCheck();
    
-}
+};
 
 // The cardCheck function - compares the two selected cards & calls functions depending on outcome of match
 
@@ -167,7 +167,7 @@ function cardCheck() {
     let match = cardTest1 === cardTest2
 
     match ? cardsMatch() : cardsDontMatch()
-}
+};
 
 
 // The cardsMatch function - if cards match then it stops the two cards from turning back over & calls resetMatch
@@ -180,10 +180,10 @@ function cardsMatch(){
     points += 5;
     totalCards += 2;
     score.innerHTML = points;
-  //  levelScore();
-  //  gamescore.innerHTML = levelTotal;
+    levelScore();
+  // gamescore.innerHTML = levelTotal;
 
-    if (totalCards === 12) {
+    if (totalCards === 12 && ([1,2].includes(+levelAt))) {
         levelScore();
         gamescore.innerHTML = levelTot;
         gameover.style.visibility = "visible";
@@ -191,11 +191,20 @@ function cardsMatch(){
         audio.muted = false;
         mute();
         clearInterval(timer);
+    } else if (totalCards === 12 && +levelAt === 3) {
+        levelScore();
+        gamescore.innerHTML = levelTot;
+        gameover.style.visibility = "visible";
+        welldone.innerHTML = `Awesome Game ${gamename}`;
+        audio.muted = false;
+        mute();
+        clearInterval(timer);
+
     }
 
     gameChat();
     matchReset();
-}
+};
 
 // The cardsDontMatch function - if cards do not match then turns the cards back over again in 2 sec & calls resetMatch
 
@@ -214,7 +223,7 @@ function cardsDontMatch() {
     }
 , 1000);
 
-}
+};
 
 // The resetMatch function - this just resets some variables to allow the card selection sequence to start again
 
@@ -222,7 +231,7 @@ function matchReset() {
     
     [hasTurnCard, gridLock] = [false, false];
     [cardOne, cardTwo] = [null, null];
-}
+};
 
 // My game chat function just send positive messages whilst playing the game
 
@@ -388,7 +397,7 @@ function newLevel () {
     levelUp ();
     location.reload();
 
- }
+ };
 
 
 
@@ -400,7 +409,7 @@ function restart (){
     localStorage.setItem("Level", 1);          // Reset level to 1
     location.reload();                         // Reload the page again
 
-}
+};
 
 
 
