@@ -286,17 +286,18 @@ function gameChat() {
 function gameLevelOver () {
 
     levelScore();
-    audiosource.setAttribute('src', "assets/audio/levelover.mp3");
+    audiosource.setAttribute('src', "assets/audio/levelovershort.mp3");
     gamescore.innerHTML = levelTot;
     gameover.style.visibility = "visible";
 
     if (totalCards === 12 && ([1, 2, 3, 4].includes(+levelAt))) {
         
         welldone.innerHTML = `Awesome Game ${gamename}`;
-        audio.muted = false;
+        audio.muted = true;
      } 
         else if (totalCards === 12 && +levelAt === 5) {
         
+        audiosource.setAttribute('src', "assets/audio/levelover.mp3");
         completeGame.innerHTML = `** YOU LEGEND **`;
         welldone.innerHTML = `You Completed The <br>Game, ${gamename} !`;
         levelup.removeEventListener("click", newLevel);                          // Removed so I could add the restart function to it
