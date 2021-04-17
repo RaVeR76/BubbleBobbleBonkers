@@ -29,7 +29,7 @@ function handleSubmit(event) {
     let gamename = user.value;
     localStorage.setItem("GameName", gamename);   // Used this method for transferring the users Game Name from Intro Zone to The Game Zone so I can interact with them during the game :)
 
-    let countDown = 60;
+    let countDown = 30;
     localStorage.setItem("CountDown", countDown);
     let level = 1;
     localStorage.setItem("Level", level);

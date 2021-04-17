@@ -12,6 +12,7 @@ const gamescore = document.getElementById("gamescore");
 const audiosource = document.getElementById("audioSource");
 const sound = document.getElementById("mute");
 const gameover = document.getElementById("gameover");
+const newHighScore = document.getElementById("new-high");
 const levelup = document.getElementById("levelup");
 const newgame = document.getElementById("restart");
 const welldone = document.getElementsByClassName("welldone")[0];
@@ -22,6 +23,8 @@ let levelAt = localStorage.getItem("Level");         // Needed to use this for s
 let points = 0;
 let totalCards = 0;
 let matchNumber = -1;
+let level1Hi = localStorage.getItem("Level1HiScore");
+let level2Hi = 0;
 
 
 
@@ -183,7 +186,7 @@ function cardsMatch(){
         levelScore();
         gamescore.innerHTML = levelTot;
         gameover.style.visibility = "visible";
-        welldone.innerHTML = `Awesome Game<br>${gamename}`;
+        welldone.innerHTML = `Awesome Game ${gamename}`;
         audio.muted = false;
         mute();
         clearInterval(timer);
@@ -276,38 +279,45 @@ function levelScore() {
 
     console.log(levelTot);
     console.log(levelAt);
+
+
     
 
     switch (+levelAt) {
 
+        case 1:
+            if (levelTot > level1Hi) {
+                localStorage.setItem("Level1HiScore", levelTot);
+                newHighScore.innerHTML = `New Level High Score ${levelTot}`;
+                }
+                break;
+
         case 2:
             levelTot *= 2;
+            if (levelTot > level2Hi) {
+            localStorage.setItem("Level2HiScore", levelTot);
+            newHighScore.innerHTML = `New High Score ${levelTot}`;
+            }
             break;
         
         case 3:
             levelTot *= 3;
+            localStorage.setItem("Level3HiScore", level3Hi);
             break;
         
         case 4:
             levelTot *= 4;
              break;
 
+        case 5:
+            levelTot *= 5;
+            break;
+
         default:
             break;
 
     }
 
-
-
-            
- //    if (levelAt === 1) {
-   //     //levelTot = (levelTot*2);
-   //     console.log("wanker");
-  //  } else if (levelAt === 3) {
-  //      levelTot = levelTot *= 3;
-  //  } else if (levelAt === 4) {
-  //      levelTot = levelTot *= 4;
-  //  }
 
     console.log(levelTot);
     console.log("made it");
@@ -329,8 +339,9 @@ function levelUp () {
      countDown = 40;
    } else if (levelAt === 4) {
        countDown = 30;
+   } else if (levelAt === 5) {
+    countDown = 20;
    }
-
    
    localStorage.setItem("CountDown", countDown);
    localStorage.setItem("Level", levelAt);
