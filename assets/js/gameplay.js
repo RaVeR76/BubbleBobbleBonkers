@@ -224,9 +224,28 @@ function matchReset() {
 
 function gameChat() {
 
-    chat.innerHTML = `Hey ${gamename}, good luck !`;
-
     matchNumber +=1;
+    
+    chat.innerHTML = `${gamename}, the high score is ${level1Hi}`;
+
+    switch (+levelAt) {
+        
+        case 2: 
+            chat.innerHTML = `${gamename}, the high score is ${level2Hi}`;
+            break;
+
+        case 3:
+            chat.innerHTML = `${gamename}, the high score is ${level3Hi}`;
+            break;
+        
+        case 4:
+            chat.innerHTML = `${gamename}, the high score is ${level4Hi}`;
+            break;
+
+        case 5:
+            chat.innerHTML = `${gamename}, the high score is ${level5Hi}`;
+            break;
+    }
 
 
 
