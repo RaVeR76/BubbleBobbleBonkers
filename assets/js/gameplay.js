@@ -171,7 +171,7 @@ function cardCheck() {
 };
 
 
-// The cardsMatch function - if cards match then it stops the two cards from turning back over & calls resetMatch
+// The cardsMatch function - if cards match then it stops the two cards from turning back over & calls matchReset
 
 function cardsMatch(){
 
@@ -181,32 +181,10 @@ function cardsMatch(){
     points += 5;
     totalCards += 2;
     score.innerHTML = points;
-    levelScore();
-  // gamescore.innerHTML = levelTotal;
-
-    if (totalCards === 12 && ([1,2].includes(+levelAt))) {
-        levelScore();
-        gamescore.innerHTML = levelTot;
-        gameover.style.visibility = "visible";
-        welldone.innerHTML = `Awesome Game ${gamename}`;
-        audio.muted = false;
-        mute();
-        clearInterval(timer);
-    } else if (totalCards === 12 && +levelAt === 3) {
-        levelScore();
-        gamescore.innerHTML = levelTot;
-        gameover.style.visibility = "visible";
-        completeGame.innerHTML = `** LEGEND **`;
-        welldone.innerHTML = `You Completed The <br>Game, ${gamename} !`;
-        levelup.removeEventListener("click", newLevel);                          // Removed so I could add the restart function to it
-        levelup.addEventListener("click", restart);
-        levelup.innerHTML = `Start New Game`;
-        audiosource.setAttribute('src', "assets/audio/levelover.mp3");
-        audio.muted = true;
-        mute();
-        clearInterval(timer);
-
-    }
+ 
+    if (totalCards === 12) {
+        gameLevelOver();
+    };
 
     gameChat();
     matchReset();
@@ -284,6 +262,42 @@ function gameChat() {
 
 
 
+function gameLevelOver () {
+
+    levelScore();
+    audiosource.setAttribute('src', "assets/audio/levelover.mp3");
+    //gamescore.innerHTML = levelTotal;
+
+    if (totalCards === 12 && ([1].includes(+levelAt))) {
+      //  levelScore();
+        gamescore.innerHTML = levelTot;
+        gameover.style.visibility = "visible";
+        welldone.innerHTML = `Awesome Game ${gamename}`;
+        audio.muted = false;
+        mute();
+        clearInterval(timer);
+    } else if (totalCards === 12 && +levelAt === 2) {
+     //   levelScore();
+        gamescore.innerHTML = levelTot;
+        gameover.style.visibility = "visible";
+        completeGame.innerHTML = `** LEGEND **`;
+        welldone.innerHTML = `You Completed The <br>Game, ${gamename} !`;
+        levelup.removeEventListener("click", newLevel);                          // Removed so I could add the restart function to it
+        levelup.addEventListener("click", restart);
+        levelup.innerHTML = `Start New Game`;
+        audio.muted = true;
+        mute();
+        clearInterval(timer);
+
+    }
+
+};
+
+
+
+
+
+
 // Score Calculations Per Level & Display / Store If High Score
 
 function levelScore() {
@@ -296,6 +310,7 @@ function levelScore() {
             if (levelTot > level1Hi) {
                 localStorage.setItem("Level1HiScore", levelTot);
                 newHighScore.innerHTML = `New High Score ${levelTot}`;
+                levelup.innerHTML = `Play Level Two`;
                 }
                 break;
 
@@ -304,6 +319,7 @@ function levelScore() {
             if (levelTot > level2Hi) {
             localStorage.setItem("Level2HiScore", levelTot);
             newHighScore.innerHTML = `New High Score ${levelTot}`;
+            levelup.innerHTML = `Play Level Three`;
             }
             break;
         
@@ -312,6 +328,7 @@ function levelScore() {
             if (levelTot > level3Hi) {
                 localStorage.setItem("Level3HiScore", levelTot);
                 newHighScore.innerHTML = `New High Score ${levelTot}`;
+                levelup.innerHTML = `Play Level Four`;
                 }
             break;
         
@@ -320,6 +337,7 @@ function levelScore() {
             if (levelTot > level4Hi) {
                 localStorage.setItem("Level4HiScore", levelTot);
                 newHighScore.innerHTML = `New High Score ${levelTot}`;
+                levelup.innerHTML = `Play Level Last Level`;
                 }
             break;
 
