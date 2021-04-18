@@ -385,6 +385,20 @@ footer {
     border: 2px solid rgba(254, 238, 32, 1);
 }
 
+
+.home-light {
+    background-color: rgba(247, 68, 152, .3);
+    border: 1px solid rgba(254, 238, 32, 1);
+}
+
+.home-light:hover {
+    background-color: rgba(254, 238, 32, 1);
+    border: 1px solid rgba(247, 68, 152, .3);
+}
+
+
+
+
 .icon {                                                        /* Autoprefixer*/
     font-size: 1.2rem;
     line-height: 2rem;
@@ -419,7 +433,7 @@ footer {
 }
 
 
-#reset-jumbo {                                              /* Autoprefixer*/
+#reset-jumbo, #rules-jumbo {                                              /* Autoprefixer*/
       visibility: hidden;
       color: rgba(247, 68, 152, 1);
       font-family: "Press Start 2P", sans-serif;

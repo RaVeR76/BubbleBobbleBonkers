@@ -11,7 +11,9 @@ const playButton = document.getElementsByClassName("game-butt")[0];
 const buttonName = document.getElementsByClassName("btn-block")[0];
 const introAudio = document.getElementById('intro-theme');
 const resetJumbo = document.getElementById('reset-jumbo');
+const rulesJumbo = document.getElementById('rules-jumbo');
 const highScoreDisplay = document.getElementById("high-scores");
+const gameRulesDisplay = document.getElementById("game-rules");
 const resetHighScore = document.getElementById("reset-butt");
 const levelOneHiDisplay = document.getElementsByClassName("hi-score")[0];
 const levelTwoHiDisplay = document.getElementsByClassName("hi-score")[1];
@@ -55,6 +57,7 @@ function handleSubmit(event) {
 
     playButton.style.visibility = "visible";
     buttonName.innerHTML = `Mon Into The Gamezone <b>${gameName}</b> !`;
+    
 
     bubCharacterRef.innerHTML = `<img src="assets/cards/bub-card.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">`
   
@@ -241,7 +244,7 @@ function checkHiScore () {
 
 
 
-function DisplayHighScores(event){
+function displayHighScores(event){
 
     event.preventDefault();
 
@@ -257,6 +260,25 @@ function DisplayHighScores(event){
       };
 
       checkHiScore();
+
+};
+
+
+
+function displayGameRules(event){
+
+    event.preventDefault();
+
+
+    rulesJumbo.style.visibility = "visible"; 
+
+    if (rulesJumbo.style.display === "block") {             // Got from https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp & changed to suit me
+        rulesJumbo.style.display = "none";
+        gameRulesDisplay.classList.remove("mute");
+      } else {
+        rulesJumbo.style.display = "block";
+        gameRulesDisplay.classList.add("mute");
+      };
 
 };
 
@@ -283,10 +305,9 @@ function resetHiScores (event){
 form.addEventListener('submit', handleSubmit);
 bubCharacterRef.addEventListener("click", bubTalk);
 //bobCharacterRef.addEventListener("click", bobTalk);
-highScoreDisplay.addEventListener("click", DisplayHighScores);
+highScoreDisplay.addEventListener("click", displayHighScores);
 resetHighScore.addEventListener("click", resetHiScores);
-
-
+gameRulesDisplay.addEventListener("click", displayGameRules);
 
 
 
