@@ -110,14 +110,6 @@ footer {
     line-height: 4rem;
 }
 
-.level {
-    text-align: right;
-}
-
-.hi-score {
-    text-align: left;
-}
-
 #high-scores, #game-rules {
     font-size: 1.2rem;
     height : 3.2rem;
@@ -452,8 +444,9 @@ footer {
   }
 
 
-.high-pad {
-    margin-bottom: 1rem;
+.head-high {
+    color: #000;
+    font-size: 1.5rem;
 }
 
 
@@ -524,6 +517,16 @@ footer {
     .btn-block {
         font-size: 1.7rem;
     }
+
+    .head-high {
+        font-size: 2.4rem;
+    }
+
+    #reset-jumbo {
+        width: 50%;
+        font-size: 1.7rem;
+    }
+
 
     .gamehud  p {
         font-size: 1.7rem;
@@ -616,6 +619,15 @@ footer {
         height: 10rem;
         width: 10rem;
     }
+
+    .head-high {
+        font-size: 2.3rem;
+    }
+
+    #reset-jumbo {
+        width: 50%;
+        font-size: 1.6rem;
+    }
  
     .gamehud  p {
         font-size: 1.5rem;
@@ -707,6 +719,15 @@ footer {
         height: 10rem;
         width: 10rem;
     }
+
+    .head-high {
+        font-size: 2.2rem;
+    }
+
+    #reset-jumbo {
+        width: 50%;
+        font-size: 1.5rem;
+    }
  
     .gamehud  p {
         font-size: 1.5rem;
@@ -797,6 +818,15 @@ footer {
         float: right;
         height: 10rem;
         width: 10rem;
+    }
+
+    .head-high {
+        font-size: 2rem;
+    }
+
+    #reset-jumbo {
+        width: 50%;
+        font-size: 1.4rem;
     }
  
     .gamehud  p {
