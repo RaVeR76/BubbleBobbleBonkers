@@ -8,6 +8,7 @@ const bobChat = document.getElementById("bob-talk");
 const speechBubs = document.getElementsByClassName("bub-speech")[0];
 const speechBobs = document.getElementsByClassName("bob-speech")[0];
 const playButton = document.getElementsByClassName("game-butt")[0];
+const buttonName = document.getElementsByClassName("btn-block")[0];
 
 let clickCounterBub = 0;
 let clickCounterBob = 0;
@@ -35,6 +36,7 @@ function handleSubmit(event) {
     localStorage.setItem("Level", level);
 
     playButton.style.visibility = "visible";
+    buttonName.innerHTML = `Please Enter The Gamezone <b>${gamename}</b> !`;
 
     bubCharacterRef.innerHTML = `<img src="assets/cards/bub-card.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">`
   
@@ -48,7 +50,7 @@ function handleSubmit(event) {
        speechBobs.style.visibility = "visible";
      
        speechBobs.innerHTML = 
-           ` <p>And I am <b>Bob</b>, pleased to meet you ... <b>${ user.value }</b></p> 
+           ` <p>And I am <b>Bob</b>, pleased to meet you ... <b>${gamename}</b></p> 
             <p>Even if I don't look it ha ha !</p>`
            
         
