@@ -10,7 +10,14 @@ const speechBobs = document.getElementsByClassName("bob-speech")[0];
 const playButton = document.getElementsByClassName("game-butt")[0];
 const buttonName = document.getElementsByClassName("btn-block")[0];
 const introAudio = document.getElementById('intro-theme');
+const resetJumbo = document.getElementById('reset-jumbo');
 const highScoreDisplay = document.getElementById("high-scores");
+const resetHighScore = document.getElementById("reset-butt");
+const levelOneHiDisplay = document.getElementsByClassName("hi-score")[0];
+const levelTwoHiDisplay = document.getElementsByClassName("hi-score")[1];
+const levelThreeHiDisplay = document.getElementsByClassName("hi-score")[2];
+const levelFourHiDisplay = document.getElementsByClassName("hi-score")[3];
+const levelFiveHiDisplay = document.getElementsByClassName("hi-score")[4];
 
 
 let level1Hi = localStorage.getItem("Level1HiScore");
@@ -200,20 +207,67 @@ function DisplayHighScores(event){
 
     event.preventDefault();
 
-    document.getElementsByClassName("hi-score")[0].innerHTML = `${level1Hi}`;
-    document.getElementsByClassName("hi-score")[1].innerHTML = `${level2Hi}`;
-    document.getElementsByClassName("hi-score")[2].innerHTML = `${level3Hi}`;
-    document.getElementsByClassName("hi-score")[3].innerHTML = `${level4Hi}`;
-    document.getElementsByClassName("hi-score")[4].innerHTML = `${level5Hi}`;
+
+    resetJumbo.style.visibility = "visible"; 
+
+    if (resetJumbo.style.display === "block") {             // Got from https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp & changed to suit me
+        resetJumbo.style.display = "none";
+        highScoreDisplay.classList.remove("mute");
+      } else {
+        resetJumbo.style.display = "block";
+        highScoreDisplay.classList.add("mute");
+      };
 
 
+  
 
 
+    if (level1Hi === null) {
+        levelOneHiDisplay.innerHTML = `0`;
+    } else {
+        levelOneHiDisplay.innerHTML = `${level1Hi}`;
+    };
+
+    if (level2Hi === null) {
+        levelTwoHiDisplay.innerHTML = `0`;
+    } else {
+        levelTwoHiDisplay.innerHTML = `${level2Hi}`;
+    };
+
+    if (level3Hi === null) {
+        levelThreeHiDisplay.innerHTML = `0`;
+    } else {
+        levelThreeHiDisplay.innerHTML = `${level3Hi}`;
+    };
+
+    if (level4Hi === null) {
+        levelFourHiDisplay.innerHTML = `0`;
+    } else {
+        levelFourHiDisplay.innerHTML = `${level4Hi}`;
+    };
+
+    if (level5Hi === null) {
+        levelFiveHiDisplay.innerHTML = `0`;
+    } else {
+        levelFiveHiDisplay.innerHTML = `${level5Hi}`;
+    };
 
 
 }
 
 
+
+function resetHiScores (event){
+
+    event.preventDefault();
+
+    localStorage.removeItem("Level1HiScore");
+    localStorage.removeItem("Level2HiScore");
+    localStorage.removeItem("Level3HiScore");
+    localStorage.removeItem("Level4HiScore");
+    localStorage.removeItem("Level5HiScore");
+
+}
 
 
 
@@ -223,7 +277,7 @@ form.addEventListener('submit', handleSubmit);
 bubCharacterRef.addEventListener("click", bubTalk);
 //bobCharacterRef.addEventListener("click", bobTalk);
 highScoreDisplay.addEventListener("click", DisplayHighScores);
-
+resetHighScore.addEventListener("click", resetHiScores);
 
 
 
