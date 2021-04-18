@@ -203,24 +203,7 @@ function bobTalk(event) {
 }
 
 
-
-
-function DisplayHighScores(event){
-
-    event.preventDefault();
-
-
-    resetJumbo.style.visibility = "visible"; 
-
-    if (resetJumbo.style.display === "block") {             // Got from https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp & changed to suit me
-        resetJumbo.style.display = "none";
-        highScoreDisplay.classList.remove("mute");
-      } else {
-        resetJumbo.style.display = "block";
-        highScoreDisplay.classList.add("mute");
-      };
-
-
+function checkHiScore () {
 
     if (level1Hi === null) {
         levelOneHiDisplay.innerHTML = `0`;
@@ -252,6 +235,28 @@ function DisplayHighScores(event){
         levelFiveHiDisplay.innerHTML = `${level5Hi}`;
     };
 
+};
+
+
+
+
+
+function DisplayHighScores(event){
+
+    event.preventDefault();
+
+
+    resetJumbo.style.visibility = "visible"; 
+
+    if (resetJumbo.style.display === "block") {             // Got from https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp & changed to suit me
+        resetJumbo.style.display = "none";
+        highScoreDisplay.classList.remove("mute");
+      } else {
+        resetJumbo.style.display = "block";
+        highScoreDisplay.classList.add("mute");
+      };
+
+      checkHiScore();
 
 };
 
@@ -266,6 +271,8 @@ function resetHiScores (event){
     localStorage.removeItem("Level3HiScore");
     localStorage.removeItem("Level4HiScore");
     localStorage.removeItem("Level5HiScore");
+
+    location.reload();
 
 };
 
