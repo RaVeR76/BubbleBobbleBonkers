@@ -10,6 +10,15 @@ const speechBobs = document.getElementsByClassName("bob-speech")[0];
 const playButton = document.getElementsByClassName("game-butt")[0];
 const buttonName = document.getElementsByClassName("btn-block")[0];
 const introAudio = document.getElementById('intro-theme');
+const highScoreDisplay = document.getElementById("high-scores");
+
+
+let level1Hi = localStorage.getItem("Level1HiScore");
+let level2Hi = localStorage.getItem("Level2HiScore");
+let level3Hi = localStorage.getItem("Level3HiScore");
+let level4Hi = localStorage.getItem("Level4HiScore");
+let level5Hi = localStorage.getItem("Level5HiScore");
+
 
 let clickCounterBub = 0;
 let clickCounterBob = 0;
@@ -187,10 +196,33 @@ function bobTalk(event) {
 }
 
 
+function DisplayHighScores(event){
+
+    event.preventDefault();
+
+    document.getElementsByClassName("hi-score")[0].innerHTML = `${level1Hi}`;
+    document.getElementsByClassName("hi-score")[1].innerHTML = `${level2Hi}`;
+    document.getElementsByClassName("hi-score")[2].innerHTML = `${level3Hi}`;
+    document.getElementsByClassName("hi-score")[3].innerHTML = `${level4Hi}`;
+    document.getElementsByClassName("hi-score")[4].innerHTML = `${level5Hi}`;
+
+
+
+
+
+
+}
+
+
+
+
+
+
 
 form.addEventListener('submit', handleSubmit);
 bubCharacterRef.addEventListener("click", bubTalk);
 //bobCharacterRef.addEventListener("click", bobTalk);
+highScoreDisplay.addEventListener("click", DisplayHighScores);
 
 
 
