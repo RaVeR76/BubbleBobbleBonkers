@@ -203,6 +203,8 @@ function bobTalk(event) {
 }
 
 
+
+
 function DisplayHighScores(event){
 
     event.preventDefault();
@@ -218,8 +220,6 @@ function DisplayHighScores(event){
         highScoreDisplay.classList.add("mute");
       };
 
-
-  
 
 
     if (level1Hi === null) {
@@ -253,7 +253,7 @@ function DisplayHighScores(event){
     };
 
 
-}
+};
 
 
 
@@ -267,7 +267,7 @@ function resetHiScores (event){
     localStorage.removeItem("Level4HiScore");
     localStorage.removeItem("Level5HiScore");
 
-}
+};
 
 
 

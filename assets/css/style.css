@@ -110,10 +110,19 @@ footer {
     line-height: 4rem;
 }
 
-#high-scores, #settings {
+.level {
+    text-align: right;
+}
+
+.hi-score {
+    text-align: left;
+}
+
+#high-scores, #game-rules {
     font-size: 1.2rem;
     height : 3.2rem;
     width: 3.2rem;
+    line-height: 1rem;
     border-radius: 50%;
 }
 
@@ -443,9 +452,9 @@ footer {
   }
 
 
-
-
-
+.high-pad {
+    margin-bottom: 1rem;
+}
 
 
 .jumbohead {
@@ -474,7 +483,8 @@ footer {
           -ms-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
       z-index: 1;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  line-height: 2rem;
   width: 20rem;
   border-radius: 1rem;
   background-color: rgba(247, 68, 152, .3);
