@@ -9,9 +9,11 @@ const speechBubs = document.getElementsByClassName("bub-speech")[0];
 const speechBobs = document.getElementsByClassName("bob-speech")[0];
 const playButton = document.getElementsByClassName("game-butt")[0];
 const buttonName = document.getElementsByClassName("btn-block")[0];
+const introAudio = document.getElementById('intro-theme');
 
 let clickCounterBub = 0;
 let clickCounterBob = 0;
+let gameName = "";
 
 console.log(clickCounterBub);
 console.log(clickCounterBob);
@@ -24,25 +26,25 @@ function handleSubmit(event) {
    // bobChat.innerHTML = "";
 
     
-    document.getElementById('intro-theme').play();
+    introAudio.play();
 
 
-    let gamename = user.value;
-    localStorage.setItem("GameName", gamename);   // Used this method for transferring the users Game Name from Intro Zone to The Game Zone so I can interact with them during the game :)
+    gameName = user.value;   
+    localStorage.setItem("GameName", gameName);   // Used this method for transferring the users Game Name from Intro Zone to The Game Zone so I can interact with them during the game :)
 
     let countDown = 60;
-    localStorage.setItem("CountDown", countDown);
+    localStorage.setItem("CountDown", countDown);      // These 4 lines of code is just to reset the gamezone main variables
     let level = 1;
     localStorage.setItem("Level", level);
 
     playButton.style.visibility = "visible";
-    buttonName.innerHTML = `Please Enter The Gamezone <b>${gamename}</b> !`;
+    buttonName.innerHTML = `Mon Into The Gamezone <b>${gameName}</b> !`;
 
     bubCharacterRef.innerHTML = `<img src="assets/cards/bub-card.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">`
   
     speechBubs.style.visibility = "visible";
     speechBubs.innerHTML = 
-        `<p>Hey <b>${ user.value }</b>, pleased to meet you ... my name is <b>Bub</b> !</p>`
+        `<p>Hey <b>${gameName}</b>, pleased to meet you ... my name is <b>Bub</b> !</p>`
 
     setTimeout(function(){
        
@@ -50,12 +52,12 @@ function handleSubmit(event) {
        speechBobs.style.visibility = "visible";
      
        speechBobs.innerHTML = 
-           ` <p>And I am <b>Bob</b>, pleased to meet you ... <b>${gamename}</b></p> 
+           ` <p>And I am <b>Bob</b>, pleased to meet you ... <b>${gameName}</b></p> 
             <p>Even if I don't look it ha ha !</p>`
            
         
             speechBubs.innerHTML = 
-            `<p>Hey <b>${ user.value }</b>, pleased to meet you ... my name is <b>Bub</b> !</p> 
+            `<p>Hey <b>${gameName}</b>, pleased to meet you ... my name is <b>Bub</b> !</p> 
             <p>Click me then Bob & vice versa, for some chat !</p>`
       
 
@@ -79,11 +81,11 @@ function bubTalk(event) {
 
     if (clickCounterBub === 1) {
         speechBubs.innerHTML = `
-        <p>Just so you know <b>${ user.value }</b>, I am & always will be <b>Player One</b> !</p>`
+        <p>Just so you know <b>${gameName}</b>, I am & always will be <b>Player One</b> !</p>`
 
     } else if (clickCounterBub === 2 && clickCounterBob === 1) {
         speechBubs.innerHTML = `
-        <p>Come on now Bob. <b>${ user.value }</b> doesn't want to hear such negativity .... especially from the second best player of the game !</p>`
+        <p>Come on now Bob. <b>${gameName}</b> doesn't want to hear such negativity .... especially from the second best player of the game !</p>`
     
     } else if (clickCounterBub === 3 && clickCounterBob === 2) {
         speechBubs.innerHTML = `
@@ -91,15 +93,15 @@ function bubTalk(event) {
     
     } else if (clickCounterBub === 4 && clickCounterBob === 3) {
         speechBubs.innerHTML = `
-        <p>Fair point Bob ... Let's just tell <b>${ user.value }</b> the basic game rules so they can play a wee game</p>`
+        <p>Fair point Bob ... Let's just tell <b>${gameName}</b> the basic game rules so they can play a wee game</p>`
     
     } else if (clickCounterBub === 5 && clickCounterBob === 4) {
         speechBubs.innerHTML = `
-        <p>Ok <b>${ user.value }</b>, the first rule of BBB Club is "We do not talk about BBB Club"</p>`
+        <p>Ok <b>${gameName}</b>, the first rule of BBB Club is "We do not talk about BBB Club"</p>`
     
     } else if (clickCounterBub === 6 && clickCounterBob === 5) {
         speechBubs.innerHTML = `
-        <p>Ha Ha, just testing. Ok <b>${ user.value }</b>, you need to basically match <b>ALL</b> cards in the allotted time</p>`
+        <p>Ha Ha, just testing. Ok <b>${gameName}</b>, you need to basically match <b>ALL</b> cards in the allotted time</p>`
     
     } else if (clickCounterBub === 7 && clickCounterBob === 6) {
         speechBubs.innerHTML = `
@@ -111,7 +113,7 @@ function bubTalk(event) {
     
     } else if (clickCounterBub === 9 && clickCounterBob === 8) {
         speechBubs.innerHTML = `
-        <p>Love You <b>${ user.value }</b> & good luck</p>
+        <p>Love You <b>${gameName}</b> & good luck</p>
         <p><b>Peace, Love, Unity & Respect</b></p>`
     
     } 
@@ -139,7 +141,7 @@ function bobTalk(event) {
 
     if (clickCounterBob === 1) {
     speechBobs.innerHTML = `
-    <p>Hey <b>${ user.value }</b>, don't listen to him. I've heard this crap for 35 years...</p>
+    <p>Hey <b>${gameName}</b>, don't listen to him. I've heard this crap for 35 years...</p>
     <p>Hence my grumpy wee face !</p>`
    
     } else if  (clickCounterBub === 2 && clickCounterBob === 2) { 
@@ -149,7 +151,7 @@ function bobTalk(event) {
     } else if  (clickCounterBub === 3 && clickCounterBob === 3) { 
         speechBobs.innerHTML = `    
         <p>OH MY .... You kill me Bub!</p> 
-        <p><b>${ user.value }</b> will leave if you keep it up dude</p>`
+        <p><b>${gameName}</b> will leave if you keep it up dude</p>`
     
     } else if  (clickCounterBub === 4 && clickCounterBob === 4) { 
         speechBobs.innerHTML = `    
@@ -169,11 +171,11 @@ function bobTalk(event) {
 
     } else if  (clickCounterBub === 8 && clickCounterBob === 8) { 
         speechBobs.innerHTML = `    
-        <p>Always the joker Bub ... right away you go <b>${ user.value }</b>, do us proud !</p>`
+        <p>Always the joker Bub ... right away you go <b>${gameName}</b>, do us proud !</p>`
 
     } else if  (clickCounterBub === 9 && clickCounterBob === 9) { 
         speechBobs.innerHTML = `    
-        <p>Love you too <b>${ user.value }</b></p>
+        <p>Love you too <b>${gameName}</b></p>
         <p><b>Be Kind ... ALWAYS !</b></p>`
 
     } 

@@ -3,7 +3,7 @@
 
 const cards = document.querySelectorAll(".grid-item");
 const audio = document.querySelector("audio");
-const gamename = localStorage.getItem("GameName");     // Transfer username to gamezone area
+const gameName = localStorage.getItem("GameName");     // Transfer username to gamezone area
 const time = document.getElementById("timeLeft");
 const chat = document.getElementById("chat");
 const score = document.getElementById("scoreTotal");
@@ -226,24 +226,24 @@ function gameChat() {
 
     matchNumber +=1;
     
-    chat.innerHTML = `${gamename}, the high score is ${level1Hi}`;
+    chat.innerHTML = `${gameName}, the high score is ${level1Hi}`;
 
     switch (+levelAt) {
         
         case 2: 
-            chat.innerHTML = `${gamename}, the high score is ${level2Hi}`;
+            chat.innerHTML = `${gameName}, the high score is ${level2Hi}`;
             break;
 
         case 3:
-            chat.innerHTML = `${gamename}, the high score is ${level3Hi}`;
+            chat.innerHTML = `${gameName}, the high score is ${level3Hi}`;
             break;
         
         case 4:
-            chat.innerHTML = `${gamename}, the high score is ${level4Hi}`;
+            chat.innerHTML = `${gameName}, the high score is ${level4Hi}`;
             break;
 
         case 5:
-            chat.innerHTML = `${gamename}, the high score is ${level5Hi}`;
+            chat.innerHTML = `${gameName}, the high score is ${level5Hi}`;
             break;
     }
 
@@ -252,23 +252,23 @@ function gameChat() {
     switch (totalCards) {
     
         case 2:
-            chat.innerHTML = `Well done ${gamename}, ${matchNumber}st match !`;
+            chat.innerHTML = `Well done ${gameName}, ${matchNumber}st match !`;
             break;
     
         case 4:
-            chat.innerHTML = `Keep going ${gamename}, ${matchNumber}nd match !`;
+            chat.innerHTML = `Keep going ${gameName}, ${matchNumber}nd match !`;
             break; 
             
         case 6:
-            chat.innerHTML = `Awesome ${gamename}, ${matchNumber}rd match !`;
+            chat.innerHTML = `Awesome ${gameName}, ${matchNumber}rd match !`;
             break; 
 
         case 8:
-            chat.innerHTML = `Wow ${gamename}, ${matchNumber}th match !`;
+            chat.innerHTML = `Wow ${gameName}, ${matchNumber}th match !`;
             break;
             
         case 10:
-            chat.innerHTML = `So close ${gamename}, ${matchNumber}th match !`;
+            chat.innerHTML = `So close ${gameName}, ${matchNumber}th match !`;
             break;
 
         case 12:
@@ -292,14 +292,14 @@ function gameLevelOver () {
 
     if (totalCards === 12 && ([1, 2, 3, 4].includes(+levelAt))) {
         
-        welldone.innerHTML = `Awesome Game ${gamename}`;
+        welldone.innerHTML = `Awesome Game ${gameName}`;
         audio.muted = true;
      } 
         else if (totalCards === 12 && +levelAt === 5) {
         
         audiosource.setAttribute('src', "assets/audio/levelover.mp3");
         completeGame.innerHTML = `** YOU LEGEND **`;
-        welldone.innerHTML = `You Completed The <br>Game, ${gamename} !`;
+        welldone.innerHTML = `You Completed The <br>Game, ${gameName} !`;
         levelup.removeEventListener("click", newLevel);                          // Removed so I could add the restart function to it
         levelup.addEventListener("click", restart);
         levelup.innerHTML = `Start New Game`;
@@ -453,7 +453,7 @@ timer = setInterval(function() {      // Code from Stack Overflow & modified to 
     time.innerHTML = (countDown--);
     if(countDown == 11) audiosource.setAttribute('src', "assets/audio/main-theme-faster.mp3");
     if(countDown <= 9) flash.classList.add("flash");
-    if(countDown === -1) clearInterval(timer), timeout.style.visibility = "visible", unlucky.innerHTML = `Unlucky ${gamename}`, audiosource.setAttribute('src', "assets/audio/gameover.mp3");
+    if(countDown === -1) clearInterval(timer), timeout.style.visibility = "visible", unlucky.innerHTML = `Unlucky ${gameName}`, audiosource.setAttribute('src', "assets/audio/gameover.mp3");
    
 }, 1000);
 
