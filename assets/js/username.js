@@ -37,16 +37,6 @@ console.log(clickCounterBub);
 console.log(clickCounterBob);
 
 
-// On start up
-
-document.addEventListener("DOMContentLoaded", function() {
-   
-    checkHiScore();
-    
- });
-
-
-
 
 function handleSubmit(event) {
     
@@ -68,7 +58,7 @@ function handleSubmit(event) {
     localStorage.setItem("Level", level);
 
     playButton.style.visibility = "visible";
-    buttonName.innerHTML = `Mon Into The Gamezone <b>${gameName}</b> !`;
+    buttonName.innerHTML = `Enter The Gamezone <b>${gameName}</b> !`;
 
 
     bubCharacterRef.innerHTML = `<img src="assets/cards/bub-card.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">`

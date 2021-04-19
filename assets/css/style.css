@@ -95,7 +95,7 @@ footer {
     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    width: 20rem;
+    width: 22rem;
     border-radius: 1rem;
     background-color: rgba(247, 68, 152, .3);
     border: 1px solid rgba(254, 238, 32, 1);
@@ -106,10 +106,8 @@ footer {
 }
 
 .foot-pad {
-    margin-bottom: 0px;
     text-align: center;
     font-size: 1.2rem;
-   /* line-height: 4rem;*/
 }
 
 #high-scores, #game-rules {
@@ -446,7 +444,7 @@ footer {
       width: 75%;
       margin: auto;
       position: absolute;
-      top: 65%;
+      top: 64%;
       left: 50%;
       margin-right: -50%;
       -webkit-transform: translate(-50%, -50%);
@@ -528,13 +526,16 @@ footer {
         width: 10rem;
     }
 
+    .game-butt {
+        bottom: 5rem;
+    }
 
     .center {
-        width: 40rem;
+        width: 30rem;
     }
 
     .btn-block {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
     }
 
     .head-high {
@@ -673,6 +674,10 @@ footer {
     #rules-jumbo {
         width: 50%;
         font-size: 1.4rem;
+    }
+
+    .game-butt {
+        bottom: 4rem;
     }
 
     .col-centered{
@@ -1017,6 +1022,10 @@ footer {
         height: 3rem;
         line-height: 2.6rem;
         margin-top: 1.5rem;
+    }
+
+    .game-butt {
+        bottom: 5rem;
     }
 
 }
