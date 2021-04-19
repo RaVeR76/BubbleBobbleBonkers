@@ -320,7 +320,7 @@ function gameLevelOver () {
 
 function levelScore() {
    
-    levelTot = countDown * points;
+    levelTot = (countDown += 1) * points;
 
     console.log(countDown);
     console.log(points);

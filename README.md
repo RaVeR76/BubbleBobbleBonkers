@@ -436,7 +436,9 @@ So this confused the hell out of me ffs.
 
 couldn't get high scores to reset properly using remove local storage so just had to put the 5 level hi =gh scores to zero when rest button pressed
 
-
+score calculations .... the time left when level was completed did not match my 'time left' on the console log (it was 1 second out every time)
+levelTot = countDown * points;
+levelTot = (countDown += 1) * points;
 
 
 ### The Development Journey
