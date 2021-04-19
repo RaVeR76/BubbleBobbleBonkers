@@ -106,9 +106,10 @@ footer {
 }
 
 .foot-pad {
+    margin-bottom: 0px;
     text-align: center;
     font-size: 1.2rem;
-    line-height: 4rem;
+   /* line-height: 4rem;*/
 }
 
 #high-scores, #game-rules {
@@ -457,7 +458,7 @@ footer {
       text-align: center;
       font-size: .9rem;
       line-height: 3rem;
-      height: 32rem;
+      height: 31rem;
       border-radius: 1rem;
   }
 
@@ -548,6 +549,14 @@ footer {
     #rules-jumbo {
         width: 50%;
         font-size: 1.5rem;
+    }
+
+    #high-scores, #game-rules {
+        font-size: 1.2rem;
+        height : 3.2rem;
+        width: 3.2rem;
+        line-height: 1rem;
+        border-radius: 50%;
     }
 
     .col-centered{
