@@ -57,7 +57,7 @@ function handleSubmit(event) {
 
     playButton.style.visibility = "visible";
     buttonName.innerHTML = `Mon Into The Gamezone <b>${gameName}</b> !`;
-    
+
 
     bubCharacterRef.innerHTML = `<img src="assets/cards/bub-card.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">`
   
@@ -253,10 +253,10 @@ function displayHighScores(event){
 
     if (resetJumbo.style.display === "block") {             // Got from https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp & changed to suit me
         resetJumbo.style.display = "none";
-        highScoreDisplay.classList.remove("mute");
+        highScoreDisplay.classList.remove("star-swap");
       } else {
         resetJumbo.style.display = "block";
-        highScoreDisplay.classList.add("mute");
+        highScoreDisplay.classList.add("star-swap");
       };
 
       checkHiScore();

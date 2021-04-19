@@ -60,6 +60,7 @@ footer {
 
 
 .col-centered{
+    font-size: 1.2rem;
     margin: 0 auto;
     float: none;
 }
@@ -386,17 +387,20 @@ footer {
 }
 
 
-.home-light {
+.star-light {
     background-color: rgba(247, 68, 152, .3);
     border: 1px solid rgba(254, 238, 32, 1);
 }
 
-.home-light:hover {
+.star-light:hover {
     background-color: rgba(254, 238, 32, 1);
     border: 1px solid rgba(247, 68, 152, .3);
 }
 
-
+.star-swap {
+    background-color: rgba(254, 238, 32, 1);
+    border: 2px solid rgba(247, 68, 152, .3);
+}
 
 
 .icon {                                                        /* Autoprefixer*/
@@ -541,10 +545,24 @@ footer {
         font-size: 1.7rem;
     }
 
+    #rules-jumbo {
+        width: 50%;
+        font-size: 1.5rem;
+    }
+
+    .col-centered{
+        font-size: 1.7rem;
+    }
+    
+    .smiley-size {
+        height: 1.7rem;
+        width: 1.7rem;
+        padding-bottom: 0.3rem;
+    }
 
     .gamehud  p {
         font-size: 1.7rem;
-    margin-bottom: 0.3rem;
+        margin-bottom: 0.3rem;
     }
     
     .time, .score {
@@ -641,6 +659,21 @@ footer {
     #reset-jumbo {
         width: 50%;
         font-size: 1.6rem;
+    }
+
+    #rules-jumbo {
+        width: 50%;
+        font-size: 1.4rem;
+    }
+
+    .col-centered{
+        font-size: 1.5rem;
+    }
+    
+    .smiley-size {
+        height: 1.5rem;
+        width: 1.5rem;
+        padding-bottom: 0.3rem;
     }
  
     .gamehud  p {
@@ -742,6 +775,21 @@ footer {
         width: 50%;
         font-size: 1.5rem;
     }
+
+    #rules-jumbo {
+        width: 50%;
+        font-size: 1.3rem;
+    }
+
+    .col-centered{
+        font-size: 1.3rem;
+    }
+    
+    .smiley-size {
+        height: 1.3rem;
+        width: 1.3rem;
+        padding-bottom: 0.3rem;
+    }
  
     .gamehud  p {
         font-size: 1.5rem;
@@ -841,6 +889,11 @@ footer {
     #reset-jumbo {
         width: 50%;
         font-size: 1.4rem;
+    }
+
+    #rules-jumbo {
+        width: 50%;
+        font-size: .9rem;
     }
  
     .gamehud  p {
