@@ -57,6 +57,9 @@ function handleSubmit(event) {
     let level = 1;
     localStorage.setItem("Level", level);
 
+    clickCounterBub = 0;    // added this because the chat would jump if you pressed 'go' again !
+    clickCounterBob = 0;
+
     playButton.style.visibility = "visible";
     buttonName.innerHTML = `Enter The Gamezone <b>${gameName}</b> !`;
 
@@ -73,13 +76,13 @@ function handleSubmit(event) {
        speechBobs.style.visibility = "visible";
      
        speechBobs.innerHTML = 
-           ` <p>And I am <b>Bob</b>, pleased to meet you ... <b>${gameName}</b></p> 
+           ` <p>And I am <b>Bob</b>, pleased to meet you <b>${gameName}</b></p> 
             <p>Even if I don't look it ha ha !</p>`
            
         
             speechBubs.innerHTML = 
             `<p>Hey <b>${gameName}</b>, pleased to meet you ... my name is <b>Bub</b> !</p> 
-            <p>Click me then Bob & vice versa, for some chat !</p>`
+            <p>Click me then Bob & vice versa, for some comedy chit chat !</p>`
       
 
 
@@ -102,40 +105,58 @@ function bubTalk(event) {
 
     if (clickCounterBub === 1) {
         speechBubs.innerHTML = `
-        <p>Just so you know <b>${gameName}</b>, I am & always will be <b>Player One</b> !</p>`
+        <p>Just so you know <b>${gameName}</b>, I am & always will be <b>Player One</b> !</p>`;
+        speechBubs.style.visibility = "visible";
+        speechBobs.style.visibility = "hidden";
 
     } else if (clickCounterBub === 2 && clickCounterBob === 1) {
         speechBubs.innerHTML = `
-        <p>Come on now Bob. <b>${gameName}</b> doesn't want to hear such negativity .... especially from the second best player of the game !</p>`
+        <p>Come on now Bob. <b>${gameName}</b> doesn't want to hear such negativity .... especially from the <b><em>second</em></b> best player of the game !</p>`;
+        speechBubs.style.visibility = "visible";
+        speechBobs.style.visibility = "hidden";
     
     } else if (clickCounterBub === 3 && clickCounterBob === 2) {
         speechBubs.innerHTML = `
-        <p>Okay Bob, I'm sorry. I'm only having a bit of craic .... Let's not <em>drag on</em> about it (pun intended) !</p>`
+        <p>Okay Bob, I'm sorry. I'm only having a bit of craic .... Let's not <b><em>dragon</em></b> about it (pun intended) !</p>`;
+        speechBubs.style.visibility = "visible";
+        speechBobs.style.visibility = "hidden";
     
     } else if (clickCounterBub === 4 && clickCounterBob === 3) {
         speechBubs.innerHTML = `
-        <p>Fair point Bob ... Let's just tell <b>${gameName}</b> the basic game rules so they can play a wee game</p>`
+        <p>Fair point Bob ... Let's just tell <b>${gameName}</b> the basic game rules so they can play a wee game</p>`;
+        speechBubs.style.visibility = "visible";
+        speechBobs.style.visibility = "hidden";
     
     } else if (clickCounterBub === 5 && clickCounterBob === 4) {
         speechBubs.innerHTML = `
-        <p>Ok <b>${gameName}</b>, the first rule of BBB Club is "We do not talk about BBB Club"</p>`
+        <p>Ok <b>${gameName}</b>, the first rule of BBB Club is "We do not talk about BBB Club"</p>`;
+        speechBubs.style.visibility = "visible";
+        speechBobs.style.visibility = "hidden";
     
     } else if (clickCounterBub === 6 && clickCounterBob === 5) {
         speechBubs.innerHTML = `
-        <p>Ha Ha, just testing. Ok <b>${gameName}</b>, you need to basically match <b>ALL</b> cards in the allotted time</p>`
+        <p>Ha Ha, just testing. Ok <b>${gameName}</b>, you need to basically match <b>ALL</b> cards in the allotted time</p>`;
+        speechBubs.style.visibility = "visible";
+        speechBobs.style.visibility = "hidden";
     
     } else if (clickCounterBub === 7 && clickCounterBob === 6) {
         speechBubs.innerHTML = `
-        <p>Hey Bob, I've a match for you !</p>`
+        <p>Hey Bob, I've a match for you !</p>`;
+        speechBubs.style.visibility = "visible";
+        speechBobs.style.visibility = "hidden";
     
     } else if (clickCounterBub === 8 && clickCounterBob === 7) {
         speechBubs.innerHTML = `
-        <p>My <b>ass</b> & your <b>face</b> Bob .... ha ha ha !</p>`
+        <p>My <b>butt</b> & your <b>face</b> Bob .... ha ha ha !</p>`;
+        speechBubs.style.visibility = "visible";
+        speechBobs.style.visibility = "hidden";
     
     } else if (clickCounterBub === 9 && clickCounterBob === 8) {
         speechBubs.innerHTML = `
         <p>Love You <b>${gameName}</b> & good luck</p>
-        <p><b>Peace, Love, Unity & Respect</b></p>`
+        <p><b>Peace, Love, Unity & Respect</b></p>`;
+        speechBubs.style.visibility = "visible";
+        speechBobs.style.visibility = "hidden";
     
     } 
 
@@ -163,41 +184,59 @@ function bobTalk(event) {
     if (clickCounterBob === 1) {
     speechBobs.innerHTML = `
     <p>Hey <b>${gameName}</b>, don't listen to him. I've heard this crap for 35 years...</p>
-    <p>Hence my grumpy wee face !</p>`
+    <p>Hence my grumpy wee face !</p>`;
+    speechBubs.style.visibility = "hidden";
+    speechBobs.style.visibility = "visible";
    
     } else if  (clickCounterBub === 2 && clickCounterBob === 2) { 
     speechBobs.innerHTML = `    
-    <p>Tell you what Bub, you're lucky I don't come up there .... we will talk later bro !</p>`
+    <p>Tell you what Bub, you're lucky I don't come up there .... we will talk later bro !</p>`;
+    speechBubs.style.visibility = "hidden";
+    speechBobs.style.visibility = "visible";
     
     } else if  (clickCounterBub === 3 && clickCounterBob === 3) { 
         speechBobs.innerHTML = `    
         <p>OH MY .... You kill me Bub!</p> 
-        <p><b>${gameName}</b> will leave if you keep it up dude</p>`
+        <p><b>${gameName}</b> will leave if you keep it up dude</p>`;
+        speechBubs.style.visibility = "hidden";
+        speechBobs.style.visibility = "visible";
     
     } else if  (clickCounterBub === 4 && clickCounterBob === 4) { 
         speechBobs.innerHTML = `    
-        <p>Good call Bub .... you start bro</p>`
+        <p>Good call Bub .... you start bro</p>`;
+        speechBubs.style.visibility = "hidden";
+        speechBobs.style.visibility = "visible";
 
     } else if  (clickCounterBub === 5 && clickCounterBob === 5) { 
         speechBobs.innerHTML = `    
-        <p>Oi Bub .... That rule is from <b>Fight Club</b> the film, you muppet !</p>`
+        <p>Oi Bub .... That rule is from the film <b>Fight Club</b>, you muppet !</p>`;
+        speechBubs.style.visibility = "hidden";
+        speechBobs.style.visibility = "visible";
 
     } else if  (clickCounterBub === 6 && clickCounterBob === 6) { 
         speechBobs.innerHTML = `    
-        <p>And you get <b>5</b> points for a match & <b>-2</b> points for a mismatch ... that's it really ... simples!</p>`
+        <p>And you get <b>5</b> points for a match & <b>-2</b> points for a mismatch ... that's it really ... simples!</p>`;
+        speechBubs.style.visibility = "hidden";
+        speechBobs.style.visibility = "visible";
 
     } else if  (clickCounterBub === 7 && clickCounterBob === 7) { 
         speechBobs.innerHTML = `    
-        <p>Awesome Bub, what is it bro?</p>`
+        <p>Awesome Bub, what is it bro?</p>`;
+        speechBubs.style.visibility = "hidden";
+        speechBobs.style.visibility = "visible";
 
     } else if  (clickCounterBub === 8 && clickCounterBob === 8) { 
         speechBobs.innerHTML = `    
-        <p>Always the joker Bub ... right away you go <b>${gameName}</b>, do us proud !</p>`
+        <p>Always the joker Bub ... right away you go <b>${gameName}</b>, do us proud !</p>`;
+        speechBubs.style.visibility = "hidden";
+        speechBobs.style.visibility = "visible";
 
     } else if  (clickCounterBub === 9 && clickCounterBob === 9) { 
         speechBobs.innerHTML = `    
         <p>Love you too <b>${gameName}</b></p>
-        <p><b>Be Kind ... ALWAYS !</b></p>`
+        <p><b>Be Kind ... ALWAYS !</b></p>`;
+        speechBubs.style.visibility = "hidden";
+        speechBobs.style.visibility = "visible";
 
     } 
 
