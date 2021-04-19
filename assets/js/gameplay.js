@@ -272,7 +272,7 @@ function gameChat() {
             break;
 
         case 12:
-            chat.innerHTML = `Winner winner chicken dinner !`;
+            chat.innerHTML = `Winner Winner Chicken Dinner !`;
             break; 
     
         default:
@@ -322,6 +322,10 @@ function levelScore() {
    
     levelTot = countDown * points;
 
+    console.log(countDown);
+    console.log(points);
+    console.log(levelTot);
+
     switch (+levelAt) {
 
         case 1:
@@ -358,7 +362,7 @@ function levelScore() {
         
         case 4:
 
-            levelup.innerHTML = `Play Level Last Level`;
+            levelup.innerHTML = `Play Last Level`;
             levelTot *= 4;
 
             if (levelTot > level4Hi) {

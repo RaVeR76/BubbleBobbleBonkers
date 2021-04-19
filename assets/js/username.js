@@ -36,6 +36,18 @@ let gameName = "";
 console.log(clickCounterBub);
 console.log(clickCounterBob);
 
+
+// On start up
+
+document.addEventListener("DOMContentLoaded", function() {
+   
+    checkHiScore();
+    
+ });
+
+
+
+
 function handleSubmit(event) {
     
     event.preventDefault();
@@ -288,11 +300,18 @@ function resetHiScores (event){
 
     event.preventDefault();
 
-    localStorage.removeItem("Level1HiScore");
-    localStorage.removeItem("Level2HiScore");
-    localStorage.removeItem("Level3HiScore");
-    localStorage.removeItem("Level4HiScore");
-    localStorage.removeItem("Level5HiScore");
+
+    let level1Hi = 0;
+    localStorage.setItem("Level1HiScore", level1Hi);
+    let level2Hi = 0;
+    localStorage.setItem("Level2HiScore", level2Hi);
+    let level3Hi = 0;
+    localStorage.setItem("Level3HiScore", level3Hi);
+    let level4Hi = 0;
+    localStorage.setItem("Level4HiScore", level4Hi);
+    let level5Hi = 0;
+    localStorage.setItem("Level5HiScore", level5Hi);
+
 
     location.reload();
 

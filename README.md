@@ -434,6 +434,10 @@ So this confused the hell out of me ffs.
 
 
 
+couldn't get high scores to reset properly using remove local storage so just had to put the 5 level hi =gh scores to zero when rest button pressed
+
+
+
 
 ### The Development Journey
 
