@@ -1,6 +1,6 @@
 /*-- Main CSS Code --*/
 
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');  /*Test 8-bit looking font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Titillium+Web:wght@300;400&display=swap');  /*Test 8-bit looking font */
 
 
 
@@ -16,6 +16,7 @@ body {
     padding: 0px;
     position: relative;
     overflow-x: hidden;
+    font-family: "Titillium Web", sans-serif;
 }
 
 #gamezone {
@@ -48,7 +49,7 @@ footer {
 
 
 .input-group {
-    max-width: 30rem;
+    max-width: 25rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -84,7 +85,7 @@ footer {
 .game-butt {
     visibility: hidden; 
     position: fixed;
-    bottom: 3rem;
+    bottom: 4rem;
 }
 
 .center {                             /* Autoprefixer */
