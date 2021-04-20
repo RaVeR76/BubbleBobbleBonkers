@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Titillium+Web:wght@300;400&display=swap');  /*Test 8-bit looking font */
 
 
-
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -28,15 +27,13 @@ body {
 }
 
 footer {
-   position:absolute;
-   bottom: 0;
-   width: 100%;
-   height: auto;   /* Height of the footer */
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;   /* Height of the footer */
 }
 
-
 /*-- Intro Styling --*/
-
 
 .main-title {
     background: url("../images/main-head-3D-clip.png");  
@@ -46,7 +43,6 @@ footer {
     min-height: 8rem;
     margin-top: 3.5rem;
 }
-
 
 .input-group {
     max-width: 25rem;
@@ -58,7 +54,6 @@ footer {
     font-size: 1.4rem;
     text-align: center;
 }
-
 
 .col-centered{
     font-size: 1.2rem;
@@ -80,8 +75,7 @@ footer {
     height: 8rem;
     width: 8rem;
 }
-
-    
+   
 .game-butt {
     visibility: hidden; 
     position: fixed;
@@ -129,7 +123,6 @@ footer {
     -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
 }
-
 
 /*-- Bubble Code Accredited In README but I have changed it to suit my game --*/
 .bub-speech {
@@ -196,10 +189,7 @@ footer {
 	        filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
 }
 
-
-
 /*-- Game Zone Styling --*/
-
 
 .gamehud {
     font-family: "Press Start 2P", sans-serif;
@@ -207,11 +197,11 @@ footer {
 }
 
 .time {
-  background-color: rgba(254, 238, 32, 1);
-  border: 1px solid rgba(247, 68, 152, 1);
-  width: 4.4rem;
-  height: 4.4rem;
-  line-height: 2.4rem;
+    background-color: rgba(254, 238, 32, 1);
+    border: 1px solid rgba(247, 68, 152, 1);
+    width: 4.4rem;
+    height: 4.4rem;
+    line-height: 2.4rem;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%; 
@@ -225,7 +215,6 @@ footer {
 
 .time  span, .score  span {
     font-size: 1.4rem;
-   /* padding-top: 3rem;*/
 }
 
 .flash {                                                       /* Autoprefixer */
@@ -248,13 +237,12 @@ footer {
     }
   }
 
-
 .score {
     background-color: rgba(254, 238, 32, 1);
-  border: 1px solid rgba(247, 68, 152, 1);
+    border: 1px solid rgba(247, 68, 152, 1);
     width: 4.4rem;
-  height: 4.4rem;
-  line-height: 2.4rem;
+    height: 4.4rem;
+    line-height: 2.4rem;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
@@ -335,20 +323,15 @@ footer {
             transform: rotateY(180deg);
 }
 
-
 .hide {                                           /* Autoprefixer*/
    width: 7rem;
    height: 7rem; 
    border-radius: 5px;
- /*  -webkit-perspective: 0;*/
     -webkit-backface-visibility: hidden; 
- /*  -webkit-transform: translate3d(0,0,0);  */         /*Trying to fix iOS bug with code*/
-   /* visibility:visible;*/
            backface-visibility: hidden;
    -webkit-transform: rotateY(180deg);
            transform: rotateY(180deg);
 }
-
 
 #home, #mute {                                     /* Autoprefixer*/
     height : 3.2rem;
@@ -382,12 +365,10 @@ footer {
     border: 2px solid rgba(254, 238, 32, 1);
 }
 
-
 .mute {
     background-color: rgba(247, 68, 152, 1);
     border: 2px solid rgba(254, 238, 32, 1);
 }
-
 
 .star-light {
     background-color: rgba(247, 68, 152, .3);
@@ -404,7 +385,6 @@ footer {
     border: 2px solid rgba(247, 68, 152, .3);
 }
 
-
 .icon {                                                        /* Autoprefixer*/
     font-size: 1.2rem;
     line-height: 2rem;
@@ -413,7 +393,6 @@ footer {
     -o-transition: all 0.35s ease-in-out; 
     transition: all 0.35s ease-in-out;
 }
-
 
 #gameover, #timeout {                                              /* Autoprefixer*/
     visibility: hidden;
@@ -438,37 +417,34 @@ footer {
     border-radius: 1rem;
 }
 
-
 #reset-jumbo, #rules-jumbo {                                              /* Autoprefixer*/
-      visibility: hidden;
-      color: rgba(247, 68, 152, 1);
-      font-family: "Press Start 2P", sans-serif;
-      background: rgba(254, 238, 32, .9);
-      width: 75%;
-      margin: auto;
-      position: absolute;
-      top: 64%;
-      left: 50%;
-      margin-right: -50%;
-      -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
-      z-index: 1;
-      border: 5px solid #FAA101;
-      padding: 2rem 0rem;
-      text-align: center;
-      font-size: .9rem;
-      line-height: 3rem;
-      height: 31rem;
-      border-radius: 1rem;
-  }
-
+    visibility: hidden;
+    color: rgba(247, 68, 152, 1);
+    font-family: "Press Start 2P", sans-serif;
+    background: rgba(254, 238, 32, .9);
+    width: 75%;
+    margin: auto;
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 1;
+    border: 5px solid #FAA101;
+    padding: 2rem 0rem;
+    text-align: center;
+    font-size: .9rem;
+    line-height: 3rem;
+    height: 31rem;
+    border-radius: 1rem;
+}
 
 .head-high {
     color: #000;
     font-size: 1.5rem;
 }
-
 
 .jumbohead {
     font-size: 1.1rem;
@@ -478,13 +454,12 @@ footer {
     font-size: 0.9rem;
 }
 
-#restart, #levelup {
- 
-  font-size: 1.3rem;
-  width: 10rem;
-  border-radius: 1rem;
-  background-color: rgba(247, 68, 152, .3);
-  border: 1px solid #FAA101;
+#restart, #levelup { 
+    font-size: 1.3rem;
+    width: 10rem;
+    border-radius: 1rem;
+    background-color: rgba(247, 68, 152, .3);
+    border: 1px solid #FAA101;
 }
 
 #reset-butt {
@@ -496,16 +471,13 @@ footer {
           -ms-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
       z-index: 1;
-  font-size: 0.9rem;
-  line-height: 2rem;
-  width: 20rem;
-  border-radius: 1rem;
-  background-color: rgba(247, 68, 152, .3);
-  border: 1px solid #FAA101;
+    font-size: 0.9rem;
+    line-height: 2rem;
+    width: 20rem;
+    border-radius: 1rem;
+    background-color: rgba(247, 68, 152, .3);
+    border: 1px solid #FAA101;
 }
-
-
-
 
 /*-- Media Queries --*/
 
@@ -640,7 +612,6 @@ footer {
         font-size: 2rem;
         line-height: 3.5rem;
     }
-
 }
 
 /*Hide in Other Small Devices */                                    /* ----IF THERE ARE TWO MEDIA QUERY SIZES WITH SAME INFO , COMBINE THEM -----*/
@@ -760,7 +731,6 @@ footer {
         font-size: 2rem;
         line-height: 3.5rem;
     }
-
 }
 
 
@@ -875,7 +845,6 @@ footer {
         font-size: 2rem;
         line-height: 3.5rem;
     }
-
 }
 
 
@@ -981,25 +950,8 @@ footer {
         font-size: 1.6rem;
         line-height: 3rem;
     }
-
 }
 
-/* Portrait phones and smaller */
-/*@media (max-width: 480px) {
-
-    .main-title{
-        min-height: 15rem;
-    }
-
-    .bub-size {
-        float: right;
-    }
-
-    .bob-size {
-        float: left;
-    }
-
-}*/
 
 
 /* Media Queries For Screens With Larger Heights */
@@ -1014,7 +966,6 @@ footer {
     .bub-pad {
         padding: 4rem 0rem 0rem 0rem;  
     }
-
 }
 
 
@@ -1030,7 +981,6 @@ footer {
     .game-butt {
         bottom: 5rem;
     }
-
 }
 
 
@@ -1077,7 +1027,6 @@ footer {
         height: 15rem; 
     }
 
-
     #gameover, #timeout {
         width: 63%;
         top: 68%;
@@ -1098,119 +1047,4 @@ footer {
         font-size: 2rem;
         width: 20rem;
     }
-
 }
-                                      /*(min-height: 400px) and*/
-/*
-@media (min-width: (min-height: 400px) and (max-height: 850px) {      
-
-    .main-title {
-        min-height: 8rem;
-        margin-top: 4rem;
-    }
-
-    .bub-size {
-        float: left;
-        height: 7rem;
-        width: 7rem;
-    }
-
-    .bob-size {
-        float: right;
-        height: 7rem;
-        width: 7rem;
-    }
-
-    .head-high {
-        font-size: 2.2rem;
-    }
-
-    #reset-jumbo {
-        width: 50%;
-        font-size: 1.5rem;
-    }
-
-    #rules-jumbo {
-        width: 50%;
-        font-size: 1.3rem;
-    }
-
-    .col-centered{
-        font-size: 1.3rem;
-    }
-    
-    .smiley-size {
-        height: 1.3rem;
-        width: 1.3rem;
-        padding-bottom: 0.3rem;
-    }
- 
-    .gamehud  p {
-        font-size: 1.2rem;
-        margin-bottom: 0.3rem;
-    }
-    
-    .time, .score {
-        width: 4.4rem;
-        height: 4.4rem;
-    }
-
-    .time  span, .score  span {
-        font-size: 1.4rem;
-        line-height: 2.2rem;
-    }
-
-    .chat {
-        height: 5rem;
-        font-size: 0.9rem;
-        line-height: 5rem;
-    }
-
-    .grid-container {                                         
-        -ms-grid-columns: auto auto auto auto;
-        grid-template-columns: auto auto auto auto;
-        top: 68%;
-    }
-
-    .grid-item {
-        width: 8rem;
-        height: 8rem; 
-    }
-
-    .hide {
-        width: 12rem;
-        height: 12rem; 
-    }
-
-    #gameover, #timeout {
-        width: 67%;
-        top: 68%;
-        height: 40rem;
-        line-height: 6rem;
-        padding: 5rem;       
-    }
-
-    .jumbohead {
-        font-size: 2rem;
-    }
-
-    .jumbomain {
-        font-size: 1.5rem;
-    }
-
-    #restart, #levelup {
-        font-size: 1.5rem;
-        width: 20rem;
-    }
-
-    #home, #mute {
-        height : 5rem;
-        width: 5rem;
-    }
-
-    .icon {
-        font-size: 2rem;
-        line-height: 3.5rem;
-    }
-
-}*/
