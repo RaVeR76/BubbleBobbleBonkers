@@ -1034,7 +1034,7 @@ footer {
 }
 
 
-@media (min-width: 1000px) and (min-height: 1000px){
+@media (min-width: 1000px) and (min-height: 1200px){
 
     .main-title {
         min-height: 30rem;
