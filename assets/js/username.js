@@ -1,5 +1,4 @@
-let user = document.getElementById('username');
-let form = document.getElementById('uname');
+// Declare constants & variables
 
 const bubCharacterRef = document.getElementById("bub-position");
 const bobCharacterRef = document.getElementById("bob-position");
@@ -21,22 +20,16 @@ const levelThreeHiDisplay = document.getElementsByClassName("hi-score")[2];
 const levelFourHiDisplay = document.getElementsByClassName("hi-score")[3];
 const levelFiveHiDisplay = document.getElementsByClassName("hi-score")[4];
 
-
+let user = document.getElementById('username');
+let form = document.getElementById('uname');
 let level1Hi = localStorage.getItem("Level1HiScore");
 let level2Hi = localStorage.getItem("Level2HiScore");
 let level3Hi = localStorage.getItem("Level3HiScore");
 let level4Hi = localStorage.getItem("Level4HiScore");
 let level5Hi = localStorage.getItem("Level5HiScore");
-
-
 let clickCounterBub = 0;
 let clickCounterBob = 0;
 let gameName = "";
-
-console.log(clickCounterBub);
-console.log(clickCounterBob);
-
-
 
 
 // On Start Up
@@ -49,18 +42,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
-
 function handleSubmit(event) {
     
     event.preventDefault();
 
-   // bubChat.innerHTML = "";     // Added these two lines so it will remove Bob's image & his speech bubble .... if the user enters a new username
-   // bobChat.innerHTML = "";
-
-    
     introAudio.play();
-
 
     gameName = user.value;   
     localStorage.setItem("GameName", gameName);   // Used this method for transferring the users Game Name from Intro Zone to The Game Zone so I can interact with them during the game :)
@@ -77,33 +63,25 @@ function handleSubmit(event) {
     buttonName.innerHTML = `Enter The Gamezone <b>${gameName}</b> !`;
 
 
-    bubCharacterRef.innerHTML = `<img src="assets/cards/bub-card.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">`
+    bubCharacterRef.innerHTML = `<img src="assets/cards/bub-card.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">`;
   
     speechBubs.style.visibility = "visible";
-    speechBubs.innerHTML = 
-        `<p>Hey <b>${gameName}</b>, pleased to meet you ... my name is <b>Bub</b> !</p>`
+    speechBubs.innerHTML = `<p>Hey <b>${gameName}</b>, pleased to meet you ... my name is <b>Bub</b> !</p>`;
 
     setTimeout(function(){
        
-       bobCharacterRef.innerHTML = `<img src="assets/cards/bob-card.jpg" alt="Wee Bubble Bobble Bob" class="bob-size">`
-       speechBobs.style.visibility = "visible";
+        bobCharacterRef.innerHTML = `<img src="assets/cards/bob-card.jpg" alt="Wee Bubble Bobble Bob" class="bob-size">`
+        speechBobs.style.visibility = "visible";
      
-       speechBobs.innerHTML = 
-           ` <p>And I am <b>Bob</b>, pleased to meet you <b>${gameName}</b></p> 
-            <p>Even if I don't look it ha ha !</p>`
-           
-        
-            speechBubs.innerHTML = 
-            `<p>Hey <b>${gameName}</b>, pleased to meet you ... my name is <b>Bub</b> !</p> 
-            <p>Click me then Bob & vice versa, for some comedy chit chat !</p>`
-      
+        speechBobs.innerHTML =`<p>And I am <b>Bob</b>, pleased to meet you <b>${gameName}</b></p> <p>Even if I don't look it ha ha !</p>`;
+                  
+        speechBubs.innerHTML =`<p>Hey <b>${gameName}</b>, pleased to meet you ... my name is <b>Bub</b> !</p> <p>Click me then Bob & vice versa, for some comedy chit chat !</p>`;
 
-
-    },2000);
+    }, 2000);
 
     //document.getElementById('username').value = ''; // Removes the username from the input field once button is hit
 
-}
+};
 
 
 
@@ -113,9 +91,7 @@ function bubTalk(event) {
     event.preventDefault();
 
     clickCounterBub +=1;
-    console.log(clickCounterBub);
-
-
+    
     if (clickCounterBub === 1) {
         speechBubs.innerHTML = `
         <p>Just so you know <b>${gameName}</b>, I am & always will be <b>Player One</b> !</p>`;
@@ -173,14 +149,10 @@ function bubTalk(event) {
     
     } 
 
-
-
-
-
     bubCharacterRef.removeEventListener("click", bubTalk);
     bobCharacterRef.addEventListener("click", bobTalk);
 
-}
+};
 
 
 
@@ -191,73 +163,57 @@ function bobTalk(event) {
 
     clickCounterBob += 1;
     
-    console.log(clickCounterBob);
-    
-
     if (clickCounterBob === 1) {
-    speechBobs.innerHTML = `
-    <p>Hey <b>${gameName}</b>, don't listen to him. I've heard this crap for 35 years...</p>
-    <p>Hence my grumpy wee face !</p>`;
+    speechBobs.innerHTML = `<p>Hey <b>${gameName}</b>, don't listen to him. I've heard this crap for 35 years...</p> <p>Hence my grumpy wee face !</p>`;
     speechBubs.style.visibility = "hidden";
     speechBobs.style.visibility = "visible";
    
     } else if  (clickCounterBub === 2 && clickCounterBob === 2) { 
-    speechBobs.innerHTML = `    
-    <p>Tell you what Bub, you're lucky I don't come up there .... we will talk later bro !</p>`;
+    speechBobs.innerHTML = `<p>Tell you what Bub, you're lucky I don't come up there .... we will talk later bro !</p>`;
     speechBubs.style.visibility = "hidden";
     speechBobs.style.visibility = "visible";
     
     } else if  (clickCounterBub === 3 && clickCounterBob === 3) { 
-        speechBobs.innerHTML = `    
-        <p>OH MY .... You kill me Bub!</p> 
-        <p><b>${gameName}</b> will leave if you keep it up dude</p>`;
+        speechBobs.innerHTML = `<p>OH MY .... You kill me Bub!</p> <p><b>${gameName}</b> will leave if you keep it up dude</p>`;
         speechBubs.style.visibility = "hidden";
         speechBobs.style.visibility = "visible";
     
     } else if  (clickCounterBub === 4 && clickCounterBob === 4) { 
-        speechBobs.innerHTML = `    
-        <p>Good call Bub .... you start bro</p>`;
+        speechBobs.innerHTML = `<p>Good call Bub .... you start bro</p>`;
         speechBubs.style.visibility = "hidden";
         speechBobs.style.visibility = "visible";
 
     } else if  (clickCounterBub === 5 && clickCounterBob === 5) { 
-        speechBobs.innerHTML = `    
-        <p>Oi Bub .... That rule is from the film <b>Fight Club</b>, you muppet !</p>`;
+        speechBobs.innerHTML = `<p>Oi Bub .... That rule is from the film <b>Fight Club</b>, you muppet !</p>`;
         speechBubs.style.visibility = "hidden";
         speechBobs.style.visibility = "visible";
 
     } else if  (clickCounterBub === 6 && clickCounterBob === 6) { 
-        speechBobs.innerHTML = `    
-        <p>And you get <b>5</b> points for a match & <b>-2</b> points for a mismatch ... that's it really ... simples!</p>`;
+        speechBobs.innerHTML = `<p>And you get <b>5</b> points for a match & <b>-2</b> points for a mismatch ... that's it really ... simples!</p>`;
         speechBubs.style.visibility = "hidden";
         speechBobs.style.visibility = "visible";
 
     } else if  (clickCounterBub === 7 && clickCounterBob === 7) { 
-        speechBobs.innerHTML = `    
-        <p>Awesome Bub, what is it bro?</p>`;
+        speechBobs.innerHTML = `<p>Awesome Bub, what is it bro?</p>`;
         speechBubs.style.visibility = "hidden";
         speechBobs.style.visibility = "visible";
 
     } else if  (clickCounterBub === 8 && clickCounterBob === 8) { 
-        speechBobs.innerHTML = `    
-        <p>Always the joker Bub ... right away you go <b>${gameName}</b>, do us proud !</p>`;
+        speechBobs.innerHTML = `<p>Always the joker Bub ... right away you go <b>${gameName}</b>, do us proud !</p>`;
         speechBubs.style.visibility = "hidden";
         speechBobs.style.visibility = "visible";
 
     } else if  (clickCounterBub === 9 && clickCounterBob === 9) { 
-        speechBobs.innerHTML = `    
-        <p>Love you too <b>${gameName}</b></p>
-        <p><b>Be Kind ... ALWAYS !</b></p>`;
+        speechBobs.innerHTML = `<p>Love you too <b>${gameName}</b></p> <p><b>Be Kind ... ALWAYS !</b></p>`;
         speechBubs.style.visibility = "hidden";
         speechBobs.style.visibility = "visible";
-
     } 
 
 
     bobCharacterRef.removeEventListener("click", bobTalk);
     bubCharacterRef.addEventListener("click", bubTalk);
 
-}
+};
 
 
 function checkHiScore () {
@@ -326,7 +282,6 @@ function displayGameRules(event){
 
     event.preventDefault();
 
-
     rulesJumbo.style.visibility = "visible"; 
 
     if (rulesJumbo.style.display === "block") {             // Got from https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp & changed to suit me
@@ -351,46 +306,15 @@ function resetHiScores (event){
     localStorage.setItem("Level4HiScore", 0);
     localStorage.setItem("Level5HiScore", 0);
 
-
     location.reload();
 
 };
 
-
-
-
-
 form.addEventListener('submit', handleSubmit);
 bubCharacterRef.addEventListener("click", bubTalk);
-//bobCharacterRef.addEventListener("click", bobTalk);
 highScoreDisplay.addEventListener("click", displayHighScores);
 resetHighScore.addEventListener("click", resetHiScores);
 gameRulesDisplay.addEventListener("click", displayGameRules);
 
-
-
-
-//function characterTalk(event, characterColor) {
-
-  //  event.preventDefault();
-  
-//    console.log("Working Sham")
-///    if (characterColor === 'green') {
- //     bubSpeech.innerHTML = `
- //       <div class="speech-bubs">
-//            <p>Hey <b>${user.value}</b>, don't listen to him. I've heard this crap for 35 years !!!</p>
- //       </div>`;
-//    } else {
- //     bobSpeech.innerHTML = `
- //     <div class="speech-bubs2">
-//          <p><b>${user.value}</b>, that's <b>Bob</b> by the way ... the <b>"second"</b> best player of the game !</p>
-//      </div>`;
- //   }
- // }
-
-  
-  //bubCharacterRef.addEventListener('click', characterTalk("green"));
-  //bobCharacterRef.addEventListener('click', characterTalk("blue"));
-  
   
   // STop you greeting & tell them the rules sham so they can play the wee game

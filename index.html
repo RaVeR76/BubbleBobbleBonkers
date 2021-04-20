@@ -17,7 +17,9 @@
             <div class="col-12 main-title"></div>
         </div>
     </header>
-  
+
+<!-- Game Name Input Area --> 
+    
     <section>
         <div class="col-12 p-3 intro">
             <p>Please Enter Your Game Name Below</p>
@@ -38,39 +40,32 @@
 <!-- Bub Chat Area -->
 
         <div class="row bub-pad">
-             <div  class="col-9 col-sm-8 col-md-7" > 
-                <div id="bub-talk" class="bub-speech"></div>           
-              
+            <div  class="col-9 col-sm-8 col-md-7" > 
+                <div id="bub-talk" class="bub-speech"></div>                    
             </div>           
             <div id="bub-position" class="col-3 col-sm-4 col-md-5">
-              
             </div>       
         </div>
 
 <!-- Bob Chat Area -->
 
         <div class="row bub-pad">
-            <div id="bob-position" class="col-3 col-sm-4 col-md-5">
-                
-            </div>
-
+            <div id="bob-position" class="col-3 col-sm-4 col-md-5"></div>
             <div id="bob-talk" class="col-9 col-sm-8 col-md-7">
                 <div class="bob-speech"></div>
             </div>
         </div>
 
-
-
-
+<!-- Intro Audio -->
 
         <audio id="intro-theme" >
             <source src="assets/audio/name-register.mp3" type="audio/mpeg">
              Your browser does not support the audio element.
-         </audio>
+        </audio>
 
+<!-- High Score Jumbotron With Reset Button -->
 
-
-         <div id="reset-jumbo" class="container jumbotron">
+        <div id="reset-jumbo" class="container jumbotron">
             <div class="row">
                 <div class="col-12">
                     <p class="head-high">High Scores</p>
@@ -90,12 +85,11 @@
                 <div class="col-12">
                     <p>Level 5 : <span class="hi-score"></span></p>
                 </div>
-
-            </div>
-            
+            </div>           
             <button id="reset-butt" class="btn">Reset High Scores</button>
         </div> 
 
+<!-- Rules Jumbotron -->
 
         <div id="rules-jumbo" class="container jumbotron">
             <div class="row">
@@ -120,17 +114,10 @@
                 <div class="col-12">
                     <p>Have Fun !</p>
                 </div>
-
-            </div>
-            
+            </div>         
         </div> 
 
-        
-
-
-
-
-<!-- Game Button -->
+<!-- Gamezone Enter Button -->
 
         <div class="container-fluid game-butt">
             <div class="center">
@@ -139,58 +126,28 @@
         </div>
     </section>
 
-
+<!-- Footer With High Score & Rules Toggle Buttons -->
 
     <footer class="container-fluid foot-pad">
         <div class="row">
             <div class="col-12">
-            <ul class="list-inline">
-                <li class="list-inline-item"><button type="button" id="high-scores" class="btn star-light" data-toggle="button" aria-pressed="false" autocomplete="off">
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                </button></li>
-                <li class="list-inline-item col-centered"><p>
-                    Developed by <b>RaVeR76</b> (2<img src="assets/images/smiley.png" alt="A rave smiley face" class="smiley-size">21)
-                </p> </li>
-                <li class="list-inline-item"><button type="button" id="game-rules" class="btn star-light" data-toggle="button" aria-pressed="false" autocomplete="off">
-                    <i class="fas fa-cog" aria-hidden="true"></i>
-                </button></li>
-             </ul>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <button type="button" id="high-scores" class="btn star-light" data-toggle="button" aria-pressed="false" autocomplete="off">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </button>
+                    </li>
+                    <li class="list-inline-item col-centered">
+                        <p>Developed by <b>RaVeR76</b> (2<img src="assets/images/smiley.png" alt="A rave smiley face" class="smiley-size">21)</p> 
+                    </li>
+                    <li class="list-inline-item">
+                        <button type="button" id="game-rules" class="btn star-light" data-toggle="button" aria-pressed="false" autocomplete="off">
+                            <i class="fas fa-cog" aria-hidden="true"></i>
+                        </button>
+                    </li>
+                </ul>
             </div>
-
-
-
-
-
-
-
-
-     <!--   <div class="col-2 col-sm-4">
-
-            <button type="button" id="high-scores" class="btn star-light" data-toggle="button" aria-pressed="false" autocomplete="off">
-                <i class="fas fa-star" aria-hidden="true"></i>
-            </button>
-
         </div>
-
-
-
-        <div class="col-8 col-sm-4 col-centered">    
-            <p>
-                Developed by <b>RaVeR76</b> (2<img src="assets/images/smiley.png" alt="A rave smiley face" class="smiley-size">21)
-            </p> 
-        </div>
-
-
-        <div class="col-2 col-sm-4">
-
-            <button type="button" id="game-rules" class="btn star-light" data-toggle="button" aria-pressed="false" autocomplete="off">
-                <i class="fas fa-cog" aria-hidden="true"></i>
-            </button>
-
-        </div>    -->
-
-    </div>
-
     </footer>
 
 <script type="text/javascript" src="assets/js/username.js"></script> 
