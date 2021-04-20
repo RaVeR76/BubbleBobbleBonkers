@@ -313,6 +313,3 @@ bubCharacterRef.addEventListener("click", bubTalk);
 highScoreDisplay.addEventListener("click", displayHighScores);
 resetHighScore.addEventListener("click", resetHiScores);
 gameRulesDisplay.addEventListener("click", displayGameRules);
-
-  
-  // STop you greeting & tell them the rules sham so they can play the wee game

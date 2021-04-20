@@ -8,14 +8,14 @@ const time = document.getElementById("timeLeft");
 const chat = document.getElementById("chat");
 const score = document.getElementById("scoreTotal");
 const flash = document.getElementById("time");
-const gamescore = document.getElementById("gamescore");
-const audiosource = document.getElementById("audioSource");
+const gameScore = document.getElementById("gamescore");
+const audioSource = document.getElementById("audioSource");
 const sound = document.getElementById("mute");
-const gameover = document.getElementById("gameover");
+const gameOver = document.getElementById("gameover");
 const newHighScore = document.getElementById("new-high");
-const levelup = document.getElementById("levelup");
-const newgame = document.getElementById("restart");
-const welldone = document.getElementsByClassName("welldone")[0];
+const levelNext = document.getElementById("levelup");
+const newGame = document.getElementById("restart");
+const wellDone = document.getElementsByClassName("welldone")[0];
 const unlucky = document.getElementsByClassName("welldone")[1];
 const completeGame = document.getElementsByClassName("jumbohead")[0];
 
@@ -86,8 +86,6 @@ ArrayOfImages[5]];
 
 shuffle(memoryCards);
 
-
-
 // Shuffle my array using the code below
 
     function shuffle(array) {
@@ -135,7 +133,7 @@ let numberOfCards = memoryCards.length;
 // The turnCard function - to turn the cards over on click event
 
 function turnCard() {
-    
+
     if (gridLock) return;
     if (this === cardOne) return;
 
@@ -287,23 +285,23 @@ function gameChat() {
 function gameLevelOver () {
 
     levelScore();
-    audiosource.setAttribute('src', "assets/audio/levelovershort.mp3");
-    gamescore.innerHTML = levelTot;
-    gameover.style.visibility = "visible";
+    audioSource.setAttribute('src', "assets/audio/levelovershort.mp3");
+    gameScore.innerHTML = levelTot;
+    gameOver.style.visibility = "visible";
 
     if (totalCards === 12 && ([1, 2, 3, 4].includes(+levelAt))) {
         
-        welldone.innerHTML = `Awesome Game ${gameName}`;
+        wellDone.innerHTML = `Awesome Game ${gameName}`;
         audio.muted = true;
     } 
     else if (totalCards === 12 && +levelAt === 5) {
         
-        audiosource.setAttribute('src', "assets/audio/levelover.mp3");
+        audioSource.setAttribute('src', "assets/audio/levelover.mp3");
         completeGame.innerHTML = `** YOU LEGEND **`;
-        welldone.innerHTML = `You Completed The <br>Game, ${gameName} !`;
-        levelup.removeEventListener("click", newLevel);                          // Removed so I could add the restart function to it
-        levelup.addEventListener("click", restart);
-        levelup.innerHTML = `Start New Game`;
+        wellDone.innerHTML = `You Completed The <br>Game, ${gameName} !`;
+        levelNext.removeEventListener("click", newLevel);                          // Removed so I could add the restart function to it
+        levelNext.addEventListener("click", restart);
+        levelNext.innerHTML = `Start New Game`;
         audio.muted = true;
     }
 
@@ -327,7 +325,7 @@ function levelScore() {
 
         case 1:
 
-            levelup.innerHTML = `Play Level Two`;
+            levelNext.innerHTML = `Play Level Two`;
 
             if (levelTot > level1Hi) {
                 localStorage.setItem("Level1HiScore", levelTot);
@@ -337,7 +335,7 @@ function levelScore() {
 
         case 2:
 
-            levelup.innerHTML = `Play Level Three`;    
+            levelNext.innerHTML = `Play Level Three`;    
             levelTot *= 2;
 
             if (levelTot > level2Hi) {
@@ -348,7 +346,7 @@ function levelScore() {
         
         case 3:
 
-            levelup.innerHTML = `Play Level Four`;
+            levelNext.innerHTML = `Play Level Four`;
             levelTot *= 3;
             
             if (levelTot > level3Hi) {
@@ -359,7 +357,7 @@ function levelScore() {
         
         case 4:
 
-            levelup.innerHTML = `Play Last Level`;
+            levelNext.innerHTML = `Play Last Level`;
             levelTot *= 4;
 
             if (levelTot > level4Hi) {
@@ -453,14 +451,14 @@ function restart (){
 timer = setInterval(function() {      // Code from Stack Overflow & modified to suit
 
     time.innerHTML = (countDown--);
-    if(countDown == 11) audiosource.setAttribute('src', "assets/audio/main-theme-faster.mp3");
+    if(countDown == 11) audioSource.setAttribute('src', "assets/audio/main-theme-faster.mp3");
     if(countDown <= 9) flash.classList.add("flash");
     if(countDown === -1) clearInterval(timer), timeout.style.visibility = "visible", unlucky.innerHTML = `Unlucky ${gameName}`, 
-                         audiosource.setAttribute('src', "assets/audio/gameover.mp3");
+                         audioSource.setAttribute('src', "assets/audio/gameover.mp3");
    
 }, 1000);
 
 cards.forEach((card) => card.addEventListener("click", turnCard));
 sound.addEventListener("click", mute);
-levelup.addEventListener("click", newLevel);
-newgame.addEventListener("click", restart);
+levelNext.addEventListener("click", newLevel);
+newGame.addEventListener("click", restart);

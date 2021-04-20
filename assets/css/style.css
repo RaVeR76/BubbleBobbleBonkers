@@ -520,6 +520,7 @@ footer {
     #reset-jumbo {
         width: 50%;
         font-size: 1.7rem;
+        height: 33rem;
     }
 
     #rules-jumbo {
@@ -643,11 +644,13 @@ footer {
     #reset-jumbo {
         width: 50%;
         font-size: 1.6rem;
+        height: 33rem;
     }
 
     #rules-jumbo {
         width: 50%;
         font-size: 1.4rem;
+        height: 33rem;
     }
 
     .game-butt {
@@ -761,11 +764,13 @@ footer {
     #reset-jumbo {
         width: 50%;
         font-size: 1.5rem;
+        height: 33rem;
     }
 
     #rules-jumbo {
         width: 50%;
         font-size: 1.3rem;
+        height: 33rem;
     }
 
     .col-centered{
