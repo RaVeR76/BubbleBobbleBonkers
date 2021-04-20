@@ -19,6 +19,7 @@ const levelTwoHiDisplay = document.getElementsByClassName("hi-score")[1];
 const levelThreeHiDisplay = document.getElementsByClassName("hi-score")[2];
 const levelFourHiDisplay = document.getElementsByClassName("hi-score")[3];
 const levelFiveHiDisplay = document.getElementsByClassName("hi-score")[4];
+const zeroReset = 0;
 
 let user = document.getElementById('username');
 let form = document.getElementById('uname');
@@ -30,6 +31,12 @@ let level5Hi = localStorage.getItem("Level5HiScore");
 let clickCounterBub = 0;
 let clickCounterBob = 0;
 let gameName = "";
+
+let countDown = 60;
+localStorage.setItem("CountDown", countDown);      // These 4 lines of code is just to reset the gamezone main variables
+let level = 1;
+localStorage.setItem("Level", level);
+
 
 
 // On Start Up
@@ -51,17 +58,11 @@ function handleSubmit(event) {
     gameName = user.value;   
     localStorage.setItem("GameName", gameName);   // Used this method for transferring the users Game Name from Intro Zone to The Game Zone so I can interact with them during the game :)
 
-    let countDown = 60;
-    localStorage.setItem("CountDown", countDown);      // These 4 lines of code is just to reset the gamezone main variables
-    let level = 1;
-    localStorage.setItem("Level", level);
-
     clickCounterBub = 0;    // added this because the chat would jump if you pressed 'go' again !
     clickCounterBob = 0;
 
     playButton.style.visibility = "visible";
     buttonName.innerHTML = `Enter The Gamezone <b>${gameName}</b> !`;
-
 
     bubCharacterRef.innerHTML = `<img src="assets/cards/bub-card.jpg" alt="Wee Bubble Bobble Bub" class="bub-size">`;
   
@@ -78,8 +79,6 @@ function handleSubmit(event) {
         speechBubs.innerHTML =`<p>Hey <b>${gameName}</b>, pleased to meet you ... my name is <b>Bub</b> !</p> <p>Click me then Bob & vice versa, for some comedy chit chat !</p>`;
 
     }, 2000);
-
-    //document.getElementById('username').value = ''; // Removes the username from the input field once button is hit
 
 };
 
@@ -209,7 +208,6 @@ function bobTalk(event) {
         speechBobs.style.visibility = "visible";
     } 
 
-
     bobCharacterRef.removeEventListener("click", bobTalk);
     bubCharacterRef.addEventListener("click", bubTalk);
 
@@ -220,35 +218,35 @@ function checkHiScore () {
 
     if (level1Hi === null) {
         levelOneHiDisplay.innerHTML = `0`;
-        localStorage.setItem("Level1HiScore", 0);
+        localStorage.setItem("Level1HiScore", zeroReset);
     } else {
         levelOneHiDisplay.innerHTML = `${level1Hi}`;
     };
 
     if (level2Hi === null) {
         levelTwoHiDisplay.innerHTML = `0`;
-        localStorage.setItem("Level2HiScore", 0);
+        localStorage.setItem("Level2HiScore", zeroReset);
     } else {
         levelTwoHiDisplay.innerHTML = `${level2Hi}`;
     };
 
     if (level3Hi === null) {
         levelThreeHiDisplay.innerHTML = `0`;
-        localStorage.setItem("Level3HiScore", 0);
+        localStorage.setItem("Level3HiScore", zeroReset);
     } else {
         levelThreeHiDisplay.innerHTML = `${level3Hi}`;
     };
 
     if (level4Hi === null) {
         levelFourHiDisplay.innerHTML = `0`;
-        localStorage.setItem("Level4HiScore", 0);
+        localStorage.setItem("Level4HiScore", zeroReset);
     } else {
         levelFourHiDisplay.innerHTML = `${level4Hi}`;
     };
 
     if (level5Hi === null) {
         levelFiveHiDisplay.innerHTML = `0`;
-        localStorage.setItem("Level5HiScore", 0);
+        localStorage.setItem("Level5HiScore", zeroReset);
     } else {
         levelFiveHiDisplay.innerHTML = `${level5Hi}`;
     };
@@ -300,11 +298,11 @@ function resetHiScores (event){
 
     event.preventDefault();
 
-    localStorage.setItem("Level1HiScore", 0);
-    localStorage.setItem("Level2HiScore", 0);
-    localStorage.setItem("Level3HiScore", 0);
-    localStorage.setItem("Level4HiScore", 0);
-    localStorage.setItem("Level5HiScore", 0);
+    localStorage.setItem("Level1HiScore", zeroReset);
+    localStorage.setItem("Level2HiScore", zeroReset);
+    localStorage.setItem("Level3HiScore", zeroReset);
+    localStorage.setItem("Level4HiScore", zeroReset);
+    localStorage.setItem("Level5HiScore", zeroReset);
 
     location.reload();
 

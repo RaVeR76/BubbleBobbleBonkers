@@ -26,6 +26,9 @@ let level2Hi = localStorage.getItem("Level2HiScore");
 let level3Hi = localStorage.getItem("Level3HiScore");
 let level4Hi = localStorage.getItem("Level4HiScore");
 let level5Hi = localStorage.getItem("Level5HiScore");
+let hasTurnCard = false;
+let gridLock = false;   // Added this because once you selected two cards, you could select another which messed up the sequence
+let cardOne, cardTwo;
 let points = 0;
 let totalCards = 0;
 let matchNumber = -1;
@@ -116,13 +119,9 @@ let numberOfCards = memoryCards.length;
     memoryCards.forEach(function(image) {
     
     let img = document.createElement('img');
-    
     let memCardAtt = memoryCards[i++];
-
-    //img.setAttribute("id", memCardAtt.name);
     img.classList.add("hide");
     img.src = memCardAtt.src;
-    
     let cardStyle = document.getElementsByClassName("grid-item")[i-1];
    
     cardStyle.setAttribute("id", memCardAtt.name);
@@ -135,12 +134,8 @@ let numberOfCards = memoryCards.length;
 
 // The turnCard function - to turn the cards over on click event
 
-let hasTurnCard = false;
-let gridLock = false;   // Added this because once you selected two cards, you could select another which messed up the sequence
-let cardOne, cardTwo;
-
-
 function turnCard() {
+    
     if (gridLock) return;
     if (this === cardOne) return;
 
@@ -157,6 +152,8 @@ function turnCard() {
     cardCheck();
    
 };
+
+
 
 // The cardCheck function - compares the two selected cards & calls functions depending on outcome of match
 
@@ -190,7 +187,7 @@ function cardsMatch(){
     matchReset();
 };
 
-// The cardsDontMatch function - if cards do not match then turns the cards back over again in 2 sec & calls resetMatch
+// The cardsDontMatch function - if cards do not match then turns the cards back over again in 1 sec & calls resetMatch
 
 function cardsDontMatch() {
 
@@ -208,6 +205,8 @@ function cardsDontMatch() {
 , 1000);
 
 };
+
+
 
 // The resetMatch function - this just resets some variables to allow the card selection sequence to start again
 
@@ -245,8 +244,10 @@ function gameChat() {
         case 5:
             chat.innerHTML = `${gameName}, the high score is ${level5Hi}`;
             break;
-    }
 
+        default:
+            break;
+    }
 
 
     switch (totalCards) {
@@ -294,8 +295,8 @@ function gameLevelOver () {
         
         welldone.innerHTML = `Awesome Game ${gameName}`;
         audio.muted = true;
-     } 
-        else if (totalCards === 12 && +levelAt === 5) {
+    } 
+    else if (totalCards === 12 && +levelAt === 5) {
         
         audiosource.setAttribute('src', "assets/audio/levelover.mp3");
         completeGame.innerHTML = `** YOU LEGEND **`;
@@ -322,10 +323,6 @@ function levelScore() {
    
     levelTot = (countDown += 1) * points;
 
-    console.log(countDown);
-    console.log(points);
-    console.log(levelTot);
-
     switch (+levelAt) {
 
         case 1:
@@ -336,17 +333,17 @@ function levelScore() {
                 localStorage.setItem("Level1HiScore", levelTot);
                 newHighScore.innerHTML = `New High Score ${levelTot}`;
                 }
-                break;
+            break;
 
         case 2:
 
             levelup.innerHTML = `Play Level Three`;    
-
             levelTot *= 2;
+
             if (levelTot > level2Hi) {
-            localStorage.setItem("Level2HiScore", levelTot);
-            newHighScore.innerHTML = `New High Score ${levelTot}`;
-            }
+                localStorage.setItem("Level2HiScore", levelTot);
+                newHighScore.innerHTML = `New High Score ${levelTot}`;
+                }
             break;
         
         case 3:
@@ -393,15 +390,15 @@ function levelScore() {
 
 function levelUp () {
     
-   if (levelAt === 2) {
-       countDown = 50;
-   } else if (levelAt === 3) {
-     countDown = 40;
-   } else if (levelAt === 4) {
-       countDown = 30;
-   } else if (levelAt === 5) {
-    countDown = 20;                                 // Change to 20 once game is finished
-   }
+    if (levelAt === 2) {
+        countDown = 50;
+    } else if (levelAt === 3) {
+        countDown = 40;
+    } else if (levelAt === 4) {
+        countDown = 30;
+    } else if (levelAt === 5) {
+        countDown = 20;
+    }
    
    localStorage.setItem("CountDown", countDown);
    localStorage.setItem("Level", levelAt);
@@ -451,21 +448,19 @@ function restart (){
 };
 
 
+// 60 Second Timer
 
 timer = setInterval(function() {      // Code from Stack Overflow & modified to suit
 
     time.innerHTML = (countDown--);
     if(countDown == 11) audiosource.setAttribute('src', "assets/audio/main-theme-faster.mp3");
     if(countDown <= 9) flash.classList.add("flash");
-    if(countDown === -1) clearInterval(timer), timeout.style.visibility = "visible", unlucky.innerHTML = `Unlucky ${gameName}`, audiosource.setAttribute('src', "assets/audio/gameover.mp3");
+    if(countDown === -1) clearInterval(timer), timeout.style.visibility = "visible", unlucky.innerHTML = `Unlucky ${gameName}`, 
+                         audiosource.setAttribute('src', "assets/audio/gameover.mp3");
    
 }, 1000);
 
-
 cards.forEach((card) => card.addEventListener("click", turnCard));
-
 sound.addEventListener("click", mute);
-
 levelup.addEventListener("click", newLevel);
-
 newgame.addEventListener("click", restart);
