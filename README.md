@@ -434,11 +434,25 @@ So this confused the hell out of me ffs.
 
 
 
-couldn't get high scores to reset properly using remove local storage so just had to put the 5 level hi =gh scores to zero when rest button pressed
+couldn't get high scores to reset properly using remove local storage so just had to put the 5 level hi =gh scores to zero when reset button pressed
+
+Could't figure out why when you refreshed the page and started the gamezone that it still said null when dispalying the current high score
+I thought I was zeroing the high scores within my checkHiScore function but I was only zeroing the High Score Jumbotron innerHTML for display purposes only.
+Once I realise this mistake I added 'localStorage.setItem("Level1HiScore", 0);' for each level which zero's the high scores only if the value was orginally 'null'.
+The function allows for current level high score to be kept & displayed to the jumbotron.
+I also added the checkHiScore function on start up so everything is in place :) 
 
 score calculations .... the time left when level was completed did not match my 'time left' on the console log (it was 1 second out every time)
 levelTot = countDown * points;
 levelTot = (countDown += 1) * points;
+
+
+
+
+
+User Storys - When Testing - Small laptop screen cards where ovelapping the chat item etc etc
+Works Good in portrait mode but not good in landscape mode :( A bug that will be fixed in the future
+
 
 
 ### The Development Journey

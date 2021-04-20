@@ -38,6 +38,19 @@ console.log(clickCounterBob);
 
 
 
+
+// On Start Up
+
+document.addEventListener("DOMContentLoaded", function() {
+   
+    checkHiScore();
+    
+ });
+
+
+
+
+
 function handleSubmit(event) {
     
     event.preventDefault();
@@ -251,30 +264,35 @@ function checkHiScore () {
 
     if (level1Hi === null) {
         levelOneHiDisplay.innerHTML = `0`;
+        localStorage.setItem("Level1HiScore", 0);
     } else {
         levelOneHiDisplay.innerHTML = `${level1Hi}`;
     };
 
     if (level2Hi === null) {
         levelTwoHiDisplay.innerHTML = `0`;
+        localStorage.setItem("Level2HiScore", 0);
     } else {
         levelTwoHiDisplay.innerHTML = `${level2Hi}`;
     };
 
     if (level3Hi === null) {
         levelThreeHiDisplay.innerHTML = `0`;
+        localStorage.setItem("Level3HiScore", 0);
     } else {
         levelThreeHiDisplay.innerHTML = `${level3Hi}`;
     };
 
     if (level4Hi === null) {
         levelFourHiDisplay.innerHTML = `0`;
+        localStorage.setItem("Level4HiScore", 0);
     } else {
         levelFourHiDisplay.innerHTML = `${level4Hi}`;
     };
 
     if (level5Hi === null) {
         levelFiveHiDisplay.innerHTML = `0`;
+        localStorage.setItem("Level5HiScore", 0);
     } else {
         levelFiveHiDisplay.innerHTML = `${level5Hi}`;
     };
@@ -299,8 +317,6 @@ function displayHighScores(event){
         resetJumbo.style.display = "block";
         highScoreDisplay.classList.add("star-swap");
       };
-
-      checkHiScore();
 
 };
 
@@ -329,17 +345,11 @@ function resetHiScores (event){
 
     event.preventDefault();
 
-
-    let level1Hi = 0;
-    localStorage.setItem("Level1HiScore", level1Hi);
-    let level2Hi = 0;
-    localStorage.setItem("Level2HiScore", level2Hi);
-    let level3Hi = 0;
-    localStorage.setItem("Level3HiScore", level3Hi);
-    let level4Hi = 0;
-    localStorage.setItem("Level4HiScore", level4Hi);
-    let level5Hi = 0;
-    localStorage.setItem("Level5HiScore", level5Hi);
+    localStorage.setItem("Level1HiScore", 0);
+    localStorage.setItem("Level2HiScore", 0);
+    localStorage.setItem("Level3HiScore", 0);
+    localStorage.setItem("Level4HiScore", 0);
+    localStorage.setItem("Level5HiScore", 0);
 
 
     location.reload();
