@@ -284,10 +284,10 @@ function displayGameRules(event){
 
     if (rulesJumbo.style.display === "block") {             // Got from https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp & changed to suit me
         rulesJumbo.style.display = "none";
-        gameRulesDisplay.classList.remove("mute");
+        gameRulesDisplay.classList.remove("star-swap");
       } else {
         rulesJumbo.style.display = "block";
-        gameRulesDisplay.classList.add("mute");
+        gameRulesDisplay.classList.add("star-swap");
       };
 
 };
