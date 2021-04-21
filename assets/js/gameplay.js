@@ -46,7 +46,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // Create my game array using all available card images
-
+/**
+ * 
+ */
 let ArrayOfImages = [
 { name : "blubs", src : 'assets/cards/baron-von-blubba-card.jpg'}, 
 { name : "bels", src : 'assets/cards/beluga-card.jpg'}, 
@@ -87,7 +89,11 @@ ArrayOfImages[5]];
 shuffle(memoryCards);
 
 // Shuffle my array using the code below
-
+/**
+ * 
+ * @param {*} array 
+ * @returns 
+ */
     function shuffle(array) {
   let currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -108,7 +114,9 @@ shuffle(memoryCards);
 };
 
 // Populate the gameplay grid
-
+/**
+ * 
+ */
 function displayCards() {
 
 let numberOfCards = memoryCards.length;
@@ -131,7 +139,10 @@ let numberOfCards = memoryCards.length;
 
 
 // The turnCard function - to turn the cards over on click event
-
+/**
+ * 
+ * @returns 
+ */
 function turnCard() {
 
     if (gridLock) return;
@@ -154,7 +165,9 @@ function turnCard() {
 
 
 // The cardCheck function - compares the two selected cards & calls functions depending on outcome of match
-
+/**
+ * 
+ */
 function cardCheck() {
 
     let cardTest1 = cardOne.id;
@@ -167,7 +180,9 @@ function cardCheck() {
 
 
 // The cardsMatch function - if cards match then it stops the two cards from turning back over & calls matchReset
-
+/**
+ * 
+ */
 function cardsMatch(){
 
     cardOne.removeEventListener("click", turnCard);
@@ -186,7 +201,9 @@ function cardsMatch(){
 };
 
 // The cardsDontMatch function - if cards do not match then turns the cards back over again in 1 sec & calls resetMatch
-
+/**
+ * 
+ */
 function cardsDontMatch() {
 
     gridLock = true;
@@ -207,7 +224,9 @@ function cardsDontMatch() {
 
 
 // The resetMatch function - this just resets some variables to allow the card selection sequence to start again
-
+/**
+ * 
+ */
 function matchReset() {
     
     [hasTurnCard, gridLock] = [false, false];
@@ -281,7 +300,9 @@ function gameChat() {
 };
 
 
-
+/**
+ * 
+ */
 function gameLevelOver () {
 
     levelScore();

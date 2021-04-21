@@ -48,7 +48,16 @@ document.addEventListener("DOMContentLoaded", function() {
  });
 
 
-
+/**
+ * This function is initiated by the user entering their Game Name & pressing the Go button, on the intro page. 
+ * It starts the intro audio, 
+ * stores the users game name for that interactive experience.
+ * 
+ * It resets two chat counter variables, displays the gamezone button & starts the comedy chat with Bub & his speech bubble. 
+ * Quite a busy wee function this :)
+ * 
+ * @param {*} event 
+ */
 function handleSubmit(event) {
     
     event.preventDefault();
@@ -68,7 +77,10 @@ function handleSubmit(event) {
   
     speechBubs.style.visibility = "visible";
     speechBubs.innerHTML = `<p>Hey <b>${gameName}</b>, pleased to meet you ... my name is <b>Bub</b> !</p>`;
-
+    
+    /**
+     * A 2 second delay before Bob appears on the screen with his speech bubble & some chat
+     */
     setTimeout(function(){
        
         bobCharacterRef.innerHTML = `<img src="assets/cards/bob-card.jpg" alt="Wee Bubble Bobble Bob" class="bob-size">`
@@ -84,7 +96,19 @@ function handleSubmit(event) {
 
 
 
-
+/**
+ * This function is initiated by the user clicking on the green character Bub, on the intro page
+ * It first adds one to the clickCounterBub variable which was declared zero, at the start
+ * Then it checks for specific instances as regards how many times each character has been clicked
+ * This allowed me to make them chat individually & in the correct order
+ * I also utilise the users game name within my chat & therefore adding a little more interactivity to the experience
+ * I later added the effect of only showing one speech bubble at a time by using 'visible' & 'hidden' properties
+ * It also made it much easier to follow the chat between the two.
+ * At the end I remove the click event for this dude below, aka Bub & then 
+ * adds one to Bob, which calls his own wee function, similar to this one
+ * 
+ * @param {*} event 
+ */
 function bubTalk(event) {
   //   Prevent the default submit action
     event.preventDefault();
@@ -155,7 +179,20 @@ function bubTalk(event) {
 
 
 
-
+/**
+ * This function is initiated by clicking on the blue character Bob, on the intro page
+ * It first adds one to the clickCounterBob variable which was declared zero, at the start
+ * Then it checks for specific instances as regards how many times each character has been clicked
+ * This allowed me to make them chat individually & in the correct order
+ * I also utilise the users game name within my chat & therefore adding a little more interactivity to the experience
+ * I later added the effect of only showing one speech bubble at a time by using 'visible' & 'hidden' properties
+ * It also made it much easier to follow the chat between the two.
+ * At the end I remove the click event for this dude below, aka Bob & then I
+ * add one to Bub from above, which calls his own wee function, similar to this one .... Deja Vu anyone !
+ * 
+ * 
+ * @param {*} event 
+ */
 function bobTalk(event) {
    //  Prevent the default submit action
     event.preventDefault();
@@ -213,39 +250,49 @@ function bobTalk(event) {
 
 };
 
-
+/**
+ * This function is initiated on page start up
+ * I had to add this because if the user plays it for the first time their high scores would be displayed as 'null' until they actually got high scores
+ * 
+ * So Level1Hi & the rest of the crew are declared at the start, as the High Scores from the gamezone which has been stored in local memory
+ * The function checks if each levels high score is equal to 'null'
+ * If it is, it will set the High Scores stored in memory to zero   
+ * And if it's not equal to 'null', it will then display the High Score that is stored in memory, within the High Score Reset jumbotron
+ * It checks this for all 5 levels too
+ *  
+ */
 function checkHiScore () {
 
     if (level1Hi === null) {
-        levelOneHiDisplay.innerHTML = `0`;
+       // levelOneHiDisplay.innerHTML = `0`;
         localStorage.setItem("Level1HiScore", zeroReset);
     } else {
         levelOneHiDisplay.innerHTML = `${level1Hi}`;
     };
 
     if (level2Hi === null) {
-        levelTwoHiDisplay.innerHTML = `0`;
+       // levelTwoHiDisplay.innerHTML = `0`;
         localStorage.setItem("Level2HiScore", zeroReset);
     } else {
         levelTwoHiDisplay.innerHTML = `${level2Hi}`;
     };
 
     if (level3Hi === null) {
-        levelThreeHiDisplay.innerHTML = `0`;
+      //  levelThreeHiDisplay.innerHTML = `0`;
         localStorage.setItem("Level3HiScore", zeroReset);
     } else {
         levelThreeHiDisplay.innerHTML = `${level3Hi}`;
     };
 
     if (level4Hi === null) {
-        levelFourHiDisplay.innerHTML = `0`;
+     //   levelFourHiDisplay.innerHTML = `0`;
         localStorage.setItem("Level4HiScore", zeroReset);
     } else {
         levelFourHiDisplay.innerHTML = `${level4Hi}`;
     };
 
     if (level5Hi === null) {
-        levelFiveHiDisplay.innerHTML = `0`;
+     //   levelFiveHiDisplay.innerHTML = `0`;
         localStorage.setItem("Level5HiScore", zeroReset);
     } else {
         levelFiveHiDisplay.innerHTML = `${level5Hi}`;
@@ -256,7 +303,14 @@ function checkHiScore () {
 
 
 
-
+/**
+ * The function is initiated by pressing the small star button located in my footer
+ * Once pressed the High Score & Reset Button jumbotron will appear using the 'visible' property
+ * The next bit of code I got from w3schools which allows me to toggle the high score jumbotron when pressing the button
+ * I added the add / remove class for changing the colour of the button when pressed giving it that added toggly effect
+ * 
+ * @param {*} event 
+ */
 function displayHighScores(event){
 
     event.preventDefault();
@@ -275,7 +329,16 @@ function displayHighScores(event){
 };
 
 
-
+/**
+ * The function is initiated by pressing the small cog button located in my footer
+ * Once pressed the Rules jumbotron will appear using the 'visible' property
+ * The next bit of code I got from w3schools which allows me to toggle the rules jumbotron when pressing the button
+ * I added the add / remove class for changing the colour of the button when pressed giving it that added toggly effect* 
+ * 
+ * 
+ * 
+ * @param {*} event 
+ */
 function displayGameRules(event){
 
     event.preventDefault();
@@ -293,7 +356,17 @@ function displayGameRules(event){
 };
 
 
-
+/**
+ * This function is activated the user presses the Reset Button located within the High Scores jumbotron
+ * It sets each level High Score that is stored in memory to zero
+ * And then it reloads the page so it does the checkHiScores function
+ * You may ask why not just add checkHiScores in the below function which seemed plausible & the way I had it at first
+ * Unfortunately checkHiScores variables are the same storage locations below & are declared at the start so they wouldn't change 
+ * That's why it gets called on startup & this function calls for a reload
+ * The reload declares the level high score variables again which have been zeroed by this function giving the effect of a reset
+ * 
+ * @param {*} event 
+ */
 function resetHiScores (event){
 
     event.preventDefault();
@@ -308,6 +381,18 @@ function resetHiScores (event){
 
 };
 
+
+
+/**
+ * This is were all the action is happening I tell ye ...
+ * This is just my list events that I am listening out for
+ * 
+ * The first one is a submit event when the user presses game name input button
+ * The second one is click event when the user presses on the Bub character
+ * The third one is another click event when the user presses the High Score, star icon button
+ * The forth one is also a click event when the user presses the High Score Reset Button
+ * Last but not least, you guessed it ... a click event when the user presses the Rules, cog icon button
+ */
 form.addEventListener('submit', handleSubmit);
 bubCharacterRef.addEventListener("click", bubTalk);
 highScoreDisplay.addEventListener("click", displayHighScores);

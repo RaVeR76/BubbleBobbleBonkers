@@ -354,6 +354,11 @@ I also want the user to feel they are interacting with Bob & Bub by adding good 
 
 * **Implementation**
 
+When writing up the functions I found that I could remove some js by adding a '0' to my high-score spans, in my html .... D'OH !
+instead of using innerHTML = `0`; everytime :)
+
+
+
 * **Test**
 
 * **Result**
