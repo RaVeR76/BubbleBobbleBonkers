@@ -183,6 +183,12 @@ Possible high score register for user to compete against (can also be reset by u
 # Features
 ---
 
+Future features .... harder levels
+Different backdrops utilising orginal screenshots that I have
+
+Landscape View Working
+
+
 
 # Technologies Utilised
 ---
@@ -223,17 +229,48 @@ Only messing, I did want a cool retro looking game & I feel I have pulled it off
 At the start I gathered as much info, pictures, images, game sprites, audio, as I could .... I even got screenshots of every level from the original game.
 I actually used round87 where I edited out some other background detail to give me the open space for my game design.
 I amended the Bubble Bobble image for my main headings in Paint 3D by adding a 3D Bonkers using my main pink colour.
-
+I got an image with all the main Bubble Bobble characters on it & edited this to remove each character separately.
+I centered each image and resized them to 200px by 200px for my card characters.
+I also utilised the Bub and Bob characters for the comedy chat on the Intro.
+As regards the buttons, I decided on them as I went along.
 
 
 
 
 * **Test**
 
+I have tested this game so many times myself and deep down I still really love it ha ha ... I think it's an awesome wee game considering I only learnt Javascript
+about 2 months ago and only started developing the game a month ago.
+It's a simple wee game which gets harder each level by the fact it removes 10 second from the previous time.
+It stores your high score so you can try and beat it everytime.
+I try to be interactive with the user by getting their Game Name and using it where possible to involve them in the intro chat & game play messages.
+Aesthetically it looks really good & the audio works well at each instance is used. These are the orginal audio clips from the orignal Bubble Bobble too.
+
+I shared my link with a few lads and lasses at work breaktime, so they could be my testers .... they all loved it and said it was super addictive !
+Especially when I said that if you complete the last level .... you become a <b>Legend !</b> ha ha .... should have seen their wee fingers tapping cards like mad :)
+Anyways, I came back for lunch and as I walked in the canteen ... all you heard was the wee Bubble Bobble theme tune blasting out from several different phones.
+Not gonna lie ... that was one of the best feelings that I have ever felt, in a long long time :)
+My boss text me at like 9 that night saying he was a Legend so he must've been playing it ... love it ha ha !
+I got them to test everything within the game, I got them to fill out a questionnaire that I made and also add their device / operating systems too.
+ 
+Unfortunately, the biggest bug I came across and I will talk about later within my <b>Bug Section</b> was the fact that the game doesn't work on iOS operating system device and therefore Safari .... I was truely gutted when I found this out from my Mentor because whilst it looked really cool to me, his would not display the characters when the cards turned. He has a Mac by the way. That near broke me as it was os unexpected but I will explain leter as said already.
+
 * **Result**
+
+Overall, the game works really well and give the user more than I expected it to. It's aesthetically pleasing, has a catchy backdrop with catchy music.
+It is slightly addictive which is what I had anticapated at the start and secretly aimed for.
+The overall layout looks awesome and I am super happy with how it looks overall.
+The cards turn when pressed, they lock when matched, the score adds up, the time counts down. When the timer gets to 10 seconds the timer starts to flash
+and I changed the music to the faster sounding version .... talk about the heart beating faster when them two actions happen, gets the adrenilin going that wee combo does :)
+It's deffo easy the first couple of levels but the last level is quite tough to be fair but if you really want that <b>Legendary Status</b> ... it has to be completed.
+Obviously, there is always room for improvement and I already have some thoughts on these in the <b>Features</b> section.
 
 * **Verdict**
 
+I'm very happy with the end result, the game is interactive and works really well.
+Anyone that has played it, gave me awesome feedback and said they would deffo play it again.
+It deffo takes you away from your normal life for a few monents, if not hours ha ha but this was what I wanted in the plan :)
+I actually can't wait until I finish this course and get back to maybe extending it further with a few harder upgrades.
 
 ### **Multiple Device Play**
 
@@ -249,7 +286,23 @@ I may increase the maximum tile numbers as the screen size gets larger but we wi
 
 * **Implementation**
 
+I used the Code Institute Github template as I know these had all that I required to build my game up.
+I utilsed Bootstrap for most of my layout and used CSS grid-container class for my cards whcih I got from w3schools.
+
+
 * **Test**
+
+This game is really only designed for <b>Portrait View</b> and I will look at making it work better on <b>Landscape View</b> at a later date.
+I have to be honest, I only noticed the extent of landscape mode issue when I had the users test it.
+I had always looked at my game in portrait mode using <b>Chrome Dev Tools</b> and responsive mode but it never dawned on me that it would become 
+overlapping on screens where the width is larger than the height.
+This was my second major frustration, just behind the iOS Safari issue, but something I will fix in the future for sure and I will remember this for future projects.
+
+On large screened desktops, large screened laptops the game will still work, it's just the smaller screens is where it becomes crammed.
+On tablets / mobiles and in portrait view, I think it looks really cool especially the Gamezone.
+I checked on my devices, I checked on my wee testers devices and all looked really well ... visually.
+
+
 
 * **Result**
 
@@ -505,3 +558,8 @@ https://www.codegrepper.com/code-examples/css/javascript+load+with+flashing+text
 
 
 I've added some adult humour for the purposes of having a laugh but obviously if this was going to be seen by children I would remove it & keep it clean
+
+https://www.w3schools.com/css/css_grid_container.asp - Grid container
+
+CONCLUSION
+
