@@ -369,12 +369,49 @@ The third level will have again 12 tiles but the time will either be 40 or 50 se
 
 * **Implementation**
 
+Okay so my plan changed a little as regards the original design concept. 
+I now have 5 levels with first level have a countdown starting at 60 seconds.
+The levels after this, I have taken 10 seconds off the countdown for each consecutive level.
+So whilst Level One has a 60 second countdown .... Level Five has a 20 second countdown.
+
+I found this one quite difficult at the start to figure out and did stress a bit at trying to get it to work.
+There probably is an easier way to make it happen but I used local storage to store my <b>countDown</b> variable of 60 and my <b>levelAt</b> variable of 1.
+I had to use this method so that it stores the next countDown variable and levelAt from my levelUp function.
+My levelUp function checks what level the user is at and assigns the correct countDown value for the next level to be played and then stores this in local storage.
+This levelUp function is called for within my newLevel function which adds one to to my levelAt and also reloads the page.
+
+So now the reason I had to use local storage this way was because on reload, if I had declared my countDown and levelAt variables as 60 and 1 respectively.
+Then everytime the game restarted the user would be stuck on level one for 60 seconds every single level played .... it would be endless.
+I also declare these variables in the Intro when the Game Name input button his pressed so that if the user jumps back to the Intro page
+and then back to the gamezone, the countDown and levelAt variables will reset ... if I didn't do this then the user would start at the last level they played.
+
+I added a flashing effect which I got the code from codegrepper and it's credited in the credits. I modified it to suit my game and I think it adds that
+extra wee touch plus makes you panic when you see it. I make the flash happen when there is 9 seconds left on the clock.
+It activates on 10 seconds when displayed so there is an offset of 1 second within my code somewhere.
+Also at 11 seconds I change the theme audio to a faster one which makes you panic a little more too.
+
+Like I said above, there is probably a much simplier method to do this but I am so happy it works within my game ... whether it's correct or not. 
+
+Also remember that Level One starts automatically when the page is reloaded so this is the reason why I start some switch cases from case 2.
+
 * **Test**
+
+Once I had sorted out some issues I had from above, the countDown worked really well at each level.
+I first had 60 in my HTML (time-left) span but every new level it displayed 60 then jumped to 40 or 30 depending on the level.
+I simply added -- to the span instead so it starts with these then counts down appropiately .... whilst its not pretty, it's much better than jumping from 60 everytime.
+As the users play through the levels, the time is decreasing by 10 seconds each level so that tested perfectly.
+As I mentioned above I declared the countDown variable on the intro page because it would always be 60 on reload.
 
 * **Result**
 
+Really happy with how the game developed and me with it as I learned Javascript.
+The levels do get more difficult as the they increase.
+The first couple are really easy, with the next two relatively easy but level five is quite hard but completey doable :)
+There are five levels instead of the planned three so that's a nice added bonus for the user. 
+
 * **Verdict**
 
+Levels get harder as you progress so that's the main design function I wanted.
 
 ### **Current Players High Score**
 
@@ -386,12 +423,62 @@ So the user has a goal for each game he or she plays. Just a wee added incentive
 
 * **Implementation**
 
+I'll be honest this was quite hard as well for me. I had a few issues getting this working and over the line.
+Issues, like null being displayed or issues with getting the high scores to reset.
+
+Anyway, I utilised the local storage for storing each levels high score so I could display when required on either screen.
+
+First I had to think of a way of creating a good score as the gameplay scoring was too low.
+Like image if you completed Level One and it says your New High Score is 17 ... you'd be pretty annoyed at how low it was (I was at first hence
+why I added extra calculations). 
+I decided to make a Level Total score by multiplying the <b>Time Left</b> by <b>Level Score</b> by <b>Level Number</b>.
+This would give the user a nice higher score and the quicker they complete it the more points they get.
+It also makes it easier for having a bigger points swing between playing the same level i.e. the user could get 1200 pts on level one
+and the next time they play level one the user could get 850 pts. 
+
+So this calculation for each Level is carried out in my levelScore function.
+I first calculate the levelTot which is time left multiplied by level score, as this is common acrtoss all the levels.
+I then use a switch statement looking at what level the user is on which is stored in levelAt.
+Depending on case, as in level, it will multiply the level number by the previous levelTot, calculated at the start of the function.
+It also displays the score in the gameover jumbotron when it is displayed.
+It then checks if the level score is larger than the current High Level (levelTot > level1Hi). If it is it stores the new High Score in local storage.
+It will also display this New High Score in the gameover jumbotron so the user knows they beat their last high score.
+This gets repeated at each level with the difference being the level multiplier.
+
+So lets say you finish Level One. In the cartdsMatch function the totalCards will have equalled twelve.
+This will call my gameLevelOver function. First it calls my levelScore function so it calculates the high score for that level as explained above.
+It then plays the short gameoever audio and displays the level score in the gameover jumbotron ready for displaying.
+Next it sets the jumbotron to visible.
+Depending if it's the first four levels or the last fifth level that has been completed, the jumbotron will display different text.
+When the fifth level is completed it allows the user to start the game again. I had to remove the levelNext event listener so I could add a 
+new restart event listener which will allow the user to complete the restart of the game. I also changed the audio to the longer version, 
+as the user has completed my game.
+
+The current level high score is also displayed as the first line of the game chat to show the user what they are up against.
+It is also displayed in the intro page by utilising the local storage. i devolped a High Score button where the user can call to see all
+the current scores of all the levels. There is also an option to reset all the high scores back to zero.
+
+
+
 * **Test**
+
+Tested this thoroughly as I had some issues within the intro page. On start up, it would display null but I have clarified this in the bug section.
+Once I had any little issues sorted and i let my wee testers test the high score through and through. It all worked perfectly apart from new users never
+had a history of high scores so it displayed <b>null</b> when displaying the level high scores, in the gamezone chat. I fixed this bug by adding my checkScores function
+to the page start up and this checks if each level in memory is null. If it is, it will change it to zero.
+
+
 
 * **Result**
 
+The high score works really well and it is deffo a great addition to a game because it makes it that more enticing and addictive.
+It brings out the competitive nature of the user to try and beat their own score. It displays at start of each level and if a new high score, displays it in the level up / gameover jumbotron.
+
 * **Verdict**
 
+I am so happy how all my code and wee functions come together to allow me to have a High Score jumbotron and be able to reset all High Scores from this.
+Also, I love that the level High Score is displayed as the first line of text in the game chat ... which kind of says to the user 
+"So you think you can beat me, amigo .... well come on ahead then" !!!  
 
 ### **Contact Form**
 
@@ -405,12 +492,21 @@ So I think a wee contact form will help keep the game bug free & help me as a de
 
 * **Implementation**
 
+Look I could've deleted this and pretended it was never gonna happen ha ha but I'm an honest guy so the truth is I didn't get time for it.
+It would've been in place of my Rules jumbotron but like I said before, I can add this a later date once the course is finished.
+I just wasn't sure if I would've had time and I want it to work properly and not just there for display.
+
 * **Test**
+
+Nothing to test at present
 
 * **Result**
 
+No results at present
+
 * **Verdict**
 
+You learn that while you spend more time trying to get some other piece of code right ... others may not happen !
 
 ### **Game Navagation & Interaction**
 
@@ -426,12 +522,38 @@ Nice vibrant colours based on the original game will hopefully make it fun & ind
 
 * **Implementation**
 
+So my main aim was to get it right on mobile devices as this would be the most popular device for playing it.
+I would always look at the iPhone 5 in Chrome Dev Tools to develope my game.
+The main CSS is written so it works on that phone and other mobiles.
+I added media queries to adjust for larger screens.
+All the links and buttons do as they are supposed to which makes the game easy to navigate around like in a closed circuit.
+I have to say I used a lot of CSS to get it looking awesome and giving it that wee game feel.
+
+Like I said before I utilised the CSS grid-container and added some code to make these grid items turn.
+I try to keep the Intro page fairly quiet color wise but then let it shine in the gamezone.
+The gamezone looks amazing in my opinion and as similar to the original game as I could make it.
+Sure I use actual level 87 from the original game as my page background.
+
 * **Test**
+
+All links between pages worked fine on all <em>Android</em> and <em>Windows</em> devices tested.
+The functionality of the Bub and Bob chat worked fine.
+All buttons on the intro page worked and did what they were supposed to.
+
+As for the gamezone ... love this place ... wish I had more time to develope more levels but I'll keep this for a later date.
+Level Five is intense ha ha !
+I love the colours of the cards with the Bubble Bobble logo on the cardface as well, really blends with the level 87 backdrop.
+I deffo tried to stick to my chosen colours within the gamezone and I think it works well even if it is kind of bright lol.
 
 * **Result**
 
+All looks good and easy to manouvre around. Cards turn beautifully and lock turned if matched.
+Time counts down, the score counts down on mismatch and counts up on a match.
+Colours are just right and I would deffo come back to play it again ... even though I must have played it 50,000 times already to test it.
+
 * **Verdict**
 
+All in all, I am very happy with the finished product and how it all works together to create an interactive fun wee game :)
 
 ### **Be A Friend Of Bob & Bub**
 
@@ -588,6 +710,11 @@ https://www.codegrepper.com/code-examples/css/javascript+load+with+flashing+text
 I've added some adult humour for the purposes of having a laugh but obviously if this was going to be seen by children I would remove it & keep it clean
 
 https://www.w3schools.com/css/css_grid_container.asp - Grid container
+
+
+Testers - Scott, Storm , CJ, Wee Ro, Alan, Jonny, Ashley
+
+
 
 CONCLUSION
 

@@ -460,8 +460,10 @@ function newLevel () {
 
 function restart (){
 
-    localStorage.setItem("CountDown", 60);     // Reset countdown for level 1 again
-    localStorage.setItem("Level", 1);          // Reset level to 1
+    countDown = 60;
+    localStorage.setItem("CountDown", countDown);     // Resets countdown for level 1 again
+    levelAt = 1;
+    localStorage.setItem("Level", levelAt);          // Resets level to 1
     location.reload();                         // Reload the page again
 
 };
