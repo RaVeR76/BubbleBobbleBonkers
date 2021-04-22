@@ -188,6 +188,8 @@ Different backdrops utilising orginal screenshots that I have
 
 Landscape View Working
 
+More cards appearing on larger screens
+
 
 
 # Technologies Utilised
@@ -288,12 +290,14 @@ I may increase the maximum tile numbers as the screen size gets larger but we wi
 
 I used the Code Institute Github template as I know these had all that I required to build my game up.
 I utilsed Bootstrap for most of my layout and used CSS grid-container class for my cards whcih I got from w3schools.
+In hindsight, I should have used my alternative wireframe design for landscape view but I will deffo fix this at a later date.
+These bugs and issues are what make you stronger as a coder I feel and it is such a steep learning curve at the start
 
 
 * **Test**
 
 This game is really only designed for <b>Portrait View</b> and I will look at making it work better on <b>Landscape View</b> at a later date.
-I have to be honest, I only noticed the extent of landscape mode issue when I had the users test it.
+I have to be honest, I only noticed the extent of the landscape mode issue when I had the users test it.
 I had always looked at my game in portrait mode using <b>Chrome Dev Tools</b> and responsive mode but it never dawned on me that it would become 
 overlapping on screens where the width is larger than the height.
 This was my second major frustration, just behind the iOS Safari issue, but something I will fix in the future for sure and I will remember this for future projects.
@@ -306,8 +310,14 @@ I checked on my devices, I checked on my wee testers devices and all looked real
 
 * **Result**
 
+Overall, it has worked on any Android mobile I've seen and any Android tablet, as long as they are in portrait view.
+I used Dev Tools to view it across their selections of mobile and tablet views, again in portrait view, and they all looked good.
+I use Chrome and on my large screen it looks fine in landscape view. It's the same on FireFox.
+I never increased the number of cards on display as I was limited for time but this is another future feature that can be implemented.
+
 * **Verdict**
 
+The tests wokred perfect for portrait views but need landscape view on smaller devices fixed at a future date.
 
 ### **Score Points**
 
@@ -321,11 +331,29 @@ I hope this code is as simple to write, as it is to say it ha ha !
 
 * **Implementation**
 
+I first created my various cards functions like shuffle, display, etc,etc.
+And obviously two functions for when a match happens <b>cardsMatch()</b> and when a match doesn't happen <b>cardsDontMatch()</b>.
+I simply added <b>points += 5;</b> to the cardsMatch function and <b>points -= 2;</b> to the cardsDontMatch function.
+I declared the points variable at the start by making it zero.
+After each line above I then wrote the points total to the score span HTML and it displays the users changing score as you play the game.
+This was relatively easy once I had the main card action functions completed.
+
+
+
 * **Test**
+
+I have tested this on various devices and various different browsers and had no issues of the score adding or taking away from the level total.
+When you turn over two cards and they do not match, the users score decrease by 2 points (-2 pts).
+When you turn two cards over and they do match, the users score increases by 5 points (+5 pts).
+
 
 * **Result**
 
+The code works well an I am happy that it did
+
 * **Verdict**
+
+My plan was successfully completed for the User to score points whether the cards match or not. 
 
 
 ### **Level Difficulty**
@@ -336,7 +364,7 @@ I hope this code is as simple to write, as it is to say it ha ha !
 My plan is to design at least 3 levels with the first one being the easiest & the last one being the hardest .... standard gaming etiquette to be fair.
 The first level will have max 12 tiles & you just compete at your own pace.
 The second level will have max 12 tiles but you will have a time of 60 seconds to complete all the matches.
-The third level will have agin 12 tiles but the time will either be 40 or 50 seconds now. I will decide when testing to see how difficult either is.
+The third level will have again 12 tiles but the time will either be 40 or 50 seconds now. I will decide when testing to see how difficult either is.
 
 
 * **Implementation**
@@ -562,4 +590,11 @@ I've added some adult humour for the purposes of having a laugh but obviously if
 https://www.w3schools.com/css/css_grid_container.asp - Grid container
 
 CONCLUSION
+
+I feel taht I achieved so much with my wee game. I have had my ups and downs trying to work with Javascript
+I really love what it does and I know that my code can be simplified much better and neater but the more I learn, the better I'll become.
+I had never dealt with Javascript before the start of March so to produce what I have for this project has made me even more determined to succeed.
+My game works the way I wanted it too and I 98% of the time enjoyed everything about designing it to building it.
+The 2% was for my iOS Safari bug and my landscape view which really hurt because I was not expecting them.
+
 
