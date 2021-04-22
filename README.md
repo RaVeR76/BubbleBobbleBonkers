@@ -567,24 +567,167 @@ I also want the user to feel they are interacting with Bob & Bub by adding good 
 
 * **Implementation**
 
-When writing up the functions I found that I could remove some js by adding a '0' to my high-score spans, in my html .... D'OH !
-instead of using innerHTML = `0`; everytime :)
+I didn't know how this was going to go when I first started to be honest. So I started with the header and added the Bubble Bobble Bunkers image.
+This originally was slightly different in that the Bonkers was more bubbly and not 3D. It was all different colours taken from the main image.
+I just felt it was too multi-coloured and not as pleasing on the eye as the current header image whcih I think is super cool by the way.
+A lot of unseen image editing was happening in the background of this whole project which I eally enjoy to be honest.
+I then added a Bootstrap input and edited to suit. I put an event listener on it so that when the Game Name was input and the button pressed, 
+it would start my handleSubmit function.
+At first I was going to store this as a variable on the page and use it where ever needed but I realised that when I wanted it to use it in my gamezone it wouldn't work.
+This is when I came across the local storage option which I have used for a few variables throughout this game.
+
+So when the handle Submit function is called it first plays the Intro audio. Next it assigns it a variable and stores the users name into local storage for use in the gamezone. 
+It then resets two chat counters to zero. I needed this to happen because although I declare them at the start, if the chat has started and the person decides to 
+input a new name or hit go then the chat would just have jumped to the next chat bubble depending on where the two counters were at.
+I'm sure there is a better way to do this but this works for me so I hope it's okay.
+Next the play button is made visible so the user can enter the gamezone. I also added the users name to the button so it looks like the gamezone
+is personally for them ... damn I am good sometimes ha ha:)
+
+Obviously, this function didn't start out this way as most actually don't I found with Javascript. You may have a basic form input function.
+Then you add wee things to happen of the back of it .... cool that ! 
+
+Anyway, I noticed a lot of white space below my input so thought I'll use wee Bub to pop up and welcome the user.
+Then I thought ghet a wee speech bubble to make it look authentic which I found online and is credited in my credits.
+Again, I edited it to suit my character position. Then I added wee Bob below and added some chat whcih escalated into some humour but always involving the user by name.
+
+The initiation of the chat starts when the same handleSubmit function was pressed above.
+First Bub will appear and then Bob 2 seconds later, I used a timer for this within the function.
+I have an event listener on Bub so when he is clicked it calls the bubTalk function. I had one on Bob but it created caos when he was pressed by accident.
+I add his at the end of the bubTalk function whilst removing Bubs listener. Then when Bob is pressed the bobTalk function is called which remove Bobs listener and 
+adds Bubs back again. This sequence goes on until the end of the comedy chat.
+So while it is switching between Bub and Bob there is different chat text being displayed on screen depending on the Bub and Bob counters.
+I wrote the code this way becuse it works and I knew how to do it. There is probably a much simpler way and much shorter way but I'm still learning and it works at the end of the day.
+I have used the gameName variable that stores the users name throughout the chat as to make them feel welcome and part of the BBB club.
+I also use the gameNAme in the gamezone to interact with the user when they are playing the game and give them personal encouragement.
+I think it works really well throughout the game. I set the maximum character length to eight because anymore would take up too much space within the game.
+I also did my personal test in it by using the WWWWWWWW (largest name length imo) as a name and made sure it worked perfectly throughout the game.
+I also added the effect of only the character talking has their speech bubble displayed which I though makes it look far better. I did this wee mod at the last minute but I was very pleased with the overall effect it had on the chat animation between them. Before both speech bubbles where always there and only the text changed which made it look very
+stagnant.
+
+A few tweaks here and there to get this right and keep them from chatting over each other or freezing because the counters are out of sync.
+
+I also added the audio later on which I think works really well with it. Believe it or not, this is the original Name Register music from the actual orginal game.
+As is the gamezone theme music and the other wee audio clips. Although in the arcade version, 
+the name register was at the end for putting your initials (3 characters) in for a high score, as far as I can remember. I love the wee tune to be honest.
 
 
 
 * **Test**
 
+I tested this over and over again and although I mentioned a few tweaks here and there. It works fairly well. Don't get me wrong the user will probably
+only ever watch the comedy chat once and then just hit the Gamezone Enter Button forever after ha ha but I still wanted to add some form of interactivity with
+the user before they enter the gamezone.
+Again, the users name works in perfectly throughout me game and passed all tests and even touched my heart strings ... Bub and Bob are so lovely :)
+I and my lil tester crew all loved the use of their names throughout the game. They said it made them feel like part of the game.
+
 * **Result**
+
+Very happy with how my game interacts with the user and keeps them entertained on a personal level ... ooooo matron (Carry On pun there)!
+Like I said before it was awesome to hear so many phones polaying that Bubble Booble theme tune whilst playing my game.
+
+
+
+* **Verdict**
+
+From the feedback and me personally, I feel the plan was completed in that the user is made feel welcome and 
+part of the BBB revolution ... I mean family, I meant family ha ha !
+
+
+# Bugs
+---
+
+Before February I had never seen JavaScript or knew what it did .... I only knew it was programming language.
+Fast forward 3 months and BOOM ! I'm about to hand in my MS2, a cool wee game made from HTML, CSS and now Javascript.
+
+I had a few bugs to be honest, some major heart breaking dream crushing ones and some not so dramatic. I will try get through them as best as I can below.
+
+
+* **Bug 1**
+
+The bug of all bugs for a developer, the game doesn't work in Safari (iOS) ..... man, I could have cried when I found this out.
+Is there a better way than on your mentor sesh? I was so happy with it so far and my mentor then tried it on his Mac .... the cards wouldn't
+display when they turned over. What was displayed was the face card Bubble Bobble image but only backwards .... no characters.
+Gutted and deflated was an understatement. It worked perfectly on my screen and laptop.
+I was windows & he was Mac so I need to figure this out. I am running Chrome plus I checked it on Firefox & my andoid phone.
+All worked perfectly for me.
+On firefox though the theme tune would not autoplay either :(  .... gonna cry soon !!!
+https://css-tricks.com/almanac/properties/b/backface-visibility/ - backface visibility seems to be the issue I think & hope !
+
+* **Fix**
+
+I have no fix at this monent in time, it was consuming too much time. The unfortunate issue is that I don't own an Apple device which
+makes it impossible for me to test. I was tormenting my brother to test it when I had tried something different but I was becoming a nuisance tbh.
+I had to give up and move on. I will deffo come back to this one at a later date.
+
+* **Verdict**
+
+Nothing to Ver Dict at this momment in time.
+
+
+* **Bug 2**
+
+User Storys - When Testing - Small laptop screen cards where ovelapping the chat item etc etc
+Works Good in portrait mode but not good in landscape mode :( A bug that will be fixed in the future
+
+
+
+
+
+* **Fix**
 
 * **Verdict**
 
 
 
-# Bugs
----
-  
+
+
+* **Bug 3**
+
+* **Fix**
+
+* **Verdict**
+
+
+
+* **Bug 4**
+
+* **Fix**
+
+* **Verdict**
+
+
+
+
+* **Bug 5**
+
+* **Fix**
+
+* **Verdict**
+
+
+
+
+* **Bug 6**
+
+* **Fix**
+
+* **Verdict**
+
+
+
+* **Bug 7**
+
+* **Fix**
+
+* **Verdict**
+
+
+
+
+
+
 Added some speech bubble code but I wanted to add some code on a click of the button. The speech bubble was always there even before the click.
-So I added the speech bubble css class to my JS literal thingy for using when called for.S
+So I added the speech bubble css class 
 
 
 When my comedy chat between Bub & Bob starts but the user wants to change their username then Bub will reset okay but Bob & his speech bubble are still there.
@@ -629,11 +772,6 @@ Added one line of code to my 60 sec timer so that on 10 sec it would add my flas
 Media Queries wouldn't work once it went below 1200px - must have deleted the last '}' of the largest media query which fucked it all up ffs :()
 
 
-During Mentor session when he was playing my game the face card image showed up reversed when the card turned & no character image was displayed :( I could have cried tbh!
-On my screen / PC it worked perfectly. I was windows & he was Mac so I need to figure this out. I am running Chrome plus I checked it on Firefox & my andoid phone.
-All worked perfectly for me.
-On firefox though the theme tune would not autoplay either :(  .... gonna cry soon !!!
-https://css-tricks.com/almanac/properties/b/backface-visibility/ - backface visibility seems to be the issue I think & hope !
 
 
 Tried for hours on end to get Countdown timer to reduce as I levelled up but obviously when the game reloaded the countdown timer also reset to 60.
@@ -665,11 +803,9 @@ levelTot = countDown * points;
 levelTot = (countDown += 1) * points;
 
 
+When writing up the functions I found that I could remove some js by adding a '0' to my high-score spans, in my html .... D'OH !
+instead of using innerHTML = `0`; everytime :)
 
-
-
-User Storys - When Testing - Small laptop screen cards where ovelapping the chat item etc etc
-Works Good in portrait mode but not good in landscape mode :( A bug that will be fixed in the future
 
 
 
