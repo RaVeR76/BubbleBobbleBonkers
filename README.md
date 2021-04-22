@@ -666,107 +666,128 @@ Nothing to Ver Dict at this momment in time.
 
 * **Bug 2**
 
-User Storys - When Testing - Small laptop screen cards where ovelapping the chat item etc etc
-Works Good in portrait mode but not good in landscape mode :( A bug that will be fixed in the future
+During the user testing I noticed it wasn't great on landscape view, in fact it was awful sometimes.
+I have to put that down to a complete noob mistake. I had been checking the responsiveness the whole way through using Chrome Dev Tools
+But I had always looked at it in portrait mode when checking for positioning.
+I was gutted about this one too and how could I have missed something so important but I was so focused on getting it right in mobile portrait view.
+The effect was that the cards overlapped everything else unfortunately.
+But I will deffo fix this at a later date.
+Believe it or not I must have thought about this subcontiously when designing my wireframes because my alternative desktop design would
+fit perfectly for landscape view. 
 
-
-
+So it works brilliant in portrait view and not so good on tablets and landscape view.
+It works okay on large screens too.
 
 
 * **Fix**
 
+There is no fix at the moment as I only picked up on the issue close to the end. I will deffo come back to this one again after I complete this course. 
+
+
 * **Verdict**
 
-
+Annoyed with myself but another lesson learned I suppose .... take the good from the bad eh !
 
 
 
 * **Bug 3**
 
+I added some speech bubble CSS to make the chat look more interactive and pleasing on the eye. The speech bubble was always there when the page loaded.
+I needed this to appear along with Bub's image when the Go button was pressed.
+
+
 * **Fix**
+
+I added the visibility:hidden property to the speech bubble's css. I then change this to visible as soon as the Go button is pressed.
+Along with Bub appearing too.
 
 * **Verdict**
 
+Looks good now functioning as it should.
 
 
 * **Bug 4**
 
+Trying to get the username (Game Name) variable to transfer from index.html to gamezone.html was a complete nightmare for me ha ha.
+I spent about 3 hours on this one but got there in the end.
+After researching on best practices to solve this the local storage or session storage seemed the best solution.
+Eventually I tried local storage but it wouldn't work, I could see the variable in Dev Tools in the application section 
+after the button was hit but couldn't get it to display on my gamezone page.
+
+
 * **Fix**
+
+I used the Local Storage method to do this which I got from this link [Local Storage](https://code-boxx.com/pass-variables-between-pages-javascript/)
+It didn't work at first as mentioned above was because basically .... it was non matching variable names & syntax errors 
+but I got there in the end ..... now I am a JavaScript Jedi .... NOT !!!!
 
 * **Verdict**
 
-
+Very happy to have solve this one because it would have put a real dent in my interactivity with the user.
+Plus I used the local storage method on a few other variable that I need to pass between pages :)
 
 
 * **Bug 5**
-
-* **Fix**
-
-* **Verdict**
-
-
-
-
-* **Bug 6**
-
-* **Fix**
-
-* **Verdict**
-
-
-
-* **Bug 7**
-
-* **Fix**
-
-* **Verdict**
-
-
-
-
-
-
-Added some speech bubble code but I wanted to add some code on a click of the button. The speech bubble was always there even before the click.
-So I added the speech bubble css class 
-
-
-When my comedy chat between Bub & Bob starts but the user wants to change their username then Bub will reset okay but Bob & his speech bubble are still there.
-I added two lines of code to the user name input button function which will remove any innerHTML first from the Bob image Div & his speech bubble div.
-
-document.getElementById("bob-talk").innerHTML = "";     // Added these two lines so it will remove Bob & his speech bubble if they enter a new username
-document.getElementById("bob-position").innerHTML = "";
-
-
-Not a bug - But used my first shorthand padding utility class to allow me to reduce CSS code as I had intro 1 & intro 2.
-Both pretty much the same but one had 1rem of padding in addition so I put padding shorthand class in DOM & removed padding in CSS.
-I then removed intro 2 & changed the html classes appropiately to all match intro 1.
-
-
-Was using a line of code to clear Game Name input on first bub hit but then I loose the user name variable for th erst of my comedy chat
-
-
-Game Name input was responsive until after 991px then it just went small in length. I was using the form-group class to set max-width to 30rem.
-Tried a few things but eventually found that if I used the lower div class of input-group to set my max-width then it stayed responsive across all screen sizes.
-
-
-Trying to get the username (Game Name) variable to transfer from index.html to gamezone.html was a complete nightmare for ma ha ha.
-I spent about 3 hopurs on this one but got there in the end.
-I used the Session Storage method to do this which I got from this link https://code-boxx.com/pass-variables-between-pages-javascript/
-I could see the variable in Dev Tools in the application section after the button was hit but couldn't get it to display on my gamezone page.
-Basically it was non matching variable names & syntax errors but I got there in the end ..... now I am a JavaScript Jedi .... NOT !!!!
-
-Cards would turn but the you could turn another one then another one which messed up the sequence. I added the gridLock logic to stop this from happening.
-Only two cards can be turned now & the sequence stays functional.
 
 Thought I had an issue with getting images to populate the grid with some images not loading on occassions
 kept testing the restart over & over again to try figure the issue out. Fount that it was only two images that din't load on occassions
 Looked further using Dev Tools & found that it was the same image & it's duplicate.
 Checked the code out & found I had typed 'scr' instead of 'src'...... slap to the face for me !
 
+* **Fix**
+
+Correct the syntax errors for src
+
+* **Verdict**
+
+Easy fix but annoying to locate 
+
+
+* **Bug 6**
 
 Wanted some sort of alert for when the time was running out so added a function but couldn't get it to work.
-Investigated animation & keyframes. Added some animation / keyframe code to my css.
+Investigated animation & keyframes and found a link online which is credited below. Added some animation / keyframe code to my css.
 Added one line of code to my 60 sec timer so that on 10 sec it would add my flash class to my time class list & therefore flashing the game timer :)
+
+
+* **Fix**
+
+Used animation & keyframes inside my CSS.
+I also made the numbers change to white from black for that added effect when the background turns pink.
+
+* **Verdict**
+
+Works really well and deffo adds to the tension when time is running out.
+
+
+* **Bug 7**
+
+Tried for hours on end to get Countdown timer to reduce as I levelled up but obviously when the game reloaded the countdown timer also reset to 60,
+as I had declared this at the start. I now declare it on the intro page for use in my gamezone code. 
+I utilised localstorage again to store the level and countDown time. I wrote some code that when the level up button was presssed it increased the level variable by 1 & stored it in local storage.
+In my level up function, it checks the level value & therefore sets the countdown time accordingly (the higher the level the less time you have).
+
+* **Fix**
+
+I used local storage again to store the countdown and level variables.
+I also added some code to my restart function (when game times out) which resets these two variables to level 1 again i.e. countDown = 60 seconds & level = 1 so the user can start from the beginning again.
+
+* **Verdict**
+
+Once I eventually got it working I new it was a game changer for my wee game.
+I was so happy because it just went from a one level game to a several levels game ..... yeeeeooooo ! 
+
+
+
+
+
+Game Name input was responsive until after 991px then it just went small in length. I was using the form-group class to set max-width to 30rem.
+Tried a few things but eventually found that if I used the lower div class of input-group to set my max-width then it stayed responsive across all screen sizes.
+
+
+Cards would turn but the you could turn another one then another one which messed up the sequence. I added the gridLock logic to stop this from happening.
+Only two cards can be turned now & the sequence stays functional.
+
 
 
 Media Queries wouldn't work once it went below 1200px - must have deleted the last '}' of the largest media query which fucked it all up ffs :()
