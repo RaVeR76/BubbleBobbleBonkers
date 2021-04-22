@@ -4,7 +4,7 @@ Why not play my wee memory game & find some of the characters,
 While listening to the classic retro theme tune :) 
 
  
-![Bubble Bobble Bonkers](https://github.com/RaVeR76/BubbleBobbleBonkers/raw/master/assets/images/main-title.png)
+![Bubble Bobble Bonkers](https://github.com/RaVeR76/BubbleBobbleBonkers/raw/master/assets/images/main-head-3D-clip.png)
 
 
 # Contents
@@ -114,16 +114,17 @@ For my fonts, I'm looking at deffo going retro on this one because the original 
 Also, because it's Bubble Bobble based there will definintely be some 'Bubble' writing throughout. I have located similar Bubble fonts online & 
 I am currently checking for retro fonts that will work too. I can see that Bitmap fonts are the oldskool retro gaming fonts that were used back in the day.
 Fontspace looks like an awesome website with all these cool fonts that might be useful for this project.
-
-
-Press Start 2P in Google Fonts
-
+I have settled on [Titillium Web](https://fonts.google.com/specimen/Titillium+Web) for the main Intro font & [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) for the main Game font. I think the both work really well.
 
 ### Icons
 
 [Font Awesome](https://fontawesome.com/) will be the main source for any icons that I require, as always. 
 I also plan to use some of the retro characters or gameplay objects from Bubble Bobble to use as icons, if applicable.
 Other than them, we will just have to see what suits and fits the game layout perfectly.
+As my game developed I realised I needed a few fonts. The first one was the <b>mute</b> and <b>unmute</b> icons, that when the mute button is pressed
+they swap, using Javascript. The next icon was the <b>home</b> one which is used to take you from the Gamezone to the Intro.
+I then added the <b>star</b> and <b>cog</b> icons for opening up High Scores (with reset button) and Rule junmbotrons.
+Again, I think the icons fit really well with the button colours & the pages.
 
 ### Colours
 
@@ -214,9 +215,18 @@ I am going to base my memory game on a retro 80s classic arcade game so I will u
 I will use the various characters for my hidden memory cards so it will all look awesome & retro.
 I hope to add the wee theme tune as well because it will just add to the overall retro feel of the game .... de de dee de de de dee (don't worry you'll be dee deeing it too soon enough ha ha)
 
-
-
 * **Implementation**
+
+I set out to make a simple wee memory game and if I completed eveything as mentioned in the plan, I would be happy enough.
+Well I did this and have now been waking up at 3 o'clock in the morning de deeing the fecking theme tune !
+Only messing, I did want a cool retro looking game & I feel I have pulled it off.
+At the start I gathered as much info, pictures, images, game sprites, audio, as I could .... I even got screenshots of every level from the original game.
+I actually used round87 where I edited out some other background detail to give me the open space for my game design.
+I amended the Bubble Bobble image for my main headings in Paint 3D by adding a 3D Bonkers using my main pink colour.
+
+
+
+
 
 * **Test**
 
