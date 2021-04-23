@@ -1,4 +1,4 @@
-# Bubble Bobble Bonkers #
+# **Bubble Bobble Bonkers**
 This may not be the real Bubble Bobble but ....   
 Why not play my wee memory game & find some of the characters,  
 While listening to the classic retro theme tune :) 
@@ -6,36 +6,7 @@ While listening to the classic retro theme tune :)
  
 ![Bubble Bobble Bonkers](https://github.com/RaVeR76/BubbleBobbleBonkers/raw/master/wireframes/game-showcase.png)
 
-
-
-# Contents
-
-
-- [User Experience (UI)](#user-experience--ui-)
-  * [Project Goals](#project-goals)
-  * [User Goals](#user-goals)
-  * [User Stories](#user-stories)
-  * [Site Owner Goals](#site-owner-goals)
-  * [User Requirements and Expectations](#user-requirements-and-expectations)
-    + [Requirements](#requirements)
-    + [Expectations](#expectations)
-  * [Design Choices](#design-choices)
-    + [Fonts](#fonts)
-    + [Icons](#icons)
-    + [Colours](#colours)
-- [Wireframes](#wireframes)
-    + [What didn't make the cut](#what-didn-t-make-the-cut)
-- [Features](#features)
-- [Technologies Utilised](#technologies-utilised)
-    + [Languages](#languages)
-    + [Tools and Libraries](#tools-and-libraries)
-- [Testing](#testing)
-- [Bugs](#bugs)
-- [Deployment](#deployment)
-- [Credits](#credits)
-
-
-## Project Goals
+## **Project Goals**
 
 There isn't a day goes by when someone in the world needs a wee timeout from their normal, boring & monotonous day to day activities.....
 If only they had some kind of game to entertain themselves with & therefore flush their life stresses down the porcelain gateway to extinction :)
@@ -47,7 +18,37 @@ My bro & I played the original Bubble Bobble game for hours on end because it wa
 Although my game ain't the real deal, I still want users / players to feel that retro nostaglia when they play it & fall in love with Bub & Bob, the main Bubble Bobble characters.
 And for an added touch, you will get to hear the unforgettable Bubble Bobble theme tune while you play each level :)
 
-## User Goals
+--- 
+
+
+## Contents
+- [UX](#ux)
+  * [User Goals](#user-goals)
+  * [User Stories](#user-stories)
+  * [Site Owner Goals](#site-owner-goals)
+  * [User Requirements and Expectations](#user-requirements-and-expectations)
+    + [Requirements](#requirements)
+    + [Expectations](#expectations)
+  * [Design Choices](#design-choices)
+    + [Fonts](#fonts)
+    + [Icons](#icons)
+    + [Colours](#colours)
+- [Wireframes](#wireframes)
+  * [What didn't make the cut](#what-didn-t-make-the-cut)
+- [Features](#features)
+- [Technologies Utilised](#technologies-utilised)
+  * [Languages](#languages)
+  * [Tools and Libraries](#tools-and-libraries)
+- [Testing](#testing)
+- [Bugs](#bugs)
+- [Deployment](#deployment)
+- [Conclusion](#conclusion)
+- [Credits](#credits)
+
+
+## **UX**
+
+### **User Goals**
 
 * Have some awesome fun & a smile whilst doing so
 * Interact with the Bub & Bob (user has to input name for this)
@@ -56,7 +57,7 @@ And for an added touch, you will get to hear the unforgettable Bubble Bobble the
 * Possible message form (add link from game) - for any bugs or issues with the game or possible future ideas
 * Tell their friends about this awesome retro memory game
 
-## User Stories
+### **User Stories**
 
 * As a user, I want to take some time out from my daily routine & play a wee game
 * As a user, I want to be able to play a sneaky wee game on my office desktop, on my tablet in the bath & on my mobile whilst commuting home ... obviously when NOT driving a car!
@@ -67,7 +68,7 @@ And for an added touch, you will get to hear the unforgettable Bubble Bobble the
 * As a user, I want to enjoy a aesthetically pleasing game which is easy to navigate around 
 * As a user, I want to feel that I have a friend on the other side of the screen .... awwww !
 
-## Site Owner Goals
+### **Site Owner Goals**
 
 * As a site owner, I want to make sure game players smile & laugh
 * As a site owner, I want them to connect and love the characters that is Bub & Bob
@@ -79,9 +80,9 @@ And for an added touch, you will get to hear the unforgettable Bubble Bobble the
 
 [Back to Top](#contents)
 
-## User Requirements and Expectations
+### **User Requirements and Expectations**
 
-### Requirements 
+#### Requirements 
 
 * Single page game with introduction page 
 * Allow player to input their actual name so that it will increase their feeling of game involvement & therefore their interactivity with the game
@@ -92,7 +93,7 @@ And for an added touch, you will get to hear the unforgettable Bubble Bobble the
 * Once tiles have been matched, increase the players score (possibly decrease score on a mismatch in a later level)
 * To have link to a contact form for unnoticed bugs & ideas (obviously I don't want any bug feedback tbh but may add form just in case)
 
-### Expectations
+#### Expectations
 
 * The user will smile as a bare minimum if I consider my wee game a success
 * They will enjoy the website layout and navigate freely with no issues
@@ -101,7 +102,7 @@ And for an added touch, you will get to hear the unforgettable Bubble Bobble the
 * Stimulation of the human nation
 * Some crazy fun .... for sure !
 
-## Design Choices
+### **Design Choices**
 
 I will be using Bootstrap 4 to create the overall layout of my game, as this will make it easier for me to control it's functionality across multiple devices.
 As for the actual game design, it will be pretty simple as it's going to be a single page that hosts the game.
@@ -111,7 +112,7 @@ The main opening game screens & a lot of the levels were very dense with actual 
 that will allow me the space to add my memory tiles. I know it's a bit hazy at the minute but once I start to delve into screen plays & game levels, we will find a suitable back drop
 for this awesome memory game :)
 
-### Fonts
+#### Fonts
 
 For my fonts, I'm looking at deffo going retro on this one because the original game came out in 1986, therefore I want to try & keep to that basic style. 
 Also, because it's Bubble Bobble based there will definintely be some 'Bubble' writing throughout. I have located similar Bubble fonts online & 
@@ -119,7 +120,7 @@ I am currently checking for retro fonts that will work too. I can see that Bitma
 Fontspace looks like an awesome website with all these cool fonts that might be useful for this project.
 I have settled on [Titillium Web](https://fonts.google.com/specimen/Titillium+Web) for the main Intro font & [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) for the main Game font. I think the both work really well.
 
-### Icons
+#### Icons
 
 [Font Awesome](https://fontawesome.com/) will be the main source for any icons that I require, as always. 
 I also plan to use some of the retro characters or gameplay objects from Bubble Bobble to use as icons, if applicable.
@@ -129,7 +130,7 @@ they swap, using Javascript. The next icon was the <b>home</b> one which is used
 I then added the <b>star</b> and <b>cog</b> icons for opening up High Scores (with reset button) and Rule junmbotrons.
 Again, I think the icons fit really well with the button colours & the pages.
 
-### Colours
+#### Colours
 
 If the truth be told, this was quite a hard choice because of the fact it's a game & not an actual website.
 Therefore to keep inline with the original game itself, I used a website called [Image Color Picker](https://imagecolorpicker.com/) to upload the main Bubble Bobble title.
@@ -150,7 +151,7 @@ Below is an image of the chosen colours .....
 
 [Back to Top](#contents)
 
-# Wireframes
+## **Wireframes**
 ---
 The software that I used for my **wireframes** was [***Balsamiq***](https://balsamiq.com/).
 This was the second time I used this software & it was deffo a lot easier to understand what you need to do. 
@@ -185,7 +186,7 @@ Possible high score register for user to compete against (can also be reset by u
 
 [Back to Top](#contents)
 
-# Features
+## **Features**
 ---
 
 Future features .... harder levels
@@ -197,17 +198,16 @@ More cards appearing on larger screens
 
 [Back to Top](#contents)
 
-# Technologies Utilised
+## **Technologies Utilised**
 ---
 
-
-### Languages
+### **Languages**
 
 - [HTML](https://en.wikipedia.org/wiki/HTML)
 - [CSS](https://en.wikipedia.org/wiki/CSS) 
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript) 
 
-### Tools and Libraries
+### **Tools and Libraries**
 
 - [Git](https://en.wikipedia.org/wiki/Git) 
 - [GitPod](https://www.gitpod.io/)
@@ -221,12 +221,12 @@ More cards appearing on larger screens
 
 [Back to Top](#contents)
 
-# Testing
+## **Testing**
 ---
 
 ### **Take A Wee Break**  
 
-#### **User Story : I want to take some time out from my daily routine & play a wee game**  
+#### User Story : I want to take some time out from my daily routine & play a wee game  
 
 * **Plan**  
 Create a fun memory game that will allow the user to escape from normal life, even for a few moments.
@@ -573,7 +573,7 @@ part of the BBB revolution ... I mean family, I meant family ha ha !
 
 [Back to Top](#contents)
 
-# Bugs
+## **Bugs**
 ---
 
 Before February I had never seen JavaScript or knew what it did .... I only knew it was programming language.
@@ -764,13 +764,9 @@ This was the first time I used this fix and later on I was it to fix another nul
 * **Verdict**  
 The High Score Reset now resets the high scores with no issues within the game.
 
-### The Development Journey
+[Back to Top](#contents)
 
-### The Validation & Testing Journey
-
-### The Mentor Code Review Journey
-
-# Deployment
+## **Deployment**
 ---
 **Bubble Bobble Bonkers** was *developed* on **GitPod**, using **git** and **GitHub** to host the repository.
 
@@ -800,7 +796,17 @@ Copy the following code and enter it into your *terminal* to **clone BubbleBobbl
 
 ```git clone https://github.com/RaVeR76/BubbleBobbleBonkers.git```
 
-# Credits
+## **Conclusion**
+---
+
+I feel taht I achieved so much with my wee game. I have had my ups and downs trying to work with Javascript
+I really love what it does and I know that my code can be simplified much better and neater but the more I learn, the better I'll become.
+I had never dealt with Javascript before the start of March so to produce what I have for this project has made me even more determined to succeed.
+My game works the way I wanted it too and I 98% of the time enjoyed everything about designing it to building it.
+The 2% was for my iOS Safari bug and my landscape view which really hurt because I was not expecting them.
+
+
+## **Credits**
 ---
 
 Took on any critique from my first project so hopefully I have ironed out the issues from it :)
@@ -832,13 +838,4 @@ https://www.w3schools.com/css/css_grid_container.asp - Grid container
 Testers - Scott, Storm , CJ, Wee Ro, Alan, Jonny, Ashley, My Bro
 
 
-
-CONCLUSION
-
-I feel taht I achieved so much with my wee game. I have had my ups and downs trying to work with Javascript
-I really love what it does and I know that my code can be simplified much better and neater but the more I learn, the better I'll become.
-I had never dealt with Javascript before the start of March so to produce what I have for this project has made me even more determined to succeed.
-My game works the way I wanted it too and I 98% of the time enjoyed everything about designing it to building it.
-The 2% was for my iOS Safari bug and my landscape view which really hurt because I was not expecting them.
-
-
+[Back to Top](#contents)
