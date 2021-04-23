@@ -4,7 +4,7 @@ Why not play my wee memory game & find some of the characters,
 While listening to the classic retro theme tune :) 
 
  
-![Bubble Bobble Bonkers](https://github.com/RaVeR76/BubbleBobbleBonkers/raw/master/assets/images/main-head-3D-clip.png)
+![Bubble Bobble Bonkers](https://github.com/RaVeR76/BubbleBobbleBonkers/raw/master/assets/wireframes/game-showcase.png)
 
 
 # Contents
@@ -76,6 +76,8 @@ And for an added touch, you will get to hear the unforgettable Bubble Bobble the
 * As a site owner, I want set up a contact form for users to declare any bugs or issues with the game for me to rectify & any possible ideas
 * As a site owner, I want people to enjoy themselves that much that they want to come back for more (maybe even beat their last highest score)
 
+[Back to Top](#contents)
+
 ## User Requirements and Expectations
 
 ### Requirements 
@@ -145,6 +147,7 @@ Below is an image of the chosen colours .....
 
 ![Bubble Bobble Bonkers Colors](https://github.com/RaVeR76/BubbleBobbleBonkers/raw/master/wireframes/bbb-color-scheme.png)
 
+[Back to Top](#contents)
 
 # Wireframes
 ---
@@ -179,6 +182,7 @@ To be honest I can't wait to hear the wee theme tune as I match those cards.
 
 Possible high score register for user to compete against (can also be reset by user)
 
+[Back to Top](#contents)
 
 # Features
 ---
@@ -190,7 +194,7 @@ Landscape View Working
 
 More cards appearing on larger screens
 
-
+[Back to Top](#contents)
 
 # Technologies Utilised
 ---
@@ -209,6 +213,8 @@ More cards appearing on larger screens
 - [jQuery](https://jquery.com/)
 - [Font Awesome](https://fontawesome.com/)
 - [Google Fonts](https://fonts.google.com/)
+
+[Back to Top](#contents)
 
 # Testing
 ---
@@ -300,7 +306,7 @@ I use Chrome and on my large screen it looks fine in landscape view. It's the sa
 I never increased the number of cards on display as I was limited for time but this is another future feature that can be implemented.
 
 * **Verdict**  
-The tests wokred perfect for portrait views but need landscape view on smaller devices fixed at a future date.
+The tests worked perfect for portrait views but need landscape view on smaller devices fixed at a future date.
 
 ### **Score Points**
 
@@ -314,7 +320,7 @@ I hope this code is as simple to write, as it is to say it ha ha !
 * **Implementation**  
 I first created my various cards functions like shuffle, display, etc,etc.
 And obviously two functions for when a match happens <b>cardsMatch()</b> and when a match doesn't happen <b>cardsDontMatch()</b>.
-I simply added <b>points += 5;</b> to the cardsMatch function and <b>points -= 2;</b> to the cardsDontMatch function.
+I simply added ```points += 5;``` to the cardsMatch function and ```points -= 2;``` to the cardsDontMatch function.
 I declared the points variable at the start by making it zero.
 After each line above I then wrote the points total to the score span HTML and it displays the users changing score as you play the game.
 This was relatively easy once I had the main card action functions completed.
@@ -402,7 +408,7 @@ I first calculate the levelTot which is time left multiplied by level score, as 
 I then use a switch statement looking at what level the user is on which is stored in levelAt.
 Depending on case, as in level, it will multiply the level number by the previous levelTot, calculated at the start of the function.
 It also displays the score in the gameover jumbotron when it is displayed.
-It then checks if the level score is larger than the current High Level (levelTot > level1Hi). If it is it stores the new High Score in local storage.
+It then checks if the level score is larger than the current High Level ```(levelTot > level1Hi)```. If it is it stores the new High Score in local storage.
 It will also display this New High Score in the gameover jumbotron so the user knows they beat their last high score.
 This gets repeated at each level with the difference being the level multiplier.  
 So lets say you finish Level One. In the cartdsMatch function the totalCards will have equalled twelve.
@@ -510,7 +516,7 @@ I also want the user to feel they are interacting with Bob & Bub by adding good 
 * **Implementation**  
 I didn't know how this was going to go when I first started to be honest. So I started with the header and added the Bubble Bobble Bunkers image.
 This originally was slightly different in that the Bonkers was more bubbly and not 3D. It was all different colours taken from the main image.
-I just felt it was too multi-coloured and not as pleasing on the eye as the current header image whcih I think is super cool by the way.
+I just felt it was too multi-coloured and not as pleasing on the eye as the current header image which I think is super cool by the way.
 A lot of unseen image editing was happening in the background of this whole project which I eally enjoy to be honest.
 I then added a Bootstrap input and edited to suit. I put an event listener on it so that when the Game Name was input and the button pressed, 
 it would start my handleSubmit function.
@@ -560,6 +566,8 @@ Like I said before it was awesome to hear so many phones polaying that Bubble Bo
 From the feedback and me personally, I feel the plan was completed in that the user is made feel welcome and 
 part of the BBB revolution ... I mean family, I meant family ha ha !
 
+[Back to Top](#contents)
+
 # Bugs
 ---
 
@@ -575,9 +583,10 @@ Is there a better way than on your mentor sesh? I was so happy with it so far an
 display when they turned over. What was displayed was the face card Bubble Bobble image but only backwards .... no characters.
 Gutted and deflated was an understatement. It worked perfectly on my screen and laptop.
 I was windows & he was Mac so I need to figure this out. I am running Chrome plus I checked it on Firefox & my andoid phone.
-All worked perfectly for me.
+All worked perfectly for me.  
+[backface-visibility](https://stackoverflow.com/questions/42744573/backface-visibility-not-working-in-safari) seems to be the issue I think & hope ! ... 
+I did try this fix but it never worked for me.    
 On firefox though the theme tune would not autoplay either :(  .... gonna cry soon !!!
-https://css-tricks.com/almanac/properties/b/backface-visibility/ - backface visibility seems to be the issue I think & hope !
 
 * **Fix**  
 I have no fix at this monent in time, it was consuming too much time. The unfortunate issue is that I don't own an Apple device which
@@ -585,7 +594,7 @@ makes it impossible for me to test. I was tormenting my brother to test it when 
 I had to give up and move on. I will deffo come back to this one at a later date.
 
 * **Verdict**  
-Nothing to Ver Dict at this momment in time.
+Nothing to Ver Dict at this moment in time.
 
 ### **Landscape View Issues**
 
@@ -704,7 +713,7 @@ Could't figure out why when you refreshed the page and started the gamezone that
 I thought I was zeroing the high scores within my checkHiScore function but I was only zeroing the High Score Jumbotron innerHTML for display purposes only.
 
 * **Fix**  
-Once I realise this mistake I added 'localStorage.setItem("Level1HiScore", zeroReset));' for each level which zero's the high scores only if the value was orginally 'null'.
+Once I realise this mistake I added ```localStorage.setItem("Level1HiScore", zeroReset));``` for each level which zero's the high scores only if the value was orginally 'null'.
 The function allows for current level high score to be kept & displayed in the jumbotron.
 
 * **Verdict**  
@@ -725,10 +734,10 @@ Input now works across all screen sizes
 
 * **Bug **  
 For my score calculations, the time left when the level was completed did not match my 'time left' on the console log (it was 1 second out every time)
-This was my code <b>levelTot = countDown * points;</b>. I tried to figure out the reason but it stumped me so I just added an easy fix so I could move on. 
+This was my code ```levelTot = countDown * points;```. I tried to figure out the reason but it stumped me so I just added an easy fix so I could move on. 
 
 * **Fix**  
-I changed the above score calculation code to <b>levelTot = (countDown += 1) * points;</b> just as a quick fix. I know the 1 second difference 
+I changed the above score calculation code to ```levelTot = (countDown += 1) * points;``` just as a quick fix. I know the 1 second difference 
 is probably an oversight on my part but I'll figure it out another time.
 
 * **Verdict**  
@@ -739,7 +748,7 @@ The displayed countdown 'time left' now equals my countDown variable within my s
 * **Bug**  
 I had an issue with my setting the high scores back to zero when using the High Score Reset button.
 I tried using remove local storage but this cause errors and would still display <b>null</b>.
-At this time my checkHiScore function didn't have the code from <b>Bug 8</b> - 'localStorage.setItem("Level1HiScore", zeroReset));' and it wasn't called on page load either.  
+At this time my checkHiScore function didn't have the code from <em>Bug 8</em> - ```localStorage.setItem("Level1HiScore", zeroReset));``` and it wasn't called on page load either.  
 Also I noticed while writing this up, that I could remove some JavaScript in my checkHiScore () function by adding a '0' to my high-score spans, in my html .... D'OH !
 Instead of using ```levelOneHiDisplay.innerHTML = `0`;``` everytime :)
 
