@@ -201,9 +201,9 @@ To be honest I can't wait to hear the wee theme tune as I match those cards.
 ### **Features To Be Implemented**
 
 * A working version for iOS
-* A version for smaller device landscape play
+* A version for small device landscape play
 * Add more levels which are more complex than the current levels
-* Add different backgrounds )from original game) for different levels
+* Add different backgrounds (from original game) for different levels
 * More cards appearing on larger screens
 
 [Back to Top](#contents)
@@ -728,7 +728,7 @@ Could't figure out why when you refreshed the page and started the gamezone that
 I thought I was zeroing the high scores within my checkHiScore function but I was only zeroing the High Score Jumbotron innerHTML for display purposes only.
 
 * **Fix**  
-Once I realise this mistake I added ```localStorage.setItem("Level1HiScore", zeroReset));``` for each level which zero's the high scores only if the value was orginally 'null'.
+Once I realise this mistake I added `localStorage.setItem("Level1HiScore", zeroReset));` for each level which zero's the high scores only if the value was orginally 'null'.
 The function allows for current level high score to be kept & displayed in the jumbotron.
 
 * **Verdict**  
@@ -752,7 +752,7 @@ For my score calculations, the time left when the level was completed did not ma
 This was my code ```levelTot = countDown * points;```. I tried to figure out the reason but it stumped me so I just added an easy fix so I could move on. 
 
 * **Fix**  
-I changed the above score calculation code to ```levelTot = (countDown += 1) * points;``` just as a quick fix. I know the 1 second difference 
+I changed the above score calculation code to ``levelTot = (countDown += 1) * points;`` just as a quick fix. I know the 1 second difference 
 is probably an oversight on my part but I'll figure it out another time.
 
 * **Verdict**  
@@ -785,7 +785,7 @@ I don't make Bub appear until the user inputs a name and clicks Go!. This is a m
 
 * **Fix**
 
-I simply moved Bub's listener ```bubCharacterRef.addEventListener("click", bubTalk);``` to within my input name function. 
+I simply moved Bub's event listener ```bubCharacterRef.addEventListener("click", bubTalk);``` to within my input name function. 
 
 * **Verdict** 
 
@@ -834,37 +834,43 @@ I had never dealt with Javascript before the start of March so to produce what I
 My game works the way I wanted it too and I 98% of the time enjoyed everything about designing it to building it.
 The 2% was for my iOS Safari bug and my landscape view which really hurt because I was not expecting them.
 
+Took on any critique from my first project so hopefully I have ironed out the issues from it :)
+
+I've added some adult humour for the purposes of having a laugh but obviously if this was going to be seen by children I would remove it & keep it clean
+
+Hope my MS2 assessor is old like me so they appreciate the retro 80s game ha ha
 
 ## **Credits**
 ---
 
-Took on any critique from my first project so hopefully I have ironed out the issues from it :)
+* My main image for my headers was downloaded from [Clipartmax](https://www.clipartmax.com/middle/m2i8Z5A0b1b1i8i8_the-original-and-classic-that-most-people-have-played-bubble-bobble-2d/) which I modified by adding the Bonkers
 
+* I got the main characters from [Deviant Art](https://www.deviantart.com/dpsldpsl-cr/art/bubble-bobble-pokemon-461178795) which I modified to get my 200 x 200 px cards
 
-Speech Bubble - https://codepen.io/run-time/pen/VNRBJd
+* I located my Bubble Bobble card face image at [Nicepng](https://www.nicepng.com/ourpic/u2r5w7u2i1t4o0r5_farming-simulator-clipart-bubble-bubble-bobble-arcade-logo/)
 
-Speech Bubble 2 - https://codepen.io/rikschennink/pen/mjywQb    /    https://freefrontend.com/css-speech-bubbles/
+* I got the [Speech Bubble](https://codepen.io/rikschennink/pen/mjywQb) here and modified it to suit my Intro
 
+* I used the [Fisher-Yates Shuffle (aka Knuth)](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array) 
+to randomise / shuffle all available cards then I use it again to randomise / shuffle the first six cards and these are to be displayed
 
-Fisher-Yates Shuffle to randomise 1 to 6 for selecting cards
-https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+* For the last 10 seconds of the game I make the timer flash using this [Blinking Code](https://www.codegrepper.com/code-examples/css/javascript+load+with+flashing+text+color)
+and modified it to suit my game
 
+* For the main section of my game ... the cards, I use the [CSS Grid Container](https://www.w3schools.com/css/css_grid_container.asp) for the basis of this concept
 
-How to produce an image array as I wasn't sure of the how you write the location of the image into an array (link below)
-https://stackoverflow.com/questions/42327498/output-an-array-of-images-in-javascript
+**Special Shout Outs**
 
+* Firstly to my testers Alan, Jonny, Wee Ro, My Bro, Beena .... with the main ones being Scott, Storm & Wee CJ
 
+* My **'patient'** mentor [Simen Daehlin](https://github.com/Eventyret), for helping me develop my coding skills by giving awesome advice and direction :)
 
-Blinking Code
-https://www.codegrepper.com/code-examples/css/javascript+load+with+flashing+text+color
+* [AnoukSmet](https://github.com/AnoukSmet), for her awesome README & cool website
 
+* Slack for continuous information, help links, tutorials, laughter, support .... I could go on
 
-I've added some adult humour for the purposes of having a laugh but obviously if this was going to be seen by children I would remove it & keep it clean
+* [Stackoverflow](https://stackoverflow.com/), useful resource site for finding solutions to many issues I had
 
-https://www.w3schools.com/css/css_grid_container.asp - Grid container
-
-
-Testers - Scott, Storm , CJ, Wee Ro, Alan, Jonny, Ashley, My Bro
-
+**This site is mainly for educational purposes only but chill out, play the game & become A LEGEND !!!**
 
 [Back to Top](#contents)

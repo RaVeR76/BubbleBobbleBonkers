@@ -19,15 +19,15 @@ const wellDone = document.getElementsByClassName("welldone")[0];
 const unlucky = document.getElementsByClassName("welldone")[1];
 const completeGame = document.getElementsByClassName("jumbohead")[0];
 
-let countDown = localStorage.getItem("CountDown");   // Needed to use this for storing the next level coundown time because reloading the page always reset countdown to 60
-let levelAt = localStorage.getItem("Level");         // Needed to use this for storing the next level to use for selecting the level countdown time
+let countDown = localStorage.getItem("CountDown");
+let levelAt = localStorage.getItem("Level");
 let level1Hi = localStorage.getItem("Level1HiScore");
 let level2Hi = localStorage.getItem("Level2HiScore");
 let level3Hi = localStorage.getItem("Level3HiScore");
 let level4Hi = localStorage.getItem("Level4HiScore");
 let level5Hi = localStorage.getItem("Level5HiScore");
 let hasTurnCard = false;
-let gridLock = false;   // Added this because once you selected two cards, you could select another which messed up the sequence
+let gridLock = false;
 let cardOne, cardTwo;
 let points = 0;
 let totalCards = 0;
