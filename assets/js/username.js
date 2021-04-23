@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
  * 
  * @param {*} event 
  */
-function handleSubmit(event) {
+function startBubChat(event) {
     
     event.preventDefault();
 
@@ -382,7 +382,7 @@ function resetHiScores (event){
     location.reload();
 
 };
-form.addEventListener('submit', handleSubmit);
+form.addEventListener('submit', startBubChat);
 highScoreDisplay.addEventListener("click", displayHighScores);
 resetHighScore.addEventListener("click", resetHiScores);
 gameRulesDisplay.addEventListener("click", displayGameRules);

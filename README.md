@@ -1,7 +1,7 @@
 # **Bubble Bobble Bonkers**
-This may not be the real Bubble Bobble but ....   
-Why not play my wee memory game & find some of the characters,  
-While listening to the classic retro theme tune :) 
+This may not be the real Bubble Bobble but it may be as close so ....  
+why not play my wee memory game & find some of the characters,   
+while listening to the classic retro theme tune :) 
 
  
 ![Bubble Bobble Bonkers](https://github.com/RaVeR76/BubbleBobbleBonkers/raw/master/wireframes/game-showcase.png)
@@ -125,10 +125,10 @@ I have settled on [Titillium Web](https://fonts.google.com/specimen/Titillium+We
 
 [Font Awesome](https://fontawesome.com/) will be the main source for any icons that I require, as always. 
 I also plan to use some of the retro characters or gameplay objects from Bubble Bobble to use as icons, if applicable.
-Other than them, we will just have to see what suits and fits the game layout perfectly.
-As my game developed I realised I needed a few fonts. The first one was the <b>mute</b> and <b>unmute</b> icons, that when the mute button is pressed
+Other than them, we will just have to see what suits and fits the game layout perfectly.   
+As my game developed I realised I needed a few icons. The first one was the <b>mute</b> and <b>unmute</b> icons, that when the mute button is pressed
 they swap, using Javascript. The next icon was the <b>home</b> one which is used to take you from the Gamezone to the Intro.
-I then added the <b>star</b> and <b>cog</b> icons for opening up High Scores (with reset button) and Rule junmbotrons.
+I then added the <b>star</b> and <b>cog</b> icons for opening up High Scores (with reset button) and Rule jumbotrons.
 Again, I think the icons fit really well with the button colours & the pages.
 
 #### Colours
@@ -162,7 +162,7 @@ They are just simple 2D sketches but I now understand how important these really
 My wireframes are set out where you will first have a wee intro screen to input your ***game name*** & get your self fully prepared for the game of your life :)
 The second screen will basically be the gamezone & pretty much the same for the 3 levels as well, maybe with different backgrounds or slight tweaks.
 I have added an **alternative gamezone wireframe** for my desktop because I am still unsure at what layout will work better & look more aesthetically pleasing.
-At present, as I write this, I am swaying more towards the *alternative* version but even this coould change as I progress ha ha!
+At present, as I write this, I am swaying more towards the *alternative* version but even this could change as I progress ha ha!
 
 Anyway, you can have a wee look at my wireframes below:
 
@@ -193,7 +193,7 @@ To be honest I can't wait to hear the wee theme tune as I match those cards.
 * The user will have a possible 5 levels, to complete the game
 * The user will be able reset their high scores
 * The user will be able to mute the audio during game play
-* The user will see the time countdown during game play
+* The user will see the time count down during game play
 * The user will see their score update depending on a card mismatch or match
 * The user will recieve some personal game play messages in the chat hub
 * The user will be able to return to Intro from Gamezone
@@ -242,15 +242,15 @@ To be honest I can't wait to hear the wee theme tune as I match those cards.
 Create a fun memory game that will allow the user to escape from normal life, even for a few moments.
 I am going to base my memory game on a retro 80s classic arcade game so I will utilise as much Bubble Bobble content as I can.
 I will use the various characters for my hidden memory cards so it will all look awesome & retro.
-I hope to add the wee theme tune as well because it will just add to the overall retro feel of the game .... de de dee de de de dee (don't worry you'll be dee deeing it too soon enough ha ha)
+I hope to add the wee theme tune as well because it will just add to the overall retro feel of the game .... de de dee de de de dee (don't worry you'll be <em>dee deeing</em> it too soon enough ha ha)
 
 * **Implementation**  
 I set out to make a simple wee memory game and if I completed eveything as mentioned in the plan, I would be happy enough.
-Well I did this and have now been waking up at 3 o'clock in the morning dee deeing the fecking theme tune !
+Well I did this and have now been waking up at 3 o'clock in the morning <em>dee deeing</em> the fecking theme tune !
 Only messing, I did want a cool retro looking game & I feel I have pulled it off.
 At the start I gathered as much info, pictures, images, game sprites, audio, as I could .... I even got screenshots of every level from the original game.
-I actually used round87 where I edited out some other background detail to give me the open space for my game design.
-I amended the Bubble Bobble image for my main headings in Paint 3D by adding a 3D Bonkers using my main pink colour.
+I actually used <b>round 87</b> where I edited out some other background detail to give me the open space for my game design.
+I amended the Bubble Bobble image for my main headings in <b>Paint 3D</b> by adding a 3D Bonkers using my main pink colour.
 I got an image with all the main Bubble Bobble characters on it & edited this to remove each character separately.
 I centered each image and resized them to 200px by 200px for my card characters.
 I also utilised the Bub and Bob characters for the comedy chat on the Intro.
@@ -258,25 +258,25 @@ As regards the buttons, I decided on them as I went along.
 
 * **Test**  
 I have tested this game so many times myself and deep down I still really love it ha ha ... I think it's an awesome wee game considering I only learnt Javascript
-about 2 months ago and only started developing the game a month ago.
+about 3 months ago and only started developing the game over a month ago.  
 It's a simple wee game which gets harder each level by the fact it removes 10 second from the previous time.
 It stores your high score so you can try and beat it everytime.
-I try to be interactive with the user by getting their Game Name and using it where possible to involve them in the intro chat & game play messages.
-Aesthetically it looks really good & the audio works well at each instance is used. These are the orginal audio clips from the orignal Bubble Bobble too.
+I try to be interactive with the user by getting their <b>Game Name</b> and using it where possible to involve them in the intro chat & game play messages.
+Aesthetically it looks really good & the audio works well at each instance it is used. These are the orginal audio clips from the orignal Bubble Bobble too.
 I shared my link with a few lads and lasses at work breaktime, so they could be my testers .... they all loved it and said it was super addictive !
-Especially when I said that if you complete the last level .... you become a <b>Legend !</b> ha ha .... should have seen their wee fingers tapping cards like mad :)
+Especially when I said that if you complete the last level .... you become a <b>Legend !</b> ha ha .... should have seen their wee fingers tapping cards like mad :)  
 Anyways, I came back for lunch and as I walked in the canteen ... all you heard was the wee Bubble Bobble theme tune blasting out from several different phones.
 Not gonna lie ... that was one of the best feelings that I have ever felt, in a long long time :)
-My boss text me at like 9 that night saying he was a Legend so he must've been playing it ... love it ha ha !
-I got them to test everything within the game, I got them to fill out a questionnaire that I made and also add their device / operating systems too.
-Unfortunately, the biggest bug I came across and I will talk about later within my <b>Bug Section</b> was the fact that the game doesn't work on iOS operating system device and therefore Safari .... I was truely gutted when I found this out from my Mentor because whilst it looked really cool to me, his would not display the characters when the cards turned. He has a Mac by the way. That near broke me as it was os unexpected but I will explain leter as said already.
+My boss text me at like 9 o'clock that night saying he was a <b>Legend</b> so he must've been playing it ... love it ha ha !
+I got them to test everything within the game.  
+Unfortunately, the biggest bug I came across and I will talk about later within my <b>Bug Section</b> was the fact that the game doesn't work on iOS operating system device and therefore Safari .... I was truely gutted when I found this out from my Mentor because whilst it looked really cool to me, his would not display the characters when the cards turned. He has a Mac by the way. That near broke me as it was so unexpected but I will explain later, as I already said.
 
 * **Result**  
-Overall, the game works really well and give the user more than I expected it to. It's aesthetically pleasing, has a catchy backdrop with catchy music.
+Overall, the game works really well and gives the user more than I expected it to. It's aesthetically pleasing, has a catchy backdrop with catchy music.
 It is slightly addictive which is what I had anticapated at the start and secretly aimed for.
-The overall layout looks awesome and I am super happy with how it looks overall.
+The overall layout looks awesome and I am super happy with how it looks overall.  
 The cards turn when pressed, they lock when matched, the score adds up, the time counts down. When the timer gets to 10 seconds the timer starts to flash
-and I changed the music to the faster sounding version .... talk about the heart beating faster when them two actions happen, gets the adrenilin going that wee combo does :)
+and I changed the music to the faster sounding version .... talk about the heart beating faster when them two actions happen, gets the adrenilin going that wee combo does :)  
 It's deffo easy the first couple of levels but the last level is quite tough to be fair but if you really want that <b>Legendary Status</b> ... it has to be completed.
 Obviously, there is always room for improvement and I already have some thoughts on these in the <b>Features</b> section.
 
@@ -292,15 +292,15 @@ I actually can't wait until I finish this course and get back to maybe extending
 
 * **Plan**    
 I want the user to be able to play my game on any device they want or choose. Therefore the game layout will have to be compatible on large desktop screens, 
-right through to small mobile screens. I will achieve this by using the Bootstrap framework (Ver 4) as the foundation from where to build my game up. 
+right through to small mobile screens. I will achieve this by using the <b>Bootstrap framework (Ver 4)</b> as the foundation from where to build my game up. 
 I am a bit more clued up on Bootstrap now but deffo struggled a little on my first project with it. 
 This time I will start with the mobile design (seeing it is a mobile first framework) & work my way up, to the desktop sized screens.
 On a mobile device, you are really limited to the maximum number of tile / cards that can be displayed due to the screen size but I have settled for 12 max.
 I may increase the maximum tile numbers as the screen size gets larger but we will have to see.
 
 * **Implementation**  
-I used the Code Institute Github template as I know these had all that I required to build my game up.
-I utilsed Bootstrap for most of my layout and used CSS grid-container class for my cards whcih I got from w3schools.
+I used the <b><em>Code Institute Github template</em></b> as I know this has all that I required to build my game up.
+I utilsed Bootstrap for most of my layout and used CSS grid-container class for my cards which I got from <b>w3schools</b>.
 In hindsight, I should have used my alternative wireframe design for landscape view but I will deffo fix this at a later date.
 These bugs and issues are what make you stronger as a coder I feel and it is such a steep learning curve at the start
 
@@ -333,7 +333,7 @@ If my cards match function is true, then I'll add a score of 5 to the users tota
 I hope this code is as simple to write, as it is to say it ha ha ! 
 
 * **Implementation**  
-I first created my various cards functions like shuffle, display, etc,etc.
+I first created my various cards functions like shuffle, display, etc, etc.
 And obviously two functions for when a match happens <b>cardsMatch()</b> and when a match doesn't happen <b>cardsDontMatch()</b>.
 I simply added ```points += 5;``` to the cardsMatch function and ```points -= 2;``` to the cardsDontMatch function.
 I declared the points variable at the start by making it zero.
@@ -357,24 +357,24 @@ My plan was successfully completed for the User to score points whether the card
 #### User Story : I want the game to get more difficult as I progress
 
 * **Plan**  
-My plan is to design at least 3 levels with the first one being the easiest & the last one being the hardest .... standard gaming etiquette to be fair.
+My plan is to design at least <b>3 levels</b> with the first one being the easiest & the last one being the hardest .... standard gaming etiquette to be fair.
 The first level will have max 12 tiles & you just compete at your own pace.
 The second level will have max 12 tiles but you will have a time of 60 seconds to complete all the matches.
 The third level will have again 12 tiles but the time will either be 40 or 50 seconds now. I will decide when testing to see how difficult either is.
 
 * **Implementation**  
 Okay so my plan changed a little as regards the original design concept. 
-I now have 5 levels with first level have a countdown starting at 60 seconds.
-The levels after this, I have taken 10 seconds off the countdown for each consecutive level.
+I now have <b>5 levels</b>, with the first level having a countdown starting at 60 seconds.
+For the levels after this, I have taken 10 seconds off the countdown for each consecutive level.
 So whilst Level One has a 60 second countdown .... Level Five has a 20 second countdown.  
 I found this one quite difficult at the start to figure out and did stress a bit at trying to get it to work.
-There probably is an easier way to make it happen but I used local storage to store my <b>countDown</b> variable of 60 and my <b>levelAt</b> variable of 1.
-I had to use this method so that it stores the next countDown variable and levelAt from my levelUp function.
+There probably is an easier way to make it happen but I used local storage to store my <b>countDown</b> variable of <b>60</b> and my <b>levelAt</b> variable of <b>1</b>.
+I had to use this method so that it stores the next countDown variable and levelAt from my ```levelUp function```.
 My levelUp function checks what level the user is at and assigns the correct countDown value for the next level to be played and then stores this in local storage.
-This levelUp function is called for within my newLevel function which adds one to to my levelAt and also reloads the page.  
+This levelUp function is called for within my ```newLevel function``` which adds one to to my levelAt and also reloads the page.  
 So now the reason I had to use local storage this way was because on reload, if I had declared my countDown and levelAt variables as 60 and 1 respectively.
 Then everytime the game restarted the user would be stuck on level one for 60 seconds every single level played .... it would be endless.
-I also declare these variables in the Intro when the Game Name input button his pressed so that if the user jumps back to the Intro page
+I also declare these variables in the Intro when the Game Name input button is pressed so that if the user jumps back to the Intro page
 and then back to the gamezone, the countDown and levelAt variables will reset ... if I didn't do this then the user would start at the last level they played.  
 I added a flashing effect which I got the code from codegrepper and it's credited in the credits. I modified it to suit my game and I think it adds that
 extra wee touch plus makes you panic when you see it. I make the flash happen when there is 9 seconds left on the clock.
@@ -384,20 +384,20 @@ Like I said above, there is probably a much simplier method to do this but I am 
 Also remember that Level One starts automatically when the page is reloaded so this is the reason why I start some switch cases from case 2.
 
 * **Test**  
-Once I had sorted out some issues I had from above, the countDown worked really well at each level.
+Once I had sorted out some issues I had from above, the <b>countDown</b> worked really well at each level.
 I first had 60 in my HTML (time-left) span but every new level it displayed 60 then jumped to 40 or 30 depending on the level.
-I simply added -- to the span instead so it starts with these then counts down appropiately .... whilst its not pretty, it's much better than jumping from 60 everytime.
+I simply added two dashes, <b>--</b>, to the span instead so it starts with these then counts down appropiately .... whilst its not pretty, it's much better than jumping from 60 everytime.
 As the users play through the levels, the time is decreasing by 10 seconds each level so that tested perfectly.
 As I mentioned above I declared the countDown variable on the intro page because it would always be 60 on reload.
 
 * **Result**  
 Really happy with how the game developed and me with it as I learned Javascript.
-The levels do get more difficult as the they increase.
-The first couple are really easy, with the next two relatively easy but level five is quite hard but completey doable :)
+The levels do get more difficult as they increase.
+The first couple are really easy, with the next two relatively easy but level five is quite hard but completey do-able :)
 There are five levels instead of the planned three so that's a nice added bonus for the user. 
 
 * **Verdict**  
-Levels get harder as you progress so that's the main design function I wanted.
+Levels get harder as you progress so that's the main design design concept I wanted.
 
 ### **Current Players High Score**
 
@@ -409,25 +409,25 @@ So the user has a goal for each game he or she plays. Just a wee added incentive
 
 * **Implementation**  
 I'll be honest this was quite hard as well for me. I had a few issues getting this working and over the line.
-Issues, like null being displayed or issues with getting the high scores to reset.  
-Anyway, I utilised the local storage for storing each levels high score so I could display when required on either screen.  
-First I had to think of a way of creating a good score as the gameplay scoring was too low.
-Like image if you completed Level One and it says your New High Score is 17 ... you'd be pretty annoyed at how low it was (I was at first hence
-why I added extra calculations). 
+Issues, like <em>null</em> being displayed or issues with getting the high scores to reset.  
+Anyway, I utilised the <b>local storage</b> for storing each levels high score so I could display when required on either screen.  
+First I had to think of a way of creating a good score as the gameplay scoring was far too low.
+Like imagine if you completed Level One and it says your <b><em>New High Score is 17</em></b> ... you'd be pretty annoyed at how low it was (I was at first hence
+why I added extra calculations).  
 I decided to make a Level Total score by multiplying the <b>Time Left</b> by <b>Level Score</b> by <b>Level Number</b>.
 This would give the user a nice higher score and the quicker they complete it the more points they get.
 It also makes it easier for having a bigger points swing between playing the same level i.e. the user could get 1200 pts on level one
 and the next time they play level one the user could get 850 pts.   
-So this calculation for each Level is carried out in my levelScore function.
-I first calculate the levelTot which is time left multiplied by level score, as this is common acrtoss all the levels.
-I then use a switch statement looking at what level the user is on which is stored in levelAt.
+So this calculation for each Level is carried out in my ```levelScore function```.
+I first calculate the <b>levelTot</b> which is time left multiplied by level score, as this is common across all the levels.
+I then use a <b>switch statement</b> looking at what level the user is on which is stored in <b>levelAt</b>.
 Depending on case, as in level, it will multiply the level number by the previous levelTot, calculated at the start of the function.
 It also displays the score in the gameover jumbotron when it is displayed.
-It then checks if the level score is larger than the current High Level ```(levelTot > level1Hi)```. If it is it stores the new High Score in local storage.
+It then checks if the level score is larger than the current High Level ```(levelTot > level1Hi)```. If it is, it stores the new High Score in local storage.
 It will also display this New High Score in the gameover jumbotron so the user knows they beat their last high score.
 This gets repeated at each level with the difference being the level multiplier.  
-So lets say you finish Level One. In the cartdsMatch function the totalCards will have equalled twelve.
-This will call my gameLevelOver function. First it calls my levelScore function so it calculates the high score for that level as explained above.
+So lets say you finish Level One. In the ```cartdsMatch function``` the <b>totalCards</b> will have equalled twelve.
+This will call my ```gameLevelOver function```. First it calls my ```levelScore function``` so it calculates the high score for that level as explained above.
 It then plays the short gameoever audio and displays the level score in the gameover jumbotron ready for displaying.
 Next it sets the jumbotron to visible.
 Depending if it's the first four levels or the last fifth level that has been completed, the jumbotron will display different text.
@@ -435,23 +435,23 @@ When the fifth level is completed it allows the user to start the game again. I 
 new restart event listener which will allow the user to complete the restart of the game. I also changed the audio to the longer version, 
 as the user has completed my game.  
 The current level high score is also displayed as the first line of the game chat to show the user what they are up against.
-It is also displayed in the intro page by utilising the local storage. i devolped a High Score button where the user can call to see all
-the current scores of all the levels. There is also an option to reset all the high scores back to zero.
+It is also displayed in the intro page by utilising the local storage. I developed a High Score button where the user can call to see all
+the current scores of all the levels on the Intro page and the icon is the star. There is also an option to reset all the high scores back to zero within this jumbotron.
 
 * **Test**  
 Tested this thoroughly as I had some issues within the intro page. On start up, it would display null but I have clarified this in the bug section.
-Once I had any little issues sorted and i let my wee testers test the high score through and through. It all worked perfectly apart from new users never
+Once I had any little issues sorted and I let my wee testers test the high score through and through. It all worked perfectly apart from new users never
 had a history of high scores so it displayed <b>null</b> when displaying the level high scores, in the gamezone chat. I fixed this bug by adding my checkScores function
 to the page start up and this checks if each level in memory is null. If it is, it will change it to zero.
 
 * **Result**  
 The high score works really well and it is deffo a great addition to a game because it makes it that more enticing and addictive.
-It brings out the competitive nature of the user to try and beat their own score. It displays at start of each level and if a new high score, displays it in the level up / gameover jumbotron.
+It brings out the competitive nature of the user to try and beat their own score. It displays at the start of each level and if a new high score has be accomplished, it will display it in the level up / gameover jumbotron.
 
 * **Verdict**  
 I am so happy how all my code and wee functions come together to allow me to have a High Score jumbotron and be able to reset all High Scores from this.
 Also, I love that the level High Score is displayed as the first line of text in the game chat ... which kind of says to the user 
-"So you think you can beat me, amigo .... well come on ahead then" !!!  
+<b><em>"So you think you can beat me, amigo .... well come on ahead then" !!!</em></b>  
 
 ### **Contact Form**
 
@@ -464,9 +464,9 @@ While I will test this as best as I can & ask family, friends & work colleagues 
 So I think a wee contact form will help keep the game bug free & help me as a developer too.
 
 * **Implementation**  
-Look I could've deleted this and pretended it was never gonna happen ha ha but I'm an honest guy so the truth is I didn't get time for it.
+Look .... I could have deleted this and pretended, like it was never gonna happen ha ha but I'm an honest guy so the truth is I didn't get time for it.
 It would've been in place of my Rules jumbotron but like I said before, I can add this a later date once the course is finished.
-I just wasn't sure if I would've had time and I want it to work properly and not just there for display.
+I just wasn't sure if I would've had time and I want it to work properly and not just be there for display.
 
 * **Test**  
 Nothing to test at present
@@ -499,19 +499,19 @@ I have to say I used a lot of CSS to get it looking awesome and giving it that w
 Like I said before I utilised the CSS grid-container and added some code to make these grid items turn.
 I try to keep the Intro page fairly quiet color wise but then let it shine in the gamezone.
 The gamezone looks amazing in my opinion and as similar to the original game as I could make it.
-Sure I use actual level 87 from the original game as my page background.
+Sure I use the actual <em>level 87</em> from the original game, as my page background.
 
 * **Test**  
 All links between pages worked fine on all <em>Android</em> and <em>Windows</em> devices tested.
 The functionality of the Bub and Bob chat worked fine.
 All buttons on the intro page worked and did what they were supposed to.  
-As for the gamezone ... love this place ... wish I had more time to develope more levels but I'll keep this for a later date.
-Level Five is intense ha ha !
+As for the gamezone ... love this place ... wish I had more time to develop more levels but I'll keep this for a later date.
+<b>Level 5</b> is intense ha ha !
 I love the colours of the cards with the Bubble Bobble logo on the cardface as well, really blends with the level 87 backdrop.
-I deffo tried to stick to my chosen colours within the gamezone and I think it works well even if it is kind of bright lol.
+I deffo tried to stick to my chosen colours within the gamezone and I think it works well ... even if it is kind of bright lol.
 
 * **Result**  
-All looks good and easy to manouvre around. Cards turn beautifully and lock turned if matched.
+All looks good and easy to manouvre around. Cards turn beautifully and lock turned, if matched.
 Time counts down, the score counts down on mismatch and counts up on a match.
 Colours are just right and I would deffo come back to play it again ... even though I must have played it 50,000 times already to test it.
 
@@ -529,40 +529,38 @@ The chances are the user played the original Bubble Bobble so a flood of childho
 I also want the user to feel they are interacting with Bob & Bub by adding good vibes comments but using their game name too .... to address them. 
 
 * **Implementation**  
-I didn't know how this was going to go when I first started to be honest. So I started with the header and added the Bubble Bobble Bunkers image.
+I didn't know how this was going to go when I first started to be honest. So I started with the header and added the <b>Bubble Bobble Bunkers</b> image.
 This originally was slightly different in that the Bonkers was more bubbly and not 3D. It was all different colours taken from the main image.
-I just felt it was too multi-coloured and not as pleasing on the eye as the current header image which I think is super cool by the way.
-A lot of unseen image editing was happening in the background of this whole project which I eally enjoy to be honest.
+I just felt it was too multi-coloured and not as pleasing on the eye as the current header image which I think is super cool by the way.   
+A lot of unseen image editing was happening in the background of this whole project which I really enjoy to be honest.
 I then added a Bootstrap input and edited to suit. I put an event listener on it so that when the Game Name was input and the button pressed, 
-it would start my handleSubmit function.
-At first I was going to store this as a variable on the page and use it where ever needed but I realised that when I wanted it to use it in my gamezone it wouldn't work.
+it would start my ```startBubChat function```.  
+At first I was going to store this as a variable on the page and use it where ever needed but I realised that when I wanted to use it in my gamezone it wouldn't work.
 This is when I came across the local storage option which I have used for a few variables throughout this game.  
-So when the handle Submit function is called it first plays the Intro audio. Next it assigns it a variable and stores the users name into local storage for use in the gamezone. 
+So when the startBubChat function is called, it first plays the Intro audio. Next it assigns it a variable and stores the users name into local storage for use in the gamezone. 
 It then resets two chat counters to zero. I needed this to happen because although I declare them at the start, if the chat has started and the person decides to 
 input a new name or hit go then the chat would just have jumped to the next chat bubble depending on where the two counters were at.
 I'm sure there is a better way to do this but this works for me so I hope it's okay.
 Next the play button is made visible so the user can enter the gamezone. I also added the users name to the button so it looks like the gamezone
 is personally for them ... damn I am good sometimes ha ha:)  
 Obviously, this function didn't start out this way as most actually don't I found with Javascript. You may have a basic form input function.
-Then you add wee things to happen of the back of it .... cool that !   
+Then you add wee things to happen off the back of it .... cool that !   
 Anyway, I noticed a lot of white space below my input so thought I'll use wee Bub to pop up and welcome the user.
-Then I thought ghet a wee speech bubble to make it look authentic which I found online and is credited in my credits.
+Then I thought get a wee speech bubble to make it look authentic which I found online and is accredited in my credits.
 Again, I edited it to suit my character position. Then I added wee Bob below and added some chat whcih escalated into some humour but always involving the user by name.  
-The initiation of the chat starts when the same handleSubmit function was pressed above.
+The initiation of the chat starts when the same startBubChat function was pressed above.
 First Bub will appear and then Bob 2 seconds later, I used a timer for this within the function.
-I have an event listener on Bub so when he is clicked it calls the bubTalk function. I had one on Bob but it created caos when he was pressed by accident.
-I add his at the end of the bubTalk function whilst removing Bubs listener. Then when Bob is pressed the bobTalk function is called which remove Bobs listener and 
-adds Bubs back again. This sequence goes on until the end of the comedy chat.
+I add an event listener on Bub so when he is clicked it calls the ```bubTalk function```. I had one on Bob but it created caos when he was pressed by accident.
+I add his at the end of the bubTalk function whilst removing Bubs event listener. Then when Bob is pressed the ```bobTalk function``` is called which remove Bobs event listener and adds Bubs back again. This sequence goes on until the end of the comedy chat.  
 So while it is switching between Bub and Bob there is different chat text being displayed on screen depending on the Bub and Bob counters.
-I wrote the code this way becuse it works and I knew how to do it. There is probably a much simpler way and much shorter way but I'm still learning and it works at the end of the day.
-I have used the gameName variable that stores the users name throughout the chat as to make them feel welcome and part of the BBB club.
-I also use the gameNAme in the gamezone to interact with the user when they are playing the game and give them personal encouragement.
+I wrote the code this way becuse it works and I knew how to do it. There is probably a much simpler way and much shorter way but I'm still learning and it works at the end of the day.  
+I have used the <b>gameName</b> variable that stores the users name throughout the chat as to make them feel welcome and part of the BBB club.
+I also use the gameName in the gamezone to interact with the user when they are playing the game and give them personal encouragement.
 I think it works really well throughout the game. I set the maximum character length to eight because anymore would take up too much space within the game.
-I also did my personal test in it by using the WWWWWWWW (largest name length imo) as a name and made sure it worked perfectly throughout the game.
-I also added the effect of only the character talking has their speech bubble displayed which I though makes it look far better. I did this wee mod at the last minute but I was very pleased with the overall effect it had on the chat animation between them. Before both speech bubbles where always there and only the text changed which made it look very
-stagnant.  
+I also did my personal test in it, by using the WWWWWWWW (largest name length imo) as a name and made sure it worked perfectly throughout the game.
+I also added the effect of only the character talking has their speech bubble displayed which I thought makes it look far better. I did this wee mod at the last minute but I was very pleased with the overall effect it had on the chat animation between the two characters. Previously, both speech bubbles where always there and only the text changed which made it look very stagnant.  
 A few tweaks here and there to get this right and keep them from chatting over each other or freezing because the counters are out of sync.  
-I also added the audio later on which I think works really well with it. Believe it or not, this is the original Name Register music from the actual orginal game.
+I also added the audio later on which I think works really well with it too. Believe it or not, this is the original Name Register music from the actual original game.
 As is the gamezone theme music and the other wee audio clips. Although in the arcade version, 
 the name register was at the end for putting your initials (3 characters) in for a high score, as far as I can remember. I love the wee tune to be honest.
 
@@ -574,8 +572,8 @@ Again, the users name works in perfectly throughout me game and passed all tests
 I and my lil tester crew all loved the use of their names throughout the game. They said it made them feel like part of the game.
 
 * **Result**  
-Very happy with how my game interacts with the user and keeps them entertained on a personal level ... ooooo matron (Carry On pun there)!
-Like I said before it was awesome to hear so many phones polaying that Bubble Booble theme tune whilst playing my game.
+Very happy with how my game interacts with the user and keeps them entertained on a personal level ... <b>ooooo Matron !!!</b> (Carry On pun there)
+Like I said before it was awesome to hear so many phones blasting that Bubble Booble theme tune out whilst playing my game.
 
 * **Verdict**  
 From the feedback and me personally, I feel the plan was completed in that the user is made feel welcome and 
@@ -586,9 +584,11 @@ part of the BBB revolution ... I mean family, I meant family ha ha !
 ## **Bugs**
 ---
 
-Before February I had never seen JavaScript or knew what it did .... I only knew it was programming language.
+
+
+Before February I had never seen JavaScript or knew what it did .... I only knew it was a programming language.
 Fast forward 3 months and BOOM ! I'm about to hand in my MS2, a cool wee game made from HTML, CSS and now Javascript.  
-I had a few bugs to be honest, some major heart breaking dream crushing ones and some not so dramatic. I will try get through them as best as I can below.
+I had a few bugs to be honest, some <em>major heart breaking dream crushing ones</em> and some not so dramatic. I will try get through them as best as I can below.
 
 ### **Turned Cards Won't Display On iOS Devices**
 
@@ -596,16 +596,16 @@ I had a few bugs to be honest, some major heart breaking dream crushing ones and
 The bug of all bugs for a developer, the game doesn't work in Safari (iOS) ..... man, I could have cried when I found this out.
 Is there a better way than on your mentor sesh? I was so happy with it so far and my mentor then tried it on his Mac .... the cards wouldn't
 display when they turned over. What was displayed was the face card Bubble Bobble image but only backwards .... no characters.
-Gutted and deflated was an understatement. It worked perfectly on my screen and laptop.
-I was windows & he was Mac so I need to figure this out. I am running Chrome plus I checked it on Firefox & my andoid phone.
+**Gutted and deflated** was an understatement. It worked perfectly on my screen and laptop.
+I was windows and he was Mac so I need to figure this out. I am running Chrome plus I checked it on Firefox & my Andoid phone.
 All worked perfectly for me.  
 [backface-visibility](https://stackoverflow.com/questions/42744573/backface-visibility-not-working-in-safari) seems to be the issue I think & hope ! ... 
 I did try this fix but it never worked for me.    
-On firefox though the theme tune would not autoplay either :(  .... gonna cry soon !!!
+On Firefox though the theme tune would not autoplay either :(  .... gonna cry soon !!!
 
 * **Fix**  
-I have no fix at this monent in time, it was consuming too much time. The unfortunate issue is that I don't own an Apple device which
-makes it impossible for me to test. I was tormenting my brother to test it when I had tried something different but I was becoming a nuisance tbh.
+I have no fix at this monent in time, it was consuming too much time. The unfortunate issue is that *I don't own an Apple device which
+makes it impossible for me to test*. I was tormenting my brother to test it when I had tried something different but I was becoming a nuisance tbh.
 I had to give up and move on. I will deffo come back to this one at a later date.
 
 * **Verdict**  
@@ -616,13 +616,13 @@ Nothing to Ver Dict at this moment in time.
 * **Bug**  
 During the user testing I noticed it wasn't great on landscape view, in fact it was awful sometimes.
 I have to put that down to a complete noob mistake. I had been checking the responsiveness the whole way through using Chrome Dev Tools
-But I had always looked at it in portrait mode when checking for positioning.
+But I had always looked at it in *portrait* view when checking for positioning.
 I was gutted about this one too and how could I have missed something so important but I was so focused on getting it right in mobile portrait view.
 The effect was that the cards overlapped everything else unfortunately.
 But I will deffo fix this at a later date.
 Believe it or not I must have thought about this subcontiously when designing my wireframes because my alternative desktop design would
 fit perfectly for landscape view.   
-So it works brilliant in portrait view and not so good on tablets and landscape view.
+So it works brilliant in portrait view devices and not so good on devices in landscape view.
 It works okay on large screens too.
 
 * **Fix**  
@@ -638,37 +638,37 @@ I added some speech bubble CSS to make the chat look more interactive and pleasi
 I needed this to appear along with Bub's image when the Go button was pressed.
 
 * **Fix**  
-I added the visibility:hidden property to the speech bubble's css. I then change this to visible as soon as the Go button is pressed.
+I added the ```visibility:hidden``` property to the speech bubble's css. I then change this to visible as soon as the Go button is pressed.
 Along with Bub appearing too.
 
 * **Verdict**  
-Looks good now functioning as it should.
+Looks good and now functioning as it should.
 
 ### **Couldn't Get User Name To Work In Gamezone**
 
 * **Bug**  
-Trying to get the username (Game Name) variable to transfer from index.html to gamezone.html was a complete nightmare for me ha ha.
+Trying to get the **username (Game Name)** variable to transfer from *index.html* to *gamezone.html* was a complete nightmare for me ha ha.
 I spent about 3 hours on this one but got there in the end.
 After researching on best practices to solve this the local storage or session storage seemed the best solution.
 Eventually I tried local storage but it wouldn't work, I could see the variable in Dev Tools in the application section 
 after the button was hit but couldn't get it to display on my gamezone page.
 
 * **Fix**  
-I used the Local Storage method to do this which I got from this link [Local Storage](https://code-boxx.com/pass-variables-between-pages-javascript/)
+I used the **Local Storage** method to do this which I got from this link [Local Storage](https://code-boxx.com/pass-variables-between-pages-javascript/)
 It didn't work at first as mentioned above was because basically .... it was non matching variable names & syntax errors 
 but I got there in the end ..... now I am a JavaScript Jedi .... NOT !!!!
 
 * **Verdict**  
 Very happy to have solve this one because it would have put a real dent in my interactivity with the user.
-Plus I used the local storage method on a few other variable that I need to pass between pages :)
+Plus I used the local storage method on a few other variables that I need to pass between pages :)
 
 ### **Displaying Card Image Issue**
 
 * **Bug**  
-Thought I had an issue with getting images to populate the grid with some images not loading on occassions
-kept testing the restart over & over again to try figure the issue out. Fount that it was only two images that din't load on occassions
+Thought I had an issue with getting images to populate the grid with some images not loading on occasions.
+I kept testing the restart over & over again to try figure the issue out. Found that it was only two images that didn't load on occasions
 Looked further using Dev Tools & found that it was the same image & it's duplicate.
-Checked the code out & found I had typed 'scr' instead of 'src'...... slap to the face for me !
+Checked the code out & found I had typed 'scr' instead of 'src'...... *slap to the face for me !*
 
 * **Fix**  
 Correct the syntax errors for src
@@ -680,8 +680,8 @@ Easy fix but annoying to locate
 
 * **Bug**  
 Wanted some sort of alert for when the time was running out so added a function but couldn't get it to work.
-Investigated animation & keyframes and found a link online which is credited below. Added some animation / keyframe code to my css.
-Added one line of code to my 60 sec timer so that on 10 sec it would add my flash class to my time class list & therefore flashing the game timer :)
+Investigated *animation & keyframes* and found a link online which is credited below. Added some animation / keyframe code to my css.
+Added one line of code to my **60 sec timer** so that on 10 sec it would add my flash class to my time class list & therefore flashing the game timer :)
 
 * **Fix**  
 Used animation & keyframes inside my CSS.
@@ -695,7 +695,7 @@ Works really well and deffo adds to the tension when time is running out.
 * **Bug**  
 Tried for hours on end to get Countdown timer to reduce as I levelled up but obviously when the game reloaded the countdown timer also reset to 60,
 as I had declared this at the start. I now declare it on the intro page for use in my gamezone code. 
-I utilised localstorage again to store the level and countDown time. I wrote some code that when the level up button was presssed it increased the level variable by 1 & stored it in local storage.
+I utilised local storage again to store the level and countDown time. I wrote some code that when the level up button was presssed it increased the level variable by 1 & stored it in local storage.
 In my level up function, it checks the level value & therefore sets the countdown time accordingly (the higher the level the less time you have).
 
 * **Fix**  
@@ -709,10 +709,10 @@ I was so happy because it just went from a one level game to a several levels ga
 ### **Switch Not Working**
 
 * **Bug**  
-I could not get my switch, in the <b>levelScore()</b> function to work, for calculating level scores.
+I could not get my switch, in the ```levelScore() function``` to work, for calculating level scores.
 I did a little bit of research and tried a few things but still couldn't figure it out. 
-In the end I needed a '+' at the start of my switch expression which was levelAt.
-I didn't need this for gameChat function where I used the totalCards value to switch messages to be displayed. 
+In the end I needed a **'+'** at the start of my switch expression which was **levelAt**.
+I didn't need this for the ```gameChat function``` where I used the **totalCards** value to switch messages to be displayed. 
 So this confused the hell out of me and I still am to be completely honest ffs.
 
 * **Fix**  
@@ -724,11 +724,11 @@ It worked and that's the main thing
 ### **High Score Displaying null**
 
 * **Bug**  
-Could't figure out why when you refreshed the page and started the gamezone that it still said <b>null</b> when displaying the current high score
-I thought I was zeroing the high scores within my checkHiScore function but I was only zeroing the High Score Jumbotron innerHTML for display purposes only.
+Could't figure out why when you refreshed the page and started the gamezone that it still said **null** when displaying the current high score
+I thought I was zeroing the high scores within my ```checkHiScore function``` but I was only zeroing the High Score jumbotron innerHTML for display purposes only.
 
 * **Fix**  
-Once I realise this mistake I added `localStorage.setItem("Level1HiScore", zeroReset));` for each level which zero's the high scores only if the value was orginally 'null'.
+Once I realise this mistake I added ```localStorage.setItem("Level1HiScore", zeroReset));``` for each level which zero's the high scores only if the value was orginally *null*.
 The function allows for current level high score to be kept & displayed in the jumbotron.
 
 * **Verdict**  
@@ -737,10 +737,10 @@ I also added the checkHiScore function on start up so everything is in place :)
 ### **Game Name Not Responsive On Large Screens**
 
 * **Bug**  
-Game Name input was responsive until after 991px then it just went small in length. I was using the form-group class to set max-width to 30rem.
+Game Name input was responsive until after *991px* then it just went small in length. I was using the form-group class to set max-width to 30rem.
 
 * **Fix**  
-Tried a few things but eventually found that if I used the lower div class of input-group to set my max-width then it stayed responsive across all screen sizes. 
+Tried a few things but eventually found that if I used the lower div class of input-group to set my **max-width** then it stayed responsive across all screen sizes. 
 
 * **Verdict**  
 Input now works across all screen sizes
@@ -748,11 +748,11 @@ Input now works across all screen sizes
 ### **Time Left Discreptancy Within Score Calculation**
 
 * **Bug **  
-For my score calculations, the time left when the level was completed did not match my 'time left' on the console log (it was 1 second out every time)
+For my score calculations, the time left when the level was completed did not match my *time left* on the console log (it was 1 second out every time)
 This was my code ```levelTot = countDown * points;```. I tried to figure out the reason but it stumped me so I just added an easy fix so I could move on. 
 
 * **Fix**  
-I changed the above score calculation code to ``levelTot = (countDown += 1) * points;`` just as a quick fix. I know the 1 second difference 
+I changed the above score calculation code to ```levelTot = (countDown += 1) * points;``` just as a quick fix. I know the 1 second difference 
 is probably an oversight on my part but I'll figure it out another time.
 
 * **Verdict**  
@@ -761,15 +761,15 @@ The displayed countdown 'time left' now equals my countDown variable within my s
 ### **High Score Reset Issue**
 
 * **Bug**  
-I had an issue with my setting the high scores back to zero when using the High Score Reset button.
-I tried using remove local storage but this cause errors and would still display <b>null</b>.
-At this time my checkHiScore function didn't have the code from <em>Bug 8</em> - ```localStorage.setItem("Level1HiScore", zeroReset));``` and it wasn't called on page load either.  
+I had an issue with my setting the high scores back to zero when using the **High Score Reset** button.
+I tried using remove local storage but this cause errors and would still display *null*.
+At this time my ```checkHiScore function``` didn't have the code from *Bug 8* - ```localStorage.setItem("Level1HiScore", zeroReset));``` and it wasn't called on page load either.  
 Also I noticed while writing this up, that I could remove some JavaScript in my checkHiScore () function by adding a '0' to my high-score spans, in my html .... D'OH !
 Instead of using ```levelOneHiDisplay.innerHTML = `0`;``` everytime :)
 
 * **Fix**  
-I just had to put the 5 level high scores to zero when the reset button was pressed by using the code above.
-This was the first time I used this fix and later on I was it to fix another null error in Bug 8.
+I just had to put the five level high scores to zero when the reset button was pressed by using the code above.
+This was the first time I used this fix and later on in the development, I used it to fix another null error in *Bug 8*.
 
 * **Verdict**  
 The High Score Reset now resets the high scores with no issues within the game.
@@ -778,8 +778,8 @@ The High Score Reset now resets the high scores with no issues within the game.
 
 * **Bug**
 
-As I was testing my Intro and Game for the last few times before I submit for marking, I noticed that as soon as you load the Intro page,
-you could press / click where Bub is going to appear and his speech bubble would appear. This is because clicking Bub calls for the bubChat function.
+As I was testing my Intro and Gamezone for the last few times before I submit for marking, I noticed that as soon as you load the Intro page,
+you could press / click where Bub is going to appear and his speech bubble would appear. This is because clicking Bub calls for the ```bubChat function```.
 I don't make Bub appear until the user inputs a name and clicks Go!. This is a minor glitch which I am glad I caught.
 ```bubCharacterRef.addEventListener("click", bubTalk);```
 
@@ -827,18 +827,16 @@ Copy the following code and enter it into your *terminal* to **clone BubbleBobbl
 
 ## **Conclusion**
 ---
-
-I feel taht I achieved so much with my wee game. I have had my ups and downs trying to work with Javascript
-I really love what it does and I know that my code can be simplified much better and neater but the more I learn, the better I'll become.
-I had never dealt with Javascript before the start of March so to produce what I have for this project has made me even more determined to succeed.
-My game works the way I wanted it too and I 98% of the time enjoyed everything about designing it to building it.
-The 2% was for my iOS Safari bug and my landscape view which really hurt because I was not expecting them.
-
 Took on any critique from my first project so hopefully I have ironed out the issues from it :)
-
+I feel that I achieved so much with my wee game. I have had my ups and downs trying to work with **Javascript**
+I really love what it does and I know that my code can be simplified much better and neater but the more I learn, the better I'll become.
+I had never dealt with Javascript before the start of February so to produce what I have for this project has made me even more determined to succeed.
+My game works the way I wanted it to and I 98% of the time enjoyed everything about designing it to building it.
+The 2% was for my iOS Safari bug and my landscape view which really hurt because I was not expecting them.
 I've added some adult humour for the purposes of having a laugh but obviously if this was going to be seen by children I would remove it & keep it clean
+Overall, I really enjoyed developing this wee game into what it is now .... **A Wee Game ha ha :)**
+P.S. Hope my *MS2 assessor* is old like me so they appreciate the retro 80s game ha ha !
 
-Hope my MS2 assessor is old like me so they appreciate the retro 80s game ha ha
 
 ## **Credits**
 ---
