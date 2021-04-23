@@ -82,7 +82,7 @@ footer {
     bottom: 4rem;
 }
 
-.center {                             /* Autoprefixer */
+.center {
     margin: 0;
     position: relative;
     top: 50%;
@@ -119,14 +119,14 @@ footer {
     padding-bottom: 0.25rem;
 }
 
-.smiley-size:hover {                                    /* Autoprefixer */
+.smiley-size:hover {
     -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
 }
 
 /*-- Bubble Code Accredited In README but I have changed it to suit my game --*/
 .bub-speech {
-    visibility: hidden;                                                                                 /* Autoprefixer */
+    visibility: hidden;
     float: right;
     text-align: justify;
     position: relative;
@@ -139,7 +139,7 @@ footer {
             box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
 }
 
-.bub-speech::before {                 /* Autoprefixer */
+.bub-speech::before {
 	content: '';
 	position: absolute;
 	width: 0;
@@ -157,7 +157,7 @@ footer {
 	        filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
 }
 
-.bob-speech {	                        /* Autoprefixer */
+.bob-speech {
     visibility: hidden;
     float: left;
     text-align: justify;
@@ -171,7 +171,7 @@ footer {
             box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
 }
 
-.bob-speech::before {                              /* Autoprefixer */
+.bob-speech::before {
 	content: '';
 	position: absolute;
 	width: 0;
@@ -217,19 +217,19 @@ footer {
     font-size: 1.4rem;
 }
 
-.flash {                                                       /* Autoprefixer */
+.flash {
     -webkit-animation: blinker 1.5s linear infinite;
             animation: blinker 1.5s linear infinite;
   }
 
-  @-webkit-keyframes blinker {                                   /* Autoprefixer */
+  @-webkit-keyframes blinker {
     50% {
         background-color: rgba(247, 68, 152, 1);
         border: 1px solid rgba(254, 238, 32, 1);
         color: white;
     }
   }
-  @keyframes blinker {                                              /* Autoprefixer */
+  @keyframes blinker {
     50% {
         background-color: rgba(247, 68, 152, 1);
         border: 1px solid rgba(254, 238, 32, 1);
@@ -261,7 +261,7 @@ footer {
 }
 
 
-.grid-container {                        /* Autoprefixer*/
+.grid-container {
     display: -ms-grid;
     display: grid;
     -webkit-box-pack: center;
@@ -285,7 +285,7 @@ footer {
     padding: 1rem;
 }
 
-.grid-item {                                                                          /* Autoprefixer*/
+.grid-item {
     background: url("../images/cardface.png")no-repeat center center;
     background-size: contain;
     background-color: rgba(247, 68, 152, 1);
@@ -306,7 +306,7 @@ footer {
     border-radius: 1rem;
   }
 
-  .grid-item:active {                                       /* Autoprefixer*/
+  .grid-item:active {
     -webkit-transform: scale(0.9);
         -ms-transform: scale(0.9);
             transform: scale(0.9);
@@ -317,13 +317,13 @@ footer {
     transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
-.grid-item.turn {                                /* Autoprefixer*/
+.grid-item.turn {
     background-color: #fff;
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
 }
 
-.hide {                                           /* Autoprefixer*/
+.hide {
    width: 7rem;
    height: 7rem; 
    border-radius: 5px;
@@ -333,7 +333,7 @@ footer {
            transform: rotateY(180deg);
 }
 
-#home, #mute {                                     /* Autoprefixer*/
+#home, #mute {
     height : 3.2rem;
     width: 3.2rem;
     position: absolute;
@@ -385,7 +385,7 @@ footer {
     border: 2px solid rgba(247, 68, 152, .3);
 }
 
-.icon {                                                        /* Autoprefixer*/
+.icon {
     font-size: 1.2rem;
     line-height: 2rem;
     text-align: center; 
@@ -394,7 +394,7 @@ footer {
     transition: all 0.35s ease-in-out;
 }
 
-#gameover, #timeout {                                              /* Autoprefixer*/
+#gameover, #timeout {
     visibility: hidden;
     color: rgba(247, 68, 152, 1);
     font-family: "Press Start 2P", sans-serif;
@@ -417,7 +417,7 @@ footer {
     border-radius: 1rem;
 }
 
-#reset-jumbo, #rules-jumbo {                                              /* Autoprefixer*/
+#reset-jumbo, #rules-jumbo {
     visibility: hidden;
     color: rgba(247, 68, 152, 1);
     font-family: "Press Start 2P", sans-serif;
@@ -567,7 +567,7 @@ footer {
         line-height: 5rem;
     }
 
-    .grid-container {                                               /* Autoprefixer*/
+    .grid-container {
         -ms-grid-columns: auto auto auto auto;
         grid-template-columns: auto auto auto auto;
         top: 68%;
@@ -615,7 +615,7 @@ footer {
     }
 }
 
-/*Hide in Other Small Devices */                                    /* ----IF THERE ARE TWO MEDIA QUERY SIZES WITH SAME INFO , COMBINE THEM -----*/
+/*Hide in Other Small Devices */
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -688,7 +688,7 @@ footer {
         line-height: 5rem;
     }
 
-    .grid-container {                                                /* Autoprefixer*/
+    .grid-container {
         -ms-grid-columns: auto auto auto auto;
         grid-template-columns: auto auto auto auto;
         top: 68%;
@@ -804,7 +804,7 @@ footer {
         line-height: 5rem;
     }
 
-    .grid-container {                                          /* Autoprefixer*/
+    .grid-container {
         -ms-grid-columns: auto auto auto auto;
         grid-template-columns: auto auto auto auto;
         top: 68%;
@@ -909,7 +909,7 @@ footer {
         margin-top: 1rem;
     }
 
-    .grid-container {                                           /* Autoprefixer*/
+    .grid-container { 
         -ms-grid-columns: auto auto auto;
         grid-template-columns: auto auto auto;
         top: 67%;

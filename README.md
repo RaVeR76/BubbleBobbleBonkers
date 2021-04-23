@@ -34,8 +34,9 @@ And for an added touch, you will get to hear the unforgettable Bubble Bobble the
     + [Icons](#icons)
     + [Colours](#colours)
 - [Wireframes](#wireframes)
-  * [What didn't make the cut](#what-didn-t-make-the-cut)
 - [Features](#features)
+  * [Existing Features](#existing-features)
+  * [Features to be implemented](#features-to-be-implemented)
 - [Technologies Utilised](#technologies-utilised)
   * [Languages](#languages)
   * [Tools and Libraries](#tools-and-libraries)
@@ -180,21 +181,30 @@ Hopefully, I can pull this off & do wee Bob & wee Bub some justice with my memor
 To be honest I can't wait to hear the wee theme tune as I match those cards.
 
 
-### What didn't make the cut
-
-Possible high score register for user to compete against (can also be reset by user)
-
 [Back to Top](#contents)
 
 ## **Features**
 ---
 
-Future features .... harder levels
-Different backdrops utilising orginal screenshots that I have
+### **Existing Features**
 
-Landscape View Working
+* The user will be able to enter their game name
+* The user will be able to enter the Gamezone from the Intro
+* The user will have a possible 5 levels, to complete the game
+* The user will be able reset their high scores
+* The user will be able to mute the audio during game play
+* The user will see the time countdown during game play
+* The user will see their score update depending on a card mismatch or match
+* The user will recieve some personal game play messages in the chat hub
+* The user will be able to return to Intro from Gamezone
 
-More cards appearing on larger screens
+### **Features To Be Implemented**
+
+* A working version for iOS
+* A version for smaller device landscape play
+* Add more levels which are more complex than the current levels
+* Add different backgrounds )from original game) for different levels
+* More cards appearing on larger screens
 
 [Back to Top](#contents)
 
