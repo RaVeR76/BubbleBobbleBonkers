@@ -779,54 +779,84 @@ I was so happy because it just went from a one level game to a several levels ga
 
 
 
+* **Bug 8**
 
+I could not get my switch function, <b>levelScore()</b> to work for calculating level scores.
+I did a little bit of research and tried a few things but still couldn't figure it out. 
+In the end I needed a '+' at the start of my switch expression which was levelAt.
+I didn't need this for gameChat function where I used the totalCards value to switch messages to be displayed. 
+So this confused the hell out of me and I still am to be completely honest ffs.
+
+* **Fix**
+
+Added a '+' to the start of my switch expression which was levelAt.
+
+* **Verdict**
+
+It worked and that's the main thing
+
+
+
+* **Bug 8**
+
+Could't figure out why when you refreshed the page and started the gamezone that it still said <b>null</b> when displaying the current high score
+I thought I was zeroing the high scores within my checkHiScore function but I was only zeroing the High Score Jumbotron innerHTML for display purposes only.
+
+* **Fix**
+
+Once I realise this mistake I added 'localStorage.setItem("Level1HiScore", zeroReset));' for each level which zero's the high scores only if the value was orginally 'null'.
+The function allows for current level high score to be kept & displayed in the jumbotron.
+
+* **Verdict**
+
+I also added the checkHiScore function on start up so everything is in place :)
+
+
+* **Bug 9**
 
 Game Name input was responsive until after 991px then it just went small in length. I was using the form-group class to set max-width to 30rem.
-Tried a few things but eventually found that if I used the lower div class of input-group to set my max-width then it stayed responsive across all screen sizes.
+
+* **Fix**
+
+Tried a few things but eventually found that if I used the lower div class of input-group to set my max-width then it stayed responsive across all screen sizes. 
+
+* **Verdict**
+
+Input now works across all screen sizes
 
 
-Cards would turn but the you could turn another one then another one which messed up the sequence. I added the gridLock logic to stop this from happening.
-Only two cards can be turned now & the sequence stays functional.
+* **Bug 10**
+
+For my score calculations, the time left when the level was completed did not match my 'time left' on the console log (it was 1 second out every time)
+This was my code <b>levelTot = countDown * points;</b>. I tried to figure out the reason but it stumped me so I just added an easy fix so I could move on. 
+
+* **Fix**
+
+I changed the above score calculation code to <b>levelTot = (countDown += 1) * points;</b> just as a quick fix. I know the 1 second difference 
+is probably an oversight on my part but I'll figure it out another time.
+
+* **Verdict**
+
+The displayed countdown 'time left' now equals my countDown variable within my score calculation, so therefore the Level Score will be correct.
 
 
+* **Bug 11**
 
-Media Queries wouldn't work once it went below 1200px - must have deleted the last '}' of the largest media query which fucked it all up ffs :()
+I had an issue with my setting the high scores back to zero when using the High Score Reset button.
+I tried using remove local storage but this cause errors and would still display <b>null</b>.
+At this time my checkHiScore function didn't have the code from <b>Bug 8</b> - 'localStorage.setItem("Level1HiScore", zeroReset));' and it wasn't called on page load either.
 
+Also I noticed while writing this up, that I could remove some JavaScript in my checkHiScore () function by adding a '0' to my high-score spans, in my html .... D'OH !
+Instead of using levelOneHiDisplay.innerHTML = `0`; everytime :)
 
+* **Fix**
 
+I just had to put the 5 level high scores to zero when the reset button was pressed by using the code above.
+This was the first time I used this fix and later on I was it to fix another null error in Bug 8.
 
-Tried for hours on end to get Countdown timer to reduce as I levelled up but obviously when the game reloaded the countdown timer also reset to 60.
-I utilised localstorage again to store the level & count down time. I wrote some code that when the level up button was presssed it increased the level variable by 1 & stored it in local storage.
-In my level up function check the lavel value & therefore set the countdown time accordingly (the higher the level the less time you have).
-This one busted my balls for sure but I am nearly there at this momemnt in time.
-I also added some code to my restart function (when game times out) which resets these two variables to level 1 i.e. counDown = 60 seconds & level = 1 so the user can start from the beginning again.
+* **Verdict**
 
-
-
-
-couldn't get switch function to work for calculating level scores.
-I needed a '+' at the start of my switch expression which was levelAt.
-I didn't need this for gameChat function where I used the totalCards value to switch messages to be displayed. 
-So this confused the hell out of me ffs.
-
-
-
-couldn't get high scores to reset properly using remove local storage so just had to put the 5 level hi =gh scores to zero when reset button pressed
-
-Could't figure out why when you refreshed the page and started the gamezone that it still said null when dispalying the current high score
-I thought I was zeroing the high scores within my checkHiScore function but I was only zeroing the High Score Jumbotron innerHTML for display purposes only.
-Once I realise this mistake I added 'localStorage.setItem("Level1HiScore", 0);' for each level which zero's the high scores only if the value was orginally 'null'.
-The function allows for current level high score to be kept & displayed to the jumbotron.
-I also added the checkHiScore function on start up so everything is in place :) 
-
-score calculations .... the time left when level was completed did not match my 'time left' on the console log (it was 1 second out every time)
-levelTot = countDown * points;
-levelTot = (countDown += 1) * points;
-
-
-When writing up the functions I found that I could remove some js by adding a '0' to my high-score spans, in my html .... D'OH !
-instead of using innerHTML = `0`; everytime :)
-
+The High Score Reset now resets the high scores with no issues within the game.
 
 
 
@@ -869,7 +899,7 @@ I've added some adult humour for the purposes of having a laugh but obviously if
 https://www.w3schools.com/css/css_grid_container.asp - Grid container
 
 
-Testers - Scott, Storm , CJ, Wee Ro, Alan, Jonny, Ashley
+Testers - Scott, Storm , CJ, Wee Ro, Alan, Jonny, Ashley, My Bro
 
 
 

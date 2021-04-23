@@ -233,6 +233,10 @@ function matchReset() {
     [cardOne, cardTwo] = [null, null];
 };
 
+
+
+
+
 // My game chat function just send positive messages whilst playing the game
 
 
