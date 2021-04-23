@@ -774,6 +774,25 @@ This was the first time I used this fix and later on I was it to fix another nul
 * **Verdict**  
 The High Score Reset now resets the high scores with no issues within the game.
 
+### **Bub Speech Bubble Appearing When You Click Where Bubs Image Will Be**
+
+* **Bug**
+
+As I was testing my Intro and Game for the last few times before I submit for marking, I noticed that as soon as you load the Intro page,
+you could press / click where Bub is going to appear and his speech bubble would appear. This is because clicking Bub calls for the bubChat function.
+I don't make Bub appear until the user inputs a name and clicks Go!. This is a minor glitch which I am glad I caught.
+```bubCharacterRef.addEventListener("click", bubTalk);```
+
+* **Fix**
+
+I simply moved Bub's listener ```bubCharacterRef.addEventListener("click", bubTalk);``` to within my input name function. 
+
+* **Verdict** 
+
+Now, you can't click where Bub is goimng to be positioned and activate the speech bubble.
+So it all looks good now.
+
+
 [Back to Top](#contents)
 
 ## **Deployment**

@@ -67,6 +67,8 @@ function handleSubmit(event) {
     gameName = user.value;   
     localStorage.setItem("GameName", gameName);   // Used this method for transferring the users Game Name from Intro Zone to The Game Zone so I can interact with them during the game :)
 
+    bubCharacterRef.addEventListener("click", bubTalk);
+
     clickCounterBub = 0;    // added this because the chat would jump if you pressed 'go' again !
     clickCounterBob = 0;
 
@@ -380,21 +382,7 @@ function resetHiScores (event){
     location.reload();
 
 };
-
-
-
-/**
- * This is were all the action is happening I tell ye ...
- * This is just my list events that I am listening out for
- * 
- * The first one is a submit event when the user presses game name input button
- * The second one is click event when the user presses on the Bub character
- * The third one is another click event when the user presses the High Score, star icon button
- * The forth one is also a click event when the user presses the High Score Reset Button
- * Last but not least, you guessed it ... a click event when the user presses the Rules, cog icon button
- */
 form.addEventListener('submit', handleSubmit);
-bubCharacterRef.addEventListener("click", bubTalk);
 highScoreDisplay.addEventListener("click", displayHighScores);
 resetHighScore.addEventListener("click", resetHiScores);
 gameRulesDisplay.addEventListener("click", displayGameRules);
