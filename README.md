@@ -602,12 +602,12 @@ display when they turned over. What was displayed was the face card Bubble Bobbl
 I was windows and he was Mac so I need to figure this out. I am running Chrome plus I checked it on Firefox & my Andoid phone.
 All worked perfectly for me.  
 [backface-visibility](https://stackoverflow.com/questions/42744573/backface-visibility-not-working-in-safari) seems to be the issue I think & hope ! ... 
-I did try this fix but it never worked for me.    
+I did try this fix and other possible solutions but none of them worked for me.    
 On Firefox though the theme tune would not autoplay either :(  .... gonna cry soon !!!
 
 * **Fix**  
-I have no fix at this monent in time, it was consuming too much time. The unfortunate issue is that *I don't own an Apple device which
-makes it impossible for me to test*. I was tormenting my brother to test it when I had tried something different but I was becoming a nuisance tbh.
+I have no fix at this monent in time, it was consuming too much time. The unfortunate issue is that ***I don't own an Apple device which
+makes it impossible for me to test***. I was tormenting my brother to test it when I had tried something different but I was becoming a nuisance tbh.
 I had to give up and move on. I will deffo come back to this one at a later date.
 
 * **Verdict**  
