@@ -210,8 +210,12 @@ More cards appearing on larger screens
 ### Tools and Libraries
 
 - [Git](https://en.wikipedia.org/wiki/Git) 
+- [GitPod](https://www.gitpod.io/)
 - [Bootstrap](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework))
 - [jQuery](https://jquery.com/)
+- [Balsamiq](https://balsamiq.com/)
+- [W3C HTML Validation Service](https://validator.w3.org/)
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 - [Font Awesome](https://fontawesome.com/)
 - [Google Fonts](https://fonts.google.com/)
 
@@ -220,9 +224,9 @@ More cards appearing on larger screens
 # Testing
 ---
 
-### **Take A Wee Break**
+### **Take A Wee Break**  
 
-#### User Story : I want to take some time out from my daily routine & play a wee game
+#### **User Story : I want to take some time out from my daily routine & play a wee game**  
 
 * **Plan**  
 Create a fun memory game that will allow the user to escape from normal life, even for a few moments.
