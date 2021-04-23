@@ -33,20 +33,18 @@ let clickCounterBob = 0;
 let gameName = "";
 
 let countDown = 60;
-localStorage.setItem("CountDown", countDown);      // These 4 lines of code is just to reset the gamezone main variables
+localStorage.setItem("CountDown", countDown);
 let level = 1;
 localStorage.setItem("Level", level);
 
-
-
-// On Start Up
-
+/**
+ * Run this function on page load
+ */
 document.addEventListener("DOMContentLoaded", function() {
    
     checkHiScore();
     
  });
-
 
 /**
  * This function is initiated by the user entering their Game Name & pressing the Go button, on the intro page. 
@@ -55,7 +53,6 @@ document.addEventListener("DOMContentLoaded", function() {
  * 
  * It resets two chat counter variables, displays the gamezone button & starts the comedy chat with Bub & his speech bubble. 
  * Quite a busy wee function this :)
- * 
  * @param {*} event 
  */
 function startBubChat(event) {
@@ -65,11 +62,11 @@ function startBubChat(event) {
     introAudio.play();
 
     gameName = user.value;   
-    localStorage.setItem("GameName", gameName);   // Used this method for transferring the users Game Name from Intro Zone to The Game Zone so I can interact with them during the game :)
+    localStorage.setItem("GameName", gameName);
 
     bubCharacterRef.addEventListener("click", bubTalk);
 
-    clickCounterBub = 0;    // added this because the chat would jump if you pressed 'go' again !
+    clickCounterBub = 0;
     clickCounterBob = 0;
 
     playButton.style.visibility = "visible";
@@ -93,10 +90,7 @@ function startBubChat(event) {
         speechBubs.innerHTML =`<p>Hey <b>${gameName}</b>, pleased to meet you ... my name is <b>Bub</b> !</p> <p>Click me then Bob & vice versa, for some comedy chit chat !</p>`;
 
     }, 2000);
-
 };
-
-
 
 /**
  * This function is initiated by the user clicking on the green character Bub, on the intro page
@@ -108,11 +102,10 @@ function startBubChat(event) {
  * It also made it much easier to follow the chat between the two.
  * At the end I remove the click event for this dude below, aka Bub & then 
  * adds one to Bob, which calls his own wee function, similar to this one
- * 
  * @param {*} event 
  */
 function bubTalk(event) {
-  //   Prevent the default submit action
+
     event.preventDefault();
 
     clickCounterBub +=1;
@@ -176,10 +169,7 @@ function bubTalk(event) {
 
     bubCharacterRef.removeEventListener("click", bubTalk);
     bobCharacterRef.addEventListener("click", bobTalk);
-
 };
-
-
 
 /**
  * This function is initiated by clicking on the blue character Bob, on the intro page
@@ -191,12 +181,10 @@ function bubTalk(event) {
  * It also made it much easier to follow the chat between the two.
  * At the end I remove the click event for this dude below, aka Bob & then I
  * add one to Bub from above, which calls his own wee function, similar to this one .... Deja Vu anyone !
- * 
- * 
  * @param {*} event 
  */
 function bobTalk(event) {
-   //  Prevent the default submit action
+
     event.preventDefault();
 
     clickCounterBob += 1;
@@ -249,7 +237,6 @@ function bobTalk(event) {
 
     bobCharacterRef.removeEventListener("click", bobTalk);
     bubCharacterRef.addEventListener("click", bubTalk);
-
 };
 
 /**
@@ -260,57 +247,46 @@ function bobTalk(event) {
  * The function checks if each levels high score is equal to 'null'
  * If it is, it will set the High Scores stored in memory to zero   
  * And if it's not equal to 'null', it will then display the High Score that is stored in memory, within the High Score Reset jumbotron
- * It checks this for all 5 levels too
- *  
+ * It checks this for all 5 levels too 
  */
 function checkHiScore () {
 
     if (level1Hi === null) {
-       // levelOneHiDisplay.innerHTML = `0`;
         localStorage.setItem("Level1HiScore", zeroReset);
     } else {
         levelOneHiDisplay.innerHTML = `${level1Hi}`;
     };
 
     if (level2Hi === null) {
-       // levelTwoHiDisplay.innerHTML = `0`;
         localStorage.setItem("Level2HiScore", zeroReset);
     } else {
         levelTwoHiDisplay.innerHTML = `${level2Hi}`;
     };
 
     if (level3Hi === null) {
-      //  levelThreeHiDisplay.innerHTML = `0`;
         localStorage.setItem("Level3HiScore", zeroReset);
     } else {
         levelThreeHiDisplay.innerHTML = `${level3Hi}`;
     };
 
     if (level4Hi === null) {
-     //   levelFourHiDisplay.innerHTML = `0`;
         localStorage.setItem("Level4HiScore", zeroReset);
     } else {
         levelFourHiDisplay.innerHTML = `${level4Hi}`;
     };
 
     if (level5Hi === null) {
-     //   levelFiveHiDisplay.innerHTML = `0`;
         localStorage.setItem("Level5HiScore", zeroReset);
     } else {
         levelFiveHiDisplay.innerHTML = `${level5Hi}`;
     };
-
 };
-
-
-
 
 /**
  * The function is initiated by pressing the small star button located in my footer
  * Once pressed the High Score & Reset Button jumbotron will appear using the 'visible' property
  * The next bit of code I got from w3schools which allows me to toggle the high score jumbotron when pressing the button
  * I added the add / remove class for changing the colour of the button when pressed giving it that added toggly effect
- * 
  * @param {*} event 
  */
 function displayHighScores(event){
@@ -327,18 +303,13 @@ function displayHighScores(event){
         resetJumbo.style.display = "block";
         highScoreDisplay.classList.add("star-swap");
       };
-
 };
-
 
 /**
  * The function is initiated by pressing the small cog button located in my footer
  * Once pressed the Rules jumbotron will appear using the 'visible' property
  * The next bit of code I got from w3schools which allows me to toggle the rules jumbotron when pressing the button
  * I added the add / remove class for changing the colour of the button when pressed giving it that added toggly effect* 
- * 
- * 
- * 
  * @param {*} event 
  */
 function displayGameRules(event){
@@ -354,9 +325,7 @@ function displayGameRules(event){
         rulesJumbo.style.display = "block";
         gameRulesDisplay.classList.add("star-swap");
       };
-
 };
-
 
 /**
  * This function is activated the user presses the Reset Button located within the High Scores jumbotron
@@ -365,8 +334,7 @@ function displayGameRules(event){
  * You may ask why not just add checkHiScores in the below function which seemed plausible & the way I had it at first
  * Unfortunately checkHiScores variables are the same storage locations below & are declared at the start so they wouldn't change 
  * That's why it gets called on startup & this function calls for a reload
- * The reload declares the level high score variables again which have been zeroed by this function giving the effect of a reset
- * 
+ * The reload declares the level high score variables again which have been zeroed by this function giving the effect of a reset 
  * @param {*} event 
  */
 function resetHiScores (event){
@@ -380,7 +348,6 @@ function resetHiScores (event){
     localStorage.setItem("Level5HiScore", zeroReset);
 
     location.reload();
-
 };
 form.addEventListener('submit', startBubChat);
 highScoreDisplay.addEventListener("click", displayHighScores);

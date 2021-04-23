@@ -291,7 +291,7 @@ footer {
     background-color: rgba(247, 68, 152, 1);
     border: 1px solid rgba(0, 0, 0, 0.8);
     width: 7rem;
-    height: 7rem;                 /* Change this with .hide height & width over different screen sizes*/
+    height: 7rem;
     text-align: center;
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
@@ -956,7 +956,6 @@ footer {
         line-height: 3rem;
     }
 }
-
 
 
 /* Media Queries For Screens With Larger Heights */

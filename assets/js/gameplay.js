@@ -1,9 +1,8 @@
-// Declare constants
-
+// Declare constants & variables
 
 const cards = document.querySelectorAll(".grid-item");
 const audio = document.querySelector("audio");
-const gameName = localStorage.getItem("GameName");     // Transfer username to gamezone area
+const gameName = localStorage.getItem("GameName");
 const time = document.getElementById("timeLeft");
 const chat = document.getElementById("chat");
 const score = document.getElementById("scoreTotal");
@@ -33,9 +32,9 @@ let points = 0;
 let totalCards = 0;
 let matchNumber = -1;
 
-
-// On start up
-
+/**
+ * Run these functions on page load
+ */
 document.addEventListener("DOMContentLoaded", function() {
    
    displayCards();
@@ -43,11 +42,8 @@ document.addEventListener("DOMContentLoaded", function() {
    
 });
 
-
-
-// Create my game array using all available card images
 /**
- * 
+ * Create my game array using all available card images
  */
 let ArrayOfImages = [
 { name : "blubs", src : 'assets/cards/baron-von-blubba-card.jpg'}, 
@@ -64,12 +60,14 @@ let ArrayOfImages = [
 { name : "un2", src : 'assets/cards/unknown2-card.jpg'},
 { name : "willy", src : 'assets/cards/willy-whistle-card.jpg'}];
 
-// Shuffle all the individual cards
-
+/**
+ * Shuffle all the individual cards
+ */
 shuffle(ArrayOfImages);
 
-// Now create another array from the shuffled images but duplicate the first six of the array. This gives us our six pairs for the game.
-
+/**
+ * Create another array using the first 6 cards and duplicates
+ */
 let memoryCards = [
 ArrayOfImages[0],
 ArrayOfImages[1],
@@ -84,13 +82,13 @@ ArrayOfImages[3],
 ArrayOfImages[4],
 ArrayOfImages[5]];
 
-// Shuffle the six pairs of cards so they are ready for populating the grid :)
-
+/**
+ * Shuffle the six pairs of cards so they are ready for populating the grid :)
+ */
 shuffle(memoryCards);
 
-// Shuffle my array using the code below
 /**
- * 
+ * Shuffle my array using the code below (accredited in Credit Section)
  * @param {*} array 
  * @returns 
  */
@@ -113,9 +111,8 @@ shuffle(memoryCards);
   return array;
 };
 
-// Populate the gameplay grid
 /**
- * 
+ * This function populates the gameplay grid with my shuffled memoryCards array
  */
 function displayCards() {
 
@@ -136,11 +133,9 @@ let numberOfCards = memoryCards.length;
    }
 };
 
-
-
-// The turnCard function - to turn the cards over on click event
 /**
- * 
+ * The turnCard function - to turn the cards over on click event
+ * Once two cards have be selected it calls cardCheck function
  * @returns 
  */
 function turnCard() {
@@ -158,15 +153,11 @@ function turnCard() {
     }
   
     cardTwo = this;
-    cardCheck();
-   
+    cardCheck();  
 };
 
-
-
-// The cardCheck function - compares the two selected cards & calls functions depending on outcome of match
 /**
- * 
+ * The cardCheck function - compares the two selected cards & calls functions depending on outcome of match
  */
 function cardCheck() {
 
@@ -178,10 +169,10 @@ function cardCheck() {
     match ? cardsMatch() : cardsDontMatch()
 };
 
-
-// The cardsMatch function - if cards match then it stops the two cards from turning back over & calls matchReset
 /**
- * 
+ * The cardsMatch function - if cards match then it stops the two cards from turning back over & calls matchReset
+ * Adds points to the live game score & increases totalCards by 2
+ * If totalCards === 12 then level over
  */
 function cardsMatch(){
 
@@ -200,9 +191,8 @@ function cardsMatch(){
     matchReset();
 };
 
-// The cardsDontMatch function - if cards do not match then turns the cards back over again in 1 sec & calls resetMatch
 /**
- * 
+ * The cardsDontMatch function - if cards do not match then turns the cards back over again in 1 sec & calls resetMatch
  */
 function cardsDontMatch() {
 
@@ -218,14 +208,10 @@ function cardsDontMatch() {
         matchReset();
     }
 , 1000);
-
 };
 
-
-
-// The resetMatch function - this just resets some variables to allow the card selection sequence to start again
 /**
- * 
+ * The resetMatch function - this just resets some variables to allow the card selection sequence to start again
  */
 function matchReset() {
     
@@ -233,15 +219,9 @@ function matchReset() {
     [cardOne, cardTwo] = [null, null];
 };
 
-
-
-
-
-// My game chat function just send positive messages whilst playing the game
-
-
-
-
+/**
+ * My game chat function just sends personal positive messages whilst playing the game
+ */
 function gameChat() {
 
     matchNumber +=1;
@@ -269,7 +249,6 @@ function gameChat() {
         default:
             break;
     }
-
 
     switch (totalCards) {
     
@@ -305,7 +284,9 @@ function gameChat() {
 
 
 /**
- * 
+ * This function mainly controls the end game jumbotrons & what it says depending on level.
+ * It adds the scores to be displayed & at the very end of the last level ... you become a LEGEND!
+ * I also swap the event listener so you can restart the game again
  */
 function gameLevelOver () {
 
@@ -324,7 +305,7 @@ function gameLevelOver () {
         audioSource.setAttribute('src', "assets/audio/levelover.mp3");
         completeGame.innerHTML = `** YOU LEGEND **`;
         wellDone.innerHTML = `You Completed The <br>Game, ${gameName} !`;
-        levelNext.removeEventListener("click", newLevel);                          // Removed so I could add the restart function to it
+        levelNext.removeEventListener("click", newLevel);
         levelNext.addEventListener("click", restart);
         levelNext.innerHTML = `Start New Game`;
         audio.muted = true;
@@ -332,16 +313,11 @@ function gameLevelOver () {
 
     mute();
     clearInterval(timer);
-
 };
 
-
-
-
-
-
-// Score Calculations Per Level & Display / Store If High Score
-
+/**
+ * Score Calculations Per Level & Display / Store If It's A High Score
+ */
 function levelScore() {
    
     levelTot = (countDown += 1) * points;
@@ -403,14 +379,11 @@ function levelScore() {
             break;
 
     }
-
 };
 
-
-
-
-
-
+/**
+ * This function checks what level the user is on & sets the countDown & levelAt variables accordingly
+ */
 function levelUp () {
     
     if (levelAt === 2) {
@@ -425,13 +398,11 @@ function levelUp () {
    
    localStorage.setItem("CountDown", countDown);
    localStorage.setItem("Level", levelAt);
+};
 
- };
-
-
-
-// My mute function allows the user the option to mute the audio 
-
+/**
+ * My mute function allows the user the option to mute the audio during game play
+ */
 function mute() {
    
     if (audio.muted === false) {
@@ -445,36 +416,31 @@ function mute() {
     }
 };
 
-
-
-
-// Level Up Game Zone
-
+/**
+ * Level Up Game Zone
+ */
 function newLevel () {
    
     levelAt++;
     levelUp ();
     location.reload();
+};
 
- };
-
-
-
-// Restart Game Zone
-
+/**
+ * Restart Game Zone
+ */
 function restart (){
 
     countDown = 60;
-    localStorage.setItem("CountDown", countDown);     // Resets countdown for level 1 again
+    localStorage.setItem("CountDown", countDown);
     levelAt = 1;
-    localStorage.setItem("Level", levelAt);          // Resets level to 1
-    location.reload();                         // Reload the page again
-
+    localStorage.setItem("Level", levelAt);
+    location.reload();
 };
 
-
-// 60 Second Timer
-
+/**
+ * 60 Second Timer also used to change audio, colours & jumbotrons at set times
+ */
 timer = setInterval(function() {      // Code from Stack Overflow & modified to suit
 
     time.innerHTML = (countDown--);
